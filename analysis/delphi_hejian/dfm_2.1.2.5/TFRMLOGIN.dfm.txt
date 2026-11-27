@@ -1,0 +1,51 @@
+object frmLogin: TfrmLogin
+  Left = 577
+  Top = 237
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = '登錄'
+  ClientHeight = 177
+  ClientWidth = 295
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object txtPassWord: TLabeledEdit
+    Left = 72
+    Top = 56
+    Width = 193
+    Height = 21
+    EditLabel.Width = 36
+    EditLabel.Height = 13
+    EditLabel.Caption = '密碼：'
+    LabelPosition = lpLeft
+    LabelSpacing = 3
+    PasswordChar = '*'
+    TabOrder = 0
+    OnKeyPress = txtPassWordKeyPress
+  end
+  object btnOK: TButton
+    Left = 40
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = '確定'
+    TabOrder = 1
+    OnClick = btnOKClick
+  end
+  object btnCance: TButton
+    Left = 184
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = '取消'
+    TabOrder = 2
+    OnClick = btnCanceClick
+  end
+end

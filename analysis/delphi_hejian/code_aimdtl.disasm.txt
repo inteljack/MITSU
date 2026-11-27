@@ -1,0 +1,4686 @@
+
+========== 004019DC ?
+004019DC  push   ebp
+004019DD  mov    ebp, esp
+004019DF  add    esp, -0x5c
+004019E2  push   ebx
+004019E3  mov    eax, 0x40626c
+004019E8  call   0x40502c
+004019ED  mov    dword ptr [ebp - 0x50], 0xffffffff
+004019F4  mov    word ptr [ebp - 0x3c], 8
+004019FA  lea    eax, [ebp - 4]
+004019FD  call   0x401c9c
+00401A02  inc    dword ptr [ebp - 0x30]
+00401A05  mov    word ptr [ebp - 0x3c], 0x14
+00401A0B  mov    word ptr [ebp - 0x3c], 0x20
+00401A11  lea    eax, [ebp - 8]
+00401A14  mov    edx, dword ptr [ebp + 8]
+00401A17  call   0x4050d8
+00401A1C  inc    dword ptr [ebp - 0x30]
+00401A1F  mov    ecx, dword ptr [eax]
+00401A21  mov    dl, 1
+00401A23  mov    eax, dword ptr [0x40973c]
+00401A28  call   0x403218
+00401A2D  mov    dword ptr [ebp - 0x54], eax
+00401A30  dec    dword ptr [ebp - 0x30]
+00401A33  lea    eax, [ebp - 8]
+00401A36  mov    edx, 2
+00401A3B  call   0x40514c
+00401A40  push   0
+00401A42  mov    edx, 0x406396 ; "daCount"
+00401A47  lea    eax, [ebp - 0x10]
+00401A4A  call   0x4050d8
+00401A4F  inc    dword ptr [ebp - 0x30]
+00401A52  push   dword ptr [eax]
+00401A54  mov    word ptr [ebp - 0x3c], 0x2c
+00401A5A  mov    edx, 0x40638e ; "MsgInfo"
+00401A5F  lea    eax, [ebp - 0xc]
+00401A62  call   0x4050d8
+00401A67  inc    dword ptr [ebp - 0x30]
+00401A6A  mov    edx, dword ptr [eax]
+00401A6C  mov    eax, dword ptr [ebp - 0x54]
+00401A6F  pop    ecx
+00401A70  mov    ebx, dword ptr [eax]
+00401A72  call   dword ptr [ebx + 8]
+00401A75  mov    dword ptr [ebp - 0x58], eax
+00401A78  dec    dword ptr [ebp - 0x30]
+00401A7B  lea    eax, [ebp - 0x10]
+00401A7E  mov    edx, 2
+00401A83  call   0x40514c
+00401A88  dec    dword ptr [ebp - 0x30]
+00401A8B  lea    eax, [ebp - 0xc]
+00401A8E  mov    edx, 2
+00401A93  call   0x40514c
+00401A98  cmp    dword ptr [ebp - 0x58], 0
+00401A9C  jne    0x401ac2
+00401A9E  mov    eax, dword ptr [ebp - 0x50]
+00401AA1  push   eax
+00401AA2  dec    dword ptr [ebp - 0x30]
+00401AA5  lea    eax, [ebp - 4]
+00401AA8  mov    edx, 2
+00401AAD  call   0x40514c
+00401AB2  pop    eax
+00401AB3  mov    edx, dword ptr [ebp - 0x4c]
+00401AB6  mov    dword ptr fs:[0], edx
+00401ABD  jmp    0x401c44
+00401AC2  xor    ecx, ecx
+00401AC4  mov    dword ptr [ebp - 0x5c], ecx
+00401AC7  mov    word ptr [ebp - 0x3c], 0x14
+00401ACD  mov    eax, dword ptr [ebp - 0x5c]
+00401AD0  cmp    eax, dword ptr [ebp - 0x58]
+00401AD3  jge    0x401c1d
+00401AD9  mov    word ptr [ebp - 0x3c], 0x38
+00401ADF  lea    eax, [ebp - 0x18]
+00401AE2  call   0x401c9c
+00401AE7  mov    edx, eax
+00401AE9  inc    dword ptr [ebp - 0x30]
+00401AEC  mov    eax, dword ptr [ebp - 0x5c]
+00401AEF  call   0x405614 ; rtl60!@Sysutils@IntToStr$qqri
+00401AF4  lea    edx, [ebp - 0x18]
+00401AF7  push   edx
+00401AF8  lea    eax, [ebp - 0x1c]
+00401AFB  call   0x401c9c
+00401B00  mov    ecx, eax
+00401B02  inc    dword ptr [ebp - 0x30]
+00401B05  mov    eax, 0x40639e ; "DataSrc"
+00401B0A  pop    edx
+00401B0B  call   0x405290
+00401B10  lea    edx, [ebp - 0x1c]
+00401B13  lea    eax, [ebp - 4]
+00401B16  call   0x40517c
+00401B1B  dec    dword ptr [ebp - 0x30]
+00401B1E  lea    eax, [ebp - 0x1c]
+00401B21  mov    edx, 2
+00401B26  call   0x40514c
+00401B2B  dec    dword ptr [ebp - 0x30]
+00401B2E  lea    eax, [ebp - 0x18]
+00401B31  mov    edx, 2
+00401B36  call   0x40514c
+00401B3B  mov    word ptr [ebp - 0x3c], 0x50
+00401B41  mov    edx, 0x4063aa
+00401B46  lea    eax, [ebp - 0x24]
+00401B49  call   0x4050d8
+00401B4E  inc    dword ptr [ebp - 0x30]
+00401B51  push   dword ptr [eax]
+00401B53  lea    eax, [ebp - 0x14]
+00401B56  call   0x401c9c
+00401B5B  push   eax
+00401B5C  inc    dword ptr [ebp - 0x30]
+00401B5F  mov    edx, 0x4063a6 ; "UID"
+00401B64  lea    eax, [ebp - 0x20]
+00401B67  call   0x4050d8
+00401B6C  inc    dword ptr [ebp - 0x30]
+00401B6F  mov    ecx, dword ptr [eax]
+00401B71  mov    edx, dword ptr [ebp - 4]
+00401B74  mov    eax, dword ptr [ebp - 0x54]
+00401B77  mov    ebx, dword ptr [eax]
+00401B79  call   dword ptr [ebx]
+00401B7B  dec    dword ptr [ebp - 0x30]
+00401B7E  lea    eax, [ebp - 0x24]
+00401B81  mov    edx, 2
+00401B86  call   0x40514c
+00401B8B  dec    dword ptr [ebp - 0x30]
+00401B8E  lea    eax, [ebp - 0x20]
+00401B91  mov    edx, 2
+00401B96  call   0x40514c
+00401B9B  mov    word ptr [ebp - 0x3c], 0x44
+00401BA1  mov    word ptr [ebp - 0x3c], 0x5c
+00401BA7  mov    edx, 0x4063ab ; "ADSADT"
+00401BAC  lea    eax, [ebp - 0x28]
+00401BAF  call   0x4050d8
+00401BB4  inc    dword ptr [ebp - 0x30]
+00401BB7  lea    edx, [ebp - 0x28]
+00401BBA  lea    eax, [ebp - 0x14]
+00401BBD  call   0x40521c
+00401BC2  test   eax, eax
+00401BC4  sete   cl
+00401BC7  and    ecx, 1
+00401BCA  push   ecx
+00401BCB  dec    dword ptr [ebp - 0x30]
+00401BCE  lea    eax, [ebp - 0x28]
+00401BD1  mov    edx, 2
+00401BD6  call   0x40514c
+00401BDB  pop    ecx
+00401BDC  test   cl, cl
+00401BDE  je     0x401bf8
+00401BE0  mov    eax, dword ptr [ebp - 0x5c]
+00401BE3  mov    dword ptr [ebp - 0x50], eax
+00401BE6  dec    dword ptr [ebp - 0x30]
+00401BE9  lea    eax, [ebp - 0x14]
+00401BEC  mov    edx, 2
+00401BF1  call   0x40514c
+00401BF6  jmp    0x401c1d
+00401BF8  dec    dword ptr [ebp - 0x30]
+00401BFB  lea    eax, [ebp - 0x14]
+00401BFE  mov    edx, 2
+00401C03  call   0x40514c
+00401C08  mov    word ptr [ebp - 0x3c], 0x14
+00401C0E  inc    dword ptr [ebp - 0x5c]
+00401C11  mov    ecx, dword ptr [ebp - 0x5c]
+00401C14  cmp    ecx, dword ptr [ebp - 0x58]
+00401C17  jl     0x401ad9
+00401C1D  mov    eax, dword ptr [ebp - 0x54]
+00401C20  call   0x405596 ; rtl60!@System@TObject@Free$qqrv
+00401C25  mov    eax, dword ptr [ebp - 0x50]
+00401C28  push   eax
+00401C29  dec    dword ptr [ebp - 0x30]
+00401C2C  lea    eax, [ebp - 4]
+00401C2F  mov    edx, 2
+00401C34  call   0x40514c
+00401C39  pop    eax
+00401C3A  mov    edx, dword ptr [ebp - 0x4c]
+00401C3D  mov    dword ptr fs:[0], edx
+00401C44  pop    ebx
+00401C45  mov    esp, ebp
+00401C47  pop    ebp
+00401C48  ret    
+00401C49  nop    
+00401C4A  nop    
+00401C4B  nop    
+
+========== 00401C4C ?
+00401C4C  push   ebp
+00401C4D  mov    ebp, esp
+00401C4F  mov    eax, dword ptr [ebp + 0xc]
+00401C52  sub    eax, 1
+00401C55  jb     0x401c7d
+00401C57  je     0x401c61
+00401C59  dec    eax
+00401C5A  je     0x401c93
+00401C5C  dec    eax
+00401C5D  je     0x401c93
+00401C5F  jmp    0x401c89
+00401C61  xor    edx, edx
+00401C63  mov    dword ptr [0x407088], edx
+00401C69  push   0x40708c
+00401C6E  call   0x4057b0 ; KERNEL32!InitializeCriticalSection
+00401C73  xor    ecx, ecx
+00401C75  mov    dword ptr [0x407080], ecx
+00401C7B  jmp    0x401c93
+00401C7D  push   0x40708c
+00401C82  call   0x405762 ; KERNEL32!DeleteCriticalSection
+00401C87  jmp    0x401c93
+00401C89  push   0x406375 ; "DllEntryPoint"
+00401C8E  call   0x4057c8 ; KERNEL32!OutputDebugStringA
+00401C93  mov    eax, 1
+00401C98  pop    ebp
+00401C99  ret    0xc
+
+========== 00401D1C imDtOpen
+00401D1C  push   ebp
+00401D1D  mov    ebp, esp
+00401D1F  add    esp, -8
+00401D22  push   0x407080
+00401D27  push   0x500a50
+00401D2C  push   dword ptr [0x406124] ; "輇@"
+00401D32  call   0x40572c ; ANSERMBS!ApMapSharedMemory
+00401D37  mov    dword ptr [0x40707c], eax
+00401D3C  cmp    dword ptr [0x40707c], 0
+00401D43  jne    0x401d4d
+00401D45  or     eax, 0xffffffff
+00401D48  jmp    0x401ef2
+00401D4D  mov    dl, byte ptr [ebp + 8]
+00401D50  push   edx
+00401D51  call   0x40183c
+00401D56  pop    ecx
+00401D57  test   al, al
+00401D59  je     0x401d75
+00401D5B  push   0x407080
+00401D60  push   dword ptr [0x40707c]
+00401D66  call   0x40573e ; ANSERMBS!ApUnmapSharedMemory
+00401D6B  mov    eax, 0xfffffffe
+00401D70  jmp    0x401ef2
+00401D75  mov    edx, dword ptr [0x407080]
+00401D7B  mov    dword ptr [ebp - 4], edx
+00401D7E  push   0
+00401D80  call   0x40578c ; KERNEL32!GetModuleHandleA
+00401D85  mov    dword ptr [ebp - 8], eax
+00401D88  push   0x104
+00401D8D  movsx  ecx, byte ptr [ebp + 8]
+00401D91  imul   eax, ecx, 0x11c
+00401D97  add    eax, dword ptr [ebp - 4]
+00401D9A  push   eax
+00401D9B  push   dword ptr [ebp - 8]
+00401D9E  call   0x405786 ; KERNEL32!GetModuleFileNameA
+00401DA3  call   0x40577a ; KERNEL32!GetCurrentProcessId
+00401DA8  movsx  edx, byte ptr [ebp + 8]
+00401DAC  imul   ecx, edx, 0x47
+00401DAF  mov    edx, dword ptr [ebp - 4]
+00401DB2  mov    dword ptr [edx + ecx*4 + 0x104], eax
+00401DB9  mov    al, byte ptr [ebp + 8]
+00401DBC  mov    byte ptr [0x407084], al
+00401DC1  push   dword ptr [0x406128] ; "骲@"
+00401DC7  push   0
+00401DC9  push   1
+00401DCB  push   0
+00401DCD  call   0x405756 ; KERNEL32!CreateEventA
+00401DD2  movsx  ecx, byte ptr [ebp + 8]
+00401DD6  imul   edx, ecx, 0x47
+00401DD9  mov    ecx, dword ptr [ebp - 4]
+00401DDC  mov    dword ptr [ecx + edx*4 + 0x108], eax
+00401DE3  push   dword ptr [0x40612c]
+00401DE9  push   1
+00401DEB  push   1
+00401DED  push   0
+00401DEF  call   0x405756 ; KERNEL32!CreateEventA
+00401DF4  movsx  edx, byte ptr [ebp + 8]
+00401DF8  imul   ecx, edx, 0x47
+00401DFB  mov    edx, dword ptr [ebp - 4]
+00401DFE  mov    dword ptr [edx + ecx*4 + 0x10c], eax
+00401E05  push   dword ptr [0x406130] ; ".c@"
+00401E0B  push   0
+00401E0D  push   1
+00401E0F  push   0
+00401E11  call   0x405756 ; KERNEL32!CreateEventA
+00401E16  movsx  ecx, byte ptr [ebp + 8]
+00401E1A  imul   edx, ecx, 0x47
+00401E1D  mov    ecx, dword ptr [ebp - 4]
+00401E20  mov    dword ptr [ecx + edx*4 + 0x110], eax
+00401E27  push   dword ptr [0x406134] ; "Qc@"
+00401E2D  push   1
+00401E2F  push   1
+00401E31  push   0
+00401E33  call   0x405756 ; KERNEL32!CreateEventA
+00401E38  movsx  edx, byte ptr [ebp + 8]
+00401E3C  imul   ecx, edx, 0x47
+00401E3F  mov    edx, dword ptr [ebp - 4]
+00401E42  mov    dword ptr [edx + ecx*4 + 0x114], eax
+00401E49  call   0x405780 ; KERNEL32!GetLastError
+00401E4E  cmp    eax, 0xb7
+00401E53  jne    0x401ecb
+00401E55  mov    eax, dword ptr [ebp - 4]
+00401E58  cmp    byte ptr [eax + 0x23d], 0
+00401E5F  je     0x401e79
+00401E61  movsx  ecx, byte ptr [ebp + 8]
+00401E65  imul   eax, ecx, 0x47
+00401E68  mov    edx, dword ptr [ebp - 4]
+00401E6B  push   dword ptr [edx + eax*4 + 0x108]
+00401E72  call   0x4057e0 ; KERNEL32!SetEvent
+00401E77  jmp    0x401e8f
+00401E79  movsx  ecx, byte ptr [ebp + 8]
+00401E7D  imul   eax, ecx, 0x47
+00401E80  mov    edx, dword ptr [ebp - 4]
+00401E83  push   dword ptr [edx + eax*4 + 0x108]
+00401E8A  call   0x4057da ; KERNEL32!ResetEvent
+00401E8F  mov    ecx, dword ptr [ebp - 4]
+00401E92  cmp    byte ptr [ecx + 0x23c], 0
+00401E99  je     0x401eb3
+00401E9B  movsx  eax, byte ptr [ebp + 8]
+00401E9F  imul   edx, eax, 0x47
+00401EA2  mov    ecx, dword ptr [ebp - 4]
+00401EA5  push   dword ptr [ecx + edx*4 + 0x10c]
+00401EAC  call   0x4057e0 ; KERNEL32!SetEvent
+00401EB1  jmp    0x401edf
+00401EB3  movsx  eax, byte ptr [ebp + 8]
+00401EB7  imul   edx, eax, 0x47
+00401EBA  mov    ecx, dword ptr [ebp - 4]
+00401EBD  push   dword ptr [ecx + edx*4 + 0x10c]
+00401EC4  call   0x4057da ; KERNEL32!ResetEvent
+00401EC9  jmp    0x401edf
+00401ECB  mov    eax, dword ptr [ebp - 4]
+00401ECE  mov    byte ptr [eax + 0x23d], 0
+00401ED5  mov    edx, dword ptr [ebp - 4]
+00401ED8  mov    byte ptr [edx + 0x23c], 1
+00401EDF  mov    ecx, dword ptr [ebp - 4]
+00401EE2  mov    byte ptr [ecx + 0x23e], 0
+00401EE9  mov    byte ptr [0x407085], 1
+00401EF0  xor    eax, eax
+00401EF2  pop    ecx
+00401EF3  pop    ecx
+00401EF4  pop    ebp
+00401EF5  ret    4
+
+========== 00401EF8 ?
+00401EF8  push   ebp
+00401EF9  mov    ebp, esp
+00401EFB  push   ecx
+00401EFC  cmp    dword ptr [0x407080], 0
+00401F03  jne    0x401f0a
+00401F05  xor    eax, eax
+00401F07  pop    ecx
+00401F08  pop    ebp
+00401F09  ret    
+00401F0A  mov    edx, dword ptr [0x407080]
+00401F10  mov    dword ptr [ebp - 4], edx
+00401F13  mov    ecx, dword ptr [ebp - 4]
+00401F16  cmp    dword ptr [ecx + 0x220], 0
+00401F1D  jne    0x401f24
+00401F1F  xor    eax, eax
+00401F21  pop    ecx
+00401F22  pop    ebp
+00401F23  ret    
+00401F24  push   0x406383 ; "ctrler.exe"
+00401F29  mov    edx, dword ptr [ebp - 4]
+00401F2C  add    edx, 0x11c
+00401F32  push   edx
+00401F33  call   0x404f85
+00401F38  add    esp, 8
+00401F3B  test   eax, eax
+00401F3D  jne    0x401f44
+00401F3F  xor    eax, eax
+00401F41  pop    ecx
+00401F42  pop    ebp
+00401F43  ret    
+00401F44  mov    al, 1
+00401F46  pop    ecx
+00401F47  pop    ebp
+00401F48  ret    
+00401F49  nop    
+00401F4A  nop    
+00401F4B  nop    
+
+========== 00401F70 imDtGetExclusiveApp
+00401F70  push   ebp
+00401F71  mov    ebp, esp
+00401F73  push   ecx
+00401F74  cmp    dword ptr [0x40707c], 0
+00401F7B  je     0x401f86
+00401F7D  cmp    dword ptr [0x407080], 0
+00401F84  jne    0x401f8a
+00401F86  xor    eax, eax
+00401F88  jmp    0x401fc4
+00401F8A  mov    edx, dword ptr [0x407080]
+00401F90  mov    dword ptr [ebp - 4], edx
+00401F93  movsx  ecx, byte ptr [ebp + 8]
+00401F97  imul   eax, ecx, 0x11c
+00401F9D  add    eax, dword ptr [ebp - 4]
+00401FA0  push   eax
+00401FA1  push   dword ptr [ebp + 0xc]
+00401FA4  call   0x4058a2 ; CC3260MT!_strcpy
+00401FA9  add    esp, 8
+00401FAC  movsx  edx, byte ptr [ebp + 8]
+00401FB0  imul   ecx, edx, 0x47
+00401FB3  mov    eax, dword ptr [ebp - 4]
+00401FB6  mov    edx, dword ptr [eax + ecx*4 + 0x104]
+00401FBD  mov    ecx, dword ptr [ebp + 0x10]
+00401FC0  mov    dword ptr [ecx], edx
+00401FC2  mov    al, 1
+00401FC4  pop    ecx
+00401FC5  pop    ebp
+00401FC6  ret    0xc
+00401FC9  nop    
+00401FCA  nop    
+00401FCB  nop    
+
+========== 00401FCC imDtClose
+00401FCC  push   ebp
+00401FCD  mov    ebp, esp
+00401FCF  add    esp, -0x34
+00401FD2  cmp    byte ptr [0x407085], 0
+00401FD9  jne    0x401fe2
+00401FDB  xor    eax, eax
+00401FDD  jmp    0x4020bb
+00401FE2  mov    edx, dword ptr [0x407080]
+00401FE8  mov    dword ptr [ebp - 4], edx
+00401FEB  mov    ecx, dword ptr [ebp - 4]
+00401FEE  mov    eax, dword ptr [ecx + 0x104]
+00401FF4  mov    edx, dword ptr [ebp - 4]
+00401FF7  cmp    eax, dword ptr [edx + 0x220]
+00401FFD  setne  cl
+00402000  and    ecx, 1
+00402003  mov    byte ptr [ebp - 5], cl
+00402006  movsx  eax, byte ptr [ebp + 8]
+0040200A  imul   edx, eax, 0x47
+0040200D  mov    ecx, dword ptr [ebp - 4]
+00402010  xor    eax, eax
+00402012  mov    dword ptr [ecx + edx*4 + 0x104], eax
+00402019  cmp    byte ptr [ebp + 8], 0
+0040201D  jne    0x40203c
+0040201F  push   0x2c
+00402021  push   0
+00402023  lea    edx, [ebp - 0x34]
+00402026  push   edx
+00402027  call   0x40589c ; CC3260MT!_memset
+0040202C  add    esp, 0xc
+0040202F  mov    byte ptr [ebp - 0x2b], 0
+00402033  lea    ecx, [ebp - 0x34]
+00402036  push   ecx
+00402037  call   0x403140 ; imInitADT
+0040203C  movsx  eax, byte ptr [ebp + 8]
+00402040  imul   edx, eax, 0x47
+00402043  mov    ecx, dword ptr [ebp - 4]
+00402046  cmp    dword ptr [ecx + edx*4 + 0x108], 0
+0040204E  je     0x40206b
+00402050  call   0x4023c8 ; imDtReadCancel
+00402055  movsx  eax, byte ptr [ebp + 8]
+00402059  imul   edx, eax, 0x47
+0040205C  mov    ecx, dword ptr [ebp - 4]
+0040205F  push   dword ptr [ecx + edx*4 + 0x108]
+00402066  call   0x405750 ; KERNEL32!CloseHandle
+0040206B  movsx  eax, byte ptr [ebp + 8]
+0040206F  imul   edx, eax, 0x47
+00402072  mov    ecx, dword ptr [ebp - 4]
+00402075  cmp    dword ptr [ecx + edx*4 + 0x10c], 0
+0040207D  je     0x40209a
+0040207F  call   0x4021f8 ; imDtWriteCancel
+00402084  movsx  eax, byte ptr [ebp + 8]
+00402088  imul   edx, eax, 0x47
+0040208B  mov    ecx, dword ptr [ebp - 4]
+0040208E  push   dword ptr [ecx + edx*4 + 0x10c]
+00402095  call   0x405750 ; KERNEL32!CloseHandle
+0040209A  cmp    byte ptr [ebp - 5], 0
+0040209E  je     0x4020b9
+004020A0  mov    byte ptr [0x407085], 0
+004020A7  push   0x407080
+004020AC  push   dword ptr [0x40707c]
+004020B2  call   0x40573e ; ANSERMBS!ApUnmapSharedMemory
+004020B7  jmp    0x4020bb
+004020B9  mov    al, 1
+004020BB  mov    esp, ebp
+004020BD  pop    ebp
+004020BE  ret    4
+004020C1  nop    
+004020C2  nop    
+004020C3  nop    
+
+========== 004020C4 imDtWriteBegin
+004020C4  push   ebp
+004020C5  mov    ebp, esp
+004020C7  add    esp, -0xc
+004020CA  xor    eax, eax
+004020CC  mov    dword ptr [ebp - 4], eax
+004020CF  cmp    byte ptr [0x407085], 0
+004020D6  jne    0x4020e0
+004020D8  mov    eax, dword ptr [ebp - 4]
+004020DB  jmp    0x402192
+004020E0  call   0x401ef8
+004020E5  test   al, al
+004020E7  jne    0x4020f1
+004020E9  mov    eax, dword ptr [ebp - 4]
+004020EC  jmp    0x402192
+004020F1  cmp    dword ptr [ebp + 8], 0x500000
+004020F8  jle    0x402102
+004020FA  mov    eax, dword ptr [ebp - 4]
+004020FD  jmp    0x402192
+00402102  mov    edx, dword ptr [0x407080]
+00402108  mov    dword ptr [ebp - 0xc], edx
+0040210B  mov    ecx, dword ptr [ebp - 0xc]
+0040210E  mov    byte ptr [ecx + 0x11a], 1
+00402115  mov    eax, dword ptr [ebp - 0xc]
+00402118  mov    byte ptr [eax + 0x118], 0
+0040211F  push   dword ptr [ebp + 0xc]
+00402122  mov    edx, dword ptr [ebp - 0xc]
+00402125  push   dword ptr [edx + 0x10c]
+0040212B  call   0x4057e6 ; KERNEL32!WaitForSingleObject
+00402130  mov    dword ptr [ebp - 8], eax
+00402133  mov    ecx, dword ptr [ebp - 0xc]
+00402136  cmp    byte ptr [ecx + 0x118], 0
+0040213D  jne    0x402185
+0040213F  cmp    dword ptr [ebp - 8], 0x102
+00402146  jne    0x402156
+00402148  mov    eax, dword ptr [0x409468]
+0040214D  mov    eax, dword ptr [eax]
+0040214F  call   0x405524 ; vcl60!@Forms@TApplication@ProcessMessages$qqrv
+00402154  jmp    0x40211f
+00402156  cmp    dword ptr [ebp - 8], 0
+0040215A  jne    0x40211f
+0040215C  mov    edx, dword ptr [ebp + 8]
+0040215F  mov    ecx, dword ptr [ebp - 0xc]
+00402162  mov    dword ptr [ecx + 0x238], edx
+00402168  mov    eax, dword ptr [0x407080]
+0040216D  add    eax, 0xa50
+00402172  mov    dword ptr [ebp - 4], eax
+00402175  push   dword ptr [ebp + 8]
+00402178  push   0
+0040217A  push   dword ptr [ebp - 4]
+0040217D  call   0x40589c ; CC3260MT!_memset
+00402182  add    esp, 0xc
+00402185  mov    edx, dword ptr [ebp - 0xc]
+00402188  mov    byte ptr [edx + 0x11a], 0
+0040218F  mov    eax, dword ptr [ebp - 4]
+00402192  mov    esp, ebp
+00402194  pop    ebp
+00402195  ret    8
+
+========== 00402198 imDtWriteEnd
+00402198  push   ebp
+00402199  mov    ebp, esp
+0040219B  push   ecx
+0040219C  cmp    byte ptr [0x407085], 0
+004021A3  jne    0x4021aa
+004021A5  xor    eax, eax
+004021A7  pop    ecx
+004021A8  pop    ebp
+004021A9  ret    
+004021AA  call   0x401ef8
+004021AF  test   al, al
+004021B1  jne    0x4021b8
+004021B3  xor    eax, eax
+004021B5  pop    ecx
+004021B6  pop    ebp
+004021B7  ret    
+004021B8  mov    edx, dword ptr [0x407080]
+004021BE  mov    dword ptr [ebp - 4], edx
+004021C1  mov    ecx, dword ptr [ebp - 4]
+004021C4  mov    byte ptr [ecx + 0x23d], 1
+004021CB  mov    eax, dword ptr [ebp - 4]
+004021CE  mov    byte ptr [eax + 0x23c], 0
+004021D5  mov    edx, dword ptr [ebp - 4]
+004021D8  push   dword ptr [edx + 0x10c]
+004021DE  call   0x4057da ; KERNEL32!ResetEvent
+004021E3  mov    ecx, dword ptr [ebp - 4]
+004021E6  push   dword ptr [ecx + 0x108]
+004021EC  call   0x4057e0 ; KERNEL32!SetEvent
+004021F1  mov    al, 1
+004021F3  pop    ecx
+004021F4  pop    ebp
+004021F5  ret    
+004021F6  nop    
+004021F7  nop    
+
+========== 004021F8 imDtWriteCancel
+004021F8  push   ebp
+004021F9  mov    ebp, esp
+004021FB  add    esp, -8
+004021FE  cmp    byte ptr [0x407085], 0
+00402205  jne    0x40220e
+00402207  xor    eax, eax
+00402209  jmp    0x402292
+0040220E  call   0x401ef8
+00402213  test   al, al
+00402215  jne    0x40221b
+00402217  xor    eax, eax
+00402219  jmp    0x402292
+0040221B  mov    edx, dword ptr [0x407080]
+00402221  mov    dword ptr [ebp - 4], edx
+00402224  mov    ecx, dword ptr [ebp - 4]
+00402227  mov    byte ptr [ecx + 0x118], 1
+0040222E  mov    dword ptr [ebp - 8], 0x102
+00402235  mov    eax, dword ptr [ebp - 4]
+00402238  cmp    byte ptr [eax + 0x23e], 1
+0040223F  jne    0x402257
+00402241  push   0x3e8
+00402246  mov    edx, dword ptr [ebp - 4]
+00402249  push   dword ptr [edx + 0x10c]
+0040224F  call   0x4057e6 ; KERNEL32!WaitForSingleObject
+00402254  mov    dword ptr [ebp - 8], eax
+00402257  cmp    dword ptr [ebp - 8], 0x102
+0040225E  jne    0x402290
+00402260  mov    ecx, dword ptr [ebp - 4]
+00402263  push   dword ptr [ecx + 0x108]
+00402269  call   0x4057da ; KERNEL32!ResetEvent
+0040226E  mov    eax, dword ptr [ebp - 4]
+00402271  push   dword ptr [eax + 0x10c]
+00402277  call   0x4057e0 ; KERNEL32!SetEvent
+0040227C  mov    edx, dword ptr [ebp - 4]
+0040227F  mov    byte ptr [edx + 0x23d], 0
+00402286  mov    ecx, dword ptr [ebp - 4]
+00402289  mov    byte ptr [ecx + 0x23c], 1
+00402290  mov    al, 1
+00402292  pop    ecx
+00402293  pop    ecx
+00402294  pop    ebp
+00402295  ret    
+00402296  nop    
+00402297  nop    
+
+========== 00402298 imDtReadBegin
+00402298  push   ebp
+00402299  mov    ebp, esp
+0040229B  add    esp, -0xc
+0040229E  xor    eax, eax
+004022A0  mov    dword ptr [ebp - 4], eax
+004022A3  cmp    byte ptr [0x407085], 0
+004022AA  jne    0x4022b4
+004022AC  mov    eax, dword ptr [ebp - 4]
+004022AF  jmp    0x402358
+004022B4  call   0x401f4c
+004022B9  test   al, al
+004022BB  jne    0x4022c5
+004022BD  mov    eax, dword ptr [ebp - 4]
+004022C0  jmp    0x402358
+004022C5  mov    edx, dword ptr [0x407080]
+004022CB  mov    dword ptr [ebp - 0xc], edx
+004022CE  mov    ecx, dword ptr [ebp - 0xc]
+004022D1  mov    byte ptr [ecx + 0x235], 1
+004022D8  mov    eax, dword ptr [ebp - 0xc]
+004022DB  mov    byte ptr [eax + 0x234], 0
+004022E2  push   0
+004022E4  mov    edx, dword ptr [ebp - 0xc]
+004022E7  push   dword ptr [edx + 0x224]
+004022ED  call   0x4057e6 ; KERNEL32!WaitForSingleObject
+004022F2  mov    dword ptr [ebp - 8], eax
+004022F5  mov    ecx, dword ptr [ebp - 0xc]
+004022F8  cmp    byte ptr [ecx + 0x234], 0
+004022FF  jne    0x40234b
+00402301  cmp    dword ptr [ebp - 8], 0x102
+00402308  jne    0x40231e
+0040230A  mov    eax, dword ptr [0x409468]
+0040230F  mov    eax, dword ptr [eax]
+00402311  call   0x405524 ; vcl60!@Forms@TApplication@ProcessMessages$qqrv
+00402316  cmp    byte ptr [ebp + 0xc], 0
+0040231A  jne    0x4022e2
+0040231C  jmp    0x40234b
+0040231E  cmp    dword ptr [ebp - 8], 0
+00402322  jne    0x4022e2
+00402324  mov    edx, dword ptr [ebp + 8]
+00402327  mov    ecx, dword ptr [ebp - 0xc]
+0040232A  mov    eax, dword ptr [ecx + 0x238]
+00402330  mov    dword ptr [edx], eax
+00402332  mov    edx, dword ptr [0x407080]
+00402338  add    edx, 0xa50
+0040233E  mov    dword ptr [ebp - 4], edx
+00402341  mov    ecx, dword ptr [ebp - 0xc]
+00402344  mov    byte ptr [ecx + 0x23e], 1
+0040234B  mov    eax, dword ptr [ebp - 0xc]
+0040234E  mov    byte ptr [eax + 0x235], 0
+00402355  mov    eax, dword ptr [ebp - 4]
+00402358  mov    esp, ebp
+0040235A  pop    ebp
+0040235B  ret    0xc
+0040235E  nop    
+0040235F  nop    
+
+========== 00402360 imDtReadEnd
+00402360  push   ebp
+00402361  mov    ebp, esp
+00402363  push   ecx
+00402364  cmp    byte ptr [0x407085], 0
+0040236B  jne    0x402372
+0040236D  xor    eax, eax
+0040236F  pop    ecx
+00402370  pop    ebp
+00402371  ret    
+00402372  call   0x401f4c
+00402377  test   al, al
+00402379  jne    0x402380
+0040237B  xor    eax, eax
+0040237D  pop    ecx
+0040237E  pop    ebp
+0040237F  ret    
+00402380  mov    edx, dword ptr [0x407080]
+00402386  mov    dword ptr [ebp - 4], edx
+00402389  mov    ecx, dword ptr [ebp - 4]
+0040238C  mov    byte ptr [ecx + 0x23d], 0
+00402393  mov    eax, dword ptr [ebp - 4]
+00402396  mov    byte ptr [eax + 0x23c], 1
+0040239D  mov    edx, dword ptr [ebp - 4]
+004023A0  mov    byte ptr [edx + 0x23e], 0
+004023A7  mov    ecx, dword ptr [ebp - 4]
+004023AA  push   dword ptr [ecx + 0x224]
+004023B0  call   0x4057da ; KERNEL32!ResetEvent
+004023B5  mov    eax, dword ptr [ebp - 4]
+004023B8  push   dword ptr [eax + 0x228]
+004023BE  call   0x4057e0 ; KERNEL32!SetEvent
+004023C3  mov    al, 1
+004023C5  pop    ecx
+004023C6  pop    ebp
+004023C7  ret    
+
+========== 004023C8 imDtReadCancel
+004023C8  push   ebp
+004023C9  mov    ebp, esp
+004023CB  push   ecx
+004023CC  cmp    byte ptr [0x407085], 0
+004023D3  jne    0x4023da
+004023D5  xor    eax, eax
+004023D7  pop    ecx
+004023D8  pop    ebp
+004023D9  ret    
+004023DA  call   0x401f4c
+004023DF  test   al, al
+004023E1  jne    0x4023e8
+004023E3  xor    eax, eax
+004023E5  pop    ecx
+004023E6  pop    ebp
+004023E7  ret    
+004023E8  mov    edx, dword ptr [0x407080]
+004023EE  mov    dword ptr [ebp - 4], edx
+004023F1  mov    ecx, dword ptr [ebp - 4]
+004023F4  mov    byte ptr [ecx + 0x234], 1
+004023FB  mov    al, 1
+004023FD  pop    ecx
+004023FE  pop    ebp
+004023FF  ret    
+
+========== 00402400 imDtControl
+00402400  push   ebp
+00402401  mov    ebp, esp
+00402403  add    esp, -0x30
+00402406  push   ebx
+00402407  push   esi
+00402408  push   edi
+00402409  mov    eax, 0x4064d4
+0040240E  call   0x40502c
+00402413  xor    edx, edx
+00402415  mov    dword ptr [ebp - 0x28], edx
+00402418  cmp    byte ptr [0x407085], 0
+0040241F  jne    0x402433
+00402421  or     eax, 0xffffffff
+00402424  mov    edx, dword ptr [ebp - 0x24]
+00402427  mov    dword ptr fs:[0], edx
+0040242E  jmp    0x40260f
+00402433  call   0x401ef8
+00402438  test   al, al
+0040243A  jne    0x40244d
+0040243C  xor    eax, eax
+0040243E  mov    edx, dword ptr [ebp - 0x24]
+00402441  mov    dword ptr fs:[0], edx
+00402448  jmp    0x40260f
+0040244D  push   0x40708c
+00402452  call   0x405768 ; KERNEL32!EnterCriticalSection
+00402457  mov    ecx, dword ptr [0x407098]
+0040245D  cmp    ecx, dword ptr [0x407088]
+00402463  jne    0x402480
+00402465  push   0x40708c
+0040246A  call   0x4057b6 ; KERNEL32!LeaveCriticalSection
+0040246F  xor    eax, eax
+00402471  mov    edx, dword ptr [ebp - 0x24]
+00402474  mov    dword ptr fs:[0], edx
+0040247B  jmp    0x40260f
+00402480  mov    word ptr [ebp - 0x14], 8
+00402486  mov    ecx, dword ptr [0x407098]
+0040248C  mov    dword ptr [0x407088], ecx
+00402492  mov    eax, dword ptr [0x407080]
+00402497  mov    dword ptr [ebp - 0x30], eax
+0040249A  mov    word ptr [ebp - 0x14], 8
+004024A0  mov    edx, dword ptr [ebp - 0x30]
+004024A3  mov    ecx, dword ptr [ebp + 8]
+004024A6  mov    dword ptr [edx + 0x240], ecx
+004024AC  mov    eax, dword ptr [ebp - 0x30]
+004024AF  mov    dx, word ptr [ebp + 0x10]
+004024B3  mov    word ptr [eax + 0x244], dx
+004024BA  cmp    dword ptr [ebp + 0xc], 0
+004024BE  je     0x4024e1
+004024C0  cmp    dword ptr [ebp + 0x10], 0x400
+004024C7  jge    0x4024e1
+004024C9  push   dword ptr [ebp + 0x10]
+004024CC  push   dword ptr [ebp + 0xc]
+004024CF  mov    ecx, dword ptr [ebp - 0x30]
+004024D2  add    ecx, 0x246
+004024D8  push   ecx
+004024D9  call   0x405896 ; CC3260MT!_memcpy
+004024DE  add    esp, 0xc
+004024E1  mov    eax, dword ptr [ebp - 0x30]
+004024E4  push   dword ptr [eax + 0x114]
+004024EA  call   0x4057da ; KERNEL32!ResetEvent
+004024EF  mov    edx, dword ptr [ebp - 0x30]
+004024F2  push   dword ptr [edx + 0x110]
+004024F8  call   0x4057e0 ; KERNEL32!SetEvent
+004024FD  push   dword ptr [ebp + 0x1c]
+00402500  mov    ecx, dword ptr [ebp - 0x30]
+00402503  push   dword ptr [ecx + 0x114]
+00402509  call   0x4057e6 ; KERNEL32!WaitForSingleObject
+0040250E  mov    dword ptr [ebp - 0x2c], eax
+00402511  cmp    dword ptr [ebp - 0x2c], 0x102
+00402518  jne    0x40254e
+0040251A  mov    eax, dword ptr [ebp - 0x30]
+0040251D  push   dword ptr [eax + 0x114]
+00402523  call   0x4057e0 ; KERNEL32!SetEvent
+00402528  xor    edx, edx
+0040252A  mov    dword ptr [0x407088], edx
+00402530  push   0x40708c
+00402535  call   0x4057b6 ; KERNEL32!LeaveCriticalSection
+0040253A  mov    eax, 0xfffffffd
+0040253F  mov    edx, dword ptr [ebp - 0x24]
+00402542  mov    dword ptr fs:[0], edx
+00402549  jmp    0x40260f
+0040254E  cmp    dword ptr [ebp - 0x2c], 0
+00402552  jne    0x4025bc
+00402554  mov    ecx, dword ptr [ebp - 0x30]
+00402557  mov    eax, dword ptr [ecx + 0x648]
+0040255D  mov    dword ptr [ebp - 0x28], eax
+00402560  cmp    dword ptr [ebp + 0x14], 0
+00402564  je     0x4025a7
+00402566  cmp    dword ptr [ebp + 0x18], 0
+0040256A  je     0x4025a7
+0040256C  mov    edx, dword ptr [ebp - 0x30]
+0040256F  movzx  ecx, word ptr [edx + 0x64c]
+00402576  mov    eax, dword ptr [ebp + 0x18]
+00402579  cmp    ecx, dword ptr [eax]
+0040257B  jg     0x4025a0
+0040257D  mov    edx, dword ptr [ebp - 0x30]
+00402580  movzx  ecx, word ptr [edx + 0x64c]
+00402587  push   ecx
+00402588  mov    eax, dword ptr [ebp - 0x30]
+0040258B  add    eax, 0x64e
+00402590  push   eax
+00402591  mov    edx, dword ptr [ebp + 0x14]
+00402594  push   dword ptr [edx]
+00402596  call   0x405896 ; CC3260MT!_memcpy
+0040259B  add    esp, 0xc
+0040259E  jmp    0x4025a7
+004025A0  mov    dword ptr [ebp - 0x28], 0xfffffffc
+004025A7  cmp    dword ptr [ebp + 0x18], 0
+004025AB  je     0x4025bc
+004025AD  mov    ecx, dword ptr [ebp - 0x30]
+004025B0  movzx  eax, word ptr [ecx + 0x64c]
+004025B7  mov    edx, dword ptr [ebp + 0x18]
+004025BA  mov    dword ptr [edx], eax
+004025BC  xor    ecx, ecx
+004025BE  mov    dword ptr [0x407088], ecx
+004025C4  push   0x40708c
+004025C9  call   0x4057b6 ; KERNEL32!LeaveCriticalSection
+004025CE  mov    eax, dword ptr [ebp - 0x28]
+004025D1  mov    edx, dword ptr [ebp - 0x24]
+004025D4  mov    dword ptr fs:[0], edx
+004025DB  jmp    0x40260f
+004025DD  xor    ecx, ecx
+004025DF  mov    dword ptr [0x407088], ecx
+004025E5  push   0x40708c
+004025EA  call   0x4057b6 ; KERNEL32!LeaveCriticalSection
+004025EF  xor    eax, eax
+004025F1  push   eax
+004025F2  xor    edx, edx
+004025F4  mov    dword ptr [ebp - 8], edx
+004025F7  lea    ecx, [ebp - 0x24]
+004025FA  push   ecx
+004025FB  call   0x40581e ; CC3260MT!__Return_unwind
+00402600  pop    ecx
+00402601  pop    eax
+00402602  jmp    0x40260f
+00402604  mov    word ptr [ebp - 0x14], 0x10
+0040260A  call   0x405806 ; CC3260MT!@_CatchCleanup$qv
+0040260F  pop    edi
+00402610  pop    esi
+00402611  pop    ebx
+00402612  mov    esp, ebp
+00402614  pop    ebp
+00402615  ret    0x18
+
+========== 00402618 imDtCheckCmdIn
+00402618  push   ebp
+00402619  mov    ebp, esp
+0040261B  add    esp, -8
+0040261E  cmp    byte ptr [0x407085], 0
+00402625  jne    0x40262c
+00402627  or     eax, 0xffffffff
+0040262A  jmp    0x4026ab
+0040262C  call   0x401ef8
+00402631  test   al, al
+00402633  jne    0x40263a
+00402635  or     eax, 0xffffffff
+00402638  jmp    0x4026ab
+0040263A  mov    edx, dword ptr [0x407080]
+00402640  mov    dword ptr [ebp - 8], edx
+00402643  push   dword ptr [ebp + 0x14]
+00402646  mov    ecx, dword ptr [ebp - 8]
+00402649  push   dword ptr [ecx + 0x22c]
+0040264F  call   0x4057e6 ; KERNEL32!WaitForSingleObject
+00402654  mov    dword ptr [ebp - 4], eax
+00402657  cmp    dword ptr [ebp - 4], 0x102
+0040265E  jne    0x402667
+00402660  mov    eax, 0xfffffffd
+00402665  jmp    0x4026ab
+00402667  cmp    dword ptr [ebp - 4], 0
+0040266B  jne    0x4026a6
+0040266D  mov    edx, dword ptr [ebp + 8]
+00402670  mov    ecx, dword ptr [ebp - 8]
+00402673  mov    eax, dword ptr [ecx + 0x240]
+00402679  mov    dword ptr [edx], eax
+0040267B  mov    edx, dword ptr [ebp - 8]
+0040267E  add    edx, 0x246
+00402684  mov    ecx, dword ptr [ebp + 0xc]
+00402687  mov    dword ptr [ecx], edx
+00402689  mov    eax, dword ptr [ebp - 8]
+0040268C  movzx  edx, word ptr [eax + 0x244]
+00402693  mov    ecx, dword ptr [ebp + 0x10]
+00402696  mov    dword ptr [ecx], edx
+00402698  mov    eax, dword ptr [ebp - 8]
+0040269B  push   dword ptr [eax + 0x22c]
+004026A1  call   0x4057da ; KERNEL32!ResetEvent
+004026A6  mov    eax, 1
+004026AB  pop    ecx
+004026AC  pop    ecx
+004026AD  pop    ebp
+004026AE  ret    0x10
+004026B1  nop    
+004026B2  nop    
+004026B3  nop    
+
+========== 004026B4 imDtCmdOut
+004026B4  push   ebp
+004026B5  mov    ebp, esp
+004026B7  add    esp, -8
+004026BA  cmp    byte ptr [0x407085], 0
+004026C1  jne    0x4026c8
+004026C3  or     eax, 0xffffffff
+004026C6  jmp    0x402734
+004026C8  call   0x401ef8
+004026CD  test   al, al
+004026CF  jne    0x4026d8
+004026D1  mov    eax, 0xfffffffd
+004026D6  jmp    0x402734
+004026D8  mov    edx, dword ptr [0x407080]
+004026DE  mov    dword ptr [ebp - 8], edx
+004026E1  mov    ecx, dword ptr [ebp + 8]
+004026E4  mov    eax, dword ptr [ebp - 8]
+004026E7  mov    dword ptr [eax + 0x648], ecx
+004026ED  mov    dx, word ptr [ebp + 0x10]
+004026F1  mov    ecx, dword ptr [ebp - 8]
+004026F4  mov    word ptr [ecx + 0x64c], dx
+004026FB  cmp    dword ptr [ebp + 0xc], 0
+004026FF  je     0x402721
+00402701  cmp    dword ptr [ebp + 0x10], 0x400
+00402708  jge    0x402721
+0040270A  push   dword ptr [ebp + 0x10]
+0040270D  push   dword ptr [ebp + 0xc]
+00402710  mov    eax, dword ptr [ebp - 8]
+00402713  add    eax, 0x64e
+00402718  push   eax
+00402719  call   0x405896 ; CC3260MT!_memcpy
+0040271E  add    esp, 0xc
+00402721  mov    edx, dword ptr [ebp - 8]
+00402724  push   dword ptr [edx + 0x230]
+0040272A  call   0x4057e0 ; KERNEL32!SetEvent
+0040272F  mov    eax, 1
+00402734  pop    ecx
+00402735  pop    ecx
+00402736  pop    ebp
+00402737  ret    0xc
+0040273A  nop    
+0040273B  nop    
+
+========== 0040273C imDtFieldBound
+0040273C  push   ebp
+0040273D  mov    ebp, esp
+0040273F  mov    eax, dword ptr [ebp + 8]
+00402742  add    eax, 0x28c
+00402747  pop    ebp
+00402748  ret    4
+0040274B  nop    
+
+========== 0040274C imDtGetField
+0040274C  push   ebp
+0040274D  mov    ebp, esp
+0040274F  add    esp, -8
+00402752  xor    eax, eax
+00402754  mov    dword ptr [ebp - 4], eax
+00402757  mov    edx, dword ptr [ebp + 8]
+0040275A  mov    dword ptr [ebp - 8], edx
+0040275D  mov    ecx, dword ptr [ebp - 8]
+00402760  cmp    dword ptr [ecx], 0x46544441
+00402766  je     0x40276d
+00402768  mov    eax, dword ptr [ebp - 4]
+0040276B  jmp    0x402796
+0040276D  mov    dl, byte ptr [ebp + 0xc]
+00402770  mov    ecx, dword ptr [ebp - 8]
+00402773  cmp    dl, byte ptr [ecx + 0x31]
+00402776  jb     0x40277d
+00402778  mov    eax, dword ptr [ebp - 4]
+0040277B  jmp    0x402796
+0040277D  xor    edx, edx
+0040277F  mov    dl, byte ptr [ebp + 0xc]
+00402782  mov    ecx, edx
+00402784  shl    ecx, 2
+00402787  lea    ecx, [ecx + ecx*2]
+0040278A  add    ecx, dword ptr [ebp - 8]
+0040278D  add    ecx, 0x34
+00402790  mov    dword ptr [ebp - 4], ecx
+00402793  mov    eax, dword ptr [ebp - 4]
+00402796  pop    ecx
+00402797  pop    ecx
+00402798  pop    ebp
+00402799  ret    8
+
+========== 0040280C imDtAppendField
+0040280C  push   ebp
+0040280D  mov    ebp, esp
+0040280F  add    esp, -8
+00402812  mov    byte ptr [ebp - 1], 0
+00402816  mov    eax, dword ptr [ebp + 8]
+00402819  mov    dword ptr [ebp - 8], eax
+0040281C  mov    edx, dword ptr [ebp - 8]
+0040281F  cmp    byte ptr [edx + 0x31], 0x32
+00402823  jb     0x40282d
+00402825  mov    al, byte ptr [ebp - 1]
+00402828  jmp    0x4028e7
+0040282D  mov    edx, dword ptr [ebp - 8]
+00402830  mov    dword ptr [edx], 0x46544441
+00402836  mov    ecx, dword ptr [ebp - 8]
+00402839  xor    eax, eax
+0040283B  mov    al, byte ptr [ecx + 0x31]
+0040283E  lea    edx, [eax + eax*2]
+00402841  mov    ecx, dword ptr [ebp - 8]
+00402844  mov    al, byte ptr [ebp + 0xc]
+00402847  mov    byte ptr [ecx + edx*4 + 0x34], al
+0040284B  mov    edx, dword ptr [ebp - 8]
+0040284E  xor    ecx, ecx
+00402850  mov    cl, byte ptr [edx + 0x31]
+00402853  lea    eax, [ecx + ecx*2]
+00402856  mov    edx, dword ptr [ebp - 8]
+00402859  mov    ecx, dword ptr [ebp + 0x14]
+0040285C  mov    dword ptr [edx + eax*4 + 0x38], ecx
+00402860  mov    eax, dword ptr [ebp - 8]
+00402863  cmp    byte ptr [eax + 0x31], 0
+00402867  jne    0x402881
+00402869  mov    edx, dword ptr [ebp - 8]
+0040286C  xor    ecx, ecx
+0040286E  mov    cl, byte ptr [edx + 0x31]
+00402871  lea    eax, [ecx + ecx*2]
+00402874  mov    edx, dword ptr [ebp - 8]
+00402877  mov    dword ptr [edx + eax*4 + 0x3c], 0x28c
+0040287F  jmp    0x4028b7
+00402881  mov    ecx, dword ptr [ebp - 8]
+00402884  xor    eax, eax
+00402886  mov    al, byte ptr [ecx + 0x31]
+00402889  lea    edx, [eax + eax*2]
+0040288C  mov    ecx, dword ptr [ebp - 8]
+0040288F  mov    eax, dword ptr [ecx + edx*4 + 0x30]
+00402893  mov    edx, dword ptr [ebp - 8]
+00402896  xor    ecx, ecx
+00402898  mov    cl, byte ptr [edx + 0x31]
+0040289B  lea    edx, [ecx + ecx*2]
+0040289E  mov    ecx, dword ptr [ebp - 8]
+004028A1  add    eax, dword ptr [ecx + edx*4 + 0x2c]
+004028A5  mov    edx, dword ptr [ebp - 8]
+004028A8  xor    ecx, ecx
+004028AA  mov    cl, byte ptr [edx + 0x31]
+004028AD  lea    edx, [ecx + ecx*2]
+004028B0  mov    ecx, dword ptr [ebp - 8]
+004028B3  mov    dword ptr [ecx + edx*4 + 0x3c], eax
+004028B7  push   dword ptr [ebp + 0x14]
+004028BA  push   dword ptr [ebp + 0x10]
+004028BD  mov    eax, dword ptr [ebp - 8]
+004028C0  movzx  eax, byte ptr [eax + 0x31]
+004028C4  lea    edx, [eax + eax*2]
+004028C7  mov    ecx, dword ptr [ebp - 8]
+004028CA  mov    eax, dword ptr [ecx + edx*4 + 0x3c]
+004028CE  add    eax, dword ptr [ebp + 8]
+004028D1  push   eax
+004028D2  call   0x405896 ; CC3260MT!_memcpy
+004028D7  add    esp, 0xc
+004028DA  mov    edx, dword ptr [ebp - 8]
+004028DD  inc    byte ptr [edx + 0x31]
+004028E0  mov    byte ptr [ebp - 1], 1
+004028E4  mov    al, byte ptr [ebp - 1]
+004028E7  pop    ecx
+004028E8  pop    ecx
+004028E9  pop    ebp
+004028EA  ret    0x10
+004028ED  nop    
+004028EE  nop    
+004028EF  nop    
+
+========== 004028F0 imDtWritePic
+004028F0  push   ebp
+004028F1  mov    ebp, esp
+004028F3  add    esp, -0x60
+004028F6  mov    eax, 0x4064f8
+004028FB  call   0x40502c
+00402900  mov    byte ptr [ebp - 0x29], 0
+00402904  mov    edx, dword ptr [ebp + 0xc]
+00402907  inc    edx
+00402908  mov    dword ptr [ebp - 0x30], edx
+0040290B  xor    ecx, ecx
+0040290D  mov    dword ptr [ebp - 0x40], ecx
+00402910  push   dword ptr [ebp + 8]
+00402913  call   0x405738 ; ANSERMBS!ApTiffToBmpBound
+00402918  mov    dword ptr [ebp - 0x38], eax
+0040291B  cmp    dword ptr [ebp - 0x38], 0
+0040291F  je     0x4029ad
+00402925  push   dword ptr [ebp - 0x38]
+00402928  call   0x405890 ; CC3260MT!_malloc
+0040292D  pop    ecx
+0040292E  mov    dword ptr [ebp - 0x40], eax
+00402931  lea    eax, [ebp - 0x38]
+00402934  push   eax
+00402935  push   dword ptr [ebp - 0x40]
+00402938  push   dword ptr [ebp + 8]
+0040293B  call   0x405732 ; ANSERMBS!ApTiffToBmp
+00402940  mov    byte ptr [ebp - 0x29], al
+00402943  cmp    byte ptr [ebp - 0x29], 0
+00402947  jne    0x40299f
+00402949  xor    edx, edx
+0040294B  mov    dword ptr [ebp - 0x34], edx
+0040294E  mov    ecx, dword ptr [ebp - 0x34]
+00402951  cmp    ecx, dword ptr [ebp - 0x30]
+00402954  jae    0x40299f
+00402956  push   dword ptr [ebp - 0x38]
+00402959  call   0x40273c ; imDtFieldBound
+0040295E  mov    dword ptr [ebp - 0x3c], eax
+00402961  push   1
+00402963  push   dword ptr [ebp - 0x3c]
+00402966  call   0x4020c4 ; imDtWriteBegin
+0040296B  mov    dword ptr [ebp - 0x44], eax
+0040296E  cmp    dword ptr [ebp - 0x44], 0
+00402972  je     0x40298e
+00402974  push   dword ptr [ebp - 0x38]
+00402977  push   dword ptr [ebp - 0x40]
+0040297A  push   2
+0040297C  push   dword ptr [ebp - 0x44]
+0040297F  call   0x40280c ; imDtAppendField
+00402984  call   0x402198 ; imDtWriteEnd
+00402989  mov    byte ptr [ebp - 0x29], al
+0040298C  jmp    0x402994
+0040298E  mov    byte ptr [ebp - 0x29], 0
+00402992  jmp    0x40299f
+00402994  inc    dword ptr [ebp - 0x34]
+00402997  mov    eax, dword ptr [ebp - 0x34]
+0040299A  cmp    eax, dword ptr [ebp - 0x30]
+0040299D  jb     0x402956
+0040299F  push   dword ptr [ebp - 0x40]
+004029A2  call   0x40588a ; CC3260MT!_free
+004029A7  pop    ecx
+004029A8  jmp    0x402b57
+004029AD  mov    dl, 1
+004029AF  mov    eax, dword ptr [0x409368]
+004029B4  call   0x405490 ; vcl60!@Graphics@TPicture@$bctr$qqrv
+004029B9  mov    dword ptr [ebp - 0x48], eax
+004029BC  mov    dl, 1
+004029BE  mov    eax, dword ptr [0x4096cc]
+004029C3  call   0x402b6c
+004029C8  mov    dword ptr [ebp - 0x4c], eax
+004029CB  mov    word ptr [ebp - 0x18], 8
+004029D1  lea    eax, [ebp - 4]
+004029D4  mov    edx, dword ptr [ebp + 8]
+004029D7  call   0x4050d8
+004029DC  inc    dword ptr [ebp - 0xc]
+004029DF  mov    edx, dword ptr [eax]
+004029E1  mov    eax, dword ptr [ebp - 0x48]
+004029E4  call   0x405484 ; vcl60!@Graphics@TPicture@LoadFromFile$qqrx17System@AnsiString
+004029E9  dec    dword ptr [ebp - 0xc]
+004029EC  lea    eax, [ebp - 4]
+004029EF  mov    edx, 2
+004029F4  call   0x40514c
+004029F9  mov    eax, dword ptr [ebp - 0x48]
+004029FC  call   0x40548a ; vcl60!@Graphics@TPicture@GetBitmap$qqrv
+00402A01  call   0x405472 ; vcl60!@Graphics@TBitmap@GetPixelFormat$qqrv
+00402A06  cmp    al, 1
+00402A08  je     0x402acc
+00402A0E  xor    ecx, ecx
+00402A10  mov    dl, 1
+00402A12  mov    eax, dword ptr [0x4093c8]
+00402A17  call   0x4054ce ; vcl60!@Extctrls@TImage@$bctr$qqrp18Classes@TComponent
+00402A1C  mov    dword ptr [ebp - 0x50], eax
+00402A1F  mov    edx, dword ptr [ebp - 0x50]
+00402A22  mov    eax, dword ptr [edx + 0x168]
+00402A28  call   0x40548a ; vcl60!@Graphics@TPicture@GetBitmap$qqrv
+00402A2D  mov    dl, 1
+00402A2F  call   0x40546c ; vcl60!@Graphics@TBitmap@SetPixelFormat$qqr21Graphics@TPixelFormat
+00402A34  mov    ecx, dword ptr [ebp - 0x50]
+00402A37  mov    eax, dword ptr [ecx + 0x168]
+00402A3D  call   0x40548a ; vcl60!@Graphics@TPicture@GetBitmap$qqrv
+00402A42  mov    dword ptr [ebp - 0x54], eax
+00402A45  mov    eax, dword ptr [ebp - 0x48]
+00402A48  call   0x40547e ; vcl60!@Graphics@TPicture@GetWidth$qqrv
+00402A4D  mov    edx, eax
+00402A4F  mov    eax, dword ptr [ebp - 0x54]
+00402A52  mov    ecx, dword ptr [eax]
+00402A54  call   dword ptr [ecx + 0x40]
+00402A57  mov    edx, dword ptr [ebp - 0x50]
+00402A5A  mov    eax, dword ptr [edx + 0x168]
+00402A60  call   0x40548a ; vcl60!@Graphics@TPicture@GetBitmap$qqrv
+00402A65  mov    dword ptr [ebp - 0x58], eax
+00402A68  mov    eax, dword ptr [ebp - 0x48]
+00402A6B  call   0x405478 ; vcl60!@Graphics@TPicture@GetHeight$qqrv
+00402A70  mov    edx, eax
+00402A72  mov    eax, dword ptr [ebp - 0x58]
+00402A75  mov    ecx, dword ptr [eax]
+00402A77  call   dword ptr [ecx + 0x34]
+00402A7A  mov    edx, dword ptr [ebp - 0x48]
+00402A7D  push   dword ptr [edx + 0xc]
+00402A80  mov    eax, dword ptr [ebp - 0x50]
+00402A83  call   0x4054c8 ; vcl60!@Extctrls@TImage@GetCanvas$qqrv
+00402A88  xor    ecx, ecx
+00402A8A  xor    edx, edx
+00402A8C  call   0x405496 ; vcl60!@Graphics@TCanvas@Draw$qqriip17Graphics@TGraphic
+00402A91  mov    eax, dword ptr [ebp - 0x50]
+00402A94  mov    eax, dword ptr [eax + 0x168]
+00402A9A  call   0x40548a ; vcl60!@Graphics@TPicture@GetBitmap$qqrv
+00402A9F  mov    dl, 1
+00402AA1  call   0x40546c ; vcl60!@Graphics@TBitmap@SetPixelFormat$qqr21Graphics@TPixelFormat
+00402AA6  mov    ecx, dword ptr [ebp - 0x50]
+00402AA9  mov    eax, dword ptr [ecx + 0x168]
+00402AAF  call   0x40548a ; vcl60!@Graphics@TPicture@GetBitmap$qqrv
+00402AB4  mov    dword ptr [ebp - 0x5c], eax
+00402AB7  mov    edx, dword ptr [ebp - 0x4c]
+00402ABA  mov    eax, dword ptr [ebp - 0x5c]
+00402ABD  mov    ecx, dword ptr [eax]
+00402ABF  call   dword ptr [ecx + 0x58]
+00402AC2  mov    eax, dword ptr [ebp - 0x50]
+00402AC5  call   0x405596 ; rtl60!@System@TObject@Free$qqrv
+00402ACA  jmp    0x402ae2
+00402ACC  mov    eax, dword ptr [ebp - 0x48]
+00402ACF  call   0x40548a ; vcl60!@Graphics@TPicture@GetBitmap$qqrv
+00402AD4  mov    dword ptr [ebp - 0x60], eax
+00402AD7  mov    edx, dword ptr [ebp - 0x4c]
+00402ADA  mov    eax, dword ptr [ebp - 0x60]
+00402ADD  mov    ecx, dword ptr [eax]
+00402ADF  call   dword ptr [ecx + 0x58]
+00402AE2  xor    edx, edx
+00402AE4  mov    dword ptr [ebp - 0x34], edx
+00402AE7  mov    eax, dword ptr [ebp - 0x34]
+00402AEA  cmp    eax, dword ptr [ebp - 0x30]
+00402AED  jae    0x402b47
+00402AEF  mov    eax, dword ptr [ebp - 0x4c]
+00402AF2  call   0x40567a ; rtl60!@Classes@TStream@GetSize$qqrv
+00402AF7  push   eax
+00402AF8  call   0x40273c ; imDtFieldBound
+00402AFD  mov    dword ptr [ebp - 0x3c], eax
+00402B00  push   1
+00402B02  push   dword ptr [ebp - 0x3c]
+00402B05  call   0x4020c4 ; imDtWriteBegin
+00402B0A  mov    dword ptr [ebp - 0x44], eax
+00402B0D  cmp    dword ptr [ebp - 0x44], 0
+00402B11  je     0x402b36
+00402B13  mov    eax, dword ptr [ebp - 0x4c]
+00402B16  call   0x40567a ; rtl60!@Classes@TStream@GetSize$qqrv
+00402B1B  push   eax
+00402B1C  mov    edx, dword ptr [ebp - 0x4c]
+00402B1F  push   dword ptr [edx + 4]
+00402B22  push   2
+00402B24  push   dword ptr [ebp - 0x44]
+00402B27  call   0x40280c ; imDtAppendField
+00402B2C  call   0x402198 ; imDtWriteEnd
+00402B31  mov    byte ptr [ebp - 0x29], al
+00402B34  jmp    0x402b3c
+00402B36  mov    byte ptr [ebp - 0x29], 0
+00402B3A  jmp    0x402b47
+00402B3C  inc    dword ptr [ebp - 0x34]
+00402B3F  mov    ecx, dword ptr [ebp - 0x34]
+00402B42  cmp    ecx, dword ptr [ebp - 0x30]
+00402B45  jb     0x402aef
+00402B47  mov    eax, dword ptr [ebp - 0x48]
+00402B4A  call   0x405596 ; rtl60!@System@TObject@Free$qqrv
+00402B4F  mov    eax, dword ptr [ebp - 0x4c]
+00402B52  call   0x405596 ; rtl60!@System@TObject@Free$qqrv
+00402B57  mov    al, byte ptr [ebp - 0x29]
+00402B5A  mov    edx, dword ptr [ebp - 0x28]
+00402B5D  mov    dword ptr fs:[0], edx
+00402B64  mov    esp, ebp
+00402B66  pop    ebp
+00402B67  ret    8
+00402B6A  nop    
+00402B6B  nop    
+
+========== 00402BC0 imOpenPrinter
+00402BC0  push   ebp
+00402BC1  mov    ebp, esp
+00402BC3  push   ecx
+00402BC4  xor    eax, eax
+00402BC6  mov    dword ptr [ebp - 4], eax
+00402BC9  push   0
+00402BCB  call   0x401d1c ; imDtOpen
+00402BD0  mov    dword ptr [ebp - 4], eax
+00402BD3  xor    edx, edx
+00402BD5  mov    dword ptr [0x4070a4], edx
+00402BDB  mov    eax, dword ptr [ebp - 4]
+00402BDE  pop    ecx
+00402BDF  pop    ebp
+00402BE0  ret    
+00402BE1  nop    
+00402BE2  nop    
+00402BE3  nop    
+
+========== 00402BE4 imGetExclusiver
+00402BE4  push   ebp
+00402BE5  mov    ebp, esp
+00402BE7  push   ecx
+00402BE8  xor    eax, eax
+00402BEA  mov    dword ptr [ebp - 4], eax
+00402BED  push   dword ptr [ebp + 0xc]
+00402BF0  push   dword ptr [ebp + 8]
+00402BF3  push   0
+00402BF5  call   0x401f70 ; imDtGetExclusiveApp
+00402BFA  xor    edx, edx
+00402BFC  mov    dl, al
+00402BFE  mov    dword ptr [ebp - 4], edx
+00402C01  mov    eax, dword ptr [ebp - 4]
+00402C04  pop    ecx
+00402C05  pop    ebp
+00402C06  ret    8
+00402C09  nop    
+00402C0A  nop    
+00402C0B  nop    
+
+========== 00402C0C imClosePrinter
+00402C0C  push   ebp
+00402C0D  mov    ebp, esp
+00402C0F  push   ecx
+00402C10  xor    eax, eax
+00402C12  mov    dword ptr [ebp - 4], eax
+00402C15  cmp    byte ptr [0x407085], 0
+00402C1C  jne    0x402c24
+00402C1E  or     eax, 0xffffffff
+00402C21  pop    ecx
+00402C22  pop    ebp
+00402C23  ret    
+00402C24  mov    dl, byte ptr [0x407084]
+00402C2A  push   edx
+00402C2B  call   0x401fcc ; imDtClose
+00402C30  xor    ecx, ecx
+00402C32  mov    cl, al
+00402C34  mov    dword ptr [ebp - 4], ecx
+00402C37  mov    eax, dword ptr [ebp - 4]
+00402C3A  pop    ecx
+00402C3B  pop    ebp
+00402C3C  ret    
+00402C3D  nop    
+00402C3E  nop    
+00402C3F  nop    
+
+========== 00402C40 imPrinterStart
+00402C40  push   ebp
+00402C41  mov    ebp, esp
+00402C43  push   ecx
+00402C44  xor    eax, eax
+00402C46  mov    dword ptr [ebp - 4], eax
+00402C49  cmp    byte ptr [0x407085], 0
+00402C50  jne    0x402c58
+00402C52  or     eax, 0xffffffff
+00402C55  pop    ecx
+00402C56  pop    ebp
+00402C57  ret    
+00402C58  push   0x3e8
+00402C5D  push   0
+00402C5F  push   0
+00402C61  push   0
+00402C63  push   0
+00402C65  push   1
+00402C67  call   0x402400 ; imDtControl
+00402C6C  mov    dword ptr [ebp - 4], eax
+00402C6F  mov    eax, dword ptr [ebp - 4]
+00402C72  pop    ecx
+00402C73  pop    ebp
+00402C74  ret    
+00402C75  nop    
+00402C76  nop    
+00402C77  nop    
+
+========== 00402C78 imPrinterStop
+00402C78  push   ebp
+00402C79  mov    ebp, esp
+00402C7B  push   ecx
+00402C7C  xor    eax, eax
+00402C7E  mov    dword ptr [ebp - 4], eax
+00402C81  cmp    byte ptr [0x407085], 0
+00402C88  jne    0x402c90
+00402C8A  or     eax, 0xffffffff
+00402C8D  pop    ecx
+00402C8E  pop    ebp
+00402C8F  ret    
+00402C90  push   0x3e8
+00402C95  push   0
+00402C97  push   0
+00402C99  push   0
+00402C9B  push   0
+00402C9D  push   2
+00402C9F  call   0x402400 ; imDtControl
+00402CA4  mov    dword ptr [ebp - 4], eax
+00402CA7  mov    eax, dword ptr [ebp - 4]
+00402CAA  pop    ecx
+00402CAB  pop    ebp
+00402CAC  ret    
+00402CAD  nop    
+00402CAE  nop    
+00402CAF  nop    
+
+========== 00402D38 imPageBegin
+00402D38  push   ebp
+00402D39  mov    ebp, esp
+00402D3B  push   0
+00402D3D  push   dword ptr [ebp + 8]
+00402D40  call   0x402cb0
+00402D45  pop    ebp
+00402D46  ret    4
+00402D49  nop    
+00402D4A  nop    
+00402D4B  nop    
+
+========== 00402D4C imPageBeginExt
+00402D4C  push   ebp
+00402D4D  mov    ebp, esp
+00402D4F  push   dword ptr [ebp + 0xc]
+00402D52  push   dword ptr [ebp + 8]
+00402D55  call   0x402cb0
+00402D5A  pop    ebp
+00402D5B  ret    8
+00402D5E  nop    
+00402D5F  nop    
+
+========== 00402D60 imAppendMessage
+00402D60  push   ebp
+00402D61  mov    ebp, esp
+00402D63  add    esp, -0x10
+00402D66  xor    eax, eax
+00402D68  mov    dword ptr [ebp - 4], eax
+00402D6B  cmp    byte ptr [0x407085], 0
+00402D72  jne    0x402d7c
+00402D74  or     eax, 0xffffffff
+00402D77  jmp    0x402e0e
+00402D7C  push   1
+00402D7E  push   0x500000
+00402D83  call   0x4020c4 ; imDtWriteBegin
+00402D88  mov    dword ptr [0x4070a4], eax
+00402D8D  cmp    dword ptr [0x4070a4], 0
+00402D94  jne    0x402d9d
+00402D96  mov    eax, 0xfffffffe
+00402D9B  jmp    0x402e0e
+00402D9D  push   dword ptr [ebp + 0x14]
+00402DA0  push   dword ptr [ebp + 8]
+00402DA3  push   dword ptr [ebp + 0x10]
+00402DA6  push   dword ptr [ebp + 0xc]
+00402DA9  push   dword ptr [0x4070a4]
+00402DAF  call   0x40279c
+00402DB4  xor    edx, edx
+00402DB6  mov    dl, al
+00402DB8  mov    dword ptr [ebp - 4], edx
+00402DBB  cmp    dword ptr [ebp - 4], 0
+00402DBF  jne    0x402dc6
+00402DC1  mov    eax, dword ptr [ebp - 4]
+00402DC4  jmp    0x402e0e
+00402DC6  mov    edx, dword ptr [0x4070a4]
+00402DCC  mov    dword ptr [ebp - 8], edx
+00402DCF  mov    ecx, dword ptr [0x407080]
+00402DD5  mov    dword ptr [ebp - 0xc], ecx
+00402DD8  mov    dword ptr [ebp - 0x10], 4
+00402DDF  mov    eax, dword ptr [ebp - 8]
+00402DE2  mov    edx, dword ptr [eax + 4]
+00402DE5  add    edx, dword ptr [ebp - 0x10]
+00402DE8  mov    dword ptr [ebp - 0x10], edx
+00402DEB  mov    ecx, dword ptr [ebp - 0xc]
+00402DEE  mov    eax, dword ptr [ebp - 0x10]
+00402DF1  mov    dword ptr [ecx + 0x238], eax
+00402DF7  call   0x402198 ; imDtWriteEnd
+00402DFC  xor    edx, edx
+00402DFE  mov    dl, al
+00402E00  mov    dword ptr [ebp - 4], edx
+00402E03  xor    ecx, ecx
+00402E05  mov    dword ptr [0x4070a4], ecx
+00402E0B  mov    eax, dword ptr [ebp - 4]
+00402E0E  mov    esp, ebp
+00402E10  pop    ebp
+00402E11  ret    0x10
+
+========== 00402E14 imAppendPageField
+00402E14  push   ebp
+00402E15  mov    ebp, esp
+00402E17  push   ecx
+00402E18  xor    eax, eax
+00402E1A  mov    dword ptr [ebp - 4], eax
+00402E1D  cmp    byte ptr [0x407085], 0
+00402E24  jne    0x402e2b
+00402E26  or     eax, 0xffffffff
+00402E29  jmp    0x402e5a
+00402E2B  cmp    dword ptr [0x4070a4], 0
+00402E32  jne    0x402e3b
+00402E34  mov    eax, 0xfffffffe
+00402E39  jmp    0x402e5a
+00402E3B  push   dword ptr [ebp + 0x10]
+00402E3E  push   dword ptr [ebp + 0xc]
+00402E41  mov    dl, byte ptr [ebp + 8]
+00402E44  push   edx
+00402E45  push   dword ptr [0x4070a4]
+00402E4B  call   0x40280c ; imDtAppendField
+00402E50  xor    ecx, ecx
+00402E52  mov    cl, al
+00402E54  mov    dword ptr [ebp - 4], ecx
+00402E57  mov    eax, dword ptr [ebp - 4]
+00402E5A  pop    ecx
+00402E5B  pop    ebp
+00402E5C  ret    0xc
+00402E5F  nop    
+
+========== 00402E60 imPageEnd
+00402E60  push   ebp
+00402E61  mov    ebp, esp
+00402E63  add    esp, -0x10
+00402E66  xor    eax, eax
+00402E68  mov    dword ptr [ebp - 4], eax
+00402E6B  cmp    byte ptr [0x407085], 0
+00402E72  jne    0x402e79
+00402E74  or     eax, 0xffffffff
+00402E77  jmp    0x402ef0
+00402E79  cmp    dword ptr [0x4070a4], 0
+00402E80  jne    0x402e89
+00402E82  mov    eax, 0xfffffffe
+00402E87  jmp    0x402ef0
+00402E89  mov    edx, dword ptr [0x407080]
+00402E8F  mov    dword ptr [ebp - 0xc], edx
+00402E92  mov    ecx, dword ptr [0x4070a4]
+00402E98  mov    dword ptr [ebp - 0x10], ecx
+00402E9B  mov    dword ptr [ebp - 8], 0x28c
+00402EA2  mov    eax, dword ptr [ebp - 0x10]
+00402EA5  xor    edx, edx
+00402EA7  mov    dl, byte ptr [eax + 0x31]
+00402EAA  lea    ecx, [edx + edx*2]
+00402EAD  mov    eax, dword ptr [ebp - 0x10]
+00402EB0  mov    edx, dword ptr [eax + ecx*4 + 0x30]
+00402EB4  mov    ecx, dword ptr [ebp - 0x10]
+00402EB7  xor    eax, eax
+00402EB9  mov    al, byte ptr [ecx + 0x31]
+00402EBC  lea    ecx, [eax + eax*2]
+00402EBF  mov    eax, dword ptr [ebp - 0x10]
+00402EC2  add    edx, dword ptr [eax + ecx*4 + 0x2c]
+00402EC6  add    edx, dword ptr [ebp - 8]
+00402EC9  mov    dword ptr [ebp - 8], edx
+00402ECC  mov    edx, dword ptr [ebp - 0xc]
+00402ECF  mov    ecx, dword ptr [ebp - 8]
+00402ED2  mov    dword ptr [edx + 0x238], ecx
+00402ED8  call   0x402198 ; imDtWriteEnd
+00402EDD  and    eax, 0xff
+00402EE2  mov    dword ptr [ebp - 4], eax
+00402EE5  xor    edx, edx
+00402EE7  mov    dword ptr [0x4070a4], edx
+00402EED  mov    eax, dword ptr [ebp - 4]
+00402EF0  mov    esp, ebp
+00402EF2  pop    ebp
+00402EF3  ret    
+
+========== 00402EF4 imSendCancel
+00402EF4  push   ebp
+00402EF5  mov    ebp, esp
+00402EF7  push   ecx
+00402EF8  xor    eax, eax
+00402EFA  mov    dword ptr [ebp - 4], eax
+00402EFD  cmp    byte ptr [0x407085], 0
+00402F04  jne    0x402f0c
+00402F06  or     eax, 0xffffffff
+00402F09  pop    ecx
+00402F0A  pop    ebp
+00402F0B  ret    
+00402F0C  call   0x4021f8 ; imDtWriteCancel
+00402F11  xor    edx, edx
+00402F13  mov    dl, al
+00402F15  mov    dword ptr [ebp - 4], edx
+00402F18  xor    ecx, ecx
+00402F1A  mov    dword ptr [0x4070a4], ecx
+00402F20  mov    eax, dword ptr [ebp - 4]
+00402F23  pop    ecx
+00402F24  pop    ebp
+00402F25  ret    
+00402F26  nop    
+00402F27  nop    
+
+========== 00402F28 imGetPrinterStatus
+00402F28  push   ebp
+00402F29  mov    ebp, esp
+00402F2B  add    esp, -0x10
+00402F2E  xor    eax, eax
+00402F30  mov    dword ptr [ebp - 4], eax
+00402F33  cmp    byte ptr [0x407085], 0
+00402F3A  jne    0x402f41
+00402F3C  or     eax, 0xffffffff
+00402F3F  jmp    0x402f96
+00402F41  call   0x401ef8
+00402F46  test   al, al
+00402F48  jne    0x402f51
+00402F4A  mov    eax, 0xfffffffd
+00402F4F  jmp    0x402f96
+00402F51  mov    dword ptr [ebp - 0x10], 1
+00402F58  lea    edx, [ebp - 9]
+00402F5B  mov    dword ptr [ebp - 8], edx
+00402F5E  push   0xbb8
+00402F63  lea    ecx, [ebp - 0x10]
+00402F66  push   ecx
+00402F67  lea    eax, [ebp - 8]
+00402F6A  push   eax
+00402F6B  push   0
+00402F6D  push   0
+00402F6F  push   0x11
+00402F71  call   0x402400 ; imDtControl
+00402F76  mov    dword ptr [ebp - 4], eax
+00402F79  cmp    dword ptr [ebp - 4], 1
+00402F7D  jne    0x402f8f
+00402F7F  cmp    dword ptr [ebp - 0x10], 0
+00402F83  je     0x402f8f
+00402F85  mov    dl, byte ptr [ebp - 9]
+00402F88  mov    ecx, dword ptr [ebp + 8]
+00402F8B  mov    byte ptr [ecx], dl
+00402F8D  jmp    0x402f93
+00402F8F  xor    eax, eax
+00402F91  jmp    0x402f96
+00402F93  mov    eax, dword ptr [ebp - 4]
+00402F96  mov    esp, ebp
+00402F98  pop    ebp
+00402F99  ret    4
+
+========== 00402F9C imClearPrintQueue
+00402F9C  push   ebp
+00402F9D  mov    ebp, esp
+00402F9F  push   ecx
+00402FA0  xor    eax, eax
+00402FA2  mov    dword ptr [ebp - 4], eax
+00402FA5  cmp    byte ptr [0x407085], 0
+00402FAC  jne    0x402fb4
+00402FAE  or     eax, 0xffffffff
+00402FB1  pop    ecx
+00402FB2  pop    ebp
+00402FB3  ret    
+00402FB4  push   0x3e8
+00402FB9  push   0
+00402FBB  push   0
+00402FBD  push   0
+00402FBF  push   0
+00402FC1  push   6
+00402FC3  call   0x402400 ; imDtControl
+00402FC8  mov    dword ptr [ebp - 4], eax
+00402FCB  mov    eax, dword ptr [ebp - 4]
+00402FCE  pop    ecx
+00402FCF  pop    ebp
+00402FD0  ret    
+00402FD1  nop    
+00402FD2  nop    
+00402FD3  nop    
+
+========== 00402FD4 imClearReturnQueue
+00402FD4  push   ebp
+00402FD5  mov    ebp, esp
+00402FD7  push   ecx
+00402FD8  xor    eax, eax
+00402FDA  mov    dword ptr [ebp - 4], eax
+00402FDD  cmp    byte ptr [0x407085], 0
+00402FE4  jne    0x402fec
+00402FE6  or     eax, 0xffffffff
+00402FE9  pop    ecx
+00402FEA  pop    ebp
+00402FEB  ret    
+00402FEC  call   0x4021f8 ; imDtWriteCancel
+00402FF1  push   0x3e8
+00402FF6  push   0
+00402FF8  push   0
+00402FFA  push   0
+00402FFC  push   0
+00402FFE  push   7
+00403000  call   0x402400 ; imDtControl
+00403005  mov    dword ptr [ebp - 4], eax
+00403008  mov    eax, dword ptr [ebp - 4]
+0040300B  pop    ecx
+0040300C  pop    ebp
+0040300D  ret    
+0040300E  nop    
+0040300F  nop    
+
+========== 00403010 imGetPrinttedPagesn
+00403010  push   ebp
+00403011  mov    ebp, esp
+00403013  add    esp, -0x10
+00403016  xor    eax, eax
+00403018  mov    dword ptr [ebp - 4], eax
+0040301B  cmp    byte ptr [0x407085], 0
+00403022  jne    0x403029
+00403024  or     eax, 0xffffffff
+00403027  jmp    0x403068
+00403029  mov    dword ptr [ebp - 0x10], 4
+00403030  lea    edx, [ebp - 0xc]
+00403033  mov    dword ptr [ebp - 8], edx
+00403036  push   0x3e8
+0040303B  lea    ecx, [ebp - 0x10]
+0040303E  push   ecx
+0040303F  lea    eax, [ebp - 8]
+00403042  push   eax
+00403043  push   0
+00403045  push   0
+00403047  push   0x10
+00403049  call   0x402400 ; imDtControl
+0040304E  mov    dword ptr [ebp - 4], eax
+00403051  cmp    dword ptr [ebp - 4], 1
+00403055  jne    0x403061
+00403057  mov    edx, dword ptr [ebp - 0xc]
+0040305A  mov    ecx, dword ptr [ebp + 8]
+0040305D  mov    dword ptr [ecx], edx
+0040305F  jmp    0x403065
+00403061  xor    eax, eax
+00403063  jmp    0x403068
+00403065  mov    eax, dword ptr [ebp - 4]
+00403068  mov    esp, ebp
+0040306A  pop    ebp
+0040306B  ret    4
+0040306E  nop    
+0040306F  nop    
+
+========== 00403070 imGetNewPrinttedPagesn
+00403070  push   ebp
+00403071  mov    ebp, esp
+00403073  add    esp, -0x10
+00403076  xor    eax, eax
+00403078  mov    dword ptr [ebp - 4], eax
+0040307B  cmp    byte ptr [0x407085], 0
+00403082  jne    0x403089
+00403084  or     eax, 0xffffffff
+00403087  jmp    0x4030c8
+00403089  mov    dword ptr [ebp - 0x10], 4
+00403090  lea    edx, [ebp - 0xc]
+00403093  mov    dword ptr [ebp - 8], edx
+00403096  push   0x3e8
+0040309B  lea    ecx, [ebp - 0x10]
+0040309E  push   ecx
+0040309F  lea    eax, [ebp - 8]
+004030A2  push   eax
+004030A3  push   0
+004030A5  push   0
+004030A7  push   0x18
+004030A9  call   0x402400 ; imDtControl
+004030AE  mov    dword ptr [ebp - 4], eax
+004030B1  cmp    dword ptr [ebp - 4], 1
+004030B5  jne    0x4030c1
+004030B7  mov    edx, dword ptr [ebp - 0xc]
+004030BA  mov    ecx, dword ptr [ebp + 8]
+004030BD  mov    dword ptr [ecx], edx
+004030BF  jmp    0x4030c5
+004030C1  xor    eax, eax
+004030C3  jmp    0x4030c8
+004030C5  mov    eax, dword ptr [ebp - 4]
+004030C8  mov    esp, ebp
+004030CA  pop    ebp
+004030CB  ret    4
+004030CE  nop    
+004030CF  nop    
+
+========== 004030D0 imGetPrinterAlarm
+004030D0  push   ebp
+004030D1  mov    ebp, esp
+004030D3  add    esp, -0x10
+004030D6  xor    eax, eax
+004030D8  mov    dword ptr [ebp - 4], eax
+004030DB  cmp    byte ptr [0x407085], 0
+004030E2  jne    0x4030e9
+004030E4  or     eax, 0xffffffff
+004030E7  jmp    0x403138
+004030E9  call   0x401ef8
+004030EE  test   al, al
+004030F0  jne    0x4030f9
+004030F2  mov    eax, 0xfffffffd
+004030F7  jmp    0x403138
+004030F9  mov    dword ptr [ebp - 0x10], 1
+00403100  lea    edx, [ebp - 9]
+00403103  mov    dword ptr [ebp - 8], edx
+00403106  push   0x3e8
+0040310B  lea    ecx, [ebp - 0x10]
+0040310E  push   ecx
+0040310F  lea    eax, [ebp - 8]
+00403112  push   eax
+00403113  push   0
+00403115  push   0
+00403117  push   0x12
+00403119  call   0x402400 ; imDtControl
+0040311E  mov    dword ptr [ebp - 4], eax
+00403121  cmp    dword ptr [ebp - 4], 1
+00403125  jne    0x403131
+00403127  mov    dl, byte ptr [ebp - 9]
+0040312A  mov    ecx, dword ptr [ebp + 8]
+0040312D  mov    byte ptr [ecx], dl
+0040312F  jmp    0x403135
+00403131  xor    eax, eax
+00403133  jmp    0x403138
+00403135  mov    eax, dword ptr [ebp - 4]
+00403138  mov    esp, ebp
+0040313A  pop    ebp
+0040313B  ret    4
+0040313E  nop    
+0040313F  nop    
+
+========== 00403140 imInitADT
+00403140  push   ebp
+00403141  mov    ebp, esp
+00403143  push   ecx
+00403144  xor    eax, eax
+00403146  mov    dword ptr [ebp - 4], eax
+00403149  cmp    byte ptr [0x407085], 0
+00403150  jne    0x403157
+00403152  or     eax, 0xffffffff
+00403155  jmp    0x40319a
+00403157  call   0x401ef8
+0040315C  test   al, al
+0040315E  jne    0x403167
+00403160  mov    eax, 0xfffffffd
+00403165  jmp    0x40319a
+00403167  cmp    dword ptr [ebp + 8], 0
+0040316B  jne    0x403172
+0040316D  mov    eax, dword ptr [ebp - 4]
+00403170  jmp    0x40319a
+00403172  push   0x3e8
+00403177  push   0
+00403179  push   0
+0040317B  push   0x2c
+0040317D  push   dword ptr [ebp + 8]
+00403180  push   0x13
+00403182  call   0x402400 ; imDtControl
+00403187  mov    dword ptr [ebp - 4], eax
+0040318A  cmp    dword ptr [ebp - 4], 0xb
+0040318E  jne    0x403197
+00403190  mov    dword ptr [ebp - 4], 2
+00403197  mov    eax, dword ptr [ebp - 4]
+0040319A  pop    ecx
+0040319B  pop    ebp
+0040319C  ret    4
+0040319F  nop    
+
+========== 004031A0 imGetADTStatus
+004031A0  push   ebp
+004031A1  mov    ebp, esp
+004031A3  add    esp, -8
+004031A6  cmp    byte ptr [0x407085], 0
+004031AD  jne    0x4031b4
+004031AF  or     eax, 0xffffffff
+004031B2  jmp    0x40320f
+004031B4  call   0x401ef8
+004031B9  test   al, al
+004031BB  jne    0x4031c4
+004031BD  mov    eax, 0xfffffffd
+004031C2  jmp    0x40320f
+004031C4  xor    edx, edx
+004031C6  mov    dword ptr [ebp - 4], edx
+004031C9  mov    ecx, dword ptr [0x407080]
+004031CF  mov    dword ptr [ebp - 8], ecx
+004031D2  cmp    byte ptr [ebp + 8], 0
+004031D6  je     0x4031ed
+004031D8  push   1
+004031DA  mov    eax, dword ptr [ebp - 8]
+004031DD  push   dword ptr [eax + 0x108]
+004031E3  call   0x4057e6 ; KERNEL32!WaitForSingleObject
+004031E8  mov    dword ptr [ebp - 4], eax
+004031EB  jmp    0x403200
+004031ED  push   1
+004031EF  mov    edx, dword ptr [ebp - 8]
+004031F2  push   dword ptr [edx + 0x10c]
+004031F8  call   0x4057e6 ; KERNEL32!WaitForSingleObject
+004031FD  mov    dword ptr [ebp - 4], eax
+00403200  cmp    dword ptr [ebp - 4], 0
+00403204  jne    0x40320d
+00403206  mov    eax, 1
+0040320B  jmp    0x40320f
+0040320D  xor    eax, eax
+0040320F  pop    ecx
+00403210  pop    ecx
+00403211  pop    ebp
+00403212  ret    4
+00403215  nop    
+00403216  nop    
+00403217  nop    
+
+========== 004032C4 imCheckIsAdtMsg
+004032C4  push   ebp
+004032C5  mov    ebp, esp
+004032C7  add    esp, -0x74
+004032CA  push   ebx
+004032CB  mov    eax, 0x4065f8
+004032D0  call   0x40502c
+004032D5  xor    edx, edx
+004032D7  mov    dword ptr [ebp - 0x5c], edx
+004032DA  push   dword ptr [ebp + 8]
+004032DD  call   0x4019dc
+004032E2  pop    ecx
+004032E3  mov    dword ptr [ebp - 0x60], eax
+004032E6  cmp    dword ptr [ebp - 0x60], -1
+004032EA  jle    0x403618
+004032F0  mov    word ptr [ebp - 0x48], 8
+004032F6  lea    eax, [ebp - 4]
+004032F9  call   0x401c9c
+004032FE  inc    dword ptr [ebp - 0x3c]
+00403301  mov    word ptr [ebp - 0x48], 0x14
+00403307  mov    word ptr [ebp - 0x48], 0x20
+0040330D  lea    eax, [ebp - 8]
+00403310  call   0x401c9c
+00403315  inc    dword ptr [ebp - 0x3c]
+00403318  mov    word ptr [ebp - 0x48], 0x14
+0040331E  mov    dl, 1
+00403320  mov    eax, dword ptr [0x4096d0]
+00403325  call   0x40362c
+0040332A  mov    dword ptr [ebp - 0x68], eax
+0040332D  mov    word ptr [ebp - 0x48], 0x2c
+00403333  lea    eax, [ebp - 0xc]
+00403336  mov    edx, dword ptr [ebp + 8]
+00403339  call   0x4050d8
+0040333E  inc    dword ptr [ebp - 0x3c]
+00403341  mov    ecx, dword ptr [eax]
+00403343  mov    dl, 1
+00403345  mov    eax, dword ptr [0x40973c]
+0040334A  call   0x403218
+0040334F  mov    dword ptr [ebp - 0x64], eax
+00403352  dec    dword ptr [ebp - 0x3c]
+00403355  lea    eax, [ebp - 0xc]
+00403358  mov    edx, 2
+0040335D  call   0x40514c
+00403362  push   0
+00403364  mov    edx, 0x4063ba ; "Count"
+00403369  lea    eax, [ebp - 0x14]
+0040336C  call   0x4050d8
+00403371  inc    dword ptr [ebp - 0x3c]
+00403374  push   dword ptr [eax]
+00403376  mov    word ptr [ebp - 0x48], 0x38
+0040337C  mov    edx, 0x4063b2 ; "MsgInfo"
+00403381  lea    eax, [ebp - 0x10]
+00403384  call   0x4050d8
+00403389  inc    dword ptr [ebp - 0x3c]
+0040338C  mov    edx, dword ptr [eax]
+0040338E  mov    eax, dword ptr [ebp - 0x64]
+00403391  pop    ecx
+00403392  mov    ebx, dword ptr [eax]
+00403394  call   dword ptr [ebx + 8]
+00403397  mov    dword ptr [ebp - 0x6c], eax
+0040339A  dec    dword ptr [ebp - 0x3c]
+0040339D  lea    eax, [ebp - 0x14]
+004033A0  mov    edx, 2
+004033A5  call   0x40514c
+004033AA  dec    dword ptr [ebp - 0x3c]
+004033AD  lea    eax, [ebp - 0x10]
+004033B0  mov    edx, 2
+004033B5  call   0x40514c
+004033BA  cmp    dword ptr [ebp - 0x6c], 0
+004033BE  jle    0x4035e2
+004033C4  xor    ecx, ecx
+004033C6  mov    dword ptr [ebp - 0x70], ecx
+004033C9  mov    word ptr [ebp - 0x48], 0x14
+004033CF  mov    eax, dword ptr [ebp - 0x70]
+004033D2  cmp    eax, dword ptr [ebp - 0x6c]
+004033D5  jge    0x4035e2
+004033DB  mov    word ptr [ebp - 0x48], 0x44
+004033E1  lea    eax, [ebp - 0x18]
+004033E4  call   0x401c9c
+004033E9  mov    edx, eax
+004033EB  inc    dword ptr [ebp - 0x3c]
+004033EE  mov    eax, dword ptr [ebp - 0x70]
+004033F1  inc    eax
+004033F2  call   0x405614 ; rtl60!@Sysutils@IntToStr$qqri
+004033F7  lea    edx, [ebp - 0x18]
+004033FA  push   edx
+004033FB  lea    eax, [ebp - 0x1c]
+004033FE  call   0x401c9c
+00403403  mov    ecx, eax
+00403405  inc    dword ptr [ebp - 0x3c]
+00403408  mov    eax, 0x4063c0 ; "Object"
+0040340D  pop    edx
+0040340E  call   0x405290
+00403413  lea    edx, [ebp - 0x1c]
+00403416  lea    eax, [ebp - 4]
+00403419  call   0x40517c
+0040341E  dec    dword ptr [ebp - 0x3c]
+00403421  lea    eax, [ebp - 0x1c]
+00403424  mov    edx, 2
+00403429  call   0x40514c
+0040342E  dec    dword ptr [ebp - 0x3c]
+00403431  lea    eax, [ebp - 0x18]
+00403434  mov    edx, 2
+00403439  call   0x40514c
+0040343E  xor    ecx, ecx
+00403440  mov    dword ptr [ebp - 0x74], ecx
+00403443  mov    word ptr [ebp - 0x48], 0x14
+00403449  cmp    dword ptr [ebp - 0x74], 0x19
+0040344D  jge    0x4035d3
+00403453  mov    word ptr [ebp - 0x48], 0x50
+00403459  lea    eax, [ebp - 0x20]
+0040345C  call   0x401c9c
+00403461  inc    dword ptr [ebp - 0x3c]
+00403464  mov    word ptr [ebp - 0x48], 0x5c
+0040346A  mov    word ptr [ebp - 0x48], 0x68
+00403470  lea    eax, [ebp - 0x24]
+00403473  call   0x401c9c
+00403478  mov    edx, eax
+0040347A  inc    dword ptr [ebp - 0x3c]
+0040347D  mov    eax, dword ptr [ebp - 0x74]
+00403480  call   0x405614 ; rtl60!@Sysutils@IntToStr$qqri
+00403485  lea    edx, [ebp - 0x24]
+00403488  push   edx
+00403489  lea    eax, [ebp - 0x28]
+0040348C  call   0x401c9c
+00403491  mov    ecx, eax
+00403493  inc    dword ptr [ebp - 0x3c]
+00403496  mov    eax, 0x4063c7 ; "MsgObjT"
+0040349B  pop    edx
+0040349C  call   0x405290
+004034A1  lea    edx, [ebp - 0x28]
+004034A4  lea    eax, [ebp - 8]
+004034A7  call   0x40517c
+004034AC  dec    dword ptr [ebp - 0x3c]
+004034AF  lea    eax, [ebp - 0x28]
+004034B2  mov    edx, 2
+004034B7  call   0x40514c
+004034BC  dec    dword ptr [ebp - 0x3c]
+004034BF  lea    eax, [ebp - 0x24]
+004034C2  mov    edx, 2
+004034C7  call   0x40514c
+004034CC  mov    word ptr [ebp - 0x48], 0x74
+004034D2  mov    edx, 0x4063cf
+004034D7  lea    eax, [ebp - 0x2c]
+004034DA  call   0x4050d8
+004034DF  inc    dword ptr [ebp - 0x3c]
+004034E2  push   dword ptr [eax]
+004034E4  lea    eax, [ebp - 0x30]
+004034E7  call   0x401c9c
+004034EC  push   eax
+004034ED  inc    dword ptr [ebp - 0x3c]
+004034F0  mov    ecx, dword ptr [ebp - 8]
+004034F3  mov    edx, dword ptr [ebp - 4]
+004034F6  mov    eax, dword ptr [ebp - 0x64]
+004034F9  mov    ebx, dword ptr [eax]
+004034FB  call   dword ptr [ebx]
+004034FD  lea    edx, [ebp - 0x30]
+00403500  lea    eax, [ebp - 0x20]
+00403503  call   0x40517c
+00403508  dec    dword ptr [ebp - 0x3c]
+0040350B  lea    eax, [ebp - 0x30]
+0040350E  mov    edx, 2
+00403513  call   0x40514c
+00403518  dec    dword ptr [ebp - 0x3c]
+0040351B  lea    eax, [ebp - 0x2c]
+0040351E  mov    edx, 2
+00403523  call   0x40514c
+00403528  lea    eax, [ebp - 0x20]
+0040352B  call   0x403680
+00403530  test   eax, eax
+00403532  jle    0x4035b0
+00403534  mov    eax, dword ptr [ebp - 0x68]
+00403537  mov    edx, dword ptr [eax]
+00403539  call   dword ptr [edx + 0x44]
+0040353C  mov    dl, 0x2c
+0040353E  mov    eax, dword ptr [ebp - 0x68]
+00403541  call   0x40568c ; rtl60!@Classes@TStrings@SetDelimiter$qqrxc
+00403546  mov    edx, dword ptr [ebp - 0x20]
+00403549  mov    eax, dword ptr [ebp - 0x68]
+0040354C  call   0x405692 ; rtl60!@Classes@TStrings@SetDelimitedText$qqrx17System@AnsiString
+00403551  mov    word ptr [ebp - 0x48], 0x80
+00403557  lea    eax, [ebp - 0x34]
+0040355A  call   0x401c9c
+0040355F  mov    ecx, eax
+00403561  inc    dword ptr [ebp - 0x3c]
+00403564  xor    edx, edx
+00403566  mov    eax, dword ptr [ebp - 0x68]
+00403569  mov    ebx, dword ptr [eax]
+0040356B  call   dword ptr [ebx + 0xc]
+0040356E  lea    eax, [ebp - 0x34]
+00403571  mov    eax, dword ptr [eax]
+00403573  call   0x40560e ; rtl60!@Sysutils@StrToInt$qqrx17System@AnsiString
+00403578  cmp    eax, dword ptr [ebp - 0x60]
+0040357B  sete   dl
+0040357E  and    edx, 1
+00403581  push   edx
+00403582  dec    dword ptr [ebp - 0x3c]
+00403585  lea    eax, [ebp - 0x34]
+00403588  mov    edx, 2
+0040358D  call   0x40514c
+00403592  pop    ecx
+00403593  test   cl, cl
+00403595  je     0x4035b0
+00403597  mov    dword ptr [ebp - 0x5c], 1
+0040359E  dec    dword ptr [ebp - 0x3c]
+004035A1  lea    eax, [ebp - 0x20]
+004035A4  mov    edx, 2
+004035A9  call   0x40514c
+004035AE  jmp    0x4035d3
+004035B0  dec    dword ptr [ebp - 0x3c]
+004035B3  lea    eax, [ebp - 0x20]
+004035B6  mov    edx, 2
+004035BB  call   0x40514c
+004035C0  mov    word ptr [ebp - 0x48], 0x14
+004035C6  inc    dword ptr [ebp - 0x74]
+004035C9  cmp    dword ptr [ebp - 0x74], 0x19
+004035CD  jl     0x403453
+004035D3  inc    dword ptr [ebp - 0x70]
+004035D6  mov    ecx, dword ptr [ebp - 0x70]
+004035D9  cmp    ecx, dword ptr [ebp - 0x6c]
+004035DC  jl     0x4033db
+004035E2  mov    eax, dword ptr [ebp - 0x64]
+004035E5  call   0x405596 ; rtl60!@System@TObject@Free$qqrv
+004035EA  mov    eax, dword ptr [ebp - 0x68]
+004035ED  call   0x405596 ; rtl60!@System@TObject@Free$qqrv
+004035F2  dec    dword ptr [ebp - 0x3c]
+004035F5  lea    eax, [ebp - 8]
+004035F8  mov    edx, 2
+004035FD  call   0x40514c
+00403602  dec    dword ptr [ebp - 0x3c]
+00403605  lea    eax, [ebp - 4]
+00403608  mov    edx, 2
+0040360D  call   0x40514c
+00403612  mov    word ptr [ebp - 0x48], 0
+00403618  mov    eax, dword ptr [ebp - 0x5c]
+0040361B  mov    edx, dword ptr [ebp - 0x58]
+0040361E  mov    dword ptr fs:[0], edx
+00403625  pop    ebx
+00403626  mov    esp, ebp
+00403628  pop    ebp
+00403629  ret    4
+
+========== 004036A4 imGetAdtMsgFieldCount
+004036A4  push   ebp
+004036A5  mov    ebp, esp
+004036A7  add    esp, -0x4c
+004036AA  push   ebx
+004036AB  mov    eax, 0x4066e0
+004036B0  call   0x40502c
+004036B5  xor    edx, edx
+004036B7  mov    dword ptr [ebp - 0x3c], edx
+004036BA  push   dword ptr [ebp + 8]
+004036BD  call   0x4019dc
+004036C2  pop    ecx
+004036C3  mov    dword ptr [ebp - 0x40], eax
+004036C6  cmp    dword ptr [ebp - 0x40], -1
+004036CA  jle    0x403808
+004036D0  mov    word ptr [ebp - 0x28], 8
+004036D6  lea    eax, [ebp - 4]
+004036D9  call   0x401c9c
+004036DE  inc    dword ptr [ebp - 0x1c]
+004036E1  mov    word ptr [ebp - 0x28], 0x14
+004036E7  mov    word ptr [ebp - 0x28], 0x20
+004036ED  lea    eax, [ebp - 8]
+004036F0  mov    edx, dword ptr [ebp + 8]
+004036F3  call   0x4050d8
+004036F8  inc    dword ptr [ebp - 0x1c]
+004036FB  mov    ecx, dword ptr [eax]
+004036FD  mov    dl, 1
+004036FF  mov    eax, dword ptr [0x40973c]
+00403704  call   0x403218
+00403709  mov    dword ptr [ebp - 0x44], eax
+0040370C  dec    dword ptr [ebp - 0x1c]
+0040370F  lea    eax, [ebp - 8]
+00403712  mov    edx, 2
+00403717  call   0x40514c
+0040371C  mov    dl, 1
+0040371E  mov    eax, dword ptr [0x4096cc]
+00403723  call   0x402b6c
+00403728  mov    dword ptr [ebp - 0x48], eax
+0040372B  mov    word ptr [ebp - 0x28], 0x2c
+00403731  lea    eax, [ebp - 0xc]
+00403734  call   0x401c9c
+00403739  mov    edx, eax
+0040373B  inc    dword ptr [ebp - 0x1c]
+0040373E  mov    eax, dword ptr [ebp - 0x40]
+00403741  call   0x405614 ; rtl60!@Sysutils@IntToStr$qqri
+00403746  lea    edx, [ebp - 0xc]
+00403749  push   edx
+0040374A  lea    eax, [ebp - 0x10]
+0040374D  call   0x401c9c
+00403752  mov    ecx, eax
+00403754  inc    dword ptr [ebp - 0x1c]
+00403757  mov    eax, 0x4063d0 ; "DataSrc"
+0040375C  pop    edx
+0040375D  call   0x405290
+00403762  lea    edx, [ebp - 0x10]
+00403765  lea    eax, [ebp - 4]
+00403768  call   0x40517c
+0040376D  dec    dword ptr [ebp - 0x1c]
+00403770  lea    eax, [ebp - 0x10]
+00403773  mov    edx, 2
+00403778  call   0x40514c
+0040377D  dec    dword ptr [ebp - 0x1c]
+00403780  lea    eax, [ebp - 0xc]
+00403783  mov    edx, 2
+00403788  call   0x40514c
+0040378D  push   dword ptr [ebp - 0x48]
+00403790  mov    word ptr [ebp - 0x28], 0x38
+00403796  mov    edx, 0x4063d8 ; "Data"
+0040379B  lea    eax, [ebp - 0x14]
+0040379E  call   0x4050d8
+004037A3  inc    dword ptr [ebp - 0x1c]
+004037A6  mov    ecx, dword ptr [eax]
+004037A8  mov    edx, dword ptr [ebp - 4]
+004037AB  mov    eax, dword ptr [ebp - 0x44]
+004037AE  mov    ebx, dword ptr [eax]
+004037B0  call   dword ptr [ebx + 0x18]
+004037B3  dec    dword ptr [ebp - 0x1c]
+004037B6  lea    eax, [ebp - 0x14]
+004037B9  mov    edx, 2
+004037BE  call   0x40514c
+004037C3  push   0
+004037C5  push   0
+004037C7  mov    eax, dword ptr [ebp - 0x48]
+004037CA  call   0x405680 ; rtl60!@Classes@TStream@SetPosition$qqrxj
+004037CF  mov    edx, dword ptr [ebp - 0x48]
+004037D2  mov    ecx, dword ptr [edx + 4]
+004037D5  mov    dword ptr [ebp - 0x4c], ecx
+004037D8  mov    eax, dword ptr [ebp - 0x4c]
+004037DB  xor    edx, edx
+004037DD  mov    dl, byte ptr [eax]
+004037DF  mov    dword ptr [ebp - 0x3c], edx
+004037E2  mov    eax, dword ptr [ebp - 0x44]
+004037E5  call   0x405596 ; rtl60!@System@TObject@Free$qqrv
+004037EA  mov    eax, dword ptr [ebp - 0x48]
+004037ED  call   0x405596 ; rtl60!@System@TObject@Free$qqrv
+004037F2  dec    dword ptr [ebp - 0x1c]
+004037F5  lea    eax, [ebp - 4]
+004037F8  mov    edx, 2
+004037FD  call   0x40514c
+00403802  mov    word ptr [ebp - 0x28], 0
+00403808  mov    eax, dword ptr [ebp - 0x3c]
+0040380B  mov    edx, dword ptr [ebp - 0x38]
+0040380E  mov    dword ptr fs:[0], edx
+00403815  pop    ebx
+00403816  mov    esp, ebp
+00403818  pop    ebp
+00403819  ret    4
+
+========== 0040381C imGetAdtMsgFieldType
+0040381C  push   ebp
+0040381D  mov    ebp, esp
+0040381F  add    esp, -0x4c
+00403822  push   ebx
+00403823  mov    eax, 0x406780
+00403828  call   0x40502c
+0040382D  xor    edx, edx
+0040382F  mov    dword ptr [ebp - 0x3c], edx
+00403832  push   dword ptr [ebp + 8]
+00403835  call   0x4019dc
+0040383A  pop    ecx
+0040383B  mov    dword ptr [ebp - 0x40], eax
+0040383E  cmp    dword ptr [ebp - 0x40], -1
+00403842  jle    0x4039bc
+00403848  mov    word ptr [ebp - 0x28], 8
+0040384E  lea    eax, [ebp - 4]
+00403851  call   0x401c9c
+00403856  inc    dword ptr [ebp - 0x1c]
+00403859  mov    word ptr [ebp - 0x28], 0x14
+0040385F  mov    word ptr [ebp - 0x28], 0x20
+00403865  lea    eax, [ebp - 8]
+00403868  mov    edx, dword ptr [ebp + 8]
+0040386B  call   0x4050d8
+00403870  inc    dword ptr [ebp - 0x1c]
+00403873  mov    ecx, dword ptr [eax]
+00403875  mov    dl, 1
+00403877  mov    eax, dword ptr [0x409740]
+0040387C  call   0x4056da ; rtl60!@Inifiles@TMemIniFile@$bctr$qqrx17System@AnsiString
+00403881  mov    dword ptr [ebp - 0x44], eax
+00403884  dec    dword ptr [ebp - 0x1c]
+00403887  lea    eax, [ebp - 8]
+0040388A  mov    edx, 2
+0040388F  call   0x40514c
+00403894  mov    dl, 1
+00403896  mov    eax, dword ptr [0x4096cc]
+0040389B  call   0x402b6c
+004038A0  mov    dword ptr [ebp - 0x48], eax
+004038A3  mov    word ptr [ebp - 0x28], 0x2c
+004038A9  lea    eax, [ebp - 0xc]
+004038AC  call   0x401c9c
+004038B1  mov    edx, eax
+004038B3  inc    dword ptr [ebp - 0x1c]
+004038B6  mov    eax, dword ptr [ebp - 0x40]
+004038B9  call   0x405614 ; rtl60!@Sysutils@IntToStr$qqri
+004038BE  lea    edx, [ebp - 0xc]
+004038C1  push   edx
+004038C2  lea    eax, [ebp - 0x10]
+004038C5  call   0x401c9c
+004038CA  mov    ecx, eax
+004038CC  inc    dword ptr [ebp - 0x1c]
+004038CF  mov    eax, 0x4063dd ; "DataSrc"
+004038D4  pop    edx
+004038D5  call   0x405290
+004038DA  lea    edx, [ebp - 0x10]
+004038DD  lea    eax, [ebp - 4]
+004038E0  call   0x40517c
+004038E5  dec    dword ptr [ebp - 0x1c]
+004038E8  lea    eax, [ebp - 0x10]
+004038EB  mov    edx, 2
+004038F0  call   0x40514c
+004038F5  dec    dword ptr [ebp - 0x1c]
+004038F8  lea    eax, [ebp - 0xc]
+004038FB  mov    edx, 2
+00403900  call   0x40514c
+00403905  push   dword ptr [ebp - 0x48]
+00403908  mov    word ptr [ebp - 0x28], 0x38
+0040390E  mov    edx, 0x4063e5 ; "Data"
+00403913  lea    eax, [ebp - 0x14]
+00403916  call   0x4050d8
+0040391B  inc    dword ptr [ebp - 0x1c]
+0040391E  mov    ecx, dword ptr [eax]
+00403920  mov    edx, dword ptr [ebp - 4]
+00403923  mov    eax, dword ptr [ebp - 0x44]
+00403926  mov    ebx, dword ptr [eax]
+00403928  call   dword ptr [ebx + 0x18]
+0040392B  dec    dword ptr [ebp - 0x1c]
+0040392E  lea    eax, [ebp - 0x14]
+00403931  mov    edx, 2
+00403936  call   0x40514c
+0040393B  push   0
+0040393D  push   0
+0040393F  mov    eax, dword ptr [ebp - 0x48]
+00403942  call   0x405680 ; rtl60!@Classes@TStream@SetPosition$qqrxj
+00403947  mov    edx, dword ptr [ebp - 0x48]
+0040394A  mov    ecx, dword ptr [edx + 4]
+0040394D  mov    dword ptr [ebp - 0x4c], ecx
+00403950  imul   eax, dword ptr [ebp + 0xc], 0xd
+00403954  mov    edx, dword ptr [ebp - 0x4c]
+00403957  xor    ecx, ecx
+00403959  mov    cl, byte ptr [edx + eax*4 - 0x33]
+0040395D  mov    dword ptr [ebp - 0x3c], ecx
+00403960  cmp    dword ptr [ebp + 0x10], 0
+00403964  je     0x403996
+00403966  mov    eax, dword ptr [ebp + 0xc]
+00403969  dec    eax
+0040396A  imul   eax, eax, 0x34
+0040396D  add    eax, dword ptr [ebp - 0x4c]
+00403970  add    eax, 2
+00403973  call   0x4055fc ; rtl60!@Sysutils@StrLen$qqrpxc
+00403978  cmp    eax, 0x33
+0040397B  jae    0x403996
+0040397D  mov    edx, dword ptr [ebp + 0xc]
+00403980  dec    edx
+00403981  imul   ecx, edx, 0x34
+00403984  add    ecx, dword ptr [ebp - 0x4c]
+00403987  add    ecx, 2
+0040398A  push   ecx
+0040398B  push   dword ptr [ebp + 0x10]
+0040398E  call   0x4058a2 ; CC3260MT!_strcpy
+00403993  add    esp, 8
+00403996  mov    eax, dword ptr [ebp - 0x44]
+00403999  call   0x405596 ; rtl60!@System@TObject@Free$qqrv
+0040399E  mov    eax, dword ptr [ebp - 0x48]
+004039A1  call   0x405596 ; rtl60!@System@TObject@Free$qqrv
+004039A6  dec    dword ptr [ebp - 0x1c]
+004039A9  lea    eax, [ebp - 4]
+004039AC  mov    edx, 2
+004039B1  call   0x40514c
+004039B6  mov    word ptr [ebp - 0x28], 0
+004039BC  mov    eax, dword ptr [ebp - 0x3c]
+004039BF  mov    edx, dword ptr [ebp - 0x38]
+004039C2  mov    dword ptr fs:[0], edx
+004039C9  pop    ebx
+004039CA  mov    esp, ebp
+004039CC  pop    ebp
+004039CD  ret    0xc
+
+========== 004039D0 imGetPHsHeight
+004039D0  push   ebp
+004039D1  mov    ebp, esp
+004039D3  add    esp, -0x10
+004039D6  cmp    byte ptr [0x407085], 0
+004039DD  jne    0x4039e4
+004039DF  or     eax, 0xffffffff
+004039E2  jmp    0x403a42
+004039E4  call   0x401ef8
+004039E9  test   al, al
+004039EB  jne    0x4039f4
+004039ED  mov    eax, 0xfffffffd
+004039F2  jmp    0x403a42
+004039F4  xor    edx, edx
+004039F6  mov    dword ptr [ebp - 4], edx
+004039F9  mov    dword ptr [ebp - 8], 4
+00403A00  cmp    byte ptr [0x407085], 0
+00403A07  je     0x403a3f
+00403A09  lea    ecx, [ebp - 0x10]
+00403A0C  mov    dword ptr [ebp - 0xc], ecx
+00403A0F  push   0x3e8
+00403A14  lea    eax, [ebp - 8]
+00403A17  push   eax
+00403A18  lea    edx, [ebp - 0xc]
+00403A1B  push   edx
+00403A1C  push   0
+00403A1E  push   0
+00403A20  push   9
+00403A22  call   0x402400 ; imDtControl
+00403A27  mov    dword ptr [ebp - 4], eax
+00403A2A  cmp    dword ptr [ebp - 4], 1
+00403A2E  jne    0x403a3b
+00403A30  cmp    dword ptr [ebp - 8], 0
+00403A34  je     0x403a3b
+00403A36  mov    eax, dword ptr [ebp - 0x10]
+00403A39  jmp    0x403a42
+00403A3B  xor    eax, eax
+00403A3D  jmp    0x403a42
+00403A3F  or     eax, 0xffffffff
+00403A42  mov    esp, ebp
+00403A44  pop    ebp
+00403A45  ret    
+00403A46  nop    
+00403A47  nop    
+
+========== 00403A48 imSetVMirrorCount
+00403A48  push   ebp
+00403A49  mov    ebp, esp
+00403A4B  push   ecx
+00403A4C  xor    eax, eax
+00403A4E  mov    dword ptr [ebp - 4], eax
+00403A51  cmp    byte ptr [0x407085], 0
+00403A58  je     0x403a78
+00403A5A  push   0x3e8
+00403A5F  push   0
+00403A61  push   0
+00403A63  push   4
+00403A65  lea    edx, [ebp + 8]
+00403A68  push   edx
+00403A69  push   0xa
+00403A6B  call   0x402400 ; imDtControl
+00403A70  mov    dword ptr [ebp - 4], eax
+00403A73  mov    eax, dword ptr [ebp - 4]
+00403A76  jmp    0x403a7b
+00403A78  or     eax, 0xffffffff
+00403A7B  pop    ecx
+00403A7C  pop    ebp
+00403A7D  ret    4
+
+========== 00403A80 imCheckTrigger
+00403A80  push   ebp
+00403A81  mov    ebp, esp
+00403A83  add    esp, -0x10
+00403A86  xor    eax, eax
+00403A88  mov    dword ptr [ebp - 4], eax
+00403A8B  mov    dword ptr [ebp - 8], 1
+00403A92  cmp    byte ptr [0x407085], 0
+00403A99  je     0x403ad9
+00403A9B  lea    edx, [ebp - 0xd]
+00403A9E  mov    dword ptr [ebp - 0xc], edx
+00403AA1  push   0x3e8
+00403AA6  lea    ecx, [ebp - 8]
+00403AA9  push   ecx
+00403AAA  lea    eax, [ebp - 0xc]
+00403AAD  push   eax
+00403AAE  push   0
+00403AB0  push   0
+00403AB2  push   8
+00403AB4  call   0x402400 ; imDtControl
+00403AB9  mov    dword ptr [ebp - 4], eax
+00403ABC  cmp    dword ptr [ebp - 4], 1
+00403AC0  sete   dl
+00403AC3  and    edx, 1
+00403AC6  and    edx, dword ptr [ebp - 8]
+00403AC9  je     0x403ad2
+00403ACB  xor    eax, eax
+00403ACD  mov    al, byte ptr [ebp - 0xd]
+00403AD0  jmp    0x403adc
+00403AD2  mov    eax, 0xfffffffe
+00403AD7  jmp    0x403adc
+00403AD9  or     eax, 0xffffffff
+00403ADC  mov    esp, ebp
+00403ADE  pop    ebp
+00403ADF  ret    
+
+========== 00403AE0 imGetDPI
+00403AE0  push   ebp
+00403AE1  mov    ebp, esp
+00403AE3  add    esp, -0x10
+00403AE6  cmp    byte ptr [0x407085], 0
+00403AED  jne    0x403af4
+00403AEF  or     eax, 0xffffffff
+00403AF2  jmp    0x403b52
+00403AF4  call   0x401ef8
+00403AF9  test   al, al
+00403AFB  jne    0x403b04
+00403AFD  mov    eax, 0xfffffffd
+00403B02  jmp    0x403b52
+00403B04  xor    edx, edx
+00403B06  mov    dword ptr [ebp - 4], edx
+00403B09  mov    dword ptr [ebp - 8], 4
+00403B10  cmp    byte ptr [0x407085], 0
+00403B17  je     0x403b4f
+00403B19  lea    ecx, [ebp - 0x10]
+00403B1C  mov    dword ptr [ebp - 0xc], ecx
+00403B1F  push   0x3e8
+00403B24  lea    eax, [ebp - 8]
+00403B27  push   eax
+00403B28  lea    edx, [ebp - 0xc]
+00403B2B  push   edx
+00403B2C  push   0
+00403B2E  push   0
+00403B30  push   0x14
+00403B32  call   0x402400 ; imDtControl
+00403B37  mov    dword ptr [ebp - 4], eax
+00403B3A  cmp    dword ptr [ebp - 4], 1
+00403B3E  jne    0x403b4b
+00403B40  cmp    dword ptr [ebp - 8], 0
+00403B44  je     0x403b4b
+00403B46  mov    eax, dword ptr [ebp - 0x10]
+00403B49  jmp    0x403b52
+00403B4B  xor    eax, eax
+00403B4D  jmp    0x403b52
+00403B4F  or     eax, 0xffffffff
+00403B52  mov    esp, ebp
+00403B54  pop    ebp
+00403B55  ret    
+00403B56  nop    
+00403B57  nop    
+
+========== 00403B58 imGetLgphDelay
+00403B58  push   ebp
+00403B59  mov    ebp, esp
+00403B5B  add    esp, -0x10
+00403B5E  cmp    byte ptr [0x407085], 0
+00403B65  jne    0x403b6c
+00403B67  or     eax, 0xffffffff
+00403B6A  jmp    0x403bcc
+00403B6C  call   0x401ef8
+00403B71  test   al, al
+00403B73  jne    0x403b7c
+00403B75  mov    eax, 0xfffffffd
+00403B7A  jmp    0x403bcc
+00403B7C  xor    edx, edx
+00403B7E  mov    dword ptr [ebp - 4], edx
+00403B81  mov    dword ptr [ebp - 8], 4
+00403B88  cmp    byte ptr [0x407085], 0
+00403B8F  je     0x403bc9
+00403B91  lea    ecx, [ebp - 0x10]
+00403B94  mov    dword ptr [ebp - 0xc], ecx
+00403B97  push   0x3e8
+00403B9C  lea    eax, [ebp - 8]
+00403B9F  push   eax
+00403BA0  lea    edx, [ebp - 0xc]
+00403BA3  push   edx
+00403BA4  push   4
+00403BA6  lea    ecx, [ebp + 8]
+00403BA9  push   ecx
+00403BAA  push   0x15
+00403BAC  call   0x402400 ; imDtControl
+00403BB1  mov    dword ptr [ebp - 4], eax
+00403BB4  cmp    dword ptr [ebp - 4], 1
+00403BB8  jne    0x403bc5
+00403BBA  cmp    dword ptr [ebp - 8], 0
+00403BBE  je     0x403bc5
+00403BC0  mov    eax, dword ptr [ebp - 0x10]
+00403BC3  jmp    0x403bcc
+00403BC5  xor    eax, eax
+00403BC7  jmp    0x403bcc
+00403BC9  or     eax, 0xffffffff
+00403BCC  mov    esp, ebp
+00403BCE  pop    ebp
+00403BCF  ret    4
+00403BD2  nop    
+00403BD3  nop    
+
+========== 00403BD4 imSetLgphDelay
+00403BD4  push   ebp
+00403BD5  mov    ebp, esp
+00403BD7  add    esp, -0xc
+00403BDA  cmp    byte ptr [0x407085], 0
+00403BE1  jne    0x403be8
+00403BE3  or     eax, 0xffffffff
+00403BE6  jmp    0x403c3a
+00403BE8  call   0x401ef8
+00403BED  test   al, al
+00403BEF  jne    0x403bf8
+00403BF1  mov    eax, 0xfffffffd
+00403BF6  jmp    0x403c3a
+00403BF8  cmp    byte ptr [0x407085], 0
+00403BFF  je     0x403c37
+00403C01  mov    edx, dword ptr [ebp + 8]
+00403C04  mov    dword ptr [ebp - 8], edx
+00403C07  mov    ecx, dword ptr [ebp + 0xc]
+00403C0A  mov    dword ptr [ebp - 4], ecx
+00403C0D  push   0x3e8
+00403C12  push   0
+00403C14  push   0
+00403C16  push   8
+00403C18  lea    eax, [ebp - 8]
+00403C1B  push   eax
+00403C1C  push   0x16
+00403C1E  call   0x402400 ; imDtControl
+00403C23  mov    dword ptr [ebp - 0xc], eax
+00403C26  cmp    dword ptr [ebp - 0xc], 1
+00403C2A  jne    0x403c33
+00403C2C  mov    eax, 1
+00403C31  jmp    0x403c3a
+00403C33  xor    eax, eax
+00403C35  jmp    0x403c3a
+00403C37  or     eax, 0xffffffff
+00403C3A  mov    esp, ebp
+00403C3C  pop    ebp
+00403C3D  ret    8
+
+========== 00403C40 imCheckRegFunc
+00403C40  push   ebp
+00403C41  mov    ebp, esp
+00403C43  add    esp, -0x10
+00403C46  cmp    byte ptr [0x407085], 0
+00403C4D  jne    0x403c54
+00403C4F  or     eax, 0xffffffff
+00403C52  jmp    0x403cb4
+00403C54  call   0x401ef8
+00403C59  test   al, al
+00403C5B  jne    0x403c64
+00403C5D  mov    eax, 0xfffffffd
+00403C62  jmp    0x403cb4
+00403C64  xor    edx, edx
+00403C66  mov    dword ptr [ebp - 4], edx
+00403C69  mov    dword ptr [ebp - 8], 4
+00403C70  cmp    byte ptr [0x407085], 0
+00403C77  je     0x403cb1
+00403C79  lea    ecx, [ebp - 0x10]
+00403C7C  mov    dword ptr [ebp - 0xc], ecx
+00403C7F  push   0x3e8
+00403C84  lea    eax, [ebp - 8]
+00403C87  push   eax
+00403C88  lea    edx, [ebp - 0xc]
+00403C8B  push   edx
+00403C8C  push   4
+00403C8E  lea    ecx, [ebp + 8]
+00403C91  push   ecx
+00403C92  push   0x17
+00403C94  call   0x402400 ; imDtControl
+00403C99  mov    dword ptr [ebp - 4], eax
+00403C9C  cmp    dword ptr [ebp - 4], 1
+00403CA0  jne    0x403cad
+00403CA2  cmp    dword ptr [ebp - 8], 0
+00403CA6  je     0x403cad
+00403CA8  mov    eax, dword ptr [ebp - 0x10]
+00403CAB  jmp    0x403cb4
+00403CAD  xor    eax, eax
+00403CAF  jmp    0x403cb4
+00403CB1  or     eax, 0xffffffff
+00403CB4  mov    esp, ebp
+00403CB6  pop    ebp
+00403CB7  ret    4
+00403CBA  nop    
+00403CBB  nop    
+
+========== 00403CBC imGetADTVersion
+00403CBC  push   ebp
+00403CBD  mov    ebp, esp
+00403CBF  push   dword ptr [0x406120] ; "豣@"
+00403CC5  push   dword ptr [ebp + 8]
+00403CC8  call   0x4058a2 ; CC3260MT!_strcpy
+00403CCD  add    esp, 8
+00403CD0  pop    ebp
+00403CD1  ret    4
+
+========== 00403DA0 ?
+00403DA0  push   ebp
+00403DA1  mov    ebp, esp
+00403DA3  add    esp, 0xffffff6c
+00403DA9  push   ebx
+00403DAA  push   esi
+00403DAB  push   edi
+00403DAC  mov    eax, 0x4069a4
+00403DB1  call   0x40502c
+00403DB6  mov    dword ptr [ebp - 0x70], 1
+00403DBD  lea    edx, [ebp + 8]
+00403DC0  lea    eax, [ebp + 8]
+00403DC3  call   0x405110
+00403DC8  inc    dword ptr [ebp - 0x70]
+00403DCB  mov    word ptr [ebp - 0x7c], 8
+00403DD1  lea    eax, [ebp + 8]
+00403DD4  call   0x404498
+00403DD9  test   al, al
+00403DDB  je     0x403e06
+00403DDD  mov    eax, 1
+00403DE2  push   eax
+00403DE3  dec    dword ptr [ebp - 0x70]
+00403DE6  lea    eax, [ebp + 8]
+00403DE9  mov    edx, 2
+00403DEE  call   0x40514c
+00403DF3  pop    eax
+00403DF4  mov    edx, dword ptr [ebp - 0x8c]
+00403DFA  mov    dword ptr fs:[0], edx
+00403E01  jmp    0x40448e
+00403E06  mov    ecx, dword ptr [ebp + 8]
+00403E09  mov    dl, 1
+00403E0B  mov    eax, dword ptr [0x40973c]
+00403E10  call   0x403218
+00403E15  mov    dword ptr [ebp - 0x90], eax
+00403E1B  cmp    dword ptr [ebp - 0x90], 0
+00403E22  je     0x404417
+00403E28  xor    ecx, ecx
+00403E2A  mov    dword ptr [ebp - 0x94], ecx
+00403E30  mov    word ptr [ebp - 0x7c], 0x14
+00403E36  lea    eax, [ebp - 4]
+00403E39  call   0x401c9c
+00403E3E  inc    dword ptr [ebp - 0x70]
+00403E41  mov    word ptr [ebp - 0x7c], 0x20
+00403E47  mov    edx, dword ptr [ebp - 0x94]
+00403E4D  mov    word ptr [ebp - 0x7c], 0x2c
+00403E53  lea    eax, [ebp - 8]
+00403E56  call   0x401c9c
+00403E5B  mov    edx, eax
+00403E5D  inc    dword ptr [ebp - 0x70]
+00403E60  mov    eax, dword ptr [ebp - 0x94]
+00403E66  call   0x405614 ; rtl60!@Sysutils@IntToStr$qqri
+00403E6B  lea    edx, [ebp - 8]
+00403E6E  push   edx
+00403E6F  lea    eax, [ebp - 0xc]
+00403E72  call   0x401c9c
+00403E77  mov    ecx, eax
+00403E79  inc    dword ptr [ebp - 0x70]
+00403E7C  mov    eax, 0x4063ea ; "InkInfo_"
+00403E81  pop    edx
+00403E82  call   0x405290
+00403E87  lea    edx, [ebp - 0xc]
+00403E8A  lea    eax, [ebp - 4]
+00403E8D  call   0x40517c
+00403E92  dec    dword ptr [ebp - 0x70]
+00403E95  lea    eax, [ebp - 0xc]
+00403E98  mov    edx, 2
+00403E9D  call   0x40514c
+00403EA2  dec    dword ptr [ebp - 0x70]
+00403EA5  lea    eax, [ebp - 8]
+00403EA8  mov    edx, 2
+00403EAD  call   0x40514c
+00403EB2  mov    word ptr [ebp - 0x7c], 0x38
+00403EB8  mov    word ptr [ebp - 0x7c], 0x50
+00403EBE  mov    edx, 0x4063f6
+00403EC3  lea    eax, [ebp - 0x18]
+00403EC6  call   0x4050d8
+00403ECB  inc    dword ptr [ebp - 0x70]
+00403ECE  push   dword ptr [eax]
+00403ED0  lea    eax, [ebp - 0x10]
+00403ED3  call   0x401c9c
+00403ED8  push   eax
+00403ED9  inc    dword ptr [ebp - 0x70]
+00403EDC  mov    edx, 0x4063f3 ; "SN"
+00403EE1  lea    eax, [ebp - 0x14]
+00403EE4  call   0x4050d8
+00403EE9  inc    dword ptr [ebp - 0x70]
+00403EEC  mov    ecx, dword ptr [eax]
+00403EEE  mov    edx, dword ptr [ebp - 4]
+00403EF1  mov    eax, dword ptr [ebp - 0x90]
+00403EF7  mov    ebx, dword ptr [eax]
+00403EF9  call   dword ptr [ebx]
+00403EFB  dec    dword ptr [ebp - 0x70]
+00403EFE  lea    eax, [ebp - 0x18]
+00403F01  mov    edx, 2
+00403F06  call   0x40514c
+00403F0B  dec    dword ptr [ebp - 0x70]
+00403F0E  lea    eax, [ebp - 0x14]
+00403F11  mov    edx, 2
+00403F16  call   0x40514c
+00403F1B  mov    word ptr [ebp - 0x7c], 0x44
+00403F21  push   -1
+00403F23  mov    word ptr [ebp - 0x7c], 0x5c
+00403F29  mov    edx, 0x4063f7 ; "STATUS"
+00403F2E  lea    eax, [ebp - 0x1c]
+00403F31  call   0x4050d8
+00403F36  inc    dword ptr [ebp - 0x70]
+00403F39  mov    ecx, dword ptr [eax]
+00403F3B  mov    edx, dword ptr [ebp - 4]
+00403F3E  mov    eax, dword ptr [ebp - 0x90]
+00403F44  mov    ebx, dword ptr [eax]
+00403F46  call   dword ptr [ebx + 8]
+00403F49  mov    edx, dword ptr [ebp - 0x94]
+00403F4F  lea    edx, [edx + edx*2]
+00403F52  lea    edx, [edx + edx*8]
+00403F55  mov    ecx, dword ptr [ebp + 0xc]
+00403F58  mov    dword ptr [ecx + edx*4 + 8], eax
+00403F5C  dec    dword ptr [ebp - 0x70]
+00403F5F  lea    eax, [ebp - 0x1c]
+00403F62  mov    edx, 2
+00403F67  call   0x40514c
+00403F6C  push   8
+00403F6E  lea    eax, [ebp - 0x10]
+00403F71  call   0x4044b0
+00403F76  push   eax
+00403F77  imul   ecx, dword ptr [ebp - 0x94], 0x6c
+00403F7E  add    ecx, dword ptr [ebp + 0xc]
+00403F81  push   ecx
+00403F82  call   0x4058a8 ; CC3260MT!_strncpy
+00403F87  add    esp, 0xc
+00403F8A  push   0xbff00000
+00403F8F  push   0
+00403F91  mov    word ptr [ebp - 0x7c], 0x68
+00403F97  mov    edx, 0x4063fe ; "VolumeLoad"
+00403F9C  lea    eax, [ebp - 0x20]
+00403F9F  call   0x4050d8
+00403FA4  inc    dword ptr [ebp - 0x70]
+00403FA7  mov    ecx, dword ptr [eax]
+00403FA9  mov    edx, dword ptr [ebp - 4]
+00403FAC  mov    eax, dword ptr [ebp - 0x90]
+00403FB2  mov    ebx, dword ptr [eax]
+00403FB4  call   dword ptr [ebx + 0x24]
+00403FB7  mov    eax, dword ptr [ebp - 0x94]
+00403FBD  lea    eax, [eax + eax*2]
+00403FC0  lea    eax, [eax + eax*8]
+00403FC3  mov    edx, dword ptr [ebp + 0xc]
+00403FC6  fstp   dword ptr [edx + eax*4 + 0xc]
+00403FCA  dec    dword ptr [ebp - 0x70]
+00403FCD  lea    eax, [ebp - 0x20]
+00403FD0  mov    edx, 2
+00403FD5  call   0x40514c
+00403FDA  push   0xbff00000
+00403FDF  push   0
+00403FE1  mov    word ptr [ebp - 0x7c], 0x74
+00403FE7  mov    edx, 0x406409 ; "VolumeCur"
+00403FEC  lea    eax, [ebp - 0x24]
+00403FEF  call   0x4050d8
+00403FF4  inc    dword ptr [ebp - 0x70]
+00403FF7  mov    ecx, dword ptr [eax]
+00403FF9  mov    edx, dword ptr [ebp - 4]
+00403FFC  mov    eax, dword ptr [ebp - 0x90]
+00404002  mov    ebx, dword ptr [eax]
+00404004  call   dword ptr [ebx + 0x24]
+00404007  mov    eax, dword ptr [ebp - 0x94]
+0040400D  lea    eax, [eax + eax*2]
+00404010  lea    eax, [eax + eax*8]
+00404013  mov    edx, dword ptr [ebp + 0xc]
+00404016  fstp   dword ptr [edx + eax*4 + 0x10]
+0040401A  dec    dword ptr [ebp - 0x70]
+0040401D  lea    eax, [ebp - 0x24]
+00404020  mov    edx, 2
+00404025  call   0x40514c
+0040402A  push   0xbff00000
+0040402F  push   0
+00404031  mov    word ptr [ebp - 0x7c], 0x80
+00404037  mov    edx, 0x406413 ; "PercentVolumeCur"
+0040403C  lea    eax, [ebp - 0x28]
+0040403F  call   0x4050d8
+00404044  inc    dword ptr [ebp - 0x70]
+00404047  mov    ecx, dword ptr [eax]
+00404049  mov    edx, dword ptr [ebp - 4]
+0040404C  mov    eax, dword ptr [ebp - 0x90]
+00404052  mov    ebx, dword ptr [eax]
+00404054  call   dword ptr [ebx + 0x24]
+00404057  mov    eax, dword ptr [ebp - 0x94]
+0040405D  lea    eax, [eax + eax*2]
+00404060  lea    eax, [eax + eax*8]
+00404063  mov    edx, dword ptr [ebp + 0xc]
+00404066  fstp   dword ptr [edx + eax*4 + 0x14]
+0040406A  dec    dword ptr [ebp - 0x70]
+0040406D  lea    eax, [ebp - 0x28]
+00404070  mov    edx, 2
+00404075  call   0x40514c
+0040407A  push   0
+0040407C  mov    word ptr [ebp - 0x7c], 0x8c
+00404082  mov    edx, 0x406424 ; "Color"
+00404087  lea    eax, [ebp - 0x2c]
+0040408A  call   0x4050d8
+0040408F  inc    dword ptr [ebp - 0x70]
+00404092  mov    ecx, dword ptr [eax]
+00404094  mov    edx, dword ptr [ebp - 4]
+00404097  mov    eax, dword ptr [ebp - 0x90]
+0040409D  mov    ebx, dword ptr [eax]
+0040409F  call   dword ptr [ebx + 8]
+004040A2  mov    edx, dword ptr [ebp - 0x94]
+004040A8  lea    edx, [edx + edx*2]
+004040AB  lea    edx, [edx + edx*8]
+004040AE  mov    ecx, dword ptr [ebp + 0xc]
+004040B1  mov    dword ptr [ecx + edx*4 + 0x18], eax
+004040B5  dec    dword ptr [ebp - 0x70]
+004040B8  lea    eax, [ebp - 0x2c]
+004040BB  mov    edx, 2
+004040C0  call   0x40514c
+004040C5  mov    word ptr [ebp - 0x7c], 0x98
+004040CB  mov    edx, 0x406433
+004040D0  lea    eax, [ebp - 0x34]
+004040D3  call   0x4050d8
+004040D8  inc    dword ptr [ebp - 0x70]
+004040DB  push   dword ptr [eax]
+004040DD  lea    eax, [ebp - 0x38]
+004040E0  call   0x401c9c
+004040E5  push   eax
+004040E6  inc    dword ptr [ebp - 0x70]
+004040E9  mov    edx, 0x40642a ; "AreaCode"
+004040EE  lea    eax, [ebp - 0x30]
+004040F1  call   0x4050d8
+004040F6  inc    dword ptr [ebp - 0x70]
+004040F9  mov    ecx, dword ptr [eax]
+004040FB  mov    edx, dword ptr [ebp - 4]
+004040FE  mov    eax, dword ptr [ebp - 0x90]
+00404104  mov    ebx, dword ptr [eax]
+00404106  call   dword ptr [ebx]
+00404108  lea    edx, [ebp - 0x38]
+0040410B  lea    eax, [ebp - 0x10]
+0040410E  call   0x40517c
+00404113  dec    dword ptr [ebp - 0x70]
+00404116  lea    eax, [ebp - 0x38]
+00404119  mov    edx, 2
+0040411E  call   0x40514c
+00404123  dec    dword ptr [ebp - 0x70]
+00404126  lea    eax, [ebp - 0x34]
+00404129  mov    edx, 2
+0040412E  call   0x40514c
+00404133  dec    dword ptr [ebp - 0x70]
+00404136  lea    eax, [ebp - 0x30]
+00404139  mov    edx, 2
+0040413E  call   0x40514c
+00404143  push   8
+00404145  lea    eax, [ebp - 0x10]
+00404148  call   0x4044b0
+0040414D  push   eax
+0040414E  imul   edx, dword ptr [ebp - 0x94], 0x6c
+00404155  add    edx, dword ptr [ebp + 0xc]
+00404158  add    edx, 0x1c
+0040415B  push   edx
+0040415C  call   0x4058a8 ; CC3260MT!_strncpy
+00404161  add    esp, 0xc
+00404164  mov    word ptr [ebp - 0x7c], 0xa4
+0040416A  mov    edx, 0x40643d
+0040416F  lea    eax, [ebp - 0x40]
+00404172  call   0x4050d8
+00404177  inc    dword ptr [ebp - 0x70]
+0040417A  push   dword ptr [eax]
+0040417C  lea    eax, [ebp - 0x44]
+0040417F  call   0x401c9c
+00404184  push   eax
+00404185  inc    dword ptr [ebp - 0x70]
+00404188  mov    edx, 0x406434 ; "SaleCode"
+0040418D  lea    eax, [ebp - 0x3c]
+00404190  call   0x4050d8
+00404195  inc    dword ptr [ebp - 0x70]
+00404198  mov    ecx, dword ptr [eax]
+0040419A  mov    edx, dword ptr [ebp - 4]
+0040419D  mov    eax, dword ptr [ebp - 0x90]
+004041A3  mov    ebx, dword ptr [eax]
+004041A5  call   dword ptr [ebx]
+004041A7  lea    edx, [ebp - 0x44]
+004041AA  lea    eax, [ebp - 0x10]
+004041AD  call   0x40517c
+004041B2  dec    dword ptr [ebp - 0x70]
+004041B5  lea    eax, [ebp - 0x44]
+004041B8  mov    edx, 2
+004041BD  call   0x40514c
+004041C2  dec    dword ptr [ebp - 0x70]
+004041C5  lea    eax, [ebp - 0x40]
+004041C8  mov    edx, 2
+004041CD  call   0x40514c
+004041D2  dec    dword ptr [ebp - 0x70]
+004041D5  lea    eax, [ebp - 0x3c]
+004041D8  mov    edx, 2
+004041DD  call   0x40514c
+004041E2  push   8
+004041E4  lea    eax, [ebp - 0x10]
+004041E7  call   0x4044b0
+004041EC  push   eax
+004041ED  imul   edx, dword ptr [ebp - 0x94], 0x6c
+004041F4  add    edx, dword ptr [ebp + 0xc]
+004041F7  add    edx, 0x24
+004041FA  push   edx
+004041FB  call   0x4058a8 ; CC3260MT!_strncpy
+00404200  add    esp, 0xc
+00404203  push   -1
+00404205  mov    word ptr [ebp - 0x7c], 0xb0
+0040420B  mov    edx, 0x40643e ; "DotsPrinted"
+00404210  lea    eax, [ebp - 0x48]
+00404213  call   0x4050d8
+00404218  inc    dword ptr [ebp - 0x70]
+0040421B  mov    ecx, dword ptr [eax]
+0040421D  mov    edx, dword ptr [ebp - 4]
+00404220  mov    eax, dword ptr [ebp - 0x90]
+00404226  mov    ebx, dword ptr [eax]
+00404228  call   dword ptr [ebx + 8]
+0040422B  mov    edx, dword ptr [ebp - 0x94]
+00404231  lea    edx, [edx + edx*2]
+00404234  lea    edx, [edx + edx*8]
+00404237  mov    ecx, dword ptr [ebp + 0xc]
+0040423A  mov    dword ptr [ecx + edx*4 + 0x2c], eax
+0040423E  dec    dword ptr [ebp - 0x70]
+00404241  lea    eax, [ebp - 0x48]
+00404244  mov    edx, 2
+00404249  call   0x40514c
+0040424E  push   -1
+00404250  mov    word ptr [ebp - 0x7c], 0xbc
+00404256  mov    edx, 0x40644a ; "TimesPrinted"
+0040425B  lea    eax, [ebp - 0x4c]
+0040425E  call   0x4050d8
+00404263  inc    dword ptr [ebp - 0x70]
+00404266  mov    ecx, dword ptr [eax]
+00404268  mov    edx, dword ptr [ebp - 4]
+0040426B  mov    eax, dword ptr [ebp - 0x90]
+00404271  mov    ebx, dword ptr [eax]
+00404273  call   dword ptr [ebx + 8]
+00404276  mov    edx, dword ptr [ebp - 0x94]
+0040427C  lea    edx, [edx + edx*2]
+0040427F  lea    edx, [edx + edx*8]
+00404282  mov    ecx, dword ptr [ebp + 0xc]
+00404285  mov    dword ptr [ecx + edx*4 + 0x30], eax
+00404289  dec    dword ptr [ebp - 0x70]
+0040428C  lea    eax, [ebp - 0x4c]
+0040428F  mov    edx, 2
+00404294  call   0x40514c
+00404299  push   -1
+0040429B  mov    word ptr [ebp - 0x7c], 0xc8
+004042A1  mov    edx, 0x406457 ; "TimesWouldPrint"
+004042A6  lea    eax, [ebp - 0x50]
+004042A9  call   0x4050d8
+004042AE  inc    dword ptr [ebp - 0x70]
+004042B1  mov    ecx, dword ptr [eax]
+004042B3  mov    edx, dword ptr [ebp - 4]
+004042B6  mov    eax, dword ptr [ebp - 0x90]
+004042BC  mov    ebx, dword ptr [eax]
+004042BE  call   dword ptr [ebx + 8]
+004042C1  mov    edx, dword ptr [ebp - 0x94]
+004042C7  lea    edx, [edx + edx*2]
+004042CA  lea    edx, [edx + edx*8]
+004042CD  mov    ecx, dword ptr [ebp + 0xc]
+004042D0  mov    dword ptr [ecx + edx*4 + 0x34], eax
+004042D4  dec    dword ptr [ebp - 0x70]
+004042D7  lea    eax, [ebp - 0x50]
+004042DA  mov    edx, 2
+004042DF  call   0x40514c
+004042E4  push   -1
+004042E6  mov    word ptr [ebp - 0x7c], 0xd4
+004042EC  mov    edx, 0x406467 ; "TimesWouldPrintTotal"
+004042F1  lea    eax, [ebp - 0x54]
+004042F4  call   0x4050d8
+004042F9  inc    dword ptr [ebp - 0x70]
+004042FC  mov    ecx, dword ptr [eax]
+004042FE  mov    edx, dword ptr [ebp - 4]
+00404301  mov    eax, dword ptr [ebp - 0x90]
+00404307  mov    ebx, dword ptr [eax]
+00404309  call   dword ptr [ebx + 8]
+0040430C  mov    edx, dword ptr [ebp - 0x94]
+00404312  lea    edx, [edx + edx*2]
+00404315  lea    edx, [edx + edx*8]
+00404318  mov    ecx, dword ptr [ebp + 0xc]
+0040431B  mov    dword ptr [ecx + edx*4 + 0x38], eax
+0040431F  dec    dword ptr [ebp - 0x70]
+00404322  lea    eax, [ebp - 0x54]
+00404325  mov    edx, 2
+0040432A  call   0x40514c
+0040432F  push   0x20
+00404331  mov    word ptr [ebp - 0x7c], 0xe0
+00404337  mov    edx, 0x40648d
+0040433C  lea    eax, [ebp - 0x5c]
+0040433F  call   0x4050d8
+00404344  inc    dword ptr [ebp - 0x70]
+00404347  push   dword ptr [eax]
+00404349  lea    eax, [ebp - 0x60]
+0040434C  call   0x401c9c
+00404351  push   eax
+00404352  inc    dword ptr [ebp - 0x70]
+00404355  mov    edx, 0x40647c ; "PrintStationName"
+0040435A  lea    eax, [ebp - 0x58]
+0040435D  call   0x4050d8
+00404362  inc    dword ptr [ebp - 0x70]
+00404365  mov    ecx, dword ptr [eax]
+00404367  mov    edx, dword ptr [ebp - 4]
+0040436A  mov    eax, dword ptr [ebp - 0x90]
+00404370  mov    ebx, dword ptr [eax]
+00404372  call   dword ptr [ebx]
+00404374  lea    eax, [ebp - 0x60]
+00404377  call   0x4044b0
+0040437C  push   eax
+0040437D  imul   edx, dword ptr [ebp - 0x94], 0x6c
+00404384  add    edx, dword ptr [ebp + 0xc]
+00404387  add    edx, 0x3c
+0040438A  push   edx
+0040438B  call   0x4058a8 ; CC3260MT!_strncpy
+00404390  add    esp, 0xc
+00404393  dec    dword ptr [ebp - 0x70]
+00404396  lea    eax, [ebp - 0x60]
+00404399  mov    edx, 2
+0040439E  call   0x40514c
+004043A3  dec    dword ptr [ebp - 0x70]
+004043A6  lea    eax, [ebp - 0x5c]
+004043A9  mov    edx, 2
+004043AE  call   0x40514c
+004043B3  dec    dword ptr [ebp - 0x70]
+004043B6  lea    eax, [ebp - 0x58]
+004043B9  mov    edx, 2
+004043BE  call   0x40514c
+004043C3  dec    dword ptr [ebp - 0x70]
+004043C6  lea    eax, [ebp - 0x10]
+004043C9  mov    edx, 2
+004043CE  call   0x40514c
+004043D3  mov    word ptr [ebp - 0x7c], 0x38
+004043D9  mov    word ptr [ebp - 0x7c], 0x20
+004043DF  jmp    0x4043ec
+004043E1  mov    word ptr [ebp - 0x7c], 0x40
+004043E7  call   0x405806 ; CC3260MT!@_CatchCleanup$qv
+004043EC  dec    dword ptr [ebp - 0x70]
+004043EF  lea    eax, [ebp - 4]
+004043F2  mov    edx, 2
+004043F7  call   0x40514c
+004043FC  mov    word ptr [ebp - 0x7c], 8
+00404402  inc    dword ptr [ebp - 0x94]
+00404408  cmp    dword ptr [ebp - 0x94], 0x40
+0040440F  jl     0x403e30
+00404415  jmp    0x40443d
+00404417  mov    eax, 1
+0040441C  push   eax
+0040441D  dec    dword ptr [ebp - 0x70]
+00404420  lea    eax, [ebp + 8]
+00404423  mov    edx, 2
+00404428  call   0x40514c
+0040442D  pop    eax
+0040442E  mov    edx, dword ptr [ebp - 0x8c]
+00404434  mov    dword ptr fs:[0], edx
+0040443B  jmp    0x40448e
+0040443D  mov    ecx, dword ptr [ebp - 0x90]
+00404443  mov    dword ptr [ebp - 0x68], ecx
+00404446  cmp    dword ptr [ebp - 0x68], 0
+0040444A  je     0x40446d
+0040444C  mov    eax, dword ptr [ebp - 0x68]
+0040444F  mov    edx, dword ptr [eax]
+00404451  mov    dword ptr [ebp - 0x64], edx
+00404454  mov    word ptr [ebp - 0x7c], 0xf8
+0040445A  mov    edx, 3
+0040445F  mov    eax, dword ptr [ebp - 0x68]
+00404462  mov    ecx, dword ptr [eax]
+00404464  call   dword ptr [ecx - 4]
+00404467  mov    word ptr [ebp - 0x7c], 0xec
+0040446D  xor    eax, eax
+0040446F  push   eax
+00404470  dec    dword ptr [ebp - 0x70]
+00404473  lea    eax, [ebp + 8]
+00404476  mov    edx, 2
+0040447B  call   0x40514c
+00404480  pop    eax
+00404481  mov    edx, dword ptr [ebp - 0x8c]
+00404487  mov    dword ptr fs:[0], edx
+0040448E  pop    edi
+0040448F  pop    esi
+00404490  pop    ebx
+00404491  mov    esp, ebp
+00404493  pop    ebp
+00404494  ret    8
+00404497  nop    
+
+========== 004044F0 imFetchInkInfo
+004044F0  push   ebp
+004044F1  mov    ebp, esp
+004044F3  add    esp, -0x3c
+004044F6  push   ebx
+004044F7  push   esi
+004044F8  push   edi
+004044F9  mov    eax, 0x406b10
+004044FE  call   0x40502c
+00404503  cmp    dword ptr [ebp + 8], 0
+00404507  jne    0x40451d
+00404509  mov    eax, 1
+0040450E  mov    edx, dword ptr [ebp - 0x34]
+00404511  mov    dword ptr fs:[0], edx
+00404518  jmp    0x40467a
+0040451D  push   0x406497 ; "Printing PRO"
+00404522  push   0x40648e ; "TfrmMain"
+00404527  call   0x4057ec ; USER32!FindWindowA
+0040452C  mov    dword ptr [ebp - 0x38], eax
+0040452F  cmp    dword ptr [ebp - 0x38], 0
+00404533  je     0x40466b
+00404539  push   0
+0040453B  push   0
+0040453D  push   0x550
+00404542  push   dword ptr [ebp - 0x38]
+00404545  call   0x4057f8 ; USER32!SendMessageA
+0040454A  mov    dword ptr [ebp - 0x3c], eax
+0040454D  cmp    dword ptr [ebp - 0x3c], 1
+00404551  jne    0x40465a
+00404557  mov    word ptr [ebp - 0x24], 8
+0040455D  mov    word ptr [ebp - 0x24], 0x14
+00404563  lea    eax, [ebp - 4]
+00404566  call   0x401c9c
+0040456B  inc    dword ptr [ebp - 0x18]
+0040456E  mov    word ptr [ebp - 0x24], 0x20
+00404574  lea    edx, [ebp - 4]
+00404577  push   edx
+00404578  push   dword ptr [ebp - 0x38]
+0040457B  call   0x403cd4
+00404580  mov    word ptr [ebp - 0x24], 0x2c
+00404586  lea    eax, [ebp - 8]
+00404589  call   0x401c9c
+0040458E  mov    edx, eax
+00404590  inc    dword ptr [ebp - 0x18]
+00404593  mov    eax, dword ptr [ebp - 4]
+00404596  call   0x405608 ; rtl60!@Sysutils@ExtractFilePath$qqrx17System@AnsiString
+0040459B  lea    edx, [ebp - 8]
+0040459E  push   edx
+0040459F  lea    eax, [ebp - 0x10]
+004045A2  call   0x401c9c
+004045A7  push   eax
+004045A8  inc    dword ptr [ebp - 0x18]
+004045AB  mov    edx, 0x4064a4 ; "InkInfo.INI"
+004045B0  lea    eax, [ebp - 0xc]
+004045B3  call   0x4050d8
+004045B8  inc    dword ptr [ebp - 0x18]
+004045BB  lea    edx, [ebp - 0xc]
+004045BE  pop    ecx
+004045BF  pop    eax
+004045C0  call   0x405190
+004045C5  lea    edx, [ebp - 0x10]
+004045C8  lea    eax, [ebp - 4]
+004045CB  call   0x40517c
+004045D0  dec    dword ptr [ebp - 0x18]
+004045D3  lea    eax, [ebp - 0x10]
+004045D6  mov    edx, 2
+004045DB  call   0x40514c
+004045E0  dec    dword ptr [ebp - 0x18]
+004045E3  lea    eax, [ebp - 0xc]
+004045E6  mov    edx, 2
+004045EB  call   0x40514c
+004045F0  dec    dword ptr [ebp - 0x18]
+004045F3  lea    eax, [ebp - 8]
+004045F6  mov    edx, 2
+004045FB  call   0x40514c
+00404600  push   dword ptr [ebp + 8]
+00404603  push   dword ptr [ebp - 4]
+00404606  call   0x403da0
+0040460B  dec    dword ptr [ebp - 0x18]
+0040460E  lea    eax, [ebp - 4]
+00404611  mov    edx, 2
+00404616  call   0x40514c
+0040461B  mov    word ptr [ebp - 0x24], 8
+00404621  mov    word ptr [ebp - 0x24], 0
+00404627  jmp    0x40464c
+00404629  mov    eax, 1
+0040462E  push   eax
+0040462F  xor    edx, edx
+00404631  mov    dword ptr [ebp - 0x18], edx
+00404634  lea    ecx, [ebp - 0x34]
+00404637  push   ecx
+00404638  call   0x40581e ; CC3260MT!__Return_unwind
+0040463D  pop    ecx
+0040463E  pop    eax
+0040463F  jmp    0x40467a
+00404641  mov    word ptr [ebp - 0x24], 0x10
+00404647  call   0x405806 ; CC3260MT!@_CatchCleanup$qv
+0040464C  xor    eax, eax
+0040464E  mov    edx, dword ptr [ebp - 0x34]
+00404651  mov    dword ptr fs:[0], edx
+00404658  jmp    0x40467a
+0040465A  mov    eax, 1
+0040465F  mov    edx, dword ptr [ebp - 0x34]
+00404662  mov    dword ptr fs:[0], edx
+00404669  jmp    0x40467a
+0040466B  mov    eax, 1
+00404670  mov    edx, dword ptr [ebp - 0x34]
+00404673  mov    dword ptr fs:[0], edx
+0040467A  pop    edi
+0040467B  pop    esi
+0040467C  pop    ebx
+0040467D  mov    esp, ebp
+0040467F  pop    ebp
+00404680  ret    4
+00404683  nop    
+00404684  add    al, 0
+00404686  add    byte ptr [eax], al
+00404688  adc    byte ptr [eax], al
+0040468A  or     al, 0
+0040468C  int3   
+0040468D  sbb    al, 0x40
+0040468F  add    byte ptr [ecx + 0x6e], al
+00404692  jae    0x4046fd
+00404694  push   ebx
+00404695  je     0x404709
+00404697  imul   ebp, dword ptr [esi + 0x67], 0x90002a20
+0040469E  nop    
+0040469F  nop    
+
+========== 00404E1C ?
+00404E1C  push   ebp
+00404E1D  mov    ebp, esp
+00404E1F  add    esp, -0x2c
+00404E22  call   0x405435
+00404E27  mov    byte ptr [ebp - 0x29], dl
+00404E2A  mov    dword ptr [ebp - 4], eax
+00404E2D  mov    eax, 0x406d30
+00404E32  call   0x40502c
+00404E37  mov    dword ptr [ebp - 0xc], 2
+00404E3E  cmp    byte ptr [ebp - 0x29], 0
+00404E42  jl     0x404e6a
+00404E44  mov    word ptr [ebp - 0x18], 8
+00404E4A  dec    dword ptr [ebp - 0xc]
+00404E4D  mov    eax, dword ptr [ebp - 4]
+00404E50  add    eax, 4
+00404E53  mov    edx, 2
+00404E58  call   0x40514c
+00404E5D  dec    dword ptr [ebp - 0xc]
+00404E60  xor    edx, edx
+00404E62  mov    eax, dword ptr [ebp - 4]
+00404E65  call   0x40559c ; rtl60!@System@TObject@$bdtr$qqrv
+00404E6A  mov    ecx, dword ptr [ebp - 0x28]
+00404E6D  mov    dword ptr fs:[0], ecx
+00404E74  cmp    byte ptr [ebp - 0x29], 0
+00404E78  jle    0x404e82
+00404E7A  mov    eax, dword ptr [ebp - 4]
+00404E7D  call   0x405428
+00404E82  mov    esp, ebp
+00404E84  pop    ebp
+00404E85  ret    
+00404E86  nop    
+00404E87  nop    
+00404E88  add    al, 0
+00404E8A  add    byte ptr [eax], al
+00404E8C  nop    
+00404E8D  add    byte ptr [eax + eax], cl
+00404E90  je     0x404ede
+00404E92  inc    eax
+00404E93  add    byte ptr [ebx + eax*2 + 0x75], dl
+00404E97  jae    0x404f0d
+00404E99  outsd  dx, dword ptr [esi]
+00404E9A  insd   dword ptr es:[edi], dx
+00404E9B  dec    ecx
+00404E9C  outsb  dx, byte ptr [esi]
+00404E9D  imul   eax, dword ptr [esi + 0x69], 0x2a20656c
+00404EA4  add    byte ptr [eax - 0x3d746f70], dl
+00404EAA  cmp    byte ptr [0x40607c], 0
+00404EB1  jne    0x404ed8
+00404EB3  cmp    byte ptr [0x40607d], 0
+00404EBA  je     0x404ed0
+00404EBC  cmp    byte ptr [0x40607d], 0
+00404EC3  je     0x404ed8
+00404EC5  mov    edx, dword ptr [0x409568]
+00404ECB  cmp    dword ptr [edx], 0
+00404ECE  jne    0x404ed8
+00404ED0  mov    ecx, dword ptr [0x409568]
+00404ED6  mov    dword ptr [ecx], eax
+00404ED8  mov    eax, dword ptr [0x409554]
+00404EDD  mov    byte ptr [eax], 1
+00404EE0  call   0x405554 ; rtl60!@System@initialization$qqrv
+00404EE5  call   0x404ef4
+00404EEA  ret    
+00404EEB  nop    
+00404EEC  ret    
+00404EED  nop    
+00404EEE  nop    
+00404EEF  nop    
+00404EF0  ret    
+00404EF1  nop    
+00404EF2  nop    
+00404EF3  nop    
+00404EF4  add    esp, -0xc
+00404EF7  xor    eax, eax
+00404EF9  xor    edx, edx
+00404EFB  xor    ecx, ecx
+00404EFD  mov    dword ptr [esp], eax
+00404F00  mov    dword ptr [esp + 4], edx
+00404F04  mov    dword ptr [esp + 8], ecx
+00404F08  lea    eax, [esp + 8]
+00404F0C  push   eax
+00404F0D  lea    edx, [esp + 8]
+00404F11  push   edx
+00404F12  lea    ecx, [esp + 8]
+00404F16  push   ecx
+00404F17  call   0x405824 ; CC3260MT!___CRTL_MEM_GetBorMemPtrs
+00404F1C  add    esp, 0xc
+00404F1F  test   eax, eax
+00404F21  jne    0x404f2e
+00404F23  push   0x406d44 ; "vclshmem.cpp: GetBorMemPtrs failed"
+00404F28  call   0x405812 ; CC3260MT!__ErrorExit
+00404F2D  pop    ecx
+00404F2E  mov    eax, dword ptr [esp + 8]
+00404F32  push   eax
+00404F33  mov    edx, dword ptr [esp + 8]
+00404F37  push   edx
+00404F38  mov    ecx, dword ptr [esp + 8]
+00404F3C  push   ecx
+00404F3D  call   0x404f50
+00404F42  add    esp, 0xc
+00404F45  call   0x405724 ; BORLNDMM!#2
+00404F4A  add    esp, 0xc
+00404F4D  ret    
+00404F4E  nop    
+00404F4F  nop    
+
+========== 00404F50 ?
+00404F50  push   ebp
+00404F51  mov    ebp, esp
+00404F53  add    esp, -0xc
+00404F56  call   0x4055a8 ; rtl60!@System@IsMemoryManagerSet$qqrv
+00404F5B  test   al, al
+00404F5D  jne    0x404f79
+00404F5F  mov    eax, dword ptr [ebp + 8]
+00404F62  mov    dword ptr [ebp - 0xc], eax
+00404F65  lea    eax, [ebp - 0xc]
+00404F68  mov    edx, dword ptr [ebp + 0xc]
+00404F6B  mov    dword ptr [ebp - 8], edx
+00404F6E  mov    ecx, dword ptr [ebp + 0x10]
+00404F71  mov    dword ptr [ebp - 4], ecx
+00404F74  call   0x4055ae ; rtl60!@System@SetMemoryManager$qqrrx21System@TMemoryManager
+00404F79  mov    esp, ebp
+00404F7B  pop    ebp
+00404F7C  ret    
+00404F7D  nop    
+00404F7E  nop    
+00404F7F  nop    
+00404F80  jmp    0x4058ae ; CC3260MT!_strstr
+00404F85  jmp    0x4058ae ; CC3260MT!_strstr
+00404F8A  nop    
+00404F8B  nop    
+00404F8C  push   0x406e08 ; "___CPPdebugHook"
+00404F91  push   0
+00404F93  call   0x40578c ; KERNEL32!GetModuleHandleA
+00404F98  push   eax
+00404F99  call   0x405792 ; KERNEL32!GetProcAddress
+00404F9E  mov    dword ptr [0x4070ac], eax
+00404FA3  cmp    dword ptr [0x4070ac], 0
+00404FAA  jne    0x404fb6
+00404FAC  mov    dword ptr [0x4070ac], 0x4060f8
+00404FB6  ret    
+00404FB7  nop    
+
+========== 00405004 ?
+00405004  push   ebp
+00405005  mov    ebp, esp
+00405007  push   ebx
+00405008  mov    ebx, dword ptr [ebp + 8]
+0040500B  call   0x401432
+00405010  add    eax, 0x1c
+00405016  mov    dword ptr [0x406d7c], eax
+0040501B  mov    dword ptr [ebx], 0x82727349
+00405021  mov    dword ptr [ebx + 4], 0x406d68
+00405028  pop    ebx
+00405029  pop    ebp
+0040502A  ret    
+0040502B  nop    
+0040502C  push   ebx
+0040502D  mov    ebx, ebp
+0040502F  add    ebx, dword ptr [eax + 4]
+00405032  mov    dword ptr [ebx + 8], eax
+00405035  lea    eax, [esp + 8]
+00405039  mov    dword ptr [ebx + 0xc], eax
+0040503C  mov    dword ptr [ebx + 4], 0x405073
+00405043  mov    word ptr [ebx + 0x10], 0
+00405049  mov    word ptr [ebx + 0x12], 0
+0040504F  mov    dword ptr [ebx + 0x1c], 0
+00405056  mov    eax, dword ptr fs:[0]
+0040505B  mov    dword ptr [ebx], eax
+0040505D  mov    dword ptr fs:[0], ebx
+00405063  pop    ebx
+00405064  ret    
+00405065  mov    dword ptr fs:[0], eax
+0040506A  ret    
+0040506B  sub    ch, byte ptr [edx]
+0040506D  inc    edx
+0040506E  inc    ebx
+0040506F  inc    ebx
+00405070  js     0x4050da
+00405072  xor    dword ptr [ebx + 0x1835ffc4], ecx
+00405078  outsb  dx, byte ptr [esi]
+00405079  inc    eax
+0040507A  add    byte ptr [ebx + 0x57], dl
+0040507D  push   esi
+0040507E  push   ebp
+0040507F  push   eax
+00405080  push   dword ptr [ebp + 0x14]
+00405083  push   dword ptr [ebp + 0x10]
+00405086  push   dword ptr [ebp + 0xc]
+00405089  push   dword ptr [ebp + 8]
+0040508C  call   0x405854 ; CC3260MT!____ExceptionHandler
+00405091  add    esp, 0x14
+00405094  pop    ebp
+00405095  pop    esi
+00405096  pop    edi
+00405097  pop    ebx
+00405098  add    esp, 4
+0040509B  ret    
+0040509C  push   0x406e2c ; "CC3260MT.DLL"
+004050A1  call   0x4057bc ; KERNEL32!LoadLibraryA
+004050A6  mov    dword ptr [0x4070b4], eax
+004050AB  cmp    dword ptr [0x4070b4], 0
+004050B2  jne    0x4050bf
+004050B4  push   0x406e39 ; "RTLDLL cannot find itself!"
+004050B9  call   0x405812 ; CC3260MT!__ErrorExit
+004050BE  pop    ecx
+004050BF  ret    
+004050C0  mov    eax, dword ptr [0x4070b4]
+004050C5  test   eax, eax
+004050C7  je     0x4050d7
+004050C9  push   eax
+004050CA  call   0x40576e ; KERNEL32!FreeLibrary
+004050CF  xor    edx, edx
+004050D1  mov    dword ptr [0x4070b4], edx
+004050D7  ret    
+
+========== 00405364 ?
+00405364  push   ebp
+00405365  mov    ebp, esp
+00405367  add    esp, -0x30
+0040536A  mov    eax, 0x406ffc
+0040536F  call   0x40502c
+00405374  mov    word ptr [ebp - 0x20], 8
+0040537A  mov    edx, 0x406fbc ; "false"
+0040537F  lea    eax, [ebp - 4]
+00405382  call   0x4050d8
+00405387  inc    dword ptr [ebp - 0x14]
+0040538A  lea    edx, [ebp - 4]
+0040538D  mov    eax, dword ptr [0x409650]
+00405392  call   0x40517c
+00405397  dec    dword ptr [ebp - 0x14]
+0040539A  lea    eax, [ebp - 4]
+0040539D  mov    edx, 2
+004053A2  call   0x40514c
+004053A7  mov    word ptr [ebp - 0x20], 0x14
+004053AD  mov    edx, 0x406fc2 ; "true"
+004053B2  lea    eax, [ebp - 8]
+004053B5  call   0x4050d8
+004053BA  inc    dword ptr [ebp - 0x14]
+004053BD  lea    edx, [ebp - 8]
+004053C0  mov    eax, dword ptr [0x409650]
+004053C5  add    eax, 4
+004053C8  call   0x40517c
+004053CD  dec    dword ptr [ebp - 0x14]
+004053D0  lea    eax, [ebp - 8]
+004053D3  mov    edx, 2
+004053D8  call   0x40514c
+004053DD  mov    word ptr [ebp - 0x20], 0x20
+004053E3  mov    edx, 0x406fc7 ; "->"
+004053E8  lea    eax, [ebp - 0xc]
+004053EB  call   0x4050d8
+004053F0  inc    dword ptr [ebp - 0x14]
+004053F3  lea    edx, [ebp - 0xc]
+004053F6  mov    eax, dword ptr [0x40964c]
+004053FB  call   0x40517c
+00405400  dec    dword ptr [ebp - 0x14]
+00405403  lea    eax, [ebp - 0xc]
+00405406  mov    edx, 2
+0040540B  call   0x40514c
+00405410  mov    ecx, dword ptr [ebp - 0x30]
+00405413  mov    dword ptr fs:[0], ecx
+0040541A  mov    esp, ebp
+0040541C  pop    ebp
+0040541D  ret    
+0040541E  nop    
+0040541F  nop    
+00405420  push   edx
+00405421  push   ecx
+00405422  call   dword ptr [eax - 0xc]
+00405425  pop    ecx
+00405426  pop    edx
+00405427  ret    
+00405428  mov    edx, dword ptr [eax]
+0040542A  jmp    dword ptr [edx - 8]
+0040542D  push   eax
+0040542E  mov    edx, dword ptr [eax]
+00405430  call   dword ptr [edx - 0x1c]
+00405433  pop    eax
+00405434  ret    
+00405435  test   dl, dl
+00405437  jg     0x40543a
+00405439  ret    
+0040543A  push   eax
+0040543B  push   edx
+0040543C  mov    edx, dword ptr [eax]
+0040543E  call   dword ptr [edx - 0x18]
+00405441  pop    edx
+00405442  pop    eax
+00405443  ret    
+00405444  sub    esp, 8
+00405447  fld    xword ptr [esp + 0xc]
+0040544B  fistp  qword ptr [esp]
+0040544E  pop    eax
+0040544F  pop    edx
+00405450  ret    
+00405451  nop    
+00405452  nop    
+00405453  nop    
+00405454  jmp    dword ptr [0x409304] ; vcl60!@Consts@initialization$qqrv
+0040545A  jmp    dword ptr [0x409308] ; vcl60!@Consts@Finalization$qqrv
+00405460  jmp    dword ptr [0x409340] ; vcl60!@Graphics@initialization$qqrv
+00405466  jmp    dword ptr [0x409344] ; vcl60!@Graphics@Finalization$qqrv
+0040546C  jmp    dword ptr [0x409348] ; vcl60!@Graphics@TBitmap@SetPixelFormat$qqr21Graphics@TPixelFormat
+00405472  jmp    dword ptr [0x40934c] ; vcl60!@Graphics@TBitmap@GetPixelFormat$qqrv
+00405478  jmp    dword ptr [0x409350] ; vcl60!@Graphics@TPicture@GetHeight$qqrv
+0040547E  jmp    dword ptr [0x409354] ; vcl60!@Graphics@TPicture@GetWidth$qqrv
+00405484  jmp    dword ptr [0x409358] ; vcl60!@Graphics@TPicture@LoadFromFile$qqrx17System@AnsiString
+0040548A  jmp    dword ptr [0x40935c] ; vcl60!@Graphics@TPicture@GetBitmap$qqrv
+00405490  jmp    dword ptr [0x409360] ; vcl60!@Graphics@TPicture@$bctr$qqrv
+00405496  jmp    dword ptr [0x409364] ; vcl60!@Graphics@TCanvas@Draw$qqriip17Graphics@TGraphic
+0040549C  jmp    dword ptr [0x409368] ; vcl60!@Graphics@TPicture@
+004054A2  int3   
+004054A3  int3   
+004054A4  jmp    dword ptr [0x40937c] ; vcl60!@Printers@initialization$qqrv
+004054AA  jmp    dword ptr [0x409380] ; vcl60!@Printers@Finalization$qqrv
+004054B0  jmp    dword ptr [0x409394] ; vcl60!@Stdctrls@initialization$qqrv
+004054B6  jmp    dword ptr [0x409398] ; vcl60!@Stdctrls@Finalization$qqrv
+004054BC  jmp    dword ptr [0x4093b8] ; vcl60!@Extctrls@initialization$qqrv
+004054C2  jmp    dword ptr [0x4093bc] ; vcl60!@Extctrls@Finalization$qqrv
+004054C8  jmp    dword ptr [0x4093c0] ; vcl60!@Extctrls@TImage@GetCanvas$qqrv
+004054CE  jmp    dword ptr [0x4093c4] ; vcl60!@Extctrls@TImage@$bctr$qqrp18Classes@TComponent
+004054D4  jmp    dword ptr [0x4093c8] ; vcl60!@Extctrls@TImage@
+004054DA  int3   
+004054DB  int3   
+004054DC  jmp    dword ptr [0x4093dc] ; vcl60!@Dialogs@initialization$qqrv
+004054E2  jmp    dword ptr [0x4093e0] ; vcl60!@Dialogs@Finalization$qqrv
+004054E8  jmp    dword ptr [0x4093f4] ; vcl60!@Clipbrd@initialization$qqrv
+004054EE  jmp    dword ptr [0x4093f8] ; vcl60!@Clipbrd@Finalization$qqrv
+004054F4  jmp    dword ptr [0x40940c] ; vcl60!@Stdactns@initialization$qqrv
+004054FA  jmp    dword ptr [0x409410] ; vcl60!@Stdactns@Finalization$qqrv
+00405500  jmp    dword ptr [0x409424] ; vcl60!@Winhelpviewer@initialization$qqrv
+00405506  jmp    dword ptr [0x409428] ; vcl60!@Winhelpviewer@Finalization$qqrv
+0040550C  jmp    dword ptr [0x40943c] ; vcl60!@Actnlist@initialization$qqrv
+00405512  jmp    dword ptr [0x409440] ; vcl60!@Actnlist@Finalization$qqrv
+00405518  jmp    dword ptr [0x40945c] ; vcl60!@Forms@initialization$qqrv
+0040551E  jmp    dword ptr [0x409460] ; vcl60!@Forms@Finalization$qqrv
+00405524  jmp    dword ptr [0x409464] ; vcl60!@Forms@TApplication@ProcessMessages$qqrv
+0040552A  jmp    dword ptr [0x409468] ; vcl60!@Forms@Application
+00405530  jmp    dword ptr [0x40947c] ; vcl60!@Imglist@initialization$qqrv
+00405536  jmp    dword ptr [0x409480] ; vcl60!@Imglist@Finalization$qqrv
+0040553C  jmp    dword ptr [0x409494] ; vcl60!@Menus@initialization$qqrv
+00405542  jmp    dword ptr [0x409498] ; vcl60!@Menus@Finalization$qqrv
+00405548  jmp    dword ptr [0x4094ac] ; vcl60!@Controls@initialization$qqrv
+0040554E  jmp    dword ptr [0x4094b0] ; vcl60!@Controls@Finalization$qqrv
+00405554  jmp    dword ptr [0x409514] ; rtl60!@System@initialization$qqrv
+0040555A  jmp    dword ptr [0x409518] ; rtl60!@System@Finalization$qqrv
+00405560  jmp    dword ptr [0x40951c] ; rtl60!@System@UnregisterModule$qqrp17System@TLibModule
+00405566  jmp    dword ptr [0x409520] ; rtl60!@System@RegisterModule$qqrp17System@TLibModule
+0040556C  jmp    dword ptr [0x409524] ; rtl60!@System@FindHInstance$qqrpv
+00405572  jmp    dword ptr [0x409528] ; rtl60!@System@@LStrCat3$qqrv
+00405578  jmp    dword ptr [0x40952c] ; rtl60!@System@@LStrCat$qqrv
+0040557E  jmp    dword ptr [0x409530] ; rtl60!@System@@LStrFromPChar$qqrr17System@AnsiStringpc
+00405584  jmp    dword ptr [0x409534] ; rtl60!@System@@LStrAsg$qqrpvpxv
+0040558A  jmp    dword ptr [0x409538] ; rtl60!@System@@LStrClr$qqrpv
+00405590  jmp    dword ptr [0x40953c] ; rtl60!@System@@HandleFinally$qqrv
+00405596  jmp    dword ptr [0x409540] ; rtl60!@System@TObject@Free$qqrv
+0040559C  jmp    dword ptr [0x409544] ; rtl60!@System@TObject@$bdtr$qqrv
+004055A2  jmp    dword ptr [0x409548] ; rtl60!@System@TObject@$bctr$qqrv
+004055A8  jmp    dword ptr [0x40954c] ; rtl60!@System@IsMemoryManagerSet$qqrv
+004055AE  jmp    dword ptr [0x409550] ; rtl60!@System@SetMemoryManager$qqrrx21System@TMemoryManager
+004055B4  jmp    dword ptr [0x409554] ; rtl60!@System@IsMultiThread
+004055BA  jmp    dword ptr [0x409558] ; rtl60!@System@IsConsole
+004055C0  jmp    dword ptr [0x40955c] ; rtl60!@System@ExitProc
+004055C6  jmp    dword ptr [0x409560] ; rtl60!@System@CmdLine
+004055CC  jmp    dword ptr [0x409564] ; rtl60!@System@IsLibrary
+004055D2  jmp    dword ptr [0x409568] ; rtl60!@System@MainInstance
+004055D8  jmp    dword ptr [0x40957c] ; rtl60!@Types@initialization$qqrv
+004055DE  jmp    dword ptr [0x409580] ; rtl60!@Types@Finalization$qqrv
+004055E4  jmp    dword ptr [0x409594] ; rtl60!@Sysconst@initialization$qqrv
+004055EA  jmp    dword ptr [0x409598] ; rtl60!@Sysconst@Finalization$qqrv
+004055F0  jmp    dword ptr [0x4095c4] ; rtl60!@Sysutils@initialization$qqrv
+004055F6  jmp    dword ptr [0x4095c8] ; rtl60!@Sysutils@Finalization$qqrv
+004055FC  jmp    dword ptr [0x4095cc] ; rtl60!@Sysutils@StrLen$qqrpxc
+00405602  jmp    dword ptr [0x4095d0] ; rtl60!@Sysutils@ExtractFileName$qqrx17System@AnsiString
+00405608  jmp    dword ptr [0x4095d4] ; rtl60!@Sysutils@ExtractFilePath$qqrx17System@AnsiString
+0040560E  jmp    dword ptr [0x4095d8] ; rtl60!@Sysutils@StrToInt$qqrx17System@AnsiString
+00405614  jmp    dword ptr [0x4095dc] ; rtl60!@Sysutils@IntToStr$qqri
+0040561A  jmp    dword ptr [0x4095e0] ; rtl60!@Sysutils@AnsiCompareText$qqrx17System@AnsiStringt1
+00405620  jmp    dword ptr [0x4095f4] ; rtl60!@Varutils@initialization$qqrv
+00405626  jmp    dword ptr [0x4095f8] ; rtl60!@Varutils@Finalization$qqrv
+0040562C  jmp    dword ptr [0x40960c] ; rtl60!@Variants@initialization$qqrv
+00405632  jmp    dword ptr [0x409610] ; rtl60!@Variants@Finalization$qqrv
+00405638  jmp    dword ptr [0x409624] ; rtl60!@Rtlconsts@initialization$qqrv
+0040563E  jmp    dword ptr [0x409628] ; rtl60!@Rtlconsts@Finalization$qqrv
+00405644  jmp    dword ptr [0x409644] ; rtl60!@Typinfo@initialization$qqrv
+0040564A  jmp    dword ptr [0x409648] ; rtl60!@Typinfo@Finalization$qqrv
+00405650  jmp    dword ptr [0x40964c] ; rtl60!@Typinfo@DotSep
+00405656  jmp    dword ptr [0x409650] ; rtl60!@Typinfo@BooleanIdents
+0040565C  jmp    dword ptr [0x409664] ; rtl60!@Activex@initialization$qqrv
+00405662  jmp    dword ptr [0x409668] ; rtl60!@Activex@Finalization$qqrv
+00405668  jmp    dword ptr [0x4096a4] ; rtl60!@Classes@initialization$qqrv
+0040566E  jmp    dword ptr [0x4096a8] ; rtl60!@Classes@Finalization$qqrv
+00405674  jmp    dword ptr [0x4096ac] ; rtl60!@Classes@TMemoryStream@$bdtr$qqrv
+0040567A  jmp    dword ptr [0x4096b0] ; rtl60!@Classes@TStream@GetSize$qqrv
+00405680  jmp    dword ptr [0x4096b4] ; rtl60!@Classes@TStream@SetPosition$qqrxj
+00405686  jmp    dword ptr [0x4096b8] ; rtl60!@Classes@TStringList@$bdtr$qqrv
+0040568C  jmp    dword ptr [0x4096bc] ; rtl60!@Classes@TStrings@SetDelimiter$qqrxc
+00405692  jmp    dword ptr [0x4096c0] ; rtl60!@Classes@TStrings@SetDelimitedText$qqrx17System@AnsiString
+00405698  jmp    dword ptr [0x4096c4] ; rtl60!@Classes@TStrings@$bdtr$qqrv
+0040569E  jmp    dword ptr [0x4096c8] ; rtl60!@Classes@TPersistent@$bdtr$qqrv
+004056A4  jmp    dword ptr [0x4096cc] ; rtl60!@Classes@TMemoryStream@
+004056AA  jmp    dword ptr [0x4096d0] ; rtl60!@Classes@TStringList@
+004056B0  jmp    dword ptr [0x4096e4] ; rtl60!@Math@initialization$qqrv
+004056B6  jmp    dword ptr [0x4096e8] ; rtl60!@Math@Finalization$qqrv
+004056BC  jmp    dword ptr [0x4096fc] ; rtl60!@Contnrs@initialization$qqrv
+004056C2  jmp    dword ptr [0x409700] ; rtl60!@Contnrs@Finalization$qqrv
+004056C8  jmp    dword ptr [0x409728] ; rtl60!@Inifiles@initialization$qqrv
+004056CE  jmp    dword ptr [0x40972c] ; rtl60!@Inifiles@Finalization$qqrv
+004056D4  jmp    dword ptr [0x409730] ; rtl60!@Inifiles@TIniFile@$bdtr$qqrv
+004056DA  jmp    dword ptr [0x409734] ; rtl60!@Inifiles@TMemIniFile@$bctr$qqrx17System@AnsiString
+004056E0  jmp    dword ptr [0x409738] ; rtl60!@Inifiles@TCustomIniFile@$bctr$qqrx17System@AnsiString
+004056E6  jmp    dword ptr [0x40973c] ; rtl60!@Inifiles@TIniFile@
+004056EC  jmp    dword ptr [0x409740] ; rtl60!@Inifiles@TMemIniFile@
+004056F2  int3   
+004056F3  int3   
+004056F4  jmp    dword ptr [0x409754] ; rtl60!@Strutils@initialization$qqrv
+004056FA  jmp    dword ptr [0x409758] ; rtl60!@Strutils@Finalization$qqrv
+00405700  jmp    dword ptr [0x40976c] ; rtl60!@Helpintfs@initialization$qqrv
+00405706  jmp    dword ptr [0x409770] ; rtl60!@Helpintfs@Finalization$qqrv
+0040570C  jmp    dword ptr [0x409784] ; rtl60!@Flatsb@initialization$qqrv
+00405712  jmp    dword ptr [0x409788] ; rtl60!@Flatsb@Finalization$qqrv
+00405718  jmp    dword ptr [0x40979c] ; rtl60!@Multimon@initialization$qqrv
+0040571E  jmp    dword ptr [0x4097a0] ; rtl60!@Multimon@Finalization$qqrv
+00405724  jmp    dword ptr [0x4097b0] ; BORLNDMM!#2
+0040572A  int3   
+0040572B  int3   
+0040572C  jmp    dword ptr [0x4097cc] ; ANSERMBS!ApMapSharedMemory
+00405732  jmp    dword ptr [0x4097d0] ; ANSERMBS!ApTiffToBmp
+00405738  jmp    dword ptr [0x4097d4] ; ANSERMBS!ApTiffToBmpBound
+0040573E  jmp    dword ptr [0x4097d8] ; ANSERMBS!ApUnmapSharedMemory
+00405744  jmp    dword ptr [0x4097ec] ; PSAPI!EnumProcessModules
+0040574A  jmp    dword ptr [0x4097f0] ; PSAPI!GetModuleFileNameExA
+00405750  jmp    dword ptr [0x409864] ; KERNEL32!CloseHandle
+00405756  jmp    dword ptr [0x409868] ; KERNEL32!CreateEventA
+0040575C  jmp    dword ptr [0x40986c] ; KERNEL32!CreateToolhelp32Snapshot
+00405762  jmp    dword ptr [0x409870] ; KERNEL32!DeleteCriticalSection
+00405768  jmp    dword ptr [0x409874] ; KERNEL32!EnterCriticalSection
+0040576E  jmp    dword ptr [0x409878] ; KERNEL32!FreeLibrary
+00405774  jmp    dword ptr [0x40987c] ; KERNEL32!GetCommandLineA
+0040577A  jmp    dword ptr [0x409880] ; KERNEL32!GetCurrentProcessId
+00405780  jmp    dword ptr [0x409884] ; KERNEL32!GetLastError
+00405786  jmp    dword ptr [0x409888] ; KERNEL32!GetModuleFileNameA
+0040578C  jmp    dword ptr [0x40988c] ; KERNEL32!GetModuleHandleA
+00405792  jmp    dword ptr [0x409890] ; KERNEL32!GetProcAddress
+00405798  jmp    dword ptr [0x409894] ; KERNEL32!GetProcessHeap
+0040579E  jmp    dword ptr [0x409898] ; KERNEL32!GetVersion
+004057A4  jmp    dword ptr [0x40989c] ; KERNEL32!HeapAlloc
+004057AA  jmp    dword ptr [0x4098a0] ; KERNEL32!HeapFree
+004057B0  jmp    dword ptr [0x4098a4] ; KERNEL32!InitializeCriticalSection
+004057B6  jmp    dword ptr [0x4098a8] ; KERNEL32!LeaveCriticalSection
+004057BC  jmp    dword ptr [0x4098ac] ; KERNEL32!LoadLibraryA
+004057C2  jmp    dword ptr [0x4098b0] ; KERNEL32!OpenProcess
+004057C8  jmp    dword ptr [0x4098b4] ; KERNEL32!OutputDebugStringA
+004057CE  jmp    dword ptr [0x4098b8] ; KERNEL32!Process32First
+004057D4  jmp    dword ptr [0x4098bc] ; KERNEL32!Process32Next
+004057DA  jmp    dword ptr [0x4098c0] ; KERNEL32!ResetEvent
+004057E0  jmp    dword ptr [0x4098c4] ; KERNEL32!SetEvent
+004057E6  jmp    dword ptr [0x4098c8] ; KERNEL32!WaitForSingleObject
+004057EC  jmp    dword ptr [0x4098e0] ; USER32!FindWindowA
+004057F2  jmp    dword ptr [0x4098e4] ; USER32!GetWindowThreadProcessId
+004057F8  jmp    dword ptr [0x4098e8] ; USER32!SendMessageA
+004057FE  int3   
+004057FF  int3   
+00405800  jmp    dword ptr [0x40996c] ; CC3260MT!@$bdele$qpv
+00405806  jmp    dword ptr [0x409970] ; CC3260MT!@_CatchCleanup$qv
+0040580C  jmp    dword ptr [0x409974] ; CC3260MT!@_InitTermAndUnexPtrs$qv
+00405812  jmp    dword ptr [0x409978] ; CC3260MT!__ErrorExit
+00405818  jmp    dword ptr [0x40997c] ; CC3260MT!__ErrorMessage
+0040581E  jmp    dword ptr [0x409980] ; CC3260MT!__Return_unwind
+00405824  jmp    dword ptr [0x409984] ; CC3260MT!___CRTL_MEM_GetBorMemPtrs
+0040582A  jmp    dword ptr [0x409988] ; CC3260MT!___CRTL_MEM_UseBorMM
+00405830  jmp    dword ptr [0x40998c] ; CC3260MT!___CRTL_TLS_Alloc
+00405836  jmp    dword ptr [0x409990] ; CC3260MT!___CRTL_TLS_ExitThread
+0040583C  jmp    dword ptr [0x409994] ; CC3260MT!___CRTL_TLS_Free
+00405842  jmp    dword ptr [0x409998] ; CC3260MT!___CRTL_TLS_GetValue
+00405848  jmp    dword ptr [0x40999c] ; CC3260MT!___CRTL_TLS_InitThread
+0040584E  jmp    dword ptr [0x4099a0] ; CC3260MT!___CRTL_TLS_SetValue
+00405854  jmp    dword ptr [0x4099a4] ; CC3260MT!____ExceptionHandler
+0040585A  jmp    dword ptr [0x4099a8] ; CC3260MT!__argv_default_expand
+00405860  jmp    dword ptr [0x4099ac] ; CC3260MT!__free_heaps
+00405866  jmp    dword ptr [0x4099b0] ; CC3260MT!__handle_exitargv
+0040586C  jmp    dword ptr [0x4099b4] ; CC3260MT!__handle_setargv
+00405872  jmp    dword ptr [0x4099b8] ; CC3260MT!__handle_wexitargv
+00405878  jmp    dword ptr [0x4099bc] ; CC3260MT!__handle_wsetargv
+0040587E  jmp    dword ptr [0x4099c0] ; CC3260MT!__startupd
+00405884  jmp    dword ptr [0x4099c4] ; CC3260MT!__wargv_default_expand
+0040588A  jmp    dword ptr [0x4099c8] ; CC3260MT!_free
+00405890  jmp    dword ptr [0x4099cc] ; CC3260MT!_malloc
+00405896  jmp    dword ptr [0x4099d0] ; CC3260MT!_memcpy
+0040589C  jmp    dword ptr [0x4099d4] ; CC3260MT!_memset
+004058A2  jmp    dword ptr [0x4099d8] ; CC3260MT!_strcpy
+004058A8  jmp    dword ptr [0x4099dc] ; CC3260MT!_strncpy
+004058AE  jmp    dword ptr [0x4099e0] ; CC3260MT!_strstr
+004058B4  add    byte ptr [eax], al
+004058B6  add    byte ptr [eax], al
+004058B8  add    byte ptr [eax], al
+004058BA  add    byte ptr [eax], al
+004058BC  add    byte ptr [eax], al
+004058BE  add    byte ptr [eax], al
+004058C0  add    byte ptr [eax], al
+004058C2  add    byte ptr [eax], al
+004058C4  add    byte ptr [eax], al
+004058C6  add    byte ptr [eax], al
+004058C8  add    byte ptr [eax], al
+004058CA  add    byte ptr [eax], al
+004058CC  add    byte ptr [eax], al
+004058CE  add    byte ptr [eax], al
+004058D0  add    byte ptr [eax], al
+004058D2  add    byte ptr [eax], al
+004058D4  add    byte ptr [eax], al
+004058D6  add    byte ptr [eax], al
+004058D8  add    byte ptr [eax], al
+004058DA  add    byte ptr [eax], al
+004058DC  add    byte ptr [eax], al
+004058DE  add    byte ptr [eax], al
+004058E0  add    byte ptr [eax], al
+004058E2  add    byte ptr [eax], al
+004058E4  add    byte ptr [eax], al
+004058E6  add    byte ptr [eax], al
+004058E8  add    byte ptr [eax], al
+004058EA  add    byte ptr [eax], al
+004058EC  add    byte ptr [eax], al
+004058EE  add    byte ptr [eax], al
+004058F0  add    byte ptr [eax], al
+004058F2  add    byte ptr [eax], al
+004058F4  add    byte ptr [eax], al
+004058F6  add    byte ptr [eax], al
+004058F8  add    byte ptr [eax], al
+004058FA  add    byte ptr [eax], al
+004058FC  add    byte ptr [eax], al
+004058FE  add    byte ptr [eax], al
+00405900  add    byte ptr [eax], al
+00405902  add    byte ptr [eax], al
+00405904  add    byte ptr [eax], al
+00405906  add    byte ptr [eax], al
+00405908  add    byte ptr [eax], al
+0040590A  add    byte ptr [eax], al
+0040590C  add    byte ptr [eax], al
+0040590E  add    byte ptr [eax], al
+00405910  add    byte ptr [eax], al
+00405912  add    byte ptr [eax], al
+00405914  add    byte ptr [eax], al
+00405916  add    byte ptr [eax], al
+00405918  add    byte ptr [eax], al
+0040591A  add    byte ptr [eax], al
+0040591C  add    byte ptr [eax], al
+0040591E  add    byte ptr [eax], al
+00405920  add    byte ptr [eax], al
+00405922  add    byte ptr [eax], al
+00405924  add    byte ptr [eax], al
+00405926  add    byte ptr [eax], al
+00405928  add    byte ptr [eax], al
+0040592A  add    byte ptr [eax], al
+0040592C  add    byte ptr [eax], al
+0040592E  add    byte ptr [eax], al
+00405930  add    byte ptr [eax], al
+00405932  add    byte ptr [eax], al
+00405934  add    byte ptr [eax], al
+00405936  add    byte ptr [eax], al
+00405938  add    byte ptr [eax], al
+0040593A  add    byte ptr [eax], al
+0040593C  add    byte ptr [eax], al
+0040593E  add    byte ptr [eax], al
+00405940  add    byte ptr [eax], al
+00405942  add    byte ptr [eax], al
+00405944  add    byte ptr [eax], al
+00405946  add    byte ptr [eax], al
+00405948  add    byte ptr [eax], al
+0040594A  add    byte ptr [eax], al
+0040594C  add    byte ptr [eax], al
+0040594E  add    byte ptr [eax], al
+00405950  add    byte ptr [eax], al
+00405952  add    byte ptr [eax], al
+00405954  add    byte ptr [eax], al
+00405956  add    byte ptr [eax], al
+00405958  add    byte ptr [eax], al
+0040595A  add    byte ptr [eax], al
+0040595C  add    byte ptr [eax], al
+0040595E  add    byte ptr [eax], al
+00405960  add    byte ptr [eax], al
+00405962  add    byte ptr [eax], al
+00405964  add    byte ptr [eax], al
+00405966  add    byte ptr [eax], al
+00405968  add    byte ptr [eax], al
+0040596A  add    byte ptr [eax], al
+0040596C  add    byte ptr [eax], al
+0040596E  add    byte ptr [eax], al
+00405970  add    byte ptr [eax], al
+00405972  add    byte ptr [eax], al
+00405974  add    byte ptr [eax], al
+00405976  add    byte ptr [eax], al
+00405978  add    byte ptr [eax], al
+0040597A  add    byte ptr [eax], al
+0040597C  add    byte ptr [eax], al
+0040597E  add    byte ptr [eax], al
+00405980  add    byte ptr [eax], al
+00405982  add    byte ptr [eax], al
+00405984  add    byte ptr [eax], al
+00405986  add    byte ptr [eax], al
+00405988  add    byte ptr [eax], al
+0040598A  add    byte ptr [eax], al
+0040598C  add    byte ptr [eax], al
+0040598E  add    byte ptr [eax], al
+00405990  add    byte ptr [eax], al
+00405992  add    byte ptr [eax], al
+00405994  add    byte ptr [eax], al
+00405996  add    byte ptr [eax], al
+00405998  add    byte ptr [eax], al
+0040599A  add    byte ptr [eax], al
+0040599C  add    byte ptr [eax], al
+0040599E  add    byte ptr [eax], al
+004059A0  add    byte ptr [eax], al
+004059A2  add    byte ptr [eax], al
+004059A4  add    byte ptr [eax], al
+004059A6  add    byte ptr [eax], al
+004059A8  add    byte ptr [eax], al
+004059AA  add    byte ptr [eax], al
+004059AC  add    byte ptr [eax], al
+004059AE  add    byte ptr [eax], al
+004059B0  add    byte ptr [eax], al
+004059B2  add    byte ptr [eax], al
+004059B4  add    byte ptr [eax], al
+004059B6  add    byte ptr [eax], al
+004059B8  add    byte ptr [eax], al
+004059BA  add    byte ptr [eax], al
+004059BC  add    byte ptr [eax], al
+004059BE  add    byte ptr [eax], al
+004059C0  add    byte ptr [eax], al
+004059C2  add    byte ptr [eax], al
+004059C4  add    byte ptr [eax], al
+004059C6  add    byte ptr [eax], al
+004059C8  add    byte ptr [eax], al
+004059CA  add    byte ptr [eax], al
+004059CC  add    byte ptr [eax], al
+004059CE  add    byte ptr [eax], al
+004059D0  add    byte ptr [eax], al
+004059D2  add    byte ptr [eax], al
+004059D4  add    byte ptr [eax], al
+004059D6  add    byte ptr [eax], al
+004059D8  add    byte ptr [eax], al
+004059DA  add    byte ptr [eax], al
+004059DC  add    byte ptr [eax], al
+004059DE  add    byte ptr [eax], al
+004059E0  add    byte ptr [eax], al
+004059E2  add    byte ptr [eax], al
+004059E4  add    byte ptr [eax], al
+004059E6  add    byte ptr [eax], al
+004059E8  add    byte ptr [eax], al
+004059EA  add    byte ptr [eax], al
+004059EC  add    byte ptr [eax], al
+004059EE  add    byte ptr [eax], al
+004059F0  add    byte ptr [eax], al
+004059F2  add    byte ptr [eax], al
+004059F4  add    byte ptr [eax], al
+004059F6  add    byte ptr [eax], al
+004059F8  add    byte ptr [eax], al
+004059FA  add    byte ptr [eax], al
+004059FC  add    byte ptr [eax], al
+004059FE  add    byte ptr [eax], al
+00405A00  add    byte ptr [eax], al
+00405A02  add    byte ptr [eax], al
+00405A04  add    byte ptr [eax], al
+00405A06  add    byte ptr [eax], al
+00405A08  add    byte ptr [eax], al
+00405A0A  add    byte ptr [eax], al
+00405A0C  add    byte ptr [eax], al
+00405A0E  add    byte ptr [eax], al
+00405A10  add    byte ptr [eax], al
+00405A12  add    byte ptr [eax], al
+00405A14  add    byte ptr [eax], al
+00405A16  add    byte ptr [eax], al
+00405A18  add    byte ptr [eax], al
+00405A1A  add    byte ptr [eax], al
+00405A1C  add    byte ptr [eax], al
+00405A1E  add    byte ptr [eax], al
+00405A20  add    byte ptr [eax], al
+00405A22  add    byte ptr [eax], al
+00405A24  add    byte ptr [eax], al
+00405A26  add    byte ptr [eax], al
+00405A28  add    byte ptr [eax], al
+00405A2A  add    byte ptr [eax], al
+00405A2C  add    byte ptr [eax], al
+00405A2E  add    byte ptr [eax], al
+00405A30  add    byte ptr [eax], al
+00405A32  add    byte ptr [eax], al
+00405A34  add    byte ptr [eax], al
+00405A36  add    byte ptr [eax], al
+00405A38  add    byte ptr [eax], al
+00405A3A  add    byte ptr [eax], al
+00405A3C  add    byte ptr [eax], al
+00405A3E  add    byte ptr [eax], al
+00405A40  add    byte ptr [eax], al
+00405A42  add    byte ptr [eax], al
+00405A44  add    byte ptr [eax], al
+00405A46  add    byte ptr [eax], al
+00405A48  add    byte ptr [eax], al
+00405A4A  add    byte ptr [eax], al
+00405A4C  add    byte ptr [eax], al
+00405A4E  add    byte ptr [eax], al
+00405A50  add    byte ptr [eax], al
+00405A52  add    byte ptr [eax], al
+00405A54  add    byte ptr [eax], al
+00405A56  add    byte ptr [eax], al
+00405A58  add    byte ptr [eax], al
+00405A5A  add    byte ptr [eax], al
+00405A5C  add    byte ptr [eax], al
+00405A5E  add    byte ptr [eax], al
+00405A60  add    byte ptr [eax], al
+00405A62  add    byte ptr [eax], al
+00405A64  add    byte ptr [eax], al
+00405A66  add    byte ptr [eax], al
+00405A68  add    byte ptr [eax], al
+00405A6A  add    byte ptr [eax], al
+00405A6C  add    byte ptr [eax], al
+00405A6E  add    byte ptr [eax], al
+00405A70  add    byte ptr [eax], al
+00405A72  add    byte ptr [eax], al
+00405A74  add    byte ptr [eax], al
+00405A76  add    byte ptr [eax], al
+00405A78  add    byte ptr [eax], al
+00405A7A  add    byte ptr [eax], al
+00405A7C  add    byte ptr [eax], al
+00405A7E  add    byte ptr [eax], al
+00405A80  add    byte ptr [eax], al
+00405A82  add    byte ptr [eax], al
+00405A84  add    byte ptr [eax], al
+00405A86  add    byte ptr [eax], al
+00405A88  add    byte ptr [eax], al
+00405A8A  add    byte ptr [eax], al
+00405A8C  add    byte ptr [eax], al
+00405A8E  add    byte ptr [eax], al
+00405A90  add    byte ptr [eax], al
+00405A92  add    byte ptr [eax], al
+00405A94  add    byte ptr [eax], al
+00405A96  add    byte ptr [eax], al
+00405A98  add    byte ptr [eax], al
+00405A9A  add    byte ptr [eax], al
+00405A9C  add    byte ptr [eax], al
+00405A9E  add    byte ptr [eax], al
+00405AA0  add    byte ptr [eax], al
+00405AA2  add    byte ptr [eax], al
+00405AA4  add    byte ptr [eax], al
+00405AA6  add    byte ptr [eax], al
+00405AA8  add    byte ptr [eax], al
+00405AAA  add    byte ptr [eax], al
+00405AAC  add    byte ptr [eax], al
+00405AAE  add    byte ptr [eax], al
+00405AB0  add    byte ptr [eax], al
+00405AB2  add    byte ptr [eax], al
+00405AB4  add    byte ptr [eax], al
+00405AB6  add    byte ptr [eax], al
+00405AB8  add    byte ptr [eax], al
+00405ABA  add    byte ptr [eax], al
+00405ABC  add    byte ptr [eax], al
+00405ABE  add    byte ptr [eax], al
+00405AC0  add    byte ptr [eax], al
+00405AC2  add    byte ptr [eax], al
+00405AC4  add    byte ptr [eax], al
+00405AC6  add    byte ptr [eax], al
+00405AC8  add    byte ptr [eax], al
+00405ACA  add    byte ptr [eax], al
+00405ACC  add    byte ptr [eax], al
+00405ACE  add    byte ptr [eax], al
+00405AD0  add    byte ptr [eax], al
+00405AD2  add    byte ptr [eax], al
+00405AD4  add    byte ptr [eax], al
+00405AD6  add    byte ptr [eax], al
+00405AD8  add    byte ptr [eax], al
+00405ADA  add    byte ptr [eax], al
+00405ADC  add    byte ptr [eax], al
+00405ADE  add    byte ptr [eax], al
+00405AE0  add    byte ptr [eax], al
+00405AE2  add    byte ptr [eax], al
+00405AE4  add    byte ptr [eax], al
+00405AE6  add    byte ptr [eax], al
+00405AE8  add    byte ptr [eax], al
+00405AEA  add    byte ptr [eax], al
+00405AEC  add    byte ptr [eax], al
+00405AEE  add    byte ptr [eax], al
+00405AF0  add    byte ptr [eax], al
+00405AF2  add    byte ptr [eax], al
+00405AF4  add    byte ptr [eax], al
+00405AF6  add    byte ptr [eax], al
+00405AF8  add    byte ptr [eax], al
+00405AFA  add    byte ptr [eax], al
+00405AFC  add    byte ptr [eax], al
+00405AFE  add    byte ptr [eax], al
+00405B00  add    byte ptr [eax], al
+00405B02  add    byte ptr [eax], al
+00405B04  add    byte ptr [eax], al
+00405B06  add    byte ptr [eax], al
+00405B08  add    byte ptr [eax], al
+00405B0A  add    byte ptr [eax], al
+00405B0C  add    byte ptr [eax], al
+00405B0E  add    byte ptr [eax], al
+00405B10  add    byte ptr [eax], al
+00405B12  add    byte ptr [eax], al
+00405B14  add    byte ptr [eax], al
+00405B16  add    byte ptr [eax], al
+00405B18  add    byte ptr [eax], al
+00405B1A  add    byte ptr [eax], al
+00405B1C  add    byte ptr [eax], al
+00405B1E  add    byte ptr [eax], al
+00405B20  add    byte ptr [eax], al
+00405B22  add    byte ptr [eax], al
+00405B24  add    byte ptr [eax], al
+00405B26  add    byte ptr [eax], al
+00405B28  add    byte ptr [eax], al
+00405B2A  add    byte ptr [eax], al
+00405B2C  add    byte ptr [eax], al
+00405B2E  add    byte ptr [eax], al
+00405B30  add    byte ptr [eax], al
+00405B32  add    byte ptr [eax], al
+00405B34  add    byte ptr [eax], al
+00405B36  add    byte ptr [eax], al
+00405B38  add    byte ptr [eax], al
+00405B3A  add    byte ptr [eax], al
+00405B3C  add    byte ptr [eax], al
+00405B3E  add    byte ptr [eax], al
+00405B40  add    byte ptr [eax], al
+00405B42  add    byte ptr [eax], al
+00405B44  add    byte ptr [eax], al
+00405B46  add    byte ptr [eax], al
+00405B48  add    byte ptr [eax], al
+00405B4A  add    byte ptr [eax], al
+00405B4C  add    byte ptr [eax], al
+00405B4E  add    byte ptr [eax], al
+00405B50  add    byte ptr [eax], al
+00405B52  add    byte ptr [eax], al
+00405B54  add    byte ptr [eax], al
+00405B56  add    byte ptr [eax], al
+00405B58  add    byte ptr [eax], al
+00405B5A  add    byte ptr [eax], al
+00405B5C  add    byte ptr [eax], al
+00405B5E  add    byte ptr [eax], al
+00405B60  add    byte ptr [eax], al
+00405B62  add    byte ptr [eax], al
+00405B64  add    byte ptr [eax], al
+00405B66  add    byte ptr [eax], al
+00405B68  add    byte ptr [eax], al
+00405B6A  add    byte ptr [eax], al
+00405B6C  add    byte ptr [eax], al
+00405B6E  add    byte ptr [eax], al
+00405B70  add    byte ptr [eax], al
+00405B72  add    byte ptr [eax], al
+00405B74  add    byte ptr [eax], al
+00405B76  add    byte ptr [eax], al
+00405B78  add    byte ptr [eax], al
+00405B7A  add    byte ptr [eax], al
+00405B7C  add    byte ptr [eax], al
+00405B7E  add    byte ptr [eax], al
+00405B80  add    byte ptr [eax], al
+00405B82  add    byte ptr [eax], al
+00405B84  add    byte ptr [eax], al
+00405B86  add    byte ptr [eax], al
+00405B88  add    byte ptr [eax], al
+00405B8A  add    byte ptr [eax], al
+00405B8C  add    byte ptr [eax], al
+00405B8E  add    byte ptr [eax], al
+00405B90  add    byte ptr [eax], al
+00405B92  add    byte ptr [eax], al
+00405B94  add    byte ptr [eax], al
+00405B96  add    byte ptr [eax], al
+00405B98  add    byte ptr [eax], al
+00405B9A  add    byte ptr [eax], al
+00405B9C  add    byte ptr [eax], al
+00405B9E  add    byte ptr [eax], al
+00405BA0  add    byte ptr [eax], al
+00405BA2  add    byte ptr [eax], al
+00405BA4  add    byte ptr [eax], al
+00405BA6  add    byte ptr [eax], al
+00405BA8  add    byte ptr [eax], al
+00405BAA  add    byte ptr [eax], al
+00405BAC  add    byte ptr [eax], al
+00405BAE  add    byte ptr [eax], al
+00405BB0  add    byte ptr [eax], al
+00405BB2  add    byte ptr [eax], al
+00405BB4  add    byte ptr [eax], al
+00405BB6  add    byte ptr [eax], al
+00405BB8  add    byte ptr [eax], al
+00405BBA  add    byte ptr [eax], al
+00405BBC  add    byte ptr [eax], al
+00405BBE  add    byte ptr [eax], al
+00405BC0  add    byte ptr [eax], al
+00405BC2  add    byte ptr [eax], al
+00405BC4  add    byte ptr [eax], al
+00405BC6  add    byte ptr [eax], al
+00405BC8  add    byte ptr [eax], al
+00405BCA  add    byte ptr [eax], al
+00405BCC  add    byte ptr [eax], al
+00405BCE  add    byte ptr [eax], al
+00405BD0  add    byte ptr [eax], al
+00405BD2  add    byte ptr [eax], al
+00405BD4  add    byte ptr [eax], al
+00405BD6  add    byte ptr [eax], al
+00405BD8  add    byte ptr [eax], al
+00405BDA  add    byte ptr [eax], al
+00405BDC  add    byte ptr [eax], al
+00405BDE  add    byte ptr [eax], al
+00405BE0  add    byte ptr [eax], al
+00405BE2  add    byte ptr [eax], al
+00405BE4  add    byte ptr [eax], al
+00405BE6  add    byte ptr [eax], al
+00405BE8  add    byte ptr [eax], al
+00405BEA  add    byte ptr [eax], al
+00405BEC  add    byte ptr [eax], al
+00405BEE  add    byte ptr [eax], al
+00405BF0  add    byte ptr [eax], al
+00405BF2  add    byte ptr [eax], al
+00405BF4  add    byte ptr [eax], al
+00405BF6  add    byte ptr [eax], al
+00405BF8  add    byte ptr [eax], al
+00405BFA  add    byte ptr [eax], al
+00405BFC  add    byte ptr [eax], al
+00405BFE  add    byte ptr [eax], al
+00405C00  add    byte ptr [eax], al
+00405C02  add    byte ptr [eax], al
+00405C04  add    byte ptr [eax], al
+00405C06  add    byte ptr [eax], al
+00405C08  add    byte ptr [eax], al
+00405C0A  add    byte ptr [eax], al
+00405C0C  add    byte ptr [eax], al
+00405C0E  add    byte ptr [eax], al
+00405C10  add    byte ptr [eax], al
+00405C12  add    byte ptr [eax], al
+00405C14  add    byte ptr [eax], al
+00405C16  add    byte ptr [eax], al
+00405C18  add    byte ptr [eax], al
+00405C1A  add    byte ptr [eax], al
+00405C1C  add    byte ptr [eax], al
+00405C1E  add    byte ptr [eax], al
+00405C20  add    byte ptr [eax], al
+00405C22  add    byte ptr [eax], al
+00405C24  add    byte ptr [eax], al
+00405C26  add    byte ptr [eax], al
+00405C28  add    byte ptr [eax], al
+00405C2A  add    byte ptr [eax], al
+00405C2C  add    byte ptr [eax], al
+00405C2E  add    byte ptr [eax], al
+00405C30  add    byte ptr [eax], al
+00405C32  add    byte ptr [eax], al
+00405C34  add    byte ptr [eax], al
+00405C36  add    byte ptr [eax], al
+00405C38  add    byte ptr [eax], al
+00405C3A  add    byte ptr [eax], al
+00405C3C  add    byte ptr [eax], al
+00405C3E  add    byte ptr [eax], al
+00405C40  add    byte ptr [eax], al
+00405C42  add    byte ptr [eax], al
+00405C44  add    byte ptr [eax], al
+00405C46  add    byte ptr [eax], al
+00405C48  add    byte ptr [eax], al
+00405C4A  add    byte ptr [eax], al
+00405C4C  add    byte ptr [eax], al
+00405C4E  add    byte ptr [eax], al
+00405C50  add    byte ptr [eax], al
+00405C52  add    byte ptr [eax], al
+00405C54  add    byte ptr [eax], al
+00405C56  add    byte ptr [eax], al
+00405C58  add    byte ptr [eax], al
+00405C5A  add    byte ptr [eax], al
+00405C5C  add    byte ptr [eax], al
+00405C5E  add    byte ptr [eax], al
+00405C60  add    byte ptr [eax], al
+00405C62  add    byte ptr [eax], al
+00405C64  add    byte ptr [eax], al
+00405C66  add    byte ptr [eax], al
+00405C68  add    byte ptr [eax], al
+00405C6A  add    byte ptr [eax], al
+00405C6C  add    byte ptr [eax], al
+00405C6E  add    byte ptr [eax], al
+00405C70  add    byte ptr [eax], al
+00405C72  add    byte ptr [eax], al
+00405C74  add    byte ptr [eax], al
+00405C76  add    byte ptr [eax], al
+00405C78  add    byte ptr [eax], al
+00405C7A  add    byte ptr [eax], al
+00405C7C  add    byte ptr [eax], al
+00405C7E  add    byte ptr [eax], al
+00405C80  add    byte ptr [eax], al
+00405C82  add    byte ptr [eax], al
+00405C84  add    byte ptr [eax], al
+00405C86  add    byte ptr [eax], al
+00405C88  add    byte ptr [eax], al
+00405C8A  add    byte ptr [eax], al
+00405C8C  add    byte ptr [eax], al
+00405C8E  add    byte ptr [eax], al
+00405C90  add    byte ptr [eax], al
+00405C92  add    byte ptr [eax], al
+00405C94  add    byte ptr [eax], al
+00405C96  add    byte ptr [eax], al
+00405C98  add    byte ptr [eax], al
+00405C9A  add    byte ptr [eax], al
+00405C9C  add    byte ptr [eax], al
+00405C9E  add    byte ptr [eax], al
+00405CA0  add    byte ptr [eax], al
+00405CA2  add    byte ptr [eax], al
+00405CA4  add    byte ptr [eax], al
+00405CA6  add    byte ptr [eax], al
+00405CA8  add    byte ptr [eax], al
+00405CAA  add    byte ptr [eax], al
+00405CAC  add    byte ptr [eax], al
+00405CAE  add    byte ptr [eax], al
+00405CB0  add    byte ptr [eax], al
+00405CB2  add    byte ptr [eax], al
+00405CB4  add    byte ptr [eax], al
+00405CB6  add    byte ptr [eax], al
+00405CB8  add    byte ptr [eax], al
+00405CBA  add    byte ptr [eax], al
+00405CBC  add    byte ptr [eax], al
+00405CBE  add    byte ptr [eax], al
+00405CC0  add    byte ptr [eax], al
+00405CC2  add    byte ptr [eax], al
+00405CC4  add    byte ptr [eax], al
+00405CC6  add    byte ptr [eax], al
+00405CC8  add    byte ptr [eax], al
+00405CCA  add    byte ptr [eax], al
+00405CCC  add    byte ptr [eax], al
+00405CCE  add    byte ptr [eax], al
+00405CD0  add    byte ptr [eax], al
+00405CD2  add    byte ptr [eax], al
+00405CD4  add    byte ptr [eax], al
+00405CD6  add    byte ptr [eax], al
+00405CD8  add    byte ptr [eax], al
+00405CDA  add    byte ptr [eax], al
+00405CDC  add    byte ptr [eax], al
+00405CDE  add    byte ptr [eax], al
+00405CE0  add    byte ptr [eax], al
+00405CE2  add    byte ptr [eax], al
+00405CE4  add    byte ptr [eax], al
+00405CE6  add    byte ptr [eax], al
+00405CE8  add    byte ptr [eax], al
+00405CEA  add    byte ptr [eax], al
+00405CEC  add    byte ptr [eax], al
+00405CEE  add    byte ptr [eax], al
+00405CF0  add    byte ptr [eax], al
+00405CF2  add    byte ptr [eax], al
+00405CF4  add    byte ptr [eax], al
+00405CF6  add    byte ptr [eax], al
+00405CF8  add    byte ptr [eax], al
+00405CFA  add    byte ptr [eax], al
+00405CFC  add    byte ptr [eax], al
+00405CFE  add    byte ptr [eax], al
+00405D00  add    byte ptr [eax], al
+00405D02  add    byte ptr [eax], al
+00405D04  add    byte ptr [eax], al
+00405D06  add    byte ptr [eax], al
+00405D08  add    byte ptr [eax], al
+00405D0A  add    byte ptr [eax], al
+00405D0C  add    byte ptr [eax], al
+00405D0E  add    byte ptr [eax], al
+00405D10  add    byte ptr [eax], al
+00405D12  add    byte ptr [eax], al
+00405D14  add    byte ptr [eax], al
+00405D16  add    byte ptr [eax], al
+00405D18  add    byte ptr [eax], al
+00405D1A  add    byte ptr [eax], al
+00405D1C  add    byte ptr [eax], al
+00405D1E  add    byte ptr [eax], al
+00405D20  add    byte ptr [eax], al
+00405D22  add    byte ptr [eax], al
+00405D24  add    byte ptr [eax], al
+00405D26  add    byte ptr [eax], al
+00405D28  add    byte ptr [eax], al
+00405D2A  add    byte ptr [eax], al
+00405D2C  add    byte ptr [eax], al
+00405D2E  add    byte ptr [eax], al
+00405D30  add    byte ptr [eax], al
+00405D32  add    byte ptr [eax], al
+00405D34  add    byte ptr [eax], al
+00405D36  add    byte ptr [eax], al
+00405D38  add    byte ptr [eax], al
+00405D3A  add    byte ptr [eax], al
+00405D3C  add    byte ptr [eax], al
+00405D3E  add    byte ptr [eax], al
+00405D40  add    byte ptr [eax], al
+00405D42  add    byte ptr [eax], al
+00405D44  add    byte ptr [eax], al
+00405D46  add    byte ptr [eax], al
+00405D48  add    byte ptr [eax], al
+00405D4A  add    byte ptr [eax], al
+00405D4C  add    byte ptr [eax], al
+00405D4E  add    byte ptr [eax], al
+00405D50  add    byte ptr [eax], al
+00405D52  add    byte ptr [eax], al
+00405D54  add    byte ptr [eax], al
+00405D56  add    byte ptr [eax], al
+00405D58  add    byte ptr [eax], al
+00405D5A  add    byte ptr [eax], al
+00405D5C  add    byte ptr [eax], al
+00405D5E  add    byte ptr [eax], al
+00405D60  add    byte ptr [eax], al
+00405D62  add    byte ptr [eax], al
+00405D64  add    byte ptr [eax], al
+00405D66  add    byte ptr [eax], al
+00405D68  add    byte ptr [eax], al
+00405D6A  add    byte ptr [eax], al
+00405D6C  add    byte ptr [eax], al
+00405D6E  add    byte ptr [eax], al
+00405D70  add    byte ptr [eax], al
+00405D72  add    byte ptr [eax], al
+00405D74  add    byte ptr [eax], al
+00405D76  add    byte ptr [eax], al
+00405D78  add    byte ptr [eax], al
+00405D7A  add    byte ptr [eax], al
+00405D7C  add    byte ptr [eax], al
+00405D7E  add    byte ptr [eax], al
+00405D80  add    byte ptr [eax], al
+00405D82  add    byte ptr [eax], al
+00405D84  add    byte ptr [eax], al
+00405D86  add    byte ptr [eax], al
+00405D88  add    byte ptr [eax], al
+00405D8A  add    byte ptr [eax], al
+00405D8C  add    byte ptr [eax], al
+00405D8E  add    byte ptr [eax], al
+00405D90  add    byte ptr [eax], al
+00405D92  add    byte ptr [eax], al
+00405D94  add    byte ptr [eax], al
+00405D96  add    byte ptr [eax], al
+00405D98  add    byte ptr [eax], al
+00405D9A  add    byte ptr [eax], al
+00405D9C  add    byte ptr [eax], al
+00405D9E  add    byte ptr [eax], al
+00405DA0  add    byte ptr [eax], al
+00405DA2  add    byte ptr [eax], al
+00405DA4  add    byte ptr [eax], al
+00405DA6  add    byte ptr [eax], al
+00405DA8  add    byte ptr [eax], al
+00405DAA  add    byte ptr [eax], al
+00405DAC  add    byte ptr [eax], al
+00405DAE  add    byte ptr [eax], al
+00405DB0  add    byte ptr [eax], al
+00405DB2  add    byte ptr [eax], al
+00405DB4  add    byte ptr [eax], al
+00405DB6  add    byte ptr [eax], al
+00405DB8  add    byte ptr [eax], al
+00405DBA  add    byte ptr [eax], al
+00405DBC  add    byte ptr [eax], al
+00405DBE  add    byte ptr [eax], al
+00405DC0  add    byte ptr [eax], al
+00405DC2  add    byte ptr [eax], al
+00405DC4  add    byte ptr [eax], al
+00405DC6  add    byte ptr [eax], al
+00405DC8  add    byte ptr [eax], al
+00405DCA  add    byte ptr [eax], al
+00405DCC  add    byte ptr [eax], al
+00405DCE  add    byte ptr [eax], al
+00405DD0  add    byte ptr [eax], al
+00405DD2  add    byte ptr [eax], al
+00405DD4  add    byte ptr [eax], al
+00405DD6  add    byte ptr [eax], al
+00405DD8  add    byte ptr [eax], al
+00405DDA  add    byte ptr [eax], al
+00405DDC  add    byte ptr [eax], al
+00405DDE  add    byte ptr [eax], al
+00405DE0  add    byte ptr [eax], al
+00405DE2  add    byte ptr [eax], al
+00405DE4  add    byte ptr [eax], al
+00405DE6  add    byte ptr [eax], al
+00405DE8  add    byte ptr [eax], al
+00405DEA  add    byte ptr [eax], al
+00405DEC  add    byte ptr [eax], al
+00405DEE  add    byte ptr [eax], al
+00405DF0  add    byte ptr [eax], al
+00405DF2  add    byte ptr [eax], al
+00405DF4  add    byte ptr [eax], al
+00405DF6  add    byte ptr [eax], al
+00405DF8  add    byte ptr [eax], al
+00405DFA  add    byte ptr [eax], al
+00405DFC  add    byte ptr [eax], al
+00405DFE  add    byte ptr [eax], al
+00405E00  add    byte ptr [eax], al
+00405E02  add    byte ptr [eax], al
+00405E04  add    byte ptr [eax], al
+00405E06  add    byte ptr [eax], al
+00405E08  add    byte ptr [eax], al
+00405E0A  add    byte ptr [eax], al
+00405E0C  add    byte ptr [eax], al
+00405E0E  add    byte ptr [eax], al
+00405E10  add    byte ptr [eax], al
+00405E12  add    byte ptr [eax], al
+00405E14  add    byte ptr [eax], al
+00405E16  add    byte ptr [eax], al
+00405E18  add    byte ptr [eax], al
+00405E1A  add    byte ptr [eax], al
+00405E1C  add    byte ptr [eax], al
+00405E1E  add    byte ptr [eax], al
+00405E20  add    byte ptr [eax], al
+00405E22  add    byte ptr [eax], al
+00405E24  add    byte ptr [eax], al
+00405E26  add    byte ptr [eax], al
+00405E28  add    byte ptr [eax], al
+00405E2A  add    byte ptr [eax], al
+00405E2C  add    byte ptr [eax], al
+00405E2E  add    byte ptr [eax], al
+00405E30  add    byte ptr [eax], al
+00405E32  add    byte ptr [eax], al
+00405E34  add    byte ptr [eax], al
+00405E36  add    byte ptr [eax], al
+00405E38  add    byte ptr [eax], al
+00405E3A  add    byte ptr [eax], al
+00405E3C  add    byte ptr [eax], al
+00405E3E  add    byte ptr [eax], al
+00405E40  add    byte ptr [eax], al
+00405E42  add    byte ptr [eax], al
+00405E44  add    byte ptr [eax], al
+00405E46  add    byte ptr [eax], al
+00405E48  add    byte ptr [eax], al
+00405E4A  add    byte ptr [eax], al
+00405E4C  add    byte ptr [eax], al
+00405E4E  add    byte ptr [eax], al
+00405E50  add    byte ptr [eax], al
+00405E52  add    byte ptr [eax], al
+00405E54  add    byte ptr [eax], al
+00405E56  add    byte ptr [eax], al
+00405E58  add    byte ptr [eax], al
+00405E5A  add    byte ptr [eax], al
+00405E5C  add    byte ptr [eax], al
+00405E5E  add    byte ptr [eax], al
+00405E60  add    byte ptr [eax], al
+00405E62  add    byte ptr [eax], al
+00405E64  add    byte ptr [eax], al
+00405E66  add    byte ptr [eax], al
+00405E68  add    byte ptr [eax], al
+00405E6A  add    byte ptr [eax], al
+00405E6C  add    byte ptr [eax], al
+00405E6E  add    byte ptr [eax], al
+00405E70  add    byte ptr [eax], al
+00405E72  add    byte ptr [eax], al
+00405E74  add    byte ptr [eax], al
+00405E76  add    byte ptr [eax], al
+00405E78  add    byte ptr [eax], al
+00405E7A  add    byte ptr [eax], al
+00405E7C  add    byte ptr [eax], al
+00405E7E  add    byte ptr [eax], al
+00405E80  add    byte ptr [eax], al
+00405E82  add    byte ptr [eax], al
+00405E84  add    byte ptr [eax], al
+00405E86  add    byte ptr [eax], al
+00405E88  add    byte ptr [eax], al
+00405E8A  add    byte ptr [eax], al
+00405E8C  add    byte ptr [eax], al
+00405E8E  add    byte ptr [eax], al
+00405E90  add    byte ptr [eax], al
+00405E92  add    byte ptr [eax], al
+00405E94  add    byte ptr [eax], al
+00405E96  add    byte ptr [eax], al
+00405E98  add    byte ptr [eax], al
+00405E9A  add    byte ptr [eax], al
+00405E9C  add    byte ptr [eax], al
+00405E9E  add    byte ptr [eax], al
+00405EA0  add    byte ptr [eax], al
+00405EA2  add    byte ptr [eax], al
+00405EA4  add    byte ptr [eax], al
+00405EA6  add    byte ptr [eax], al
+00405EA8  add    byte ptr [eax], al
+00405EAA  add    byte ptr [eax], al
+00405EAC  add    byte ptr [eax], al
+00405EAE  add    byte ptr [eax], al
+00405EB0  add    byte ptr [eax], al
+00405EB2  add    byte ptr [eax], al
+00405EB4  add    byte ptr [eax], al
+00405EB6  add    byte ptr [eax], al
+00405EB8  add    byte ptr [eax], al
+00405EBA  add    byte ptr [eax], al
+00405EBC  add    byte ptr [eax], al
+00405EBE  add    byte ptr [eax], al
+00405EC0  add    byte ptr [eax], al
+00405EC2  add    byte ptr [eax], al
+00405EC4  add    byte ptr [eax], al
+00405EC6  add    byte ptr [eax], al
+00405EC8  add    byte ptr [eax], al
+00405ECA  add    byte ptr [eax], al
+00405ECC  add    byte ptr [eax], al
+00405ECE  add    byte ptr [eax], al
+00405ED0  add    byte ptr [eax], al
+00405ED2  add    byte ptr [eax], al
+00405ED4  add    byte ptr [eax], al
+00405ED6  add    byte ptr [eax], al
+00405ED8  add    byte ptr [eax], al
+00405EDA  add    byte ptr [eax], al
+00405EDC  add    byte ptr [eax], al
+00405EDE  add    byte ptr [eax], al
+00405EE0  add    byte ptr [eax], al
+00405EE2  add    byte ptr [eax], al
+00405EE4  add    byte ptr [eax], al
+00405EE6  add    byte ptr [eax], al
+00405EE8  add    byte ptr [eax], al
+00405EEA  add    byte ptr [eax], al
+00405EEC  add    byte ptr [eax], al
+00405EEE  add    byte ptr [eax], al
+00405EF0  add    byte ptr [eax], al
+00405EF2  add    byte ptr [eax], al
+00405EF4  add    byte ptr [eax], al
+00405EF6  add    byte ptr [eax], al
+00405EF8  add    byte ptr [eax], al
+00405EFA  add    byte ptr [eax], al
+00405EFC  add    byte ptr [eax], al
+00405EFE  add    byte ptr [eax], al
+00405F00  add    byte ptr [eax], al
+00405F02  add    byte ptr [eax], al
+00405F04  add    byte ptr [eax], al
+00405F06  add    byte ptr [eax], al
+00405F08  add    byte ptr [eax], al
+00405F0A  add    byte ptr [eax], al
+00405F0C  add    byte ptr [eax], al
+00405F0E  add    byte ptr [eax], al
+00405F10  add    byte ptr [eax], al
+00405F12  add    byte ptr [eax], al
+00405F14  add    byte ptr [eax], al
+00405F16  add    byte ptr [eax], al
+00405F18  add    byte ptr [eax], al
+00405F1A  add    byte ptr [eax], al
+00405F1C  add    byte ptr [eax], al
+00405F1E  add    byte ptr [eax], al
+00405F20  add    byte ptr [eax], al
+00405F22  add    byte ptr [eax], al
+00405F24  add    byte ptr [eax], al
+00405F26  add    byte ptr [eax], al
+00405F28  add    byte ptr [eax], al
+00405F2A  add    byte ptr [eax], al
+00405F2C  add    byte ptr [eax], al
+00405F2E  add    byte ptr [eax], al
+00405F30  add    byte ptr [eax], al
+00405F32  add    byte ptr [eax], al
+00405F34  add    byte ptr [eax], al
+00405F36  add    byte ptr [eax], al
+00405F38  add    byte ptr [eax], al
+00405F3A  add    byte ptr [eax], al
+00405F3C  add    byte ptr [eax], al
+00405F3E  add    byte ptr [eax], al
+00405F40  add    byte ptr [eax], al
+00405F42  add    byte ptr [eax], al
+00405F44  add    byte ptr [eax], al
+00405F46  add    byte ptr [eax], al
+00405F48  add    byte ptr [eax], al
+00405F4A  add    byte ptr [eax], al
+00405F4C  add    byte ptr [eax], al
+00405F4E  add    byte ptr [eax], al
+00405F50  add    byte ptr [eax], al
+00405F52  add    byte ptr [eax], al
+00405F54  add    byte ptr [eax], al
+00405F56  add    byte ptr [eax], al
+00405F58  add    byte ptr [eax], al
+00405F5A  add    byte ptr [eax], al
+00405F5C  add    byte ptr [eax], al
+00405F5E  add    byte ptr [eax], al
+00405F60  add    byte ptr [eax], al
+00405F62  add    byte ptr [eax], al
+00405F64  add    byte ptr [eax], al
+00405F66  add    byte ptr [eax], al
+00405F68  add    byte ptr [eax], al
+00405F6A  add    byte ptr [eax], al
+00405F6C  add    byte ptr [eax], al
+00405F6E  add    byte ptr [eax], al
+00405F70  add    byte ptr [eax], al
+00405F72  add    byte ptr [eax], al
+00405F74  add    byte ptr [eax], al
+00405F76  add    byte ptr [eax], al
+00405F78  add    byte ptr [eax], al
+00405F7A  add    byte ptr [eax], al
+00405F7C  add    byte ptr [eax], al
+00405F7E  add    byte ptr [eax], al
+00405F80  add    byte ptr [eax], al
+00405F82  add    byte ptr [eax], al
+00405F84  add    byte ptr [eax], al
+00405F86  add    byte ptr [eax], al
+00405F88  add    byte ptr [eax], al
+00405F8A  add    byte ptr [eax], al
+00405F8C  add    byte ptr [eax], al
+00405F8E  add    byte ptr [eax], al
+00405F90  add    byte ptr [eax], al
+00405F92  add    byte ptr [eax], al
+00405F94  add    byte ptr [eax], al
+00405F96  add    byte ptr [eax], al
+00405F98  add    byte ptr [eax], al
+00405F9A  add    byte ptr [eax], al
+00405F9C  add    byte ptr [eax], al
+00405F9E  add    byte ptr [eax], al
+00405FA0  add    byte ptr [eax], al
+00405FA2  add    byte ptr [eax], al
+00405FA4  add    byte ptr [eax], al
+00405FA6  add    byte ptr [eax], al
+00405FA8  add    byte ptr [eax], al
+00405FAA  add    byte ptr [eax], al
+00405FAC  add    byte ptr [eax], al
+00405FAE  add    byte ptr [eax], al
+00405FB0  add    byte ptr [eax], al
+00405FB2  add    byte ptr [eax], al
+00405FB4  add    byte ptr [eax], al
+00405FB6  add    byte ptr [eax], al
+00405FB8  add    byte ptr [eax], al
+00405FBA  add    byte ptr [eax], al
+00405FBC  add    byte ptr [eax], al
+00405FBE  add    byte ptr [eax], al
+00405FC0  add    byte ptr [eax], al
+00405FC2  add    byte ptr [eax], al
+00405FC4  add    byte ptr [eax], al
+00405FC6  add    byte ptr [eax], al
+00405FC8  add    byte ptr [eax], al
+00405FCA  add    byte ptr [eax], al
+00405FCC  add    byte ptr [eax], al
+00405FCE  add    byte ptr [eax], al
+00405FD0  add    byte ptr [eax], al
+00405FD2  add    byte ptr [eax], al
+00405FD4  add    byte ptr [eax], al
+00405FD6  add    byte ptr [eax], al
+00405FD8  add    byte ptr [eax], al
+00405FDA  add    byte ptr [eax], al
+00405FDC  add    byte ptr [eax], al
+00405FDE  add    byte ptr [eax], al
+00405FE0  add    byte ptr [eax], al
+00405FE2  add    byte ptr [eax], al
+00405FE4  add    byte ptr [eax], al
+00405FE6  add    byte ptr [eax], al
+00405FE8  add    byte ptr [eax], al
+00405FEA  add    byte ptr [eax], al
+00405FEC  add    byte ptr [eax], al
+00405FEE  add    byte ptr [eax], al
+00405FF0  add    byte ptr [eax], al
+00405FF2  add    byte ptr [eax], al
+00405FF4  add    byte ptr [eax], al
+00405FF6  add    byte ptr [eax], al
+00405FF8  add    byte ptr [eax], al
+00405FFA  add    byte ptr [eax], al
+00405FFC  add    byte ptr [eax], al
+00405FFE  add    byte ptr [eax], al

@@ -1,0 +1,84 @@
+object frmStatus: TfrmStatus
+  Left = 392
+  Top = 139
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = '噴印狀態'
+  ClientHeight = 377
+  ClientWidth = 719
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblPrintCount: TLabel
+    Left = 48
+    Top = 48
+    Width = 210
+    Height = 48
+    Caption = '噴印箱數：'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -40
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object txtPrintCount: TLabel
+    Left = 272
+    Top = 48
+    Width = 21
+    Height = 48
+    Caption = '0'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -40
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblPrintAllCount: TLabel
+    Left = 48
+    Top = 136
+    Width = 209
+    Height = 48
+    Caption = '總   箱  數：'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -40
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object txtPrintAllCount: TLabel
+    Left = 272
+    Top = 136
+    Width = 21
+    Height = 48
+    Caption = '0'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -40
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblPrintStatus: TLabel
+    Left = 40
+    Top = 248
+    Width = 36
+    Height = 48
+    Caption = '    '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -40
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+end

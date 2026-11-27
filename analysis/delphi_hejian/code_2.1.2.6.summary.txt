@@ -1,0 +1,2255 @@
+
+== 00401545 __GetExceptDLLinfo (len 126)
+  calls: KERNEL32!GetProcessHeap, KERNEL32!HeapAlloc, CC3260MT!___CRTL_TLS_SetValue, CC3260MT!___CRTL_TLS_InitThread, CC3260MT!___CRTL_TLS_Alloc, CC3260MT!___CRTL_TLS_GetValue, KERNEL32!HeapFree, CC3260MT!___CRTL_TLS_ExitThread, CC3260MT!___CRTL_TLS_Free, KERNEL32!FreeLibrary
+
+== 0040166C ? (len cb)
+  calls: KERNEL32!GetCommandLineA
+  strs: T扷 | \扷 | h扷 | d扷
+
+== 00401770 ? (len 272)
+  calls: CC3260MT!@_ThrowExceptionLDTC$qpvt1t1t1uiuiuipuct1, CC3260MT!@_CatchCleanup$qv
+  strs: 貙U | hpS | 鄬U |  wS | 鑼U | H銼 | 魧U | 鼘U | $JT | 垕T | 4諸 | P鉚 | 伫T | $峌 | ,峌 | 4峌 | @峌
+
+== 00401BD4 frmMain---TfrmMain (len 56b)
+  calls: frmMain---GetHeJianInfo, frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: hejian.xml | PrintMaxMem | Data | PrintDataBuffer | Data | LanguageType | Data | lanage\language.ini | lanage\TWlanguage.ini | lanage\enlanguage.ini | MainName | frmMain---TfrmMain:
+
+== 00402188 frmMain---SetIniData (len 1b7)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmMain---SetIniData:
+
+== 0040240C frmMain---GetIniData (len 26b)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmMain---GetIniData:
+
+== 00402678 frmMain---GetHeJianInfo (len 33f)
+  calls: frmMain---GetIniData, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmMain---GetHeJianInfo:
+
+== 004029B8 frmMain---SetOpenADOCon (len 36f)
+  calls: frmMain---GetHeJianInfo, frmMain---SetStringToData, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: Name | Server | Data | Server | User | Server | Pass | Server | frmMain---SetOpenADOCon:
+
+== 00402D8C frmMain---SetStringToData (len 35b)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: Provider=SQLOLEDB.1;Persist Security Info=False;User ID= | ;Password= | ;Data Source= | ;Initial Catalog= | frmMain---SetStringToData:
+
+== 004030E8 frmMain---ShowSubForm (len 227)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: ---- | frmMain---ShowSubForm:
+
+== 00403310 TfrmMain::NPrintCtrlClick [frmMain---NPrintCtrlClick] (len bf)
+  calls: frmMain---ShowSubForm, CC3260MT!@_CatchCleanup$qv
+  strs: 鑼U | 鑼U | frmMain---NPrintCtrlClick:
+
+== 004033D0 TfrmMain::NPrintManClick [frmMain---NPrintManClick] (len 117)
+  calls: frmMain---ShowSubForm, CC3260MT!@_CatchCleanup$qv
+  strs: 鑼U | 魧U | frmMain---NPrintManClick:
+
+== 004034E8 TfrmMain::NCartonManClick [frmMain---NCartonManClick] (len 123)
+  calls: frmMain---ShowSubForm, frmCarton---GetCartonSizeData, CC3260MT!@_CatchCleanup$qv
+  strs: 鑼U | frmMain---NCartonManClick:
+
+== 0040360C TfrmMain::NSystemClick [frmMain---NSystemClick] (len 117)
+  calls: frmMain---ShowSubForm, CC3260MT!@_CatchCleanup$qv
+  strs: 鑼U | frmMain---NSystemClick:
+
+== 00403724 frmMain---GetSLJZToSJZ (len 1cf)
+  calls: frmMain---GetShiWei, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmMain---GetSLJZToSJZ:
+
+== 00403ABC frmMain---GetSJZToSLJZ (len 1b3)
+  calls: frmMain---GetShiLiuJZ, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmMain---GetSJZToSLJZ:
+
+== 00403C70 frmMain---GetShiLiuJZ (len 2cf)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmMain---GetShiLiuJZ:
+
+== 00403F40 frmMain---GetShiWei (len 4ab)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmMain---GetShiWei:
+
+== 004043EC TfrmMain::NSuperSetClick [frmMain---NSuperSetClick] (len 11f)
+  calls: frmMain---ShowSubForm, CC3260MT!@_CatchCleanup$qv
+  strs: 鑼U | frmMain---NSuperSetClick:
+
+== 0040450C frmMain---ShowAlert (len 11f)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: SystemTS | frmMain---ShowAlert:
+
+== 0040464C TfrmMain::NProductClick [frmMain---NProductClick] (len 193)
+  calls: frmMain---GetIniData, frmProduct---GetProductData, frmMain---ShowSubForm, CC3260MT!@_CatchCleanup$qv
+  strs: 鑼U | ProductPageSize | Table | $峌 | $峌 | frmMain---NProductClick:
+
+== 00404804 TfrmMain::FormCloseQuery [frmMain---FormCloseQuery] (len 253)
+  calls: frmMain---ShowMessage, frmCtrl---SetStopPrint, CC3260MT!@_CatchCleanup$qv
+  strs: 鑼U | SystemTS | MainIsPrinting | 鑼U | SystemTS | MainClearShow | frmMain---FormCloseQuery:
+
+== 00404A58 TfrmMain::FormShow [frmMain---FormShow] (len 3cf)
+  calls: frmMain---ShowMessage, TfrmMain::NPrintCtrlClick [frmMain---NPrintCtrlClick], CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl | 鑼U | frmPrintMan | 魧U | frmCarton | frmProduct | $峌 | frmSystem | frmSuper | frmAbout | frmMain---FormShow:
+
+== 00404E28 TfrmMain::Timer1Timer [frmMain---Timer1Timer] (len 1af)
+  calls: frmMain---SetOpenADOCon, frmCarton---SetTimerCartonData, frmCtrl---SetPrintTimer, frmSystem---SetTimerSend, frmCtrl---ShowYLTimer, frmCtrl---SetStopPrint, CC3260MT!@_CatchCleanup$qv
+  strs: 4峌 | 魧U | 鑼U | 鑼U | 鑼U | frmMain---Timer1Timer:
+
+== 00404FD8 ? (len 647)
+  calls: frmMain---ShowMessage, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: YYYYMMDD | .log | loginfo\ | MainLogTime | YYYY-MM-DD hh:mm:ss |     | 
+ | loginfo | loginfo
+
+== 00405620 TfrmMain::FormResize [frmMain---FormResize] (len b3)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmMain---FormResize:
+
+== 004056D4 frmMain---ShowMessage (len 2c7)
+  calls: frmMain---GetIniData, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: Language | frmMain---ShowMessage:
+
+== 00406690 frmPrintMan---GetExcelDataToBase (len 1725)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: ExcelUrlError | Excel.Application | open | workbooks | ActiveWorkBook | Select | Sheets | ActiveSheet | Count | Rows | UsedRange | Value | Cells | select * from  |  where [ | ]=' | delete  |  where [ | ]=' | insert into  |  ([ID], | ) values (newid(), | Quit | ExcelInputSucc4 | ExcelInputSucc3 | InputFail | frmPrintMan---GetExcelDataToBase:
+
+== 00407E28 ? (len 4a)
+  strs: x廆
+
+== 004084E8 TfrmMain::NAboutClick (len 57)
+  strs: 鑼U | @峌 | @峌
+
+== 00408B40 ? (len f)
+  calls: STLPMT45!#11
+  strs: basic_string
+
+== 00408BF8 ? (len 16)
+  calls: STLPMT45!#12
+  strs: basic_string
+
+== 00409108 @$xp$16Cspin@TCSpinEdit (len f1)
+
+== 004096BC @Cspin@TCSpinEdit@Dispatch$qqrpv (len 8a)
+  calls: @Cspin@TCSpinEdit@WMSize$qqrr16Messages@TWMSize, @Cspin@TCSpinEdit@CMEnter$qqrr20Messages@TWMNoParams, @Cspin@TCSpinEdit@CMExit$qqrr20Messages@TWMNoParams, @Cspin@TCSpinEdit@WMPaste$qqrr20Messages@TWMNoParams, @Cspin@TCSpinEdit@WMCut$qqrr20Messages@TWMNoParams
+
+== 00409748 @$xp$18Cspin@TCSpinButton (len d)
+
+== 00409B34 @Cspin@TCSpinButton@Dispatch$qqrpv (len 67)
+  calls: @Cspin@TCSpinButton@WMSize$qqrr16Messages@TWMSize, @Cspin@TCSpinButton@WMSetFocus$qqrr20Messages@TWMSetFocus, @Cspin@TCSpinButton@WMKillFocus$qqrr21Messages@TWMKillFocus, @Cspin@TCSpinButton@WMGetDlgCode$qqrr20Messages@TWMNoParams
+
+== 00409B9C @Cspin@TCSpinButton@$bdtr$qqrv (len 14e)
+
+== 0040A754 @@Ufrmmain@Initialize (len f)
+
+== 0040A764 @@Ufrmmain@Finalize (len f)
+
+== 0040A860 @@Ufrmbase@Initialize (len f)
+
+== 0040A870 @@Ufrmbase@Finalize (len f)
+
+== 0040A880 frmCtrl---TfrmCtrl (len e40)
+  calls: frmMain---GetHeJianInfo, frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: PrintData | Table | 貙U | CartonSize | Table | 貙U | 貙U | CtrlCheckPrint | 貙U | CtrlPrinting | 貙U | CtrlStop | 貙U | CtrlStatusFail | 貙U | CtrlLJFail | 貙U | CtrlNoAlarm | 貙U | CtrlPHWarning | 貙U | CtrlPHError | 貙U | CtrlSysWarning | 貙U | CtrlSysError | 貙U | CtrlPrintOpenSucc | 貙U | CtrlPrintNoMem | 貙U | CtrlPrintOtherZY | 貙U | CtrlAllSendCount | 貙U | frmCtrl---TfrmCtrl: | 貙U
+
+== 0040B760 frmCtrl---GetPrintStatus (len 63b)
+  calls: AIMDTL!imGetPrinterStatus, frmCtrl---SetControlEnable, frmCtrl---GetAlarmStatus, frmCtrl---GetOpenPrintStatus, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: .. | ... | .... | ..... | ...... | frmCtrl---GetPrintStatus: | 貙U
+
+== 0040BD9C frmCtrl---GetAlarmStatus (len 1c3)
+  calls: AIMDTL!imGetPrinterAlarm, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---GetAlarmStatus: | 貙U
+
+== 0040BF60 TfrmCtrl::TimerPrintStartTimer [frmCtrl---TimerPrintStartTimer] (len 14b)
+  calls: frmCtrl---GetPrintStatus, frmCtrl---SetTimerPageSN, CC3260MT!@_CatchCleanup$qv
+  strs: 貙U | 4峌 | 4峌 | frmCtrl---TimerPrintStartTimer: | 貙U
+
+== 0040C0AC frmCtrl---SendMessageToADT (len 1c3)
+  calls: KERNEL32!GetFileSize, CC3260MT!@$bnwa$qui, AIMDTL!imAppendMessage, CC3260MT!@$bdla$qpv, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---SendMessageToADT: | 貙U
+
+== 0040C270 frmCtrl---GetOpenPrintStatus (len 1c3)
+  calls: AIMDTL!imOpenPrinter, frmCtrl---SetControlEnable, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---GetOpenPrintStatus: | 貙U
+
+== 0040C434 TfrmCtrl::btnReadDataClick [frmCtrl---btnReadDataClick] (len 373)
+  calls: frmDataSelect---GetPrintData, frmCtrl---GetPrintHeight, CC3260MT!@_CatchCleanup$qv
+  strs: 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | frmCtrl---btnReadDataClick: | 貙U
+
+== 0040C7A8 frmCtrl---GetPrintHeight (len 703)
+  calls: frmMain---GetHeJianInfo, CC3260MT!@_CatchCleanup$qv
+  strs: CartonSize | Table | 貙U | select [CartonYZGD] as YZHeight,[CartonBMYZKS] as BMBegin,[CartonBMYZZL] as BMEnd,[CartonLMYZKS] as LMBegin,[CartonLMYZZL] as LMEnd from  |  where [CASE-NO]=' | 貙U | 貙U | 貙U | 貙U | YZHeight | 貙U | BMBegin | 貙U | BMEnd | 貙U | LMBegin | 貙U | LMEnd | 貙U | frmCtrl---GetPrintHeight: | 貙U
+
+== 0040CEAC TfrmCtrl::btnPrintClick [frmCtrl---btnPrintClick] (len 217)
+  calls: frmCtrl---GetCheckIsNULL, frmMain---ShowMessage, frmCtrl---ShowMsgStation, frmMain---ShowAlert, CC3260MT!@_CatchCleanup$qv
+  strs: CtrlIsPrepareModel | 貙U | 貙U | 貙U | 貙U | frmCtrl---btnPrintClick: | 貙U | CtrlPrintWarm | 貙U | 貙U
+
+== 0040D0C4 frmCtrl---SetPrintToPrintPro (len 26f)
+  calls: CC3260MT!_memset, AIMDTL!imInitADT, frmCtrl---SetStopPrint, frmCtrl---SendMessageToADT, frmCtrl---SetValueToStr, AIMDTL!imPrinterStart, frmCtrl---InserProductRecord, frmMain---ShowMessage, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: CtrlSendADTException | 貙U | CtrlSendADTError | 貙U | frmCtrl---SetPrintToPrintPro: | 貙U
+
+== 0040D334 TfrmCtrl::TimerSendMsgTimer [frmCtrl---TimerSendMsgTimer] (len 3df)
+  calls: AIMDTL!imGetADTStatus, frmMain---ShowMessage, frmCtrl---SetStopPrint, AIMDTL!imPageBegin, frmCtrl---SetDataToPrintPro, AIMDTL!imPageEnd, CC3260MT!@_CatchCleanup$qv
+  strs: 貙U | CtrlPrintClearCarton1 | 貙U | CtrlPrintClearCarton2 | 貙U | SystemTS | 貙U | frmCtrl---TimerSendMsgTimer: | 貙U
+
+== 0040D714 frmCtrl---SetValueToStr (len ea3)
+  calls: frmMain---GetHeJianInfo, frmCtrl---GetNULLStr, CC3260MT!@_CatchCleanup$qv
+  strs: SpaceBtVoltageHzValue | Data | 貙U | frmCtrl---SetValueToStr: | 貙U
+
+== 0040E5B8 frmCtrl---SetDataToPrintPro (len bbc)
+  calls: frmCtrl---SetAppendPageField, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: Model | ModelValue | Bore | BoreValue | Output | OutputValue | PhaseValue | PhaseUnit | AllValueData | MadeNoValue | Tokii |     | Code | CodeDian | CodeValue | MacineNo | MacineNoValue | Printing Serial Number: |    XiangHao: | 貙U | ModelValueSide | Place | frmCtrl---SetDataToPrintPro: | 貙U
+
+== 0040F178 frmCtrl---GetNULLStr (len 1a7)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---GetNULLStr: | 貙U
+
+== 0040F3BC frmCtrl---SetTextToImage (len 3e7)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs:    | 貙U | .bmp | frmCtrl---SetTextToImage: | 貙U
+
+== 0040F83C frmCtrl---EditOutSideObj (len 112b)
+  calls: frmMain---GetIniData, frmCtrl---SetTextToImage, frmMain---SetIniData, frmCtrl---GetMsgObj, CC3260MT!@_CatchCleanup$qv
+  strs: FontName | Object1 | 貙U | FontSize | Object1 | 貙U | StyleType | Object1 | 貙U | FontName | Object2 | 貙U | FontSize | Object2 | 貙U | StyleType | Object2 | 貙U | Object1 | 貙U | Object2 | 貙U | Object1 | 貙U | Object2 | 貙U | MsgObjT0 | Object1 | 貙U | Object2 | 貙U | Object1 | 貙U | Width | MsgInfo | 貙U | Height | MsgInfo | 貙U | Width | Object1 | 貙U | Width | Object2 | 貙U | Height | Object1 | 貙U | Height | Object2 | 貙U | Text | Object1 | 貙U | Text | Object2 | 貙U | SimpleData | Object1 | 貙U | SimpleData | Object2 | 貙U | MsgObjT0 | Object1 | 貙U | frmCtrl---EditOutSideObj: | 貙U
+
+== 00410968 frmCtrl---GetMsgObj (len 32b)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---GetMsgObj: | 貙U
+
+== 00410CA4 frmCtrl---SetAppendPageField (len 197)
+  calls: CC3260MT!@$bnwa$qui, CC3260MT!_strcpy, AIMDTL!imAppendPageField, CC3260MT!@$bdla$qpv, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---SetAppendPageField: | 貙U
+
+== 00410E3C frmCtrl---GetAllGroupMSG (len 4ab)
+  calls: frmMain---GetHeJianInfo, CC3260MT!_atof, frmCtrl---GroupMsgWhole, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: DPI | Data | 貙U | PerInch | Data | 貙U | msg\TempInSide.ms | 貙U | msg\TempOutSide.ms | 貙U | frmCtrl---GetAllGroupMSG: | 貙U
+
+== 004112E8 frmCtrl---GroupMsgWhole (len 30b)
+  calls: frmMain---GetHeJianInfo, frmCtrl---GroupMsgModel, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: MaxPrintHeadCount | Data | 貙U | SinglePrintHeadHeight | Data | 貙U | TempOutSide | TempInSide | AdtTemp | frmCtrl---GroupMsgWhole: | 貙U
+
+== 004115F4 frmCtrl---GroupMsgModel (len 4c7)
+  calls: CC3260MT!_memset, frmCtrl---GetDataFormMsg, frmCtrl---SetMsgOBJT, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---GroupMsgModel: | 貙U
+
+== 00411ABC frmCtrl---SetMsgOBJT (len 2af)
+  calls: frmMain---SetIniData, frmMain---GetIniData, CC3260MT!@_CatchCleanup$qv
+  strs: Height | MsgInfo | 貙U | MsgObjT0 | Object | 貙U | frmCtrl---SetMsgOBJT: | 貙U
+
+== 00411ED8 ? (len 8c7)
+  calls: frmMain---SetIniData
+  strs: MsgObjT0 | Object | 貙U
+
+== 004127E8 frmCtrl---GetDataFormMsg (len 208b)
+  calls: frmMain---GetHeJianInfo, frmCtrl---GetStrValue, CC3260MT!_atof, CC3260MT!__ftol, frmMain---GetSLJZToSJZ, frmMain---GetSJZToSLJZ, frmCtrl---GetMsgInfoText, CC3260MT!@_CatchCleanup$qv
+  strs: iAdtDataMaxLen | Data | 貙U | iOneAdtField | Data | 貙U | [MsgInfo] | [Object | 
+[Object | ]
+ | [DataSrc | 
+[DataSrc | ]
+ | Ver | No | ID | Name | Width | Height | Angle | Count | daCount | dsid | X= | Y= | UID | ADSADT | Data | 貙U | Data | 貙U | 貙U | Data= | frmCtrl---GetDataFormMsg: | 貙U
+
+== 00414964 frmCtrl---GetMsgInfoText (len 991)
+  calls: CC3260MT!__ftol, CC3260MT!_memset, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: [MsgInfo]
+ | Ver= | No= | ID= | Name= | Width= | Height= | Angle= | Count= | daCount= | dsid= | frmCtrl---GetMsgInfoText: | 貙U
+
+== 004152F8 frmCtrl---GetStrValue (len 40b)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---GetStrValue: | 貙U
+
+== 00415704 frmCtrl---GetCheckIsNULL (len 1e42)
+  calls: CC3260MT!_memset, frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!_atof, frmMain---GetHeJianInfo, frmMain---GetIniData, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: CtrlKeyCodeNoNULL | 貙U | 貙U | CtrlMadeNoValue | 貙U | 貙U | CtrlNoBeginValue | 貙U | 貙U | CtrlMaxPrintNoNULL | 貙U | 貙U | CtrlCaptionBeginAndEnd | 貙U | 貙U | CtrlNoValueMachine | 貙U | 貙U | CtrlPrintCGMax | 貙U | 貙U | CtrlPrintCGCanPrint | 貙U | 貙U | CtrlCartonCGMaxHeight | 貙U | 貙U | CtrlCartonCGMaxWBegin | 貙U | 貙U | CtrlBMYZZLNoNULL | 貙U | 貙U | CtrlLMYZKSNoNULL | 貙U | 貙U | CtrlLMYZZLNoNULL | 貙U | 貙U | SourceMsg1Path | SourceMsg | 貙U | CtrlNoZMai | 貙U | 貙U | Width | MsgInfo | 貙U | CtrlZSZMai | 貙U | 貙U | CtrlZMKDNoNULL | 貙U | 貙U | SourceMsg2Path | SourceMsg | 貙U | CtrlNoCMai | 貙U | 貙U | Width | MsgInfo | 貙U | CtrlCMKD | 貙U | 貙U | CtrlCMKDNoNULL | 貙U | 貙U | select * from  |  where [CASE-No]=' | 貙U | 貙U | 貙U | 貙U | CartonNoThere | 貙U | 貙U | CartonNoTable | 貙U | 貙U | frmCtrl---GetCheckIsNULL: | 貙U
+
+== 00417548 frmCtrl---SetControlEnable (len 173)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---SetControlEnable: | 貙U
+
+== 004176BC TfrmCtrl::txtBoxNoBeginValueKeyPress [frmCtrl---txtBoxNoBeginValueKeyPress] (len b3)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---txtBoxNoBeginValueKeyPress: | 貙U
+
+== 00417770 TfrmCtrl::btnStopClick [frmCtrl---btnStopClick] (len 127)
+  calls: frmMain---ShowMessage, frmCtrl---ShowMsgStation, CC3260MT!@_CatchCleanup$qv
+  strs: CtrlStoping | 貙U | 貙U | 貙U | frmCtrl---btnStopClick: | 貙U
+
+== 00417898 frmCtrl---SetStopPrint (len cb)
+  calls: AIMDTL!imSendCancel, AIMDTL!imClearPrintQueue, AIMDTL!imClearReturnQueue, AIMDTL!imPrinterStop, frmCtrl---SetEndProductInfo, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---SetStopPrint: | 貙U
+
+== 00417964 frmCtrl---SetEndProductInfo (len 3df)
+  calls: frmMain---GetHeJianInfo, CC3260MT!@_CatchCleanup$qv
+  strs: ProductRecord | Table | 貙U | update  |  set [EndPrintTime]=CONVERT(VARCHAR(100), GETDATE(), 121),[EndBoxNo]=' | ',[EndMachineNo]=' |  where ID=(select max(ID) as MaxID from  | 貙U | 貙U | 貙U | frmCtrl---SetEndProductInfo: | 貙U
+
+== 00417D44 frmCtrl---SetPrintTimer (len 887)
+  calls: frmCtrl---EditOutSideObj, frmCtrl---GetAllGroupMSG, frmMain---ShowMessage, AIMDTL!imGetAdtMsgFieldCount, frmMain---GetHeJianInfo, frmCtrl---SetPrintDelayToPro, frmCtrl---SetPrintToPrintPro, frmMain---ShowAlert, KERNEL32!Sleep, CC3260MT!@_CatchCleanup$qv
+  strs: msg\AdtTemp.ms | 貙U | CtrlNoInSideModel | 貙U | CtrlNoOutSideModel | 貙U | CtrlNoALLModel | 貙U | AdtFieldCount | Data | 貙U | CtrlNoAllADTCount | 貙U | CtrlIsSetDelaying | 貙U | 貙U | -1 | 貙U | CtrlFailAllModel | 貙U | -1 | 貙U | CtrlIsPrinting | 貙U | 貙U | frmCtrl---SetPrintTimer: | 貙U | CtrlWarmAllModel | 貙U | 貙U
+
+== 004185CC frmCtrl---InserProductRecord (len 563)
+  calls: frmMain---GetHeJianInfo, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: ProductRecord | Table | 貙U | insert into  |  ([Key code],[MadeNo],[Case-No],[BeginPrintTime],[BeginBoxNo],[BeginMachineNo]) |  values (' | ',' | ',' | ',CONVERT(VARCHAR(100), GETDATE(), 121),' | ',' | ') | 貙U | 貙U | 貙U | frmCtrl---InserProductRecord: | 貙U
+
+== 00418B30 frmCtrl---SetPrintDelayToPro (len ee6)
+  calls: frmMain---ShowMessage, frmCtrl---GetPrintHeadDelayCount, frmMain---GetHeJianInfo, frmMain---GetIniData, CC3260MT!_atof, frmCtrl---SetPrintHeadDelay, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: CtrlIsSendingDelay | 貙U | 貙U | DPI | Data | 貙U | Width | MsgInfo | 貙U | PerInch | Data | 貙U | Width | MsgInfo | 貙U | PrintHead1FixedDelay1 | Data | 貙U | PrintHead1FixedDelay2 | Data | 貙U | PrintHead2FixedDelay1 | Data | 貙U | PrintHead2FixedDelay2 | Data | 貙U | PrintHead3FixedDelay1 | Data | 貙U | PrintHead3FixedDelay2 | Data | 貙U | PrintHead4FixedDelay1 | Data | 貙U | PrintHead4FixedDelay2 | Data | 貙U | CtrlDelayNoInt | 貙U | frmCtrl---SetPrintDelayToPro: | 貙U | CtrlSendDelayException | 貙U
+
+== 00419A18 frmCtrl---GetPrintHeadDelayCount (len b3)
+  calls: AIMDTL!imGetLgphDelay, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---GetPrintHeadDelayCount: | 貙U
+
+== 00419ACC frmCtrl---SetPrintHeadDelay (len ec)
+  calls: CC3260MT!__ftol, AIMDTL!imSetLgphDelay, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---SetPrintHeadDelay: | 貙U
+
+== 00419BBC frmCtrl---UpdatePageSN (len 270)
+  calls: AIMDTL!imGetPrinttedPagesn, CC3260MT!@_CatchCleanup$qv
+  strs: 貙U | frmCtrl---UpdatePageSN: | 貙U
+
+== 00419E30 frmCtrl---SetTimerPageSN (len 34f)
+  calls: frmMain---ShowMessage, frmCtrl---ShowMsgStation, CC3260MT!@_CatchCleanup$qv
+  strs: CtrlDataSecond | 貙U | CtrlDataHCZhong1 | 貙U | CtrlIsZBPrinting | 貙U | frmCtrl---SetTimerPageSN: | 貙U
+
+== 0041A180 frmCtrl---ShowMsgStation (len 15f)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---ShowMsgStation: | 貙U
+
+== 0041A2E0 TfrmCtrl::txtMachineNoValue2Change [frmCtrl---txtMachineNoValue2Change] (len 8f)
+  calls: frmCtrl---ChangeNoText, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---txtMachineNoValue2Change: | 貙U
+
+== 0041A370 frmCtrl---ChangeNoText (len 11f)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---ChangeNoText: | 貙U
+
+== 0041A490 TfrmCtrl::btnPreviewClick [frmCtrl---btnPreviewClick] (len 19b)
+  calls: frmCtrl---GetCheckIsNULL, frmMain---ShowMessage, frmCtrl---ShowMsgStation, frmMain---ShowAlert, CC3260MT!@_CatchCleanup$qv
+  strs: CtrlIsPreviewShow | 貙U | 貙U | 貙U | frmCtrl---btnPreviewClick: | 貙U | CtrlPreviewFail | 貙U | 貙U
+
+== 0041A62C frmCtrl---ShowYLTimer (len 127)
+  calls: frmCtrl---GetAllGroupMSG, frmPreview---ShowImageToUi, CC3260MT!@_CatchCleanup$qv
+  strs: msg\Preview.ms | 貙U | ,峌 | ,峌 | frmCtrl---ShowYLTimer: | 貙U
+
+== 0041A754 TfrmCtrl::txtBoxNoBeginValueChange [frmCtrl---txtBoxNoBeginValueChange] (len 93)
+  calls: frmCtrl---SetValueToStatus, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---txtBoxNoBeginValueChange: | 貙U
+
+== 0041A7E8 TfrmCtrl::txtBoxNoEndValueChange [frmCtrl---txtBoxNoEndValueChange] (len 93)
+  calls: frmCtrl---SetValueToStatus, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---txtBoxNoEndValueChange: | 貙U
+
+== 0041A87C frmCtrl---SetValueToStatus (len 2a3)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: 4峌 | 4峌 | 4峌 | 4峌 | 4峌 | 4峌 | frmCtrl---SetValueToStatus: | 貙U
+
+== 0041AB20 TfrmCtrl::FormShow [frmCtrl---FormShow] (len 81b)
+  calls: frmMain---ShowMessage, SendThread---Wakeup, CC3260MT!@_CatchCleanup$qv
+  strs: txtCaseNo | 貙U | txtMadeNoValue | 貙U | txtBoxNoBeginValue | 貙U | txtMachineNoValue1 | 貙U | btnReadData | 貙U | gboxSet | 貙U | gboxZM | 貙U | gboxCM | 貙U | gboxZXGG | 貙U | gboxPSet | 貙U | btnPreview | 貙U | btnPrint | 貙U | btnStop | 貙U | cbxtype0 | 貙U | cbxtype1 | 貙U | h.U | frmCtrl---FormShow: | 貙U
+
+== 0041B33C TfrmCtrl::FormClose (len 1b)
+  calls: frmCtrl---SetStopPrint
+
+== 0041B358 TfrmCtrl::txtMadeNoValueChange [frmCtrl---txtMadeNoValueChange] (len cb)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---txtMadeNoValueChange: | 貙U
+
+== 0041B424 TfrmCtrl::txtMachineNoValue1Change [frmCtrl---txtMachineNoValue1Change] (len 8f)
+  calls: frmCtrl---ChangeNoText, CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---txtMachineNoValue1Change: | 貙U
+
+== 0041B4B4 TfrmCtrl::FormResize [frmCtrl---FormResize] (len 69b)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---FormResize: | 貙U
+
+== 0041D4B0 @@Ufrmctrl@Initialize (len f)
+
+== 0041D4C0 @@Ufrmctrl@Finalize (len f)
+
+== 0041D4D0 frmPrintMan---TfrmPrintMan (len 29c)
+  calls: frmMain---GetHeJianInfo, CC3260MT!@_CatchCleanup$qv
+  strs: PrintData | Table | 貙U | frmPrintMan---TfrmPrintMan: | 貙U
+
+== 0041D770 TfrmPrintMan::btnReadDataClick [frmPrintMan---btnReadDataClick] (len 357)
+  calls: frmDataSelect---GetPrintData, frmPrintMan---GetPrintHeight, CC3260MT!@_CatchCleanup$qv
+  strs: 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | 鼘U | frmPrintMan---btnReadDataClick: | 貙U
+
+== 0041DAC8 frmPrintMan---GetPrintHeight (len 5a7)
+  calls: frmMain---GetHeJianInfo, CC3260MT!@_CatchCleanup$qv
+  strs: CartonSize | Table | 貙U | select [CartonYZGD] as YZHeight,[CartonBMYZKS] as BMBegin,[CartonBMYZZL] as BMEnd,[CartonLMYZKS] as LMBegin,[CartonLMYZZL] as LMEnd from  |  where [CASE-NO]=' | 貙U | 貙U | 貙U | 貙U | YZHeight | 貙U | BMBegin | 貙U | BMEnd | 貙U | LMBegin | 貙U | LMEnd | 貙U | frmPrintMan---GetPrintHeight: | 貙U
+
+== 0041E070 TfrmPrintMan::btnAddClick [frmPrintMan---btnAddClick] (len 1723)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmPrintMan---GetCheckDataLen, CC3260MT!@_CatchCleanup$qv
+  strs: CtrlKeyCodeNoNULL | 貙U | 貙U | select * from  |  where [Key code]=' | 貙U | 貙U | 貙U | 貙U | PrintManDataCZ | 貙U | 貙U | insert into  |  (ID,[Key code],[CASE-No],[MODEL],[MODEL_value],BORE,BORE_value, | BORE_unit,OUTPUT,OUTPUT_value,OUTPUT_unit,PHASE_value,PHASE_unit,VOLTAGE_value, | VOLTAGE_unit,Hz_value,Hz_unit,CODE,CODE_value,TOKKI,PLACE) values (newid(),' | ',' | ',' | ',' | ',' | ',' | ',' | ',' | ',' | ,' | ',' | ',' | ',' | ',' | ',' | ',' | ',' | ',' | ',' | ',' | ') | 貙U | 貙U | 貙U | CartonAddSucc | 貙U | 貙U | frmPrintMan---btnAddClick: | 貙U | 新增失敗 | 貙U
+
+== 0041F794 TfrmPrintMan::btnDeleteClick [frmPrintMan---btnDeleteClick] (len 6b3)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmPrintMan---ClearControlData, CC3260MT!@_CatchCleanup$qv
+  strs: CtrlKeyCodeNoNULL | 貙U | 貙U | select * from  |  where [Key code]=' | 貙U | 貙U | 貙U | 貙U | SystemTS | 貙U | DeleteMsgShow | 貙U | delete  |  where [Key code]=' | 貙U | 貙U | 貙U | DeleteSucc | 貙U | 貙U | PrintDataExists | 貙U | 貙U | frmPrintMan---btnDeleteClick: | 貙U | DataFail | 貙U | 貙U
+
+== 0041FE48 frmPrintMan---ClearControlData (len 6b3)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmPrintMan---ClearControlData: | 貙U
+
+== 004204FC TfrmPrintMan::btnEditClick [frmPrintMan---btnEditClick] (len 171f)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmPrintMan---GetCheckDataLen, CC3260MT!@_CatchCleanup$qv
+  strs: CtrlKeyCodeNoNULL | 貙U | 貙U | select * from  |  where [Key code]=' | 貙U | 貙U | 貙U | 貙U | NoExistsData | 貙U | 貙U | update  |  set [CASE-No]=' | ',[MODEL]=' | ',[MODEL_value]=' | ',BORE=' | ',BORE_value=' | ', | BORE_unit=' | ',OUTPUT=' | ',OUTPUT_value=' | ',OUTPUT_unit=' | ',PHASE_value=' | ',PHASE_unit=' | ',VOLTAGE_value=' | ', | VOLTAGE_unit=' | ',Hz_value=' | ',Hz_unit=' | ',CODE=' | ',CODE_value=' | ',TOKKI=' | ',PLACE=' | ' where [Key code]=' | 貙U | 貙U | 貙U | CartonEditSucc | 貙U | 貙U | frmPrintMan---btnEditClick: | 貙U | CartonEditFail | 貙U | 貙U
+
+== 00421C1C TfrmPrintMan::btnInsertClick [frmPrintMan---btnInsertClick] (len 5ff)
+  calls: frmMain---GetHeJianInfo, frmMain---ShowMessage, frmMain---ShowAlert, frmPrintMan---ShowMsgToLook, CC3260MT!@_CatchCleanup$qv
+  strs: SavePathInput | SourceMsg | 貙U | Excel File(*.xlsx)|*.xlsx|2003 Excel File(*.xls)|*.xls | FileNoExists | 貙U | 貙U | select * from  | 貙U | 貙U | 貙U | 貙U | SystemTS | 貙U | DataHaveCZIsClear | 貙U | 貙U | 貙U | InputDataing | 貙U | 貙U | 貙U | InputDataing | 貙U | 貙U | frmPrintMan---btnInsertClick: | 貙U | ErrorException | 貙U | 貙U
+
+== 0042221C frmPrintMan---ShowMsgToLook (len 133)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmPrintMan---ShowMsgToLook: | 貙U
+
+== 00422350 ? (len 1c3)
+  calls: frmPrintMan---GetExcelDataToBase, frmPrintMan---ShowMsgToLook, frmPrintMan---GetDataToExcel, CC3260MT!@_CatchCleanup$qv
+  strs: Key Code | 貙U | frmPrintMan---SetTimerFun( | ): | 貙U
+
+== 00422514 TfrmPrintMan::btnOutPutClick [frmPrintMan---btnOutPutClick] (len 1e7)
+  calls: frmMain---ShowMessage, frmPrintMan---ShowMsgToLook, frmMain---ShowAlert, CC3260MT!@_CatchCleanup$qv
+  strs: OutputMsg | 貙U | 貙U | 貙U | 貙U | frmPrintMan---btnOutPutClick: | 貙U | ErrorException | 貙U | 貙U
+
+== 004226FC frmPrintMan---GetDataToExcel (len 2463)
+  calls: frmMain---GetHeJianInfo, frmPrintMan---ShowMsgToLook, frmMain---ShowMessage, frmMain---ShowAlert, KERNEL32!CopyFileA, frmPrintMan---SetValueToData, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: ExcelPrintData.xlsx | ExcelVersion | SourceMsg | 貙U | ExcelPrintData.xls | SavePathOutput | SourceMsg | 貙U | ExcelUrlError | 貙U | 貙U | model\ | 貙U | ExcelModelNoExists | 貙U | 貙U | CopyFileError | 貙U | 貙U | Excel.Application | Visible | Open | Workbooks | ActiveSheet | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | select [Key Code],[Case-No],[MODEL],[MODEL_value],BORE,BORE_value, | BORE_unit,OUTPUT,OUTPUT_value,OUTPUT_unit,PHASE_value,PHASE_unit,VOLTAGE_value, | VOLTAGE_unit,Hz_value,Hz_unit,CODE,CODE_value,TOKKI,PLACE from  | 貙U | 貙U | 貙U | 貙U | 貙U | 貙U | Value | Cells | 貙U | 貙U | Save | ActiveWorkBook | Quit | ExcelOutputSucc1 | 貙U | 貙U | frmPrintMan---GetDataToExcel: | 貙U | ExcelRJError | 貙U | 貙U
+
+== 00424C48 frmPrintMan---SetValueToData (len 4bb)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: Key Code | Case-No | MODEL | MODEL_value | BORE | BORE_value | BORE_unit | OUTPUT | OUTPUT_value | OUTPUT_unit | PHASE_value | PHASE_unit | VOLTAGE_value | VOLTAGE_unit | Hz_value | Hz_unit | CODE | CODE_value | TOKKI | PLACE | frmPrintMan---SetValueToData: | 貙U
+
+== 00425104 TfrmPrintMan::FormResize [frmCtrl---FormResize] (len 57b)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCtrl---FormResize: | 貙U
+
+== 00425680 TfrmPrintMan::txtModelValueChange [frmPrintMan---txtModelValueChange] (len cb)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmPrintMan---txtModelValueChange: | 貙U
+
+== 0042574C TfrmPrintMan::FormShow [frmPrintMan---FormShow] (len 57b)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: txtCaseNo | 貙U | btnReadData | 貙U | gboxSet | 貙U | gboxZM | 貙U | gboxCM | 貙U | gboxZXGG | 貙U | gboxPSet | 貙U | btnAdd | 貙U | btnEdit | 貙U | btnDelete | 貙U | btnInput | 貙U | btnOutPut | 貙U | frmPrintMan---FormShow: | 貙U
+
+== 00425CC8 frmPrintMan---GetCheckDataLen (len 648b)
+  calls: frmMain---ShowMessage, frmMain---GetHeJianInfo, frmMain---ShowAlert, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: PrintManMaxLenLeft | 貙U | KeyCode | DataLen | 貙U | frmSystem | 貙U | KeyCode [ | ]  | 貙U | Model | DataLen | 貙U | frmSystem | 貙U | Model [ | ]  | 貙U | ModelValue | DataLen | 貙U | frmSystem | 貙U | ModelValue [ | ]  | 貙U | Bore | DataLen | 貙U | frmSystem | 貙U | Bore [ | ]  | 貙U | BoreValue | DataLen | 貙U | frmSystem | 貙U | BoreValue [ | ]  | 貙U | BoreUnit | DataLen | 貙U | frmSystem | 貙U | BoreUnit [ | ]  | 貙U | Output | DataLen | 貙U | frmSystem | 貙U | Output [ | ]  | 貙U | OutputValue | DataLen | 貙U | frmSystem | 貙U | OutputValue [ | ]  | 貙U | OutputUnit | DataLen | 貙U | frmSystem | 貙U | OutputUnit [ | ]  | 貙U | PhaseValue | DataLen | 貙U | frmSystem | 貙U | PhaseValue [ | ]  | 貙U | PhaseUnit | DataLen | 貙U | frmSystem | 貙U | PhaseUnit [ | ]  | 貙U | VoltageValue | DataLen | 貙U | frmSystem | 貙U | VoltageValue [ | ]  | 貙U | VoltageUnit | DataLen | 貙U | frmSystem | 貙U | VoltageUnit [ | ]  | 貙U | HzValue | DataLen | 貙U | frmSystem | 貙U | HzValue [ | ]  | 貙U | HzUnit | DataLen | 貙U | frmSystem | 貙U | HzUnit [ | ]  | 貙U | Code | DataLen | 貙U | frmSystem | 貙U | Code [ | ]  | 貙U | CodeValue | DataLen | 貙U | frmSystem | 貙U | CodeValue [ | ]  | 貙U | Tkki | DataLen | 貙U | frmSystem | 貙U | Tkki [ | ]  | 貙U | Place | DataLen | 貙U | frmSystem | 貙U | Place [ | ]  | 貙U | CaseNo | DataLen | 貙U | frmSystem | 貙U | CaseNo [ | ]  | 貙U | frmPrintMan---GetCheckDataLen: | 貙U
+
+== 0042CCD8 @@Ufrmprintman@Initialize (len f)
+
+== 0042CCE8 @@Ufrmprintman@Finalize (len f)
+
+== 0042CCF8 frmDataSelect---TfrmDataSelect (len 203)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmDataSelect---TfrmDataSelect: | 貙U
+
+== 0042CF04 frmDataSelect---GetPrintData (len a5f)
+  calls: frmMain---GetHeJianInfo, frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: PrintData | Table | 貙U | select count(1) as allcount from  |  where [Key code] like '% | %' | 貙U | 貙U | 貙U | allcount | 貙U | select [Key Code],[Case-No],[MODEL],[MODEL_value],BORE,BORE_value, | BORE_unit,OUTPUT,OUTPUT_value,OUTPUT_unit,PHASE_value,PHASE_unit,VOLTAGE_value, | VOLTAGE_unit,Hz_value,Hz_unit,CODE,CODE_value,TOKKI,PLACE from (select ROW_NUMBER() |  OVER(ORDER BY GETDATE()) AS Number,* from  |  where [Key code] like '% | %') as TT where TT.Number between  |  and  | 貙U | 貙U | 貙U | 貙U | frmDataSelect---GetPrintData: | 貙U | DataBaseError | 貙U | 貙U
+
+== 0042D964 TfrmDataSelect::btnNextClick [frmDataSelect---btnNextClick] (len 143)
+  calls: frmDataSelect---GetPrintData, CC3260MT!@_CatchCleanup$qv
+  strs: frmDataSelect---btnNextClick: | 貙U
+
+== 0042DAA8 TfrmDataSelect::btnProClick [frmDataSelect---btnProClick] (len 13b)
+  calls: frmDataSelect---GetPrintData, CC3260MT!@_CatchCleanup$qv
+  strs: frmDataSelect---btnProClick: | 貙U
+
+== 0042DBE4 TfrmDataSelect::btnSearchClick [frmDataSelect---btnSearchClick] (len db)
+  calls: frmDataSelect---GetPrintData, CC3260MT!@_CatchCleanup$qv
+  strs: frmDataSelect---btnSearchClick: | 貙U
+
+== 0042DCC0 TfrmDataSelect::DBGrid1DblClick [frmDataSelect---DBGrid1DblClick] (len 85b)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmDataSelect---DBGrid1DblClick: | 貙U
+
+== 0042E51C TfrmDataSelect::FormShow [frmDataSelect---DBGrid1DblClick] (len 2b3)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: txtCondition | 貙U | btnSearch | 貙U | btnPro | 貙U | btnNext | 貙U | frmDataSelect---DBGrid1DblClick: | 貙U
+
+== 0042EC40 @@Ufrmdataselect@Initialize (len f)
+
+== 0042EC50 @@Ufrmdataselect@Finalize (len f)
+
+== 0042EC60 frmCarton---TfrmCarton (len 20a)
+  calls: frmCarton---SetValueToSize, frmMain---GetHeJianInfo, CC3260MT!@_CatchCleanup$qv
+  strs: CartonSize | Table | 貙U | frmCarton---TfrmCarton: | 貙U
+
+== 0042EE70 frmCarton---GetCartonSizeData (len 41b)
+  calls: frmCarton---SetDBGridWidth, CC3260MT!@_CatchCleanup$qv
+  strs: select [CASE-No],[Carton size-L],[Carton size-W],[Carton size-H],CartonYZGD as  | CartonBMYZKS as  | ,CartonBMYZZL as  | ,CartonLMYZKS as  | ,CartonLMYZZL as  |  from  | 貙U | 貙U | 貙U | 貙U | frmCarton---GetCartonSizeData: | 貙U
+
+== 0042F28C frmCarton---SetDBGridWidth (len f7)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCarton---SetDBGridWidth: | 貙U
+
+== 0042F384 TfrmCarton::DBGrid1CellClick [frmCarton---DBGrid1CellClick] (len 3f7)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCarton---DBGrid1CellClick: | 貙U
+
+== 0042F77C TfrmCarton::txtCartonSizeLengthKeyPress [frmCarton---textBoxCartonSizeLengthKeyPress] (len b3)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCarton---textBoxCartonSizeLengthKeyPress: | 貙U
+
+== 0042F830 frmCarton---GetCheckControlsIsUser (len 637)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!_atof, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: CartonNoNULL | 貙U | 貙U | CartonOutSideDYLW | 貙U | 貙U | CartonInSideDYLW | 貙U | 貙U | frmCarton---GetCheckControlsIsUser: | 貙U
+
+== 0042FE68 TfrmCarton::btnAddClick [frmCarton---btnAddClick] (len 353)
+  calls: frmCarton---GetCheckControlsIsUser, frmCarton---btnEditClick, frmMain---ShowMessage, frmMain---ShowAlert, frmCarton---SetDataToCartonSize, frmCarton---GetCartonSizeData, CC3260MT!@_CatchCleanup$qv
+  strs: select * from  |  where [CASE-No]=' | 貙U | 貙U | 貙U | 貙U | CartonThere | 貙U | 貙U | frmCarton---btnAddClick: | 貙U
+
+== 004301BC frmCarton---SetDataToCartonSize (len a7b)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmCarton---SetNoDataToControl, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: insert into  |  (ID,[CASE-No],[Carton size-L],[Carton size-W],[Carton size-H],[CartonYZGD], | [CartonBMYZKS],[CartonBMYZZL],[CartonLMYZKS],[CartonLMYZZL]) values (newid(),' | ',' | ',' | ',' | ',' | ',' | ',' | ',' | ',' | ') | 貙U | 貙U | 貙U | CartonAddSucc | 貙U | 貙U | frmCarton---SetDataToCartonSize: | 貙U | CartonAddFail | 貙U | 貙U
+
+== 00430C38 TfrmCarton::btnDeleteClick [frmCarton---btnDeleteClick] (len 563)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmCarton---SetNoDataToControl, frmCarton---GetCartonSizeData, CC3260MT!@_CatchCleanup$qv
+  strs: SystemTS | 貙U | DeleteMsgShow | 貙U | delete  |  where [CASE-No]=' | 貙U | 貙U | 貙U | DeleteSucc | 貙U | 貙U | CartonDeleteFail | 貙U | 貙U | CartonCheck | 貙U | 貙U | frmCarton---btnDeleteClick: | 貙U | 删除失败 | 貙U
+
+== 0043119C TfrmCarton::btnEditClick [frmCarton---btnEditClick] (len d47)
+  calls: frmCarton---GetCheckControlsIsUser, frmCarton---btnEditClick, frmMain---ShowMessage, frmMain---ShowAlert, frmCarton---GetCartonSizeData, CC3260MT!@_CatchCleanup$qv
+  strs: select * from  |  where [CASE-No]=' | 貙U | 貙U | 貙U | 貙U | update  |  set [Carton size-L]=' | ',[Carton size-W]=' | ',[Carton size-H]=' | ',[CartonYZGD]=' | ', | [CartonBMYZKS]=' | ',[CartonBMYZZL]=' | ',[CartonLMYZKS]=' | ',[CartonLMYZZL]=' | ' where [CASE-No]=' | 貙U | 貙U | 貙U | CartonEditSucc | 貙U | 貙U | CartonNumNoExists | 貙U | 貙U | CartonNoTable | 貙U | 貙U | frmCarton---btnEditClick: | 貙U | CartonEditFail | 貙U | 貙U
+
+== 00431EE4 frmCarton---btnEditClick (len 467)
+  calls: frmMain---GetHeJianInfo, frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: CaseNo | DataLen | 貙U | PrintManMaxLenLeft | 貙U | frmSystem | 貙U | CaseNo [ | ]  | 貙U | frmCarton---btnEditClick: | 貙U
+
+== 0043234C frmCarton---SetNoDataToControl (len 26b)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmCarton---SetNoDataToControl: | 貙U
+
+== 004325B8 TfrmCarton::btnInputClick [frmCarton---btnInputClick] (len 66b)
+  calls: frmMain---GetHeJianInfo, frmMain---ShowMessage, frmMain---ShowAlert, TfrmCarton---ShowMsgToLook, frmCarton---GetCartonSizeData, CC3260MT!@_CatchCleanup$qv
+  strs: SavePathInput | SourceMsg | 貙U | Excel File(*.xlsx)|*.xlsx|2003 Excel File(*.xls)|*.xls | FileNoExists | 貙U | 貙U | select * from  | 貙U | 貙U | 貙U | 貙U | SystemTS | 貙U | DataHaveCZIsClear | 貙U | 貙U | 貙U | InputDataing | 貙U | 貙U | 貙U | InputDataing | 貙U | 貙U | frmCarton---btnInputClick: | 貙U | ErrorException | 貙U | 貙U
+
+== 00432C24 TfrmCarton---ShowMsgToLook (len ef)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: TfrmCarton---ShowMsgToLook: | 貙U
+
+== 00432D14 frmCarton---SetTimerCartonData (len eb)
+  calls: frmPrintMan---GetExcelDataToBase, frmCarton---GetCartonSizeData, TfrmCarton---ShowMsgToLook, frmPrintMan---GetDataToExcel, CC3260MT!@_CatchCleanup$qv
+  strs: frmCarton---SetTimerCartonData: | 貙U
+
+== 00432E00 TfrmCarton::btnOutPutClick [frmCarton---btnOutPutClick] (len 1b3)
+  calls: frmMain---ShowMessage, TfrmCarton---ShowMsgToLook, CC3260MT!@_CatchCleanup$qv
+  strs: OutputMsg | 貙U | 貙U | 貙U | 貙U | frmCarton---btnOutPutClick: | 貙U
+
+== 00432FB4 frmPrintMan---GetDataToExcel (len 1dd7)
+  calls: frmMain---GetHeJianInfo, TfrmCarton---ShowMsgToLook, frmMain---ShowMessage, frmMain---ShowAlert, KERNEL32!CopyFileA, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: ExcelCarton.xlsx | ExcelVersion | SourceMsg | 貙U | ExcelCarton.xls | SavePathOutput | SourceMsg | 貙U | ExcelUrlError | 貙U | 貙U | model\ | 貙U | ExcelModelNoExists | 貙U | 貙U | CopyFileError | 貙U | 貙U | Excel.Application | Visible | Open | Workbooks | ActiveSheet | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | NumberFormat | Columns | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | select [CASE-No],[Carton size-L],[Carton size-W],[Carton size-H],[CartonYZGD], | [CartonBMYZKS],[CartonBMYZZL],[CartonLMYZKS],[CartonLMYZZL] from  | 貙U | 貙U | 貙U | 貙U | 貙U | 貙U | Value | Cells | 貙U | 貙U | Save | ActiveWorkBook | Quit | ExcelOutputSucc1 | 貙U | 貙U | frmPrintMan---GetDataToExcel: | 貙U | ExcelRJError | 貙U | 貙U
+
+== 00434D8C frmCarton---SetValueToSize (len 3ab)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!@_CatchCleanup$qv
+  strs: CASE-No | Carton size-L | Carton size-W | Carton size-H | CartonYZGD | 貙U | CartonBMYZKS | 貙U | CartonBMYZZL | 貙U | CartonLMYZKS | 貙U | CartonLMYZZL | 貙U | frmCarton---SetValueToSize: | 貙U | ExcelRJError | 貙U | 貙U
+
+== 00435138 TfrmCarton::FormResize [frmCarton---FormResize] (len 51f)
+  calls: frmCarton---SetDBGridWidth, CC3260MT!@_CatchCleanup$qv
+  strs: frmCarton---FormResize: | 貙U
+
+== 00435658 TfrmCarton::FormShow [frmCarton---FormShow] (len 85f)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: txtCaseNo | 貙U | txtCartonSizeLength | 貙U | txtCartonSizeWidth | 貙U | txtCartonSizeHeight | 貙U | txtPrintWordHeight | 貙U | txtOutSidePrintWordBegin | 貙U | txtOutSidePrintWordEnd | 貙U | txtInsidePrintWordBegin | 貙U | txtInsidePrintWordEnd | 貙U | GboxCarton | 貙U | BaseCaoZuo | 貙U | btnAdd | 貙U | btnEdit | 貙U | btnDelete | 貙U | btnInput | 貙U | btnOutPut | 貙U | frmCarton---FormShow: | 貙U
+
+== 00435EB8 frmPrintMan---GetExcelDataToBase (len 2537)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!_atof, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: ExcelUrlError | 貙U | 貙U | Excel.Application | open | workbooks | ActiveWorkBook | Select | Sheets | ActiveSheet | Count | Rows | UsedRange | [CASE-No],[Carton size-L],[Carton size-W],[Carton size-H],[CartonYZGD],[CartonBMYZKS],[CartonBMYZZL],[CartonLMYZKS],[CartonLMYZZL] | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | Value | Cells | CartonOutSideDYLW | 貙U | 貙U | CartonInSideDYLW | 貙U | 貙U | ',' | ',' | ',' | ',' | ',' | ',' | ',' | ',' | select * from  |  where [CASE-No]=' | 貙U | 貙U | 貙U | 貙U | delete  |  where [CASE-No]=' | 貙U | 貙U | 貙U | insert into  |  ([ID], | ) values (newid(), | 貙U | 貙U | 貙U | Quit | ExcelInputSucc4 | 貙U | ExcelInputSucc3 | 貙U | 貙U | InputFail | 貙U | 貙U | frmPrintMan---GetExcelDataToBase: | 貙U
+
+== 00438690 @@Ufrmcarton@Initialize (len f)
+
+== 004386A0 @@Ufrmcarton@Finalize (len f)
+
+== 004386B0 frmSystem---TfrmSystem (len 150e)
+  calls: frmMain---GetHeJianInfo, frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: Name | Server | 貙U | Data | Server | 貙U | User | Server | 貙U | Pass | Server | 貙U | SourceMsg1Path | SourceMsg | 貙U | SourceMsg2Path | SourceMsg | 貙U | SavePathInput | SourceMsg | 貙U | SavePathOutput | SourceMsg | 貙U | KeyCode | DataLen | 貙U | CaseNo | DataLen | 貙U | Model | DataLen | 貙U | ModelValue | DataLen | 貙U | Bore | DataLen | 貙U | BoreValue | DataLen | 貙U | BoreUnit | DataLen | 貙U | Output | DataLen | 貙U | OutputValue | DataLen | 貙U | OutputUnit | DataLen | 貙U | PhaseValue | DataLen | 貙U | PhaseUnit | DataLen | 貙U | VoltageValue | DataLen | 貙U | VoltageUnit | DataLen | 貙U | HzValue | DataLen | 貙U | HzUnit | DataLen | 貙U | Code | DataLen | 貙U | CodeValue | DataLen | 貙U | Tkki | DataLen | 貙U | Place | DataLen | 貙U | SystemLenMsg | 貙U | SystemLenDW | 貙U | frmSystem---TfrmSystem: | 貙U
+
+== 00439BC4 TfrmSystem::btnSetDataClick [frmSystem---btnSetDataClick] (len fb)
+  calls: frmSystem---SetSavePWDClick, frmSystem---SetSaveServerClick, frmSystem---SetSaveModelClick, frmSystem---SetSavePathClick, frmSystem---SetSystemBFHY, frmSystem---SetInputDataLen, CC3260MT!@_CatchCleanup$qv
+  strs: frmSystem---btnSetDataClick: | 貙U
+
+== 00439CC0 frmSystem---SetInputDataLen (len 1a27)
+  calls: frmMain---SetIniData, frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!@_CatchCleanup$qv
+  strs: KeyCode | DataLen | 貙U | 貙U | CaseNo | DataLen | 貙U | 貙U | Model | DataLen | 貙U | 貙U | ModelValue | DataLen | 貙U | 貙U | Bore | DataLen | 貙U | 貙U | BoreValue | DataLen | 貙U | 貙U | BoreUnit | DataLen | 貙U | 貙U | Output | DataLen | 貙U | 貙U | OutputValue | DataLen | 貙U | 貙U | OutputUnit | DataLen | 貙U | 貙U | PhaseValue | DataLen | 貙U | 貙U | PhaseUnit | DataLen | 貙U | 貙U | VoltageValue | DataLen | 貙U | 貙U | VoltageUnit | DataLen | 貙U | 貙U | HzValue | DataLen | 貙U | 貙U | HzUnit | DataLen | 貙U | 貙U | Code | DataLen | 貙U | 貙U | CodeValue | DataLen | 貙U | 貙U | Tkki | DataLen | 貙U | 貙U | Place | DataLen | 貙U | 貙U | SystemLenSucc | 貙U | 貙U | frmSystem---SetInputDataLen: | 貙U
+
+== 0043B6E8 TfrmSystem::btnZhengMaiClick [frmSystem---btnZhengMaiClick] (len 117)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: Msg(*.ms)|*.ms|All File(*.*)|*.* | frmSystem---btnZhengMaiClick: | 貙U
+
+== 0043B800 TfrmSystem::btnCeMaiClick [frmSystem---btnCeMaiClick] (len 117)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: Msg(*.ms)|*.ms|All File(*.*)|*.* | frmSystem---btnCeMaiClick: | 貙U
+
+== 0043B918 frmSystem---SetSaveModelClick (len 59b)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmMain---SetIniData, CC3260MT!@_CatchCleanup$qv
+  strs: SystemNullMsg1Path | 貙U | 貙U | SystemNullMsg2Path | 貙U | 貙U | SystemNoMsg1Path | 貙U | 貙U | SystemNoMsg2Path | 貙U | 貙U | SourceMsg1Path | SourceMsg | 貙U | 貙U | SourceMsg2Path | SourceMsg | 貙U | 貙U | SystemSetModelSucc | 貙U | 貙U | SystemSetModelFail | 貙U | 貙U | frmSystem---SetSaveModelClick: | 貙U
+
+== 0043BEB4 frmSystem---SetSavePWDClick (len 47b)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmMain---GetHeJianInfo, frmMain---SetIniData, CC3260MT!@_CatchCleanup$qv
+  strs: SystemPassNoSame | 貙U | 貙U | LoginPassWord | LoginPass | 貙U | SystemOldPassError | 貙U | 貙U | LoginPassWord | LoginPass | 貙U | 貙U | SystemPassSucc | 貙U | 貙U | SystemPassFail | 貙U | 貙U | frmSystem---SetSavePWDClick: | 貙U
+
+== 0043C330 frmSystem---SetSaveServerClick (len ccb)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmSystem---SetOpenADOCon, frmMain---GetHeJianInfo, frmMain---SetIniData, frmSystem---CheckDataBaseExist, frmSystem---DeleteDataBase, frmSystem---ShowMsgBox, CC3260MT!@_CatchCleanup$qv
+  strs: SystemServerNoNULL | 貙U | 貙U | SystemUserNameNoNULL | 貙U | 貙U | SystemLoginPassNoNULL | 貙U | 貙U | DataName | Server | 貙U | Name | Server | 貙U | 貙U | Data | Server | 貙U | 貙U | User | Server | 貙U | 貙U | Pass | Server | 貙U | 貙U | SystemTS | 貙U | SystemDataBaseExists | 貙U | SystemClearDataBaseFail | 貙U | 貙U | SystemTS | 貙U | SystemIsCSH | 貙U | 貙U | 貙U | IsLoading | 貙U | SystemCSHing | 貙U | 貙U | SystemSetServerFail | 貙U | 貙U | frmSystem---SetSaveServerClick: | 貙U
+
+== 0043CFFC frmSystem---ShowMsgBox (len 117)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmSystem---ShowMsgBox: | 貙U
+
+== 0043D114 frmSystem---DeleteDataBase (len 25b)
+  calls: frmSystem---GetExecSQL, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: USE MASTER ALTER DATABASE  |  SET SINGLE_USER WITH ROLLBACK IMMEDIATE  |  DROP DATABASE  | MASTER | frmSystem---DeleteDataBase: | 貙U
+
+== 0043D370 frmSystem---CheckDataBaseExist (len 353)
+  calls: frmSystem---GetOpenSQL, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: USE MASTER SELECT COUNT(*) as DataCount FROM MASTER..SYSDATABASES WHERE NAME =' | MASTER | DataCount | DataCount | frmSystem---CheckDataBaseExist: | 貙U
+
+== 0043D6C4 frmSystem---SetOpenADOCon (len 29b)
+  calls: frmMain---SetStringToData, frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: 貙U | frmSystem---SetOpenADOCon: | 貙U | DataBaseError | 貙U | 貙U
+
+== 0043D960 frmSystem---SetSavePathClick (len 597)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmMain---SetIniData, CC3260MT!@_CatchCleanup$qv
+  strs: SystemInputURL | 貙U | 貙U | SystemOutURL | 貙U | 貙U | SystemNoInputDir | 貙U | 貙U | SystemNoOutputDir | 貙U | 貙U | SavePathInput | SourceMsg | 貙U | 貙U | SavePathOutput | SourceMsg | 貙U | 貙U | SystemSuccOutInp | 貙U | 貙U | SystemFailOutInp | 貙U | 貙U | frmSystem---SetSavePathClick: | 貙U
+
+== 0043DEF8 TfrmSystem::btnInputClick [frmSystem---btnInputClick] (len 14f)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: CheckDir | 貙U | frmSystem---btnInputClick: | 貙U
+
+== 0043E048 TfrmSystem::btnOutClick [frmSystem---btnOutClick] (len 14f)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: CheckDir | 貙U | frmSystem---btnOutClick: | 貙U
+
+== 0043E198 frmSystem---SetSystemBFHY (len a07)
+  calls: frmMain---ShowMessage, frmSystem---SystemDataSet, frmMain---ShowAlert, frmMain---GetIniData, CC3260MT!@_CatchCleanup$qv
+  strs: CheckDir | 貙U | 貙U | SystemDataBFSucc | 貙U | 貙U | SystemDataBFFail | 貙U | 貙U | SourceMsg1Path | SourceMsg | 貙U | 貙U | SourceMsg2Path | SourceMsg | 貙U | 貙U | msg\ | msg\ | SystemTS | 貙U | SystemClearALLData | 貙U | hejian.xml | SystemDataFileNoExists | 貙U | 貙U | 貙U | SystemDataHYSucc | 貙U | 貙U | SystemDataHYFail | 貙U | 貙U | frmSystem---SetSystemBFHY: | 貙U
+
+== 0043EBA0 frmSystem---SystemDataSet (len 34b)
+  calls: KERNEL32!DeleteFileA, KERNEL32!Sleep, KERNEL32!CopyFileA, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: hejian.xml | hejian.xml | msg | msg | 貙U | frmSystem---SystemDataSet: | 貙U
+
+== 0043EEEC ? (len 3d3)
+  calls: KERNEL32!RemoveDirectoryA
+  strs: \*.* | ..
+
+== 0043F314 frmSystem---SetTimerSend (len 503)
+  calls: frmSystem---CreateDataBase, frmSystem---CreatePrintDataTable, frmSystem---CreateCartonSizeTable, frmSystem---CreatePrintRecord, frmSystem---ShowMsgBox, frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!@_CatchCleanup$qv
+  strs: SystemServerSetSucc | 貙U | 貙U | SystemSetProductTableFail | 貙U | 貙U | SystemSetCartonTableFail | 貙U | 貙U | SystemSetPrintTableFail | 貙U | 貙U | SystemSetDataTableFail | 貙U | 貙U | SystemSetDataTableFail | 貙U | 貙U | frmSystem---SetTimerSend: | 貙U
+
+== 0043F818 frmSystem---CreateDataBase (len 1c3)
+  calls: frmSystem---GetExecSQL, frmMain---SetOpenADOCon, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: create database  | MASTER | 貙U | 貙U | frmSystem---CreateDataBase: | 貙U
+
+== 0043F9DC frmSystem---GetExecSQL (len 213)
+  calls: frmSystem---SetOpenADOCon, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmSystem---GetExecSQL: | 貙U
+
+== 0043FBF0 frmSystem---GetOpenSQL (len 1df)
+  calls: frmSystem---SetOpenADOCon, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmSystem---GetOpenSQL: | 貙U
+
+== 0043FDD0 frmSystem---CreatePrintDataTable (len a69)
+  calls: frmMain---GetHeJianInfo, frmSystem---GetExecSQL, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: PrintData | Table | 貙U | create table  | (ID nvarchar(512) not null, | [Key Code] | [Case-No] | [MODEL] | [MODEL_value] | [BORE] | [BORE_value] | [BORE_unit] | [OUTPUT] | [OUTPUT_value] | [OUTPUT_unit] | [PHASE_value] | [PHASE_unit] | [VOLTAGE_value] | [VOLTAGE_unit] | [Hz_value] | [Hz_unit] | [CODE] | [CODE_value] | [TOKKI] | [PLACE] | null, | primary key not null, | null |  nvarchar(512)  | frmSystem---CreatePrintDataTable: | 貙U
+
+== 0044083C frmSystem---CreateCartonSizeTable (len 76b)
+  calls: frmMain---GetHeJianInfo, frmSystem---GetExecSQL, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: CartonSize | Table | 貙U | create table  | (ID nvarchar(512) not null, | [Case-No] | [Carton size-L] | [Carton size-W] | [Carton size-H] | [CartonYZGD] | [CartonBMYZKS] | [CartonBMYZZL] | [CartonLMYZKS] | [CartonLMYZZL] | null, | primary key not null, | null |  nvarchar(512)  | frmSystem---CreateCartonSizeTable: | 貙U
+
+== 00440FA8 frmSystem---CreatePrintRecord (len 757)
+  calls: frmMain---GetHeJianInfo, frmSystem---GetExecSQL, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: ProductRecord | Table | 貙U | create table  | (ID int primary key IDENTITY(1,1) not null, | [Key Code] | [MadeNo] | [Case-No] | [BeginPrintTime] | [EndPrintTime] | [BeginBoxNo] | [EndBoxNo] | [BeginMachineNo] | [EndMachineNo] | null, | null |  nvarchar(512)  |  datetime  | frmSystem---CreatePrintRecord: | 貙U
+
+== 00441700 TfrmSystem::FormShow [frmSystem---FormShow] (len 99b)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: TabShPWD | 貙U | txtOldPwd | 貙U | txtNewPwd | 貙U | txtSurePwd | 貙U | TabShServer | 貙U | txtDataBaseName | 貙U | txtDataBaseUserID | 貙U | txtDataBasePwd | 貙U | TabShModel | 貙U | txtSourceMsg1Path | 貙U | txtSourceMsg2Path | 貙U | TabShInputOut | 貙U | txtImportPath | 貙U | txtExportPath | 貙U | TabShBakSystem | 貙U | RadioBtnbf | 貙U | RadioBtnhy | 貙U | btnSetData | 貙U | frmSystem---FormShow: | 貙U
+
+== 0044209C TfrmSystem::EditKeyCodeKeyPress [frmSystem---EditKeyCodeKeyPress] (len b3)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmSystem---EditKeyCodeKeyPress: | 貙U
+
+== 004422D8 @$xp$16Cspin@TCSpinEdit (len f3)
+
+== 00442890 @Cspin@TCSpinEdit@Dispatch$qqrpv (len 8a)
+  calls: @Cspin@TCSpinEdit@WMSize$qqrr16Messages@TWMSize, @Cspin@TCSpinEdit@CMEnter$qqrr20Messages@TWMNoParams, @Cspin@TCSpinEdit@CMExit$qqrr20Messages@TWMNoParams, @Cspin@TCSpinEdit@WMPaste$qqrr20Messages@TWMNoParams, @Cspin@TCSpinEdit@WMCut$qqrr20Messages@TWMNoParams
+
+== 0044291C @$xp$18Cspin@TCSpinButton (len d)
+
+== 00442D08 @Cspin@TCSpinButton@Dispatch$qqrpv (len 67)
+  calls: @Cspin@TCSpinButton@WMSize$qqrr16Messages@TWMSize, @Cspin@TCSpinButton@WMSetFocus$qqrr20Messages@TWMSetFocus, @Cspin@TCSpinButton@WMKillFocus$qqrr21Messages@TWMKillFocus, @Cspin@TCSpinButton@WMGetDlgCode$qqrr20Messages@TWMNoParams
+
+== 00442D70 @Cspin@TCSpinButton@$bdtr$qqrv (len 57)
+
+== 00442DC8 @@Ufrmsystem@Initialize (len f)
+
+== 00442DD8 @@Ufrmsystem@Finalize (len f)
+
+== 00442E58 TfrmLogin::btnCanceClick [frmLogin---btnCanceClick] (len 9f)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: 貙U | frmLogin---btnCanceClick: | 貙U
+
+== 00442EF8 TfrmLogin::btnOKClick [frmLogin---btnOKClick] (len 26b)
+  calls: frmMain---GetHeJianInfo, frmMain---ShowMessage, frmMain---ShowAlert, CC3260MT!@_CatchCleanup$qv
+  strs: LoginPassWord | LoginPass | 貙U | 貙U | CJSZPass | LoginPass | 貙U | 貙U | LoginPassError | 貙U | 貙U | frmLogin---btnOKClick: | 貙U
+
+== 00443164 TfrmLogin::FormShow [frmLogin---FormShow] (len 21f)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: frmLogin | 貙U | txtPassWord | 貙U | btnOK | 貙U | btnCance | 貙U | frmLogin---FormShow: | 貙U
+
+== 00443384 TfrmLogin::txtPassWordKeyPress (len b4)
+
+== 0044348C @@Ufrmlogin@Initialize (len f)
+
+== 0044349C @@Ufrmlogin@Finalize (len f)
+
+== 004434AC frmSuperset---TfrmSuperset (len 7ef)
+  calls: frmMain---GetHeJianInfo, CC3260MT!@_CatchCleanup$qv
+  strs: PrintHead1FixedDelay1 | Data | 貙U | PrintHead1FixedDelay2 | Data | 貙U | PrintHead2FixedDelay1 | Data | 貙U | PrintHead2FixedDelay2 | Data | 貙U | PrintHead3FixedDelay1 | Data | 貙U | PrintHead3FixedDelay2 | Data | 貙U | PrintHead4FixedDelay1 | Data | 貙U | PrintHead4FixedDelay2 | Data | 貙U | DPI | Data | 貙U | PrintMaxMem | Data | 貙U | PrintDataBuffer | Data | 貙U | frmSuperset---TfrmSuperset: | 貙U
+
+== 00443C9C TfrmSuperset::btnSetClick [frmSuperset---btnSetClick] (len eb)
+  calls: frmSuperset---SetLoginPWD, frmSuperset---SetDelay, frmSuperset---SetResolution, frmSuperset---SetPrintMaxMem, frmSuperset---SetPrintMaxHCTime, CC3260MT!@_CatchCleanup$qv
+  strs: frmSuperset---btnSetClick: | 貙U
+
+== 00443D88 frmSuperset---SetPrintMaxHCTime (len 323)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmMain---SetIniData, CC3260MT!@_CatchCleanup$qv
+  strs: SuperHCTimeNoNULL | 貙U | 貙U | SuperMaxHCDYZome | 貙U | 貙U | PrintDataBuffer | Data | 貙U | 貙U | 貙U | SuperSetSucc | 貙U | 貙U | SuperSetFail | 貙U | 貙U | frmSuperset---SetPrintMaxHCTime: | 貙U
+
+== 004440AC frmSuperset---SetPrintMaxMem (len 323)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmMain---SetIniData, CC3260MT!@_CatchCleanup$qv
+  strs: SuperMaxHCNoNULL | 貙U | 貙U | SuperMaxHCMustDyZone | 貙U | 貙U | PrintMaxMem | Data | 貙U | 貙U | 貙U | SuperSetSucc | 貙U | 貙U | SuperSetFail | 貙U | 貙U | frmSuperset---SetPrintMaxMem: | 貙U
+
+== 004443D0 frmSuperset---SetLoginPWD (len 2d3)
+  calls: frmMain---ShowMessage, frmMain---SetIniData, frmMain---ShowAlert, CC3260MT!@_CatchCleanup$qv
+  strs: SuperSetFail | 貙U | SuperSureQRPass | 貙U | LoginPassWord | anser | LoginPass | 貙U | 貙U | SuperSuccPass | 貙U | 貙U | SuperFailPass | 貙U | 貙U | frmSuperset---SetLoginPWD: | 貙U
+
+== 004446A4 frmSuperset---SetDelay (len bbf)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmMain---SetIniData, CC3260MT!@_CatchCleanup$qv
+  strs: SuperDelayNoNULL | 貙U | 貙U | PrintHead1FixedDelay1 | Data | 貙U | 貙U | PrintHead1FixedDelay2 | Data | 貙U | 貙U | PrintHead2FixedDelay1 | Data | 貙U | 貙U | PrintHead2FixedDelay2 | Data | 貙U | 貙U | PrintHead3FixedDelay1 | Data | 貙U | 貙U | PrintHead3FixedDelay2 | Data | 貙U | 貙U | PrintHead4FixedDelay1 | Data | 貙U | 貙U | PrintHead4FixedDelay2 | Data | 貙U | 貙U | SuperDelaySucc | 貙U | 貙U | SuperDelayFail | 貙U | 貙U | frmSuperset---SetDelay: | 貙U
+
+== 00445264 frmSuperset---SetResolution (len 403)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmMain---SetIniData, CC3260MT!@_CatchCleanup$qv
+  strs: SuperDPINoNULL | 貙U | 貙U | SuperDPIDYZore | 貙U | 貙U | SuperDPIZShu | 貙U | 貙U | DPI | Data | 貙U | 貙U | SuperDPISucc | 貙U | 貙U | SuperDPIFail | 貙U | 貙U | frmSuperset---SetResolution: | 貙U
+
+== 00445668 TfrmSuperset::txtWidthResolutionKeyPress [frmSuperset---txtWidthResolutionKeyPress] (len b3)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmSuperset---txtWidthResolutionKeyPress: | 貙U
+
+== 0044571C TfrmSuperset::FormShow [frmSuperset---FormShow] (len 963)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: tabEditPWD | 貙U | cbx_defaultPWD | 貙U | tabSetDelay | 貙U | lblycone | 貙U | lblyctwo | 貙U | txtYCOne1 | 貙U | txtYCOne2 | 貙U | txtYCOne3 | 貙U | txtYCOne4 | 貙U | tabEditFBL | 貙U | txtWidthResolution | 貙U | TabSZDFC | 貙U | txtEditMaxHC | 貙U | TabShHC | 貙U | txtHCSJ | 貙U | btnSet | 貙U | frmSuperset---FormShow: | 貙U
+
+== 004460D0 @@Ufrmsuperset@Initialize (len f)
+
+== 004460E0 @@Ufrmsuperset@Finalize (len f)
+
+== 004460F0 frmProduct---TfrmProduct (len 2cf)
+  calls: frmMain---GetIniData, frmMain---GetHeJianInfo, CC3260MT!@_CatchCleanup$qv
+  strs: ProductPageSize | Table | 貙U | 貙U | ProductRecord | Table | 貙U | frmProduct---TfrmProduct: | 貙U
+
+== 004463C0 frmProduct---GetProductData (len 14fb)
+  calls: frmProduct---SetDeleteProduct, frmMain---ShowMessage, frmProduct---ShowUISize, CC3260MT!@_CatchCleanup$qv
+  strs: yyyy-MM-dd |  23:59:59 | yyyy-MM-dd |  00:00:00 | BeginPrintTime>=' | ' and EndPrintTime <= ' | ' and EndBoxNo!='' | select count(1) as allcount from  |   where  | 貙U | 貙U | 貙U | allcount | 貙U | ProductEndPrintNo | 貙U | ProductBeginPrintNo | 貙U | ProductCartonNO | 貙U | ProductNo | 貙U | select [Key Code],[MadeNo] as [ | ],[Case-No] as [ | ],BeginBoxNo as [ | ],EndBoxNo as [ | ], | ProductEndTime | 貙U | ProductBeginTime | 貙U | ProductEndNo | 貙U | ProductBeginNo | 貙U | BeginMachineNo as [ | ],EndMachineNo as [ | ],BeginPrintTime as [ | ],EndPrintTime as [ | ] from (select ROW_NUMBER() |  OVER(ORDER BY GETDATE()) AS Number,* from  |  where  | ) as TT where TT.Number between  |  and  |  order by TT.BeginPrintTime desc | 貙U | 貙U | 貙U | 貙U | frmProduct---GetProductData: | 貙U
+
+== 004478F4 frmProduct---SetDeleteProduct (len 107)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: delete ProductRecord where EndBoxNo='' | 貙U | 貙U | 貙U | frmProduct---SetDeleteProduct: | 貙U
+
+== 004479FC TfrmProduct::btnSearchClick [frmProduct---btnSearchClick] (len ab)
+  calls: frmProduct---GetProductData, CC3260MT!@_CatchCleanup$qv
+  strs: frmProduct---btnSearchClick: | 貙U
+
+== 00447AA8 TfrmProduct::FormResize [frmProduct---FormResize] (len 8f)
+  calls: frmProduct---ShowUISize, CC3260MT!@_CatchCleanup$qv
+  strs: frmProduct---FormResize: | 貙U
+
+== 00447B38 frmProduct---ShowUISize (len 103)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmProduct---ShowUISize: | 貙U
+
+== 00447C3C TfrmProduct::FormShow [frmProduct---FormShow] (len 2e7)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: lblProductTime | 貙U | lblTo | 貙U | btnSearch | 貙U | btnPro | 貙U | btnNext | 貙U | btnOutput | 貙U | frmProduct---FormShow: | 貙U
+
+== 00447F24 TfrmProduct::btnProClick [frmDataSelect---btnProClick] (len cb)
+  calls: frmProduct---GetProductData, CC3260MT!@_CatchCleanup$qv
+  strs: frmDataSelect---btnProClick: | 貙U
+
+== 00447FF0 TfrmProduct::btnNextClick [frmDataSelect---btnNextClick] (len d3)
+  calls: frmProduct---GetProductData, CC3260MT!@_CatchCleanup$qv
+  strs: frmDataSelect---btnNextClick: | 貙U
+
+== 004480C4 frmPrintMan---GetDataToExcel (len 169b)
+  calls: frmMain---GetHeJianInfo, TfrmCarton---ShowMsgToLook, frmMain---ShowMessage, frmMain---ShowAlert, KERNEL32!CopyFileA, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: ExcelProduct.xlsx | ExcelVersion | SourceMsg | 貙U | ExcelProduct.xls | SavePathOutput | SourceMsg | 貙U | ExcelUrlError | 貙U | 貙U | model\ | 貙U | ExcelModelNoExists | 貙U | 貙U | CopyFileError | 貙U | 貙U | Excel.Application | Visible | Open | Workbooks | ActiveSheet | Key Code | Value | Cells | MadeNo | Value | Cells | Case-No | Value | Cells | BeginBoxNo | Value | Cells | EndBoxNo | Value | Cells | BeginMachineNo | Value | Cells | EndMachineNo | Value | Cells | BeginPrintTime | Value | Cells | EndPrintTime | Value | Cells | select [Key Code],[MadeNo],[Case-No],BeginBoxNo,EndBoxNo, | BeginMachineNo,EndMachineNo,BeginPrintTime,EndPrintTime from  | 貙U | 貙U | 貙U | 貙U | 貙U | 貙U | Value | Cells | 貙U | 貙U | Save | ActiveWorkBook | Quit | ExcelOutputSucc1 | 貙U | 貙U | frmPrintMan---GetDataToExcel: | 貙U | ExcelRJError | 貙U | 貙U
+
+== 00449760 TfrmProduct::btnOutputClick (len 97)
+  calls: frmMain---ShowMessage, TfrmCarton---ShowMsgToLook
+  strs: OutputMsg | 貙U
+
+== 004497F8 TfrmCarton---ShowMsgToLook (len ef)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: TfrmCarton---ShowMsgToLook: | 貙U
+
+== 004498E8 TfrmProduct::Timer1Timer (len aa)
+  calls: frmPrintMan---GetDataToExcel
+
+== 004499F8 @@Ufrmproduct@Initialize (len f)
+
+== 00449A08 @@Ufrmproduct@Finalize (len f)
+
+== 00449AAC frmPreview---ShowImageToUi (len 2eb)
+  calls: frmMain---GetHeJianInfo, CC3260MT!_atof, frmPreview---ShowMsgTolist, frmMain---ShowMessage, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: DPI | Data | 貙U | PerInch | Data | 貙U | Preview | PreviewDPI | 貙U | frmPreview---ShowImageToUi: | 貙U
+
+== 00449D98 frmPreview---ShowMsgTolist (len f2f)
+  calls: frmMain---ShowMessage, frmMain---ShowAlert, frmPreview---SetValueToStr, frmPreview---GetPicType, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: msg\ | 貙U | .ms | PreviewNoCMOrZM | 貙U | 貙U | [MsgInfo] | [Object | [DataSrc0] | Width | Height | Type | Width | Height | FontSize | FontName | MsgObjT0 | 貙U | MsgObjT0 | 貙U | frmPreview---ShowMsgTolist: | 貙U
+
+== 0044AE94 frmPreview---SetValueToStr (len 2f3)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmPreview---SetValueToStr: | 貙U
+
+== 0044B188 frmPreview---GetPicType (len 277)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmPreview---GetPicType: | 貙U
+
+== 0044B400 TfrmPreview::FormResize [frmPreview---FormResize] (len bb)
+  calls: frmPreview---SetPictureSize, frmPreview---DrawRulerX, CC3260MT!@_CatchCleanup$qv
+  strs: frmPreview---FormResize: | 貙U
+
+== 0044B4BC frmPreview---SetPictureSize (len 167)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmPreview---SetPictureSize: | 貙U
+
+== 0044B624 frmPreview---DrawRulerX (len 36e)
+  calls: CC3260MT!__ftol, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: frmPreview---DrawRulerX: | 貙U
+
+== 0044B994 TfrmPreview::TrackBar1Change [frmPreview---TrackBar1Change] (len 167)
+  calls: frmPreview---SetPictureSize, CC3260MT!@_CatchCleanup$qv
+  strs: frmPreview---TrackBar1Change: | 貙U
+
+== 0044BAFC TfrmPreview::FormShow [frmPreview---FormShow] (len 255)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: lbldanwei | 貙U | btnPreview | 貙U | gbxSuoFang | 貙U | frmPreview---FormShow: | 貙U
+
+== 0044C0A0 @@Ufrmpreview@Initialize (len f)
+
+== 0044C0B0 @@Ufrmpreview@Finalize (len f)
+
+== 0044C0C0 frmStatus---TfrmStatus (len 123)
+  calls: CC3260MT!@_CatchCleanup$qv
+  strs: frmStatus---TfrmStatus: | 貙U
+
+== 0044C1E4 TfrmStatus::FormShow [frmStatus---FormShow] (len 22c)
+  calls: frmMain---ShowMessage, CC3260MT!@_CatchCleanup$qv
+  strs: frmStatus | 貙U | lblPrintCount | 貙U | lblPrintAllCount | 貙U | frmStatus---FormShow: | 貙U
+
+== 0044C460 @@Ufrmstatus@Initialize (len f)
+
+== 0044C470 @@Ufrmstatus@Finalize (len f)
+
+== 0044C504 SendThread---Execute----Terminated (len 15b)
+  calls: KERNEL32!CreateEventA, SendThread---UpdateSN, KERNEL32!WaitForSingleObject, CC3260MT!@_CatchCleanup$qv, KERNEL32!CloseHandle
+  strs: SendThread---Execute----Terminated: | 貙U | SendThread---Execute: | 貙U
+
+== 0044C660 SendThread---UpdateSN (len 93)
+  calls: frmCtrl---UpdatePageSN, CC3260MT!@_CatchCleanup$qv
+  strs: 鑼U | SendThread---UpdateSN: | 貙U
+
+== 0044C6F4 SendThread---Wakeup (len 117)
+  calls: KERNEL32!SetEvent, CC3260MT!@_CatchCleanup$qv
+  strs: SendThread---Wakeup: | 貙U
+
+== 0044C8B4 @@Usendthread@Initialize (len f)
+
+== 0044C8C4 @@Usendthread@Finalize (len f)
+
+== 0044CC6C ? (len 97)
+  strs:  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_ |  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ |  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+
+== 0044CD04 ? (len 7b)
+  calls: CC3260MT!_sprintf
+  strs: %s
+
+== 0044CE48 ? (len 563)
+  calls: CC3260MT!_sprintf, CC3260MT!_strlen
+  strs: 211232 | %s | 211214 | %s | _4U | %s | %c | X4U | %s | %c%c | %s | 2331112 | %s
+
+== 0044D41C TfrmAbout::btnCloseClick (len 17)
+
+== 0044D434 ? (len 3a3)
+  calls: VERSION!GetFileVersionInfoSizeA, CC3260MT!_strcpy, CC3260MT!@$bnwa$qui, VERSION!GetFileVersionInfoA, VERSION!VerQueryValueA, CC3260MT!@$bdla$qpv, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: \VarFileInfo\Translation | \StringFileInfo\ | \FileVersion
+
+== 0044D7D8 TfrmAbout::FormShow (len 3c6)
+  calls: frmMain---ShowMessage, frmMain---GetIniData
+  strs: frmAbout | 貙U | AboutProduct | 貙U | AboutBanbeng | 貙U | AboutBanquan | 貙U | ProductName | SourceMsg | 貙U | 貙U | SoftShengMing | SourceMsg | 貙U | 貙U
+
+== 0044DBF0 @@Ufrmabout@Initialize (len f)
+
+== 0044DC00 @@Ufrmabout@Finalize (len f)
+
+== 0044DC10 @TCCalendar@$bctr$qqrp18Classes@TComponent (len e3)
+  calls: @TCCalendar@SetStartOfWeek$qqrs
+
+== 0044DDD4 @TCCalendar@Change$qqrv (len 2f)
+
+== 0044DE04 @TCCalendar@Click$qqrv (len b3)
+  calls: @TCCalendar@GetCellText$qqrii, @TCCalendar@SetDateElement$qqrii
+
+== 0044DED0 @TCCalendar@IsLeapYear$qqri (len 4b)
+
+== 0044DF1C @TCCalendar@DaysPerMonth$qqrii (len 4f)
+
+== 0044DF6C @TCCalendar@DaysThisMonth$qqrv (len 37)
+  calls: @TCCalendar@GetDateElement$qqri
+
+== 0044DFA4 @TCCalendar@DrawCell$qqriirx11Types@TRect42System@%Set$t14Grids@Grids__3$iuc$0$iuc$2% (len 127)
+  calls: @TCCalendar@GetCellText$qqrii
+
+== 0044E0CC @TCCalendar@GetCellText$qqrii (len 143)
+  strs: 槒U
+
+== 0044E210 @TCCalendar@SelectCell$qqrii (len 9f)
+  calls: @TCCalendar@GetCellText$qqrii
+
+== 0044E2B0 @TCCalendar@SeTCCalendarDate$qqr16System@TDateTime (len 33)
+
+== 0044E308 @TCCalendar@StoreCalendarDate$qqrv (len 1b)
+
+== 0044E324 @TCCalendar@GetDateElement$qqri (len 5f)
+
+== 0044E384 @TCCalendar@SetDateElement$qqrii (len e7)
+
+== 0044E46C @TCCalendar@SetStartOfWeek$qqrs (len 57)
+
+== 0044E4C4 @TCCalendar@SetUseCurrentDate$qqro (len 4b)
+
+== 0044E510 @TCCalendar@ChangeMonth$qqri (len f3)
+  calls: @TCCalendar@SeTCCalendarDate$qqr16System@TDateTime
+
+== 0044E62C @TCCalendar@PrevMonth$qqrv (len 17)
+  calls: @TCCalendar@ChangeMonth$qqri
+
+== 0044E644 @TCCalendar@NextMonth$qqrv (len 17)
+  calls: @TCCalendar@ChangeMonth$qqri
+
+== 0044E65C @TCCalendar@NextYear$qqrv (len 7b)
+  calls: @TCCalendar@GetDateElement$qqri, @TCCalendar@SetDateElement$qqrii
+
+== 0044E6D8 @TCCalendar@PrevYear$qqrv (len 7b)
+  calls: @TCCalendar@GetDateElement$qqri, @TCCalendar@SetDateElement$qqrii
+
+== 0044E754 @TCCalendar@UpdateCalendar$qqrv (len eb)
+
+== 0044E840 @TCCalendar@WMSize$qqrr16Messages@TWMSize (len 5b)
+
+== 0044E928 @$xp$10TCCalendar (len 68)
+
+== 0044EED4 @TCCalendar@Dispatch$qqrpv (len 33)
+  calls: @TCCalendar@WMSize$qqrr16Messages@TWMSize
+
+== 0044F0C8 @@Ccalendr@Initialize (len f)
+
+== 0044F0D8 @@Ccalendr@Finalize (len f)
+
+== 0044F0E8 @Cdiroutl@TCDirectoryOutline@$bctr$qqrp18Classes@TComponent (len bf)
+  calls: @Cdiroutl@TCDirectoryOutline@AssignCaseProc$qqrv
+
+== 0044F248 @Cdiroutl@TCDirectoryOutline@AssignCaseProc$qqrv (len 47)
+
+== 0044F290 @Cdiroutl@TCDirectoryOutline@BuildOneLevel$qqrl (len 30f)
+  calls: @Cdiroutl@TCDirectoryOutline@ForceCase$qqrrx17System@AnsiString
+  strs: *.*
+
+== 0044F740 @Cdiroutl@TCDirectoryOutline@BuildTree$qqrv (len ef)
+  calls: @Cdiroutl@TCDirectoryOutline@ForceCase$qqrrx17System@AnsiString, @Cdiroutl@TCDirectoryOutline@WalkTree$qqrrx17System@AnsiString
+
+== 0044F830 @Cdiroutl@TCDirectoryOutline@BuildSubTree$qqrl (len 5f)
+
+== 0044F890 @Cdiroutl@TCDirectoryOutline@Change$qqrv (len 2f)
+
+== 0044F8C0 @Cdiroutl@TCDirectoryOutline@Click$qqrv (len 6f)
+  calls: @Cdiroutl@TCDirectoryOutline@SetDirectory$qqr17System@AnsiString
+
+== 0044F930 @Cdiroutl@TCDirectoryOutline@CreateWnd$qqrv (len ef)
+  calls: @Cdiroutl@TCDirectoryOutline@CurDir$qv, @Cdiroutl@TCDirectoryOutline@ForceCase$qqrrx17System@AnsiString
+
+== 0044FA20 @Cdiroutl@TCDirectoryOutline@Expand$qqri (len 3b)
+
+== 0044FA5C @Cdiroutl@TCDirectoryOutline@Loaded$qqrv (len 3b)
+  calls: @Cdiroutl@TCDirectoryOutline@AssignCaseProc$qqrv
+
+== 0044FA98 @Cdiroutl@TCDirectoryOutline@ForceCase$qqrrx17System@AnsiString (len c3)
+
+== 0044FB5C @Cdiroutl@TCDirectoryOutline@SetDirectory$qqr17System@AnsiString (len 17b)
+  calls: @Cdiroutl@TCDirectoryOutline@ForceCase$qqrrx17System@AnsiString, CC3260MT!_chdir, @Cdiroutl@TCDirectoryOutline@SetDrive$qqrc, @Cdiroutl@TCDirectoryOutline@WalkTree$qqrrx17System@AnsiString
+
+== 0044FD10 @Cdiroutl@TCDirectoryOutline@SetDrive$qqrc (len 10b)
+  calls: CC3260MT!__ltoupper, @Cdiroutl@TCDirectoryOutline@DriveToInt$qqrc, CC3260MT!_setdisk, @Cdiroutl@TCDirectoryOutline@CurDir$qv, @Cdiroutl@TCDirectoryOutline@ForceCase$qqrrx17System@AnsiString
+
+== 0044FE1C @Cdiroutl@TCDirectoryOutline@DriveToInt$qqrc (len 1f)
+  calls: CC3260MT!__ltoupper
+
+== 0044FE90 @Cdiroutl@TCDirectoryOutline@SetTextCase$qqr18Cdiroutl@TTextCase (len c7)
+  calls: @Cdiroutl@TCDirectoryOutline@AssignCaseProc$qqrv, @Cdiroutl@TCDirectoryOutline@CurDir$qv
+
+== 0044FF58 @Cdiroutl@TCDirectoryOutline@CurDir$qv (len 11b)
+  calls: CC3260MT!_malloc, KERNEL32!GetCurrentDirectoryA, CC3260MT!_realloc, CC3260MT!_free, CC3260MT!@_ReThrowException$quipuc, CC3260MT!@_CatchCleanup$qv
+
+== 00450074 @Cdiroutl@TCDirectoryOutline@GetChildNamed$qqrrx17System@AnsiStringl (len 1df)
+
+== 00450254 @Cdiroutl@TCDirectoryOutline@WalkTree$qqrrx17System@AnsiString (len 303)
+  calls: @Cdiroutl@TCDirectoryOutline@ForceCase$qqrrx17System@AnsiString, @Cdiroutl@TCDirectoryOutline@GetChildNamed$qqrrx17System@AnsiStringl
+
+== 004505F4 @$xp$27Cdiroutl@TCDirectoryOutline (len b6)
+
+== 00450F50 @@Cdiroutl@Initialize (len f)
+
+== 00450F60 @@Cdiroutl@Finalize (len f)
+
+== 004510D4 @TCGauge@$bctr$qqrp18Classes@TComponent (len df)
+
+== 00451214 @TCGauge@GetPercentDone$qqrv (len 37)
+
+== 0045124C @TCGauge@Paint$qqrv (len 263)
+  calls: @TCGauge@PaintBackground$qqrp16Graphics@TBitmap, USER32!InflateRect, @TCGauge@PaintAsNothing$qqrp16Graphics@TBitmaprx11Types@TRect, @TCGauge@PaintAsBar$qqrp16Graphics@TBitmaprx11Types@TRect, @TCGauge@PaintAsPie$qqrp16Graphics@TBitmaprx11Types@TRect, @TCGauge@PaintAsNeedle$qqrp16Graphics@TBitmaprx11Types@TRect, @TCGauge@PaintAsText$qqrp16Graphics@TBitmaprx11Types@TRect
+
+== 004516F8 @TCGauge@PaintBackground$qqrp16Graphics@TBitmap (len 7f)
+
+== 00451778 @TCGauge@PaintAsText$qqrp16Graphics@TBitmaprx11Types@TRect (len 20b)
+  calls: @TCGauge@PaintBackground$qqrp16Graphics@TBitmap, @TCGauge@GetPercentDone$qqrv
+
+== 00451984 @TCGauge@PaintAsNothing$qqrp16Graphics@TBitmaprx11Types@TRect (len 3b)
+
+== 004519C0 @TCGauge@PaintAsBar$qqrp16Graphics@TBitmaprx11Types@TRect (len 167)
+  calls: @TCGauge@GetPercentDone$qqrv
+
+== 00451B28 @TCGauge@PaintAsPie$qqrp16Graphics@TBitmaprx11Types@TRect (len 1ca)
+  calls: @TCGauge@GetPercentDone$qqrv, CC3260MT!_cos, CC3260MT!_floor, CC3260MT!__ftol, CC3260MT!_sin
+
+== 00451CF8 @TCGauge@PaintAsNeedle$qqrp16Graphics@TBitmaprx11Types@TRect (len 21a)
+  calls: @TCGauge@GetPercentDone$qqrv, CC3260MT!_sin, CC3260MT!_floor, CC3260MT!__ftol, CC3260MT!_cos
+
+== 00451F18 @TCGauge@SeTCGaugeKind$qqr11TCGaugeKind (len 33)
+
+== 00451F4C @TCGauge@SetShowText$qqro (len 33)
+
+== 00451F80 @TCGauge@SetBorderStyle$qqr22Forms@TFormBorderStyle (len 33)
+
+== 00451FB4 @TCGauge@SetForeColor$qqr15Graphics@TColor (len 33)
+
+== 00451FE8 @TCGauge@SetBackColor$qqr15Graphics@TColor (len 33)
+
+== 0045201C @TCGauge@SetMinValue$qqrl (len 103)
+  calls: CC3260MT!@_ThrowExceptionLDTC$qpvt1t1t1uiuiuipuct1
+
+== 00452120 @TCGauge@SetMaxValue$qqrl (len fb)
+  calls: CC3260MT!@_ThrowExceptionLDTC$qpvt1t1t1uiuiuipuct1
+
+== 0045221C @TCGauge@SetProgress$qqrl (len 7f)
+  calls: @TCGauge@GetPercentDone$qqrv
+
+== 0045229C @TCGauge@AddProgress$qqrl (len 2b)
+  calls: @TCGauge@SetProgress$qqrl
+
+== 00452408 @$xp$7TCGauge (len ad)
+
+== 004527FC @@Cgauges@Initialize (len f)
+
+== 0045280C @@Cgauges@Finalize (len f)
+
+== 0045281C @Cspin@TCSpinButton@$bctr$qqrp18Classes@TComponent (len db)
+  calls: @Cspin@TCSpinButton@CreateButton$qqrv, @Cspin@TCSpinButton@SetUpGlyph$qqrp16Graphics@TBitmap, @Cspin@TCSpinButton@SetDownGlyph$qqrp16Graphics@TBitmap
+
+== 00452944 @Cspin@TCSpinButton@CreateButton$qqrv (len 9f)
+  calls: @Cspin@TTimerSpeedButton@$bctr$qqrp18Classes@TComponent
+  strs: hLU
+
+== 00452A2C @Cspin@TCSpinButton@AdjustSize$qqrrit1 (len 93)
+
+== 00452AC0 @Cspin@TCSpinButton@SetBounds$qqriiii (len 43)
+  calls: @Cspin@TCSpinButton@AdjustSize$qqrrit1
+
+== 00452B04 @Cspin@TCSpinButton@WMSize$qqrr16Messages@TWMSize (len 73)
+  calls: @Cspin@TCSpinButton@AdjustSize$qqrrit1
+
+== 00452B78 @Cspin@TCSpinButton@WMSetFocus$qqrr20Messages@TWMSetFocus (len 33)
+
+== 00452BAC @Cspin@TCSpinButton@WMKillFocus$qqrr21Messages@TWMKillFocus (len 33)
+
+== 00452C2C @Cspin@TCSpinButton@KeyDown$qqrrus46System@%Set$t18Classes@Classes__1$iuc$0$iuc$6% (len b7)
+  calls: @Cspin@TCSpinButton@SetFocusBtn$qqrp23Cspin@TTimerSpeedButton
+
+== 00452CE4 @Cspin@TCSpinButton@BtnMouseDown$qqrp14System@TObject21Controls@TMouseButton46System@%Set$t18Classes@Classes__1$iuc$0$iuc$6%ii (len d9)
+  calls: @Cspin@TCSpinButton@SetFocusBtn$qqrp23Cspin@TTimerSpeedButton, USER32!GetFocus
+
+== 00452DC0 @Cspin@TCSpinButton@BtnClick$qqrp14System@TObject (len 67)
+
+== 00452E28 @Cspin@TCSpinButton@SetFocusBtn$qqrp23Cspin@TTimerSpeedButton (len 97)
+  calls: USER32!GetFocus
+
+== 00452EC0 @Cspin@TCSpinButton@WMGetDlgCode$qqrr20Messages@TWMNoParams (len 1b)
+
+== 00452EDC @Cspin@TCSpinButton@Loaded$qqrv (len 5f)
+  calls: @Cspin@TCSpinButton@AdjustSize$qqrrit1
+
+== 00452F3C @Cspin@TCSpinButton@GetUpGlyph$qqrv (len 23)
+
+== 00452F60 @Cspin@TCSpinButton@SetUpGlyph$qqrp16Graphics@TBitmap (len 6f)
+  calls: USER32!LoadBitmapA
+  strs: SpinUp | 葘U
+
+== 00452FD0 @Cspin@TCSpinButton@GetDownGlyph$qqrv (len 23)
+
+== 00452FF4 @Cspin@TCSpinButton@SetDownGlyph$qqrp16Graphics@TBitmap (len 6f)
+  calls: USER32!LoadBitmapA
+  strs: SpinDown | 葘U
+
+== 00453064 @Cspin@TCSpinEdit@$bctr$qqrp18Classes@TComponent (len 18f)
+  calls: @Cspin@TCSpinButton@$bctr$qqrp18Classes@TComponent
+
+== 004531FC @Cspin@TCSpinEdit@$bdtr$qqrv (len 63)
+
+== 004532B8 @Cspin@TCSpinEdit@GetChildren$qqrynpqqrp18Classes@TComponent$vp18Classes@TComponent (len 13)
+
+== 004532CC @Cspin@TCSpinEdit@KeyDown$qqrrus46System@%Set$t18Classes@Classes__1$iuc$0$iuc$6% (len 53)
+
+== 00453320 @Cspin@TCSpinEdit@KeyPress$qqrrc (len 43)
+  calls: USER32!MessageBeep
+
+== 00453364 @Cspin@TCSpinEdit@IsValidChar$qqrc (len 8b)
+
+== 004533F0 @Cspin@TCSpinEdit@CreateParams$qqrr22Controls@TCreateParams (len 27)
+
+== 00453418 @Cspin@TCSpinEdit@CreateWnd$qqrv (len 1b)
+  calls: @Cspin@TCSpinEdit@SetEditRect$qqrv
+
+== 00453434 @Cspin@TCSpinEdit@SetEditRect$qqrv (len 93)
+  calls: USER32!SendMessageA
+
+== 004534C8 @Cspin@TCSpinEdit@WMSize$qqrr16Messages@TWMSize (len d3)
+  calls: @Cspin@TCSpinEdit@GetMinHeight$qqrv, @Cspin@TCSpinEdit@SetEditRect$qqrv
+  strs: |歎
+
+== 0045359C @Cspin@TCSpinEdit@GetMinHeight$qqrv (len a3)
+  calls: USER32!GetDC, GDI32!GetTextMetricsA, GDI32!SelectObject, USER32!ReleaseDC, USER32!GetSystemMetrics
+
+== 00453640 @Cspin@TCSpinEdit@UpClick$qqrp14System@TObject (len 3f)
+  calls: USER32!MessageBeep, @Cspin@TCSpinEdit@GetValue$qqrv, @Cspin@TCSpinEdit@SetValue$qqrl
+
+== 00453680 @Cspin@TCSpinEdit@DownClick$qqrp14System@TObject (len 3f)
+  calls: USER32!MessageBeep, @Cspin@TCSpinEdit@GetValue$qqrv, @Cspin@TCSpinEdit@SetValue$qqrl
+
+== 004536C0 @Cspin@TCSpinEdit@WMPaste$qqrr20Messages@TWMNoParams (len 27)
+
+== 004536E8 @Cspin@TCSpinEdit@WMCut$qqrr20Messages@TWMNoParams (len 27)
+
+== 00453710 @Cspin@TCSpinEdit@CMExit$qqrr20Messages@TWMNoParams (len 43)
+  calls: @Cspin@TCSpinEdit@GetValue$qqrv, @Cspin@TCSpinEdit@CheckValue$qqrl, @Cspin@TCSpinEdit@SetValue$qqrl
+
+== 00453754 @Cspin@TCSpinEdit@GetValue$qqrv (len cb)
+  calls: CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+
+== 00453820 @Cspin@TCSpinEdit@SetValue$qqrl (len 5b)
+  calls: @Cspin@TCSpinEdit@CheckValue$qqrl
+
+== 0045387C @Cspin@TCSpinEdit@CheckValue$qqrl (len 63)
+
+== 004538E0 @Cspin@TCSpinEdit@CMEnter$qqrr20Messages@TWMNoParams (len 37)
+
+== 0045396C @Cspin@TTimerSpeedButton@$bctr$qqrp18Classes@TComponent (len 67)
+
+== 00453A28 @Cspin@TTimerSpeedButton@$bdtr$qqrv (len b1)
+
+== 00453ADC @Cspin@TTimerSpeedButton@MouseDown$qqr21Controls@TMouseButton46System@%Set$t18Classes@Classes__1$iuc$0$iuc$6%ii (len bb)
+
+== 00453BEC @Cspin@TTimerSpeedButton@MouseUp$qqr21Controls@TMouseButton46System@%Set$t18Classes@Classes__1$iuc$0$iuc$6%ii (len 47)
+
+== 00453C34 @Cspin@TTimerSpeedButton@TimerExpired$qqrp14System@TObject (len 9f)
+  calls: CC3260MT!@_ReThrowException$quipuc, CC3260MT!@_CatchCleanup$qv
+
+== 00453CD4 @Cspin@TTimerSpeedButton@Paint$qqrv (len 1dd)
+  calls: USER32!InflateRect, USER32!OffsetRect, USER32!DrawFocusRect
+
+== 00453EB8 @$xp$23Cspin@TTimerSpeedButton (len 27)
+
+== 00453EE4 @$xp$16Cspin@TCSpinEdit (len ee)
+
+== 00454494 @Cspin@TCSpinEdit@Dispatch$qqrpv (len 8a)
+  calls: @Cspin@TCSpinEdit@WMSize$qqrr16Messages@TWMSize, @Cspin@TCSpinEdit@CMEnter$qqrr20Messages@TWMNoParams, @Cspin@TCSpinEdit@CMExit$qqrr20Messages@TWMNoParams, @Cspin@TCSpinEdit@WMPaste$qqrr20Messages@TWMNoParams, @Cspin@TCSpinEdit@WMCut$qqrr20Messages@TWMNoParams
+
+== 00454520 @$xp$18Cspin@TCSpinButton (len d)
+
+== 00454908 @Cspin@TCSpinButton@Dispatch$qqrpv (len 67)
+  calls: @Cspin@TCSpinButton@WMSize$qqrr16Messages@TWMSize, @Cspin@TCSpinButton@WMSetFocus$qqrr20Messages@TWMSetFocus, @Cspin@TCSpinButton@WMKillFocus$qqrr21Messages@TWMKillFocus, @Cspin@TCSpinButton@WMGetDlgCode$qqrr20Messages@TWMNoParams
+
+== 00454970 @Cspin@TCSpinButton@$bdtr$qqrv (len 111)
+
+== 00454A84 @@Cspin@Initialize (len f)
+
+== 00454A94 @@Cspin@Finalize (len f)
+
+== 00454AA4 @TPerformanceGraph@$bctr$qqrp18Classes@TComponent (len 203)
+  calls: @TPerformanceGraph@GetBandCount$qqrv, CC3260MT!@$bnwa$qui, @TPerformanceGraph@Initialize$qqrl
+
+== 00454CA8 @TPerformanceGraph@GetBandCount$qqrv (len 39)
+
+== 00454CE4 @TPerformanceGraph@$bdtr$qqrv (len 9b)
+  calls: CC3260MT!@$bdla$qpv
+
+== 00454D80 @TPerformanceGraph@Initialize$qqrl (len 25b)
+
+== 00455000 @TPerformanceGraph@Paint$qqrv (len 87)
+  calls: @TPerformanceGraph@ReallocHistory$qqrv, @TPerformanceGraph@Replay$qqrv
+
+== 00455088 @TPerformanceGraph@SetGraphKind$qqr10TGraphKind (len 33)
+  calls: @TPerformanceGraph@Replay$qqrv
+
+== 004550BC @TPerformanceGraph@SetForeColor$qqr15Graphics@TColor (len 33)
+  calls: @TPerformanceGraph@Replay$qqrv
+
+== 004550F0 @TPerformanceGraph@SetBackColor$qqr15Graphics@TColor (len 33)
+  calls: @TPerformanceGraph@Replay$qqrv
+
+== 00455124 @TPerformanceGraph@SetGridSize$qqrl (len 3f)
+  calls: @TPerformanceGraph@Replay$qqrv
+
+== 00455164 @TPerformanceGraph@SetStepSize$qqrl (len 47)
+  calls: @TPerformanceGraph@ReallocHistory$qqrv, @TPerformanceGraph@Replay$qqrv
+
+== 004551AC @TPerformanceGraph@SetScale$qqrl (len 6b)
+  calls: @TPerformanceGraph@RoundUp$qqrll, @TPerformanceGraph@Replay$qqrv
+
+== 00455218 @TPerformanceGraph@RoundUp$qqrll (len 33)
+
+== 0045524C @TPerformanceGraph@SetGradient$qqrl (len 33)
+  calls: @TPerformanceGraph@Replay$qqrv
+
+== 00455280 @TPerformanceGraph@SetGridlines$qqro (len 33)
+  calls: @TPerformanceGraph@Replay$qqrv
+
+== 004552B4 @TPerformanceGraph@SetPenWidth$qqrl (len 4b)
+  calls: @TPerformanceGraph@Replay$qqrv
+
+== 00455300 @TPerformanceGraph@PaintBar$qqr15Graphics@TColorll (len e7)
+  calls: CC3260MT!__ftol
+
+== 004553E8 @TPerformanceGraph@PaintLine$qqr15Graphics@TColorll (len fb)
+  calls: CC3260MT!__ftol
+
+== 004554E4 @TPerformanceGraph@DataPoint$qqr15Graphics@TColorl (len 12f)
+  calls: CC3260MT!@_ThrowExceptionLDTC$qpvt1t1t1uiuiuipuct1
+
+== 00455778 @TPerformanceGraph@ScrollGraph$qqrv (len 1b7)
+
+== 00455930 @TPerformanceGraph@DisplayPoints$qqrl (len 16b)
+  calls: @TPerformanceGraph@PaintBar$qqr15Graphics@TColorll, @TPerformanceGraph@LastY$qqri, @TPerformanceGraph@PaintLine$qqr15Graphics@TColorll
+
+== 00455A9C @TPerformanceGraph@LastY$qqri (len 27)
+
+== 00455AC4 @TPerformanceGraph@ReallocHistory$qqrv (len 12b)
+  calls: @TPerformanceGraph@GetBandCount$qqrv, CC3260MT!@$bnwa$qui, @TPerformanceGraph@FirstY$qqrv, @TPerformanceGraph@NextY$qqri, CC3260MT!@$bdla$qpv
+
+== 00455BF0 @TPerformanceGraph@FirstY$qqrv (len 13)
+
+== 00455C04 @TPerformanceGraph@NextY$qqri (len 3b)
+
+== 00455C40 @TPerformanceGraph@Update$qqrv (len 103)
+  calls: @TPerformanceGraph@ScrollGraph$qqrv, @TPerformanceGraph@ShiftY$qqrv, @TPerformanceGraph@FirstY$qqrv, @TPerformanceGraph@NextY$qqri, @TPerformanceGraph@RoundUp$qqrll, @TPerformanceGraph@SetScale$qqrl, @TPerformanceGraph@LastY$qqri, @TPerformanceGraph@DisplayPoints$qqrl
+
+== 00455D44 @TPerformanceGraph@ShiftY$qqrv (len 87)
+
+== 00455DCC @TPerformanceGraph@Replay$qqrv (len fb)
+  calls: @TPerformanceGraph@Initialize$qqrl, @TPerformanceGraph@GetBandCount$qqrv, @TPerformanceGraph@FirstY$qqrv, @TPerformanceGraph@NextY$qqri, @TPerformanceGraph@DisplayPoints$qqrl
+
+== 00456348 @$xp$17TPerformanceGraph (len 98)
+
+== 004565FC @@Perfgrap@Initialize (len f)
+
+== 0045660C @@Perfgrap@Finalize (len 1ad)
+
+== 00456D78 ? (len 1ef)
+  strs: 鑓U
+
+== 004574D4 ? (len 256)
+  strs: 鑓U
+
+== 0045A444 VMT TPasswordDialog (len 237)
+
+== 0045A6F0 TPasswordDialog::EditChange (len 87)
+
+== 0045A778 TPasswordDialog::AddButtonClick (len 77)
+
+== 0045A7F0 TPasswordDialog::RemoveButtonClick (len 6f)
+
+== 0045A860 TPasswordDialog::RemoveAllButtonClick (len 1f)
+
+== 0045A880 TPasswordDialog::OKButtonClick (len 53)
+
+== 0045A8D4 ? (len c5)
+  strs: 瑣U | 瑣U
+
+== 0045AA2C VMT TLoginDialog (len 1f3)
+
+== 0045AE68 ? (len 1bf)
+  strs: 牘E
+
+== 0045B028 TLoginDialog::FormShow (len 57)
+
+== 0045B080 ? (len 189)
+  strs: 湇U | 爫U | ¤U | ◢U
+
+== 0045CC84 ? (len 11f)
+  strs: 槱E
+
+== 0045EF34 ? (len 2d3)
+  strs: 袕U
+
+== 00460E38 ? (len 96)
+  strs: x〦
+
+== 00460ED0 ? (len 4d3)
+  strs: 袕U
+
+== 00462470 ? (len 103)
+  strs: 袕U
+
+== 004633F4 ? (len 173)
+  strs: 袕U | 袕U
+
+== 00463568 ? (len 107)
+  calls: USER32!ActivateKeyboardLayout
+  strs: 袕U
+
+== 00464E74 ? (len 1d3)
+  strs: |歎
+
+== 004650C0 ? (len 12b)
+  strs: 惄E | 埄E
+
+== 004656B4 ? (len 67f)
+  calls: KERNEL32!GetTickCount, USER32!PeekMessageA, USER32!PostQuitMessage
+  strs: 袕U | 8dU | |歎
+
+== 004661E8 ? (len 37f)
+  strs: 袕U
+
+== 00466688 ? (len 71c)
+  calls: USER32!KillTimer, USER32!SetTimer, USER32!GetScrollInfo, USER32!SetScrollInfo
+  strs: |歎
+
+== 00466DEC ? (len 14d2)
+  strs: 皪U | 磵U | 皪U | 磵U | 皪U
+
+== 0046A334 ? (len 24b)
+  calls: OLE32!CoCreateInstance
+  strs: PpG
+
+== 0046A688 ? (len 167)
+  strs:  pG
+
+== 0046AA9C ? (len 12f)
+  strs: 碽U | 碽U
+
+== 0046ABCC ? (len 11f)
+  strs: (bU
+
+== 0046AD90 ? (len 12b)
+  strs: 磵U
+
+== 0046AFE4 ? (len 7e)
+  strs: hbU
+
+== 0046B59C ? (len 11f)
+  strs: 餫U
+
+== 0046B6E0 ? (len 177)
+  strs: 爫U | 爫U
+
+== 0046C0E8 ? (len d3)
+  strs: XbU
+
+== 0046C264 ? (len 147)
+  strs: 坆U | 坆U
+
+== 0046C658 ? (len 2ea)
+  strs: 攼U
+
+== 0046C954 ? (len 267)
+  strs: 攼U
+
+== 0046D110 ? (len 22b)
+  strs: 8dU
+
+== 0046E348 ? (len c7)
+  strs: 8bU
+
+== 0046E4EC ? (len e6)
+  strs: @pG
+
+== 0046E5D4 ? (len 12f)
+  strs: (pG | 攼U
+
+== 0046F1A0 ? (len 181)
+  strs: hpG | 攼U
+
+== 0046F324 ? (len 1f3)
+  strs: HbU
+
+== 0046F518 ? (len 27b)
+  strs: HpG
+
+== 0046F8C4 ? (len 1b3)
+  strs: ppG | 磵U
+
+== 00470B50 ? (len 13d)
+  strs: 8pG
+
+== 00470FAC ? (len 373)
+  calls: OLEAUT32!SysStringLen, KERNEL32!WideCharToMultiByte
+  strs: hWU | `pG
+
+== 004716E4 ? (len 2d7)
+  strs: hWU | `pG
+
+== 00471F7C ? (len 283)
+  strs: 攼U | 攼U
+
+== 00472380 ? (len 15f)
+  strs: 攼U | 攼U
+
+== 00472704 ? (len 62)
+  strs: xpG
+
+== 00472768 ? (len df)
+  strs: 0pG
+
+== 00472BD8 ? (len 656)
+  strs: 攼U
+
+== 004733D8 ? (len 97e)
+  strs: 攼U
+
+== 00473DF0 ? (len 133)
+  strs: XpG
+
+== 00473F24 ? (len 82)
+  strs: xbU
+
+== 00474D14 ? (len 127)
+  strs: 0pG
+
+== 00475974 ? (len 2bd)
+  strs: 攼U
+
+== 004765EC ? (len 33b)
+  strs: 攼U | 攼U
+
+== 004769D4 ? (len 63)
+  strs: 攼U
+
+== 0047A568 ? (len 1e6)
+  strs: @d | @d
+
+== 00482938 ? (len 133)
+  strs: 碽U | 碽U
+
+== 00482C8C ? (len db)
+  strs: ¤sJ
+
+== 00483A2C ? (len 57)
+  strs: TtJ
+
+== 00483FDC ? (len db)
+  strs: 4tJ
+
+== 00487A98 ? (len c3)
+  strs: 4廢
+
+== 00487B70 ? (len 193)
+  strs: ,VU
+
+== 004884A0 ? (len 17f)
+  strs: hVU
+
+== 00488AE8 ? (len 167)
+  strs: hVU
+
+== 004895AC ? (len 87)
+  strs: @"H
+
+== 0048A038 ? (len 14e)
+  strs: 迯U
+
+== 0048E2D8 ? (len 143)
+  strs: @"H | @"H
+
+== 00491338 ? (len 5b)
+  strs: @"H
+
+== 00492068 @Mscommlib_tlb@TMSComm@InitControlData$qqrv (len 17)
+
+== 00492080 @Mscommlib_tlb@TMSComm@CreateControl$qqrv (len f3)
+  calls: KERNEL32!DebugBreak
+  strs: C:\Program Files\Borland\CBuilder6\Imports\MSCommLib_OCX.cpp | DefaultDispatch
+
+== 004921AC ? (len 27)
+  strs: c:\program files\borland\cbuilder6\include\vcl\utilcls.h | intf==0
+
+== 004921D4 ? (len 9b)
+  calls: USER32!wsprintfA
+  strs: %s @ %s/%d | _ASSERTE:  | %s failed - %s/%d | %s
+
+== 00492270 ? (len 3b)
+  calls: USER32!wsprintfA, USER32!MessageBoxA
+  strs: %s
+Press [Y]es to terminate, [N]o to continue and [C]ancel to Debug
+
+== 0049241C @Mscommlib_tlb@TMSComm@GetDefaultInterface$qqrv (len 53)
+  calls: @Mscommlib_tlb@TMSComm@CreateControl$qqrv
+
+== 004924C4 @Mscommlib_tlb@TMSComm@AboutBox$qqrv (len 63)
+  calls: @Mscommlib_tlb@TMSComm@GetDefaultInterface$qqrv
+
+== 00492528 ? (len 2b)
+  strs: c:\program files\borland\cbuilder6\include\vcl\utilcls.h | intf != 0
+
+== 00492604 @Mscommlib_tlb@TMSComm@set_Output$qqr10tagVARIANT (len 6d)
+  calls: @Mscommlib_tlb@TMSComm@GetDefaultInterface$qqrv
+
+== 00492674 @Mscommlib_tlb@TMSComm@get_Output$qqrv (len 87)
+  calls: @Mscommlib_tlb@TMSComm@GetDefaultInterface$qqrv
+
+== 004926FC ? (len 4f)
+  strs: C:\Program Files\Borland\CBuilder6\Imports\MSCommLib_TLB.h | this->get_Output((VARIANT*)&pvarOutput)
+
+== 004927CC @Mscommlib_tlb@TMSComm@set_Input$qqr10tagVARIANT (len 6d)
+  calls: @Mscommlib_tlb@TMSComm@GetDefaultInterface$qqrv
+
+== 0049283C @Mscommlib_tlb@TMSComm@get_Input$qqrv (len 87)
+  calls: @Mscommlib_tlb@TMSComm@GetDefaultInterface$qqrv
+
+== 004928C4 ? (len 4f)
+  strs: C:\Program Files\Borland\CBuilder6\Imports\MSCommLib_TLB.h | this->get_Input((VARIANT*)&pvarInput)
+
+== 00492914 @Mscommlib_ocx@Register$qqrv (len 63)
+  strs: p_U | ActiveX
+
+== 00492B88 ? (len 10f)
+  calls: USER32!wsprintfA, KERNEL32!FormatMessageA, KERNEL32!LocalFree, KERNEL32!DebugBreak
+  strs: %s | '%s': %s @ %s/%d | (%s) Error: %lX (%ld) @ %s/%d | HRCHECK: 
+
+== 00493000 @$xp$21Mscommlib_tlb@TMSComm (len 393)
+
+== 00493400 @Mscommlib_tlb@TMSComm@$bctr$qqrp18Classes@TComponent (len 6b)
+
+== 0049346C @Mscommlib_tlb@TMSComm@$bctr$qqrpv (len 6b)
+
+== 004934D8 @Mscommlib_tlb@TMSComm@GetWordBoolProp$qqri (len 23)
+
+== 004934FC @Mscommlib_tlb@TMSComm@SetWordBoolProp$qqrio (len 41)
+
+== 00493E6C @@Mscommlib_ocx@Initialize (len 17)
+
+== 00493E84 @@Mscommlib_ocx@Finalize (len 17)
+
+== 00497424 ? (len 247)
+  strs: $廢
+
+== 00499BAC ? (len 327)
+  calls: KERNEL32!InitializeCriticalSection, KERNEL32!DeleteCriticalSection
+  strs: 攕J
+
+== 00499ED4 ? (len 8f)
+  strs: 則J
+
+== 0049A310 ? (len 6b)
+  strs: 宻J
+
+== 0049A5A8 ? (len 9f)
+  strs: \tJ
+
+== 0049AC24 ? (len 22b)
+  strs: 4tJ
+
+== 0049AE50 ? (len 337)
+  calls: KERNEL32!InitializeCriticalSection
+  strs: 4tJ | 4tJ | 4tJ | 4tJ | $tJ | ,tJ
+
+== 0049B204 ? (len 9b)
+  calls: KERNEL32!EnterCriticalSection
+  strs: 渟J
+
+== 0049B2A0 ? (len 223)
+  calls: KERNEL32!LeaveCriticalSection
+  strs: tsJ
+
+== 0049B508 ? (len c3)
+  strs: lsJ
+
+== 0049BD1C ? (len 263)
+  strs: 黶J
+
+== 0049CC50 ? (len 41b)
+  strs: 瑂J | 4tJ | 4tJ | 4tJ | 4tJ | 4tJ
+
+== 0049D06C ? (len 53)
+  strs: ttJ | 4tJ
+
+== 0049D0C0 ? (len 113)
+  strs: ttJ | 4tJ | 4tJ
+
+== 0049D420 ? (len 4b)
+  strs: ltJ
+
+== 0049D4F0 ? (len df)
+  strs: LtJ | 攖J
+
+== 0049D894 ? (len 30b)
+  strs: 磗J | 蘳J | <tJ
+
+== 0049DBF8 ? (len 6f)
+  strs: dtJ
+
+== 0049DC68 ? (len bb)
+  calls: KERNEL32!FindResourceA, KERNEL32!LoadResource, KERNEL32!SizeofResource, KERNEL32!LockResource, KERNEL32!FreeResource
+  strs: |sJ
+
+== 0049E340 ? (len 133)
+  strs: 宼J
+
+== 0049E69C ? (len 2eb)
+  strs: LtJ
+
+== 0049F384 ? (len ff)
+  strs: 燾U | DtJ
+
+== 0049F824 ? (len d9)
+  strs: TtJ
+
+== 0049FED4 ? (len 11b)
+  strs: TPF0 | 靤J
+
+== 004A052C ? (len 1b3)
+  strs: dsJ
+
+== 004A06E0 ? (len 1bb)
+  strs: LtJ
+
+== 004A251C ? (len 3f3)
+  strs: 攖J | 攖J
+
+== 004A2914 ? (len 143)
+  strs: TPF0
+
+== 004A2AAC ? (len 15b)
+  strs: 0123456789ABCDEF | 0123456789ABCDEF
+
+== 004A2CB4 ? (len 12b)
+  calls: KERNEL32!GetCurrentThreadId, KERNEL32!EnterCriticalSection, KERNEL32!SetEvent, KERNEL32!LeaveCriticalSection
+  strs: P扷 | 剆J
+
+== 004A2E80 ? (len 143)
+  calls: KERNEL32!GetLastError, KERNEL32!CloseHandle
+  strs: 渢J
+
+== 004A2FC4 ? (len bb)
+  calls: KERNEL32!GetLastError
+  strs: ¤tJ
+
+== 004A3080 ? (len 57b)
+  calls: KERNEL32!GetCurrentThreadId, KERNEL32!CreateEventA, KERNEL32!EnterCriticalSection, KERNEL32!LeaveCriticalSection, KERNEL32!WaitForSingleObject, KERNEL32!CloseHandle, KERNEL32!ResumeThread, USER32!PeekMessageA, KERNEL32!Sleep, USER32!MsgWaitForMultipleObjects, KERNEL32!GetExitCodeThread
+  strs: P扷 | P扷
+
+== 004A36F4 ? (len 32b)
+  strs: ¤sJ | 魋J | 4tJ
+
+== 004A43D8 ? (len db)
+  calls: USER32!GetClassInfoA, USER32!UnregisterClassA, USER32!RegisterClassA, USER32!CreateWindowExA, USER32!SetWindowLongA, USER32!GetWindowLongA, USER32!DestroyWindow
+  strs: 菴J | 菴J | 菴J
+
+== 004A4E70 ? (len e7)
+  strs: 燝J | 燝J | XdU
+
+== 004A5EAC ? (len 57)
+  strs: 繥J | 燝J
+
+== 004A5F8C ? (len 5f)
+  strs: |_J
+
+== 004A6800 ? (len 1b)
+  strs: 餲J
+
+== 004A6B8C ? (len 6b)
+  calls: KERNEL32!WritePrivateProfileStringA
+  strs: 鋝J
+
+== 004A6FEC ? (len 87)
+  strs: 餲J
+
+== 004A76A0 ? (len cd)
+  strs: 剠J
+
+== 004A7C78 ? (len 343)
+  calls: OLEAUT32!SysFreeString
+  strs: 渽J | 坆U
+
+== 004A7FBC ? (len 33)
+  strs: 寘J
+
+== 004A7FF0 ? (len f7)
+  calls: KERNEL32!MultiByteToWideChar, KERNEL32!GetThreadLocale
+  strs: 坆U | 攨J
+
+== 004A80E8 ? (len 9b)
+  strs: 渽J
+
+== 004A8274 ? (len e1)
+  strs: 坆U
+
+== 004A8358 ? (len 153)
+  calls: OLEAUT32!SysFreeString, OLE32!CoInitialize
+  strs: i扷 | i扷
+
+== 004A84AC ? (len e0)
+  calls: OLE32!CoUninitialize
+  strs: 8扷 | ¤U | ¤U | 8扷 | T扷 | `扷 | `扷
+
+== 004A94E0 ? (len 47b)
+  calls: USER32!CharUpperBuffA, USER32!CharLowerBuffA, KERNEL32!CompareStringA
+  strs: d扷 | d扷 | d扷
+
+== 004AA338 ? (len 36f)
+  calls: KERNEL32!GetDiskFreeSpaceA, KERNEL32!CreateDirectoryA
+  strs: P圲
+
+== 004ABEA4 ? (len 4b)
+  strs: %.*d¤U
+
+== 004AD4C8 ? (len 123)
+  calls: KERNEL32!GetThreadLocale
+  strs: 詧U |  塙
+
+== 004AE2D0 ? (len 37f)
+  calls: KERNEL32!GetVersionExA, USER32!MessageBeep
+  strs:  扷 | 4扷 | $扷 | (扷 | <扷 | D扷 |  扷 | 4扷 | $扷 | (扷 | <扷
+
+== 004AF330 ? (len 2eb)
+  calls: KERNEL32!FindResourceA, KERNEL32!LoadResource, KERNEL32!FreeResource, KERNEL32!GetModuleHandleA, KERNEL32!GetProcAddress, KERNEL32!DeleteCriticalSection, KERNEL32!EnterCriticalSection, KERNEL32!LeaveCriticalSection
+  strs: L扷 | L扷 | L扷
+
+== 004AFDCC ? (len 17f)
+  strs: 湅J | 礉J
+
+== 004B8954 ? (len 133)
+  strs: XdU
+
+== 004B8DE0 ? (len 2af)
+  calls: OLEAUT32!SafeArrayCreate, OLEAUT32!SafeArrayRedim, OLEAUT32!SafeArrayGetLBound, OLEAUT32!SafeArrayGetUBound, OLEAUT32!SafeArrayAccessData, OLEAUT32!SafeArrayUnaccessData
+  strs: XfU | XfU
+
+== 004BA150 ? (len 2bb)
+  strs: XfU
+
+== 004BC2C0 ? (len e58)
+  calls: KERNEL32!EnterCriticalSection, KERNEL32!LeaveCriticalSection, USER32!CharNextA, KERNEL32!GetModuleFileNameA, KERNEL32!GetCommandLineA, KERNEL32!ReadFile, KERNEL32!GetLastError, KERNEL32!WriteFile, KERNEL32!CloseHandle, KERNEL32!CreateFileA, KERNEL32!GetFileSize, KERNEL32!SetFilePointer, KERNEL32!SetEndOfFile, KERNEL32!GetStdHandle, KERNEL32!GetFileType
+  strs: 冀K | L縆 | 缆K | L縆 | 冀K | 冀K | L縆 | 缆K | 冀K | L縆 | 缆K
+
+== 004CC51C ? (len 2bf)
+  calls: USER32!SendMessageA
+  strs: |歎
+
+== 004CCA68 ? (len 1c7)
+  calls: USER32!SendMessageA
+  strs: |歎 | 袕U | 餭U
+
+== 004CCC30 ? (len 473)
+  calls: USER32!SendMessageA, USER32!GetDC, GDI32!GetTextMetricsA, GDI32!SelectObject, USER32!ReleaseDC, USER32!GetSystemMetrics, USER32!IsWindow, USER32!GetWindowLongA
+  strs: |歎 | 餭U | |歎 | |歎
+
+== 004CD38C ? (len 36b)
+  calls: USER32!CreateWindowExA, USER32!SendMessageA
+  strs: 袕U | 餭U
+
+== 004CD6F8 ? (len df)
+  calls: USER32!SendMessageA
+  strs: 4tJ
+
+== 004CD9C8 ? (len 4f3)
+  calls: USER32!SendMessageA, USER32!InvalidateRect, USER32!SetWindowTextA, USER32!GetCursorPos
+  strs: |歎 | |歎 | |歎 | |歎
+
+== 004CE804 ? (len 373)
+  calls: USER32!SendMessageA, USER32!GetWindow, USER32!GetWindowLongA, USER32!SetWindowLongA, USER32!FillRect
+  strs: |歎
+
+== 004CEC6C ? (len 3c7)
+  calls: KERNEL32!GetTickCount, USER32!SendMessageA, USER32!PeekMessageA
+  strs: 8dU
+
+== 004CF034 ? (len 38b)
+  calls: USER32!SendMessageA, USER32!DrawFocusRect, USER32!GetSystemMetrics
+  strs: |歎
+
+== 004CF658 ? (len 391)
+  calls: USER32!SetFocus, USER32!GetWindowLongA, USER32!SendMessageA
+  strs: 袕U | 餭U
+
+== 004D00E8 ? (len d3)
+  calls: USER32!SendMessageA
+  strs: 4tJ
+
+== 004D01BC ? (len 137)
+  strs: 4tJ
+
+== 004D0734 ? (len 133)
+  strs: |歎
+
+== 004D09E4 ? (len 463)
+  calls: USER32!SendMessageA
+  strs: 4tJ | 4tJ | 4tJ
+
+== 004D0EFC ? (len 4f7)
+  calls: USER32!SendMessageA, USER32!PtInRect, USER32!SetWindowPos
+  strs: |歎
+
+== 004D15F8 ? (len 28b)
+  calls: USER32!DrawTextA, USER32!DrawFocusRect
+  strs: |歎
+
+== 004D196C ? (len 1cf)
+  calls: KERNEL32!GetTickCount, USER32!PeekMessageA
+  strs: 8dU
+
+== 004D2DE0 ? (len 147)
+  calls: OLE32!CoGetClassObject, OLE32!CoCreateInstance
+  strs: 8RM | @RM
+
+== 004D2F28 ? (len 1ff)
+  calls: KERNEL32!GlobalAlloc, OLE32!CreateStreamOnHGlobal, USER32!IsWindowVisible, USER32!ShowWindow, USER32!CallWindowProcA
+  strs: (RM
+
+== 004D3414 ? (len a3)
+  strs: 坆U
+
+== 004D34B8 ? (len 16f)
+  calls: USER32!GetWindowLongA, USER32!SetWindowLongA, USER32!SendMessageA
+  strs: 0RM | 渜U
+
+== 004D3DC4 ? (len d3)
+  strs: 坆U
+
+== 004D51D4 ? (len 72)
+  strs: 攼U
+
+== 004D6258 ? (len 1f6)
+  strs:  (08
+
+== 004D84FC ? (len 147)
+  strs: 鬰U | 鬰U | 鴆U | 鬰U | 餭U
+
+== 004D949C ? (len 12f)
+  strs: 8dU
+
+== 004D95FC ? (len 4af)
+  strs: LaM | LaM | 8dU | 袕U | 袕U
+
+== 004DA18C ? (len 1df)
+  calls: USER32!GetKeyState, USER32!GetMenuItemInfoA, USER32!SetMenuItemInfoA, USER32!DrawMenuBar
+  strs: 袕U
+
+== 004DA4A0 ? (len e3)
+  strs: 袕U | 袕U
+
+== 004DA584 ? (len c7)
+  strs: 袕U
+
+== 004DAC48 ? (len 7d7)
+  calls: USER32!GetSubMenu, GDI32!SaveDC, GDI32!RestoreDC, USER32!GetWindowDC, USER32!ReleaseDC, USER32!DefWindowProcA, USER32!TrackPopupMenu
+  strs: 袕U | 袕U
+
+== 004DB420 ? (len 1e3)
+  strs: 鬰U | 鬰U | 鴆U | 8dU | 袕U | 8dU
+
+== 004DB700 ? (len 1fb)
+  strs: LaM
+
+== 004DC230 ? (len 2e3)
+  calls: USER32!GetKeyboardState, USER32!SetKeyboardState, USER32!SendMessageA
+  strs: 8dU
+
+== 004DC514 ? (len 1d7)
+  calls: USER32!PeekMessageA, USER32!PostQuitMessage, USER32!SendMessageA
+  strs: 8dU | 8dU
+
+== 004DC6EC ? (len 367)
+  strs: 8dU | 8dU
+
+== 004DCE20 ? (len 287)
+  calls: USER32!MessageBeep
+  strs: 袕U
+
+== 004DD188 ? (len 2c3)
+  calls: USER32!IsCharAlphaA, USER32!IsCharAlphaNumericA
+  strs: 8dU | 8dU
+
+== 004DD5A4 ? (len 31f)
+  strs: 8dU | 8dU
+
+== 004DFDF8 ? (len 2eb)
+  calls: USER32!PeekMessageA, USER32!PostQuitMessage
+  strs: 躶J | |tJ | 詓J
+
+== 004E097C ? (len 1a3)
+  strs: |歎
+
+== 004E0B20 ? (len 11f)
+  strs: |tJ
+
+== 004E3734 ? (len 1ab)
+  strs: 躶J
+
+== 004E4074 ? (len 1d3)
+  calls: USER32!GetSystemMetrics
+  strs: |歎
+
+== 004E5274 ? (len 13f)
+  strs: 躶J
+
+== 004E53B4 ? (len 97)
+  strs: 躶J | 約J
+
+== 004E544C ? (len 19f)
+  strs: 躶J | 膕J
+
+== 004E55EC ? (len c7)
+  strs: 躶J
+
+== 004E56B4 ? (len a3)
+  strs: 躶J
+
+== 004E6408 ? (len 143)
+  calls: USER32!GetSystemMetrics, USER32!SetRect, USER32!SendMessageA
+  strs: 袕U
+
+== 004E6FA0 ? (len 24f)
+  calls: USER32!ActivateKeyboardLayout, USER32!PtInRect, USER32!GetCursorPos, USER32!LoadCursorA, USER32!SetCursor, USER32!SendMessageA
+  strs: 袕U
+
+== 004E91BC ? (len 197)
+  calls: GDI32!CreateFontIndirectA
+  strs: MS Sans Serif
+
+== 004EAB88 ? (len 343)
+  calls: GDI32!CreateCompatibleBitmap, GDI32!SelectObject, GDI32!MaskBlt, GDI32!DeleteObject, GDI32!CreateCompatibleDC, GDI32!SelectPalette, GDI32!RealizePalette, GDI32!StretchBlt, GDI32!SetTextColor, GDI32!SetBkColor, GDI32!DeleteDC
+  strs: 餭U
+
+== 004F0910 ? (len 1d7)
+  calls: USER32!GetDC, GDI32!GetDeviceCaps, USER32!ReleaseDC, GDI32!SelectObject, GDI32!GetTextMetricsA, KERNEL32!MulDiv, KERNEL32!InitializeCriticalSection, KERNEL32!DeleteCriticalSection, KERNEL32!EnterCriticalSection, KERNEL32!LeaveCriticalSection
+  strs: 袕U | MS Sans Serif
+
+== 004F46C8 ? (len 7b)
+  strs: 鞃U | 鞃U
+
+== 004F47DC ? (len 5f)
+  strs: <嶶
+
+== 004F483C ? (len 4eb)
+  calls: KERNEL32!Sleep
+  strs: 鞃U | @嶶 | D嶶 | 鞃U
+
+== 004F4E30 ? (len 24b)
+  strs: H嶶 | 袕U
+
+== 004F56D8 ? (len 193)
+  strs: |歎 | |歎
+
+== 004F586C ? (len 12f)
+  strs: dtJ
+
+== 004F5B8C ? (len 1c3)
+  strs: 寧U | dtJ | 寧U
+
+== 004F5D50 ? (len 1d7)
+  strs: 鞃U | 鞃U | 寧U
+
+== 004F5F28 ? (len e3)
+  strs: 寧U | 寧U
+
+== 004F741C ? (len 2a3)
+  calls: USER32!GetMenu, USER32!SendMessageA, USER32!DrawMenuBar
+  strs: 饙U
+
+== 004F76C0 ? (len a21)
+  calls: USER32!GetMenu, USER32!SetMenu, USER32!ShowWindow, USER32!SendMessageA, USER32!CreateWindowExA, USER32!GetWindowLongA, USER32!SetWindowLongA, USER32!SetWindowPos
+  strs: |歎 | |歎
+
+== 004F8C94 ? (len 1a7)
+  calls: USER32!IsIconic, USER32!SetWindowPos, USER32!PostMessageA, USER32!SendMessageA, USER32!SetMenu
+  strs: |歎
+
+== 004FA9D8 ? (len 1bf)
+  strs: 鼚U
+
+== 004FAB98 ? (len 4e3)
+  calls: USER32!GetKeyboardLayout, USER32!GetDC, GDI32!GetDeviceCaps, USER32!ReleaseDC, USER32!LoadCursorA, USER32!DestroyCursor
+  strs: ¤bU | 琤U | ¤bU | 琤U | 鞃U | 鞃U | 鞃U | 鞃U | 鞃U | 鞃U | 鞃U
+
+== 004FB5A0 ? (len 1af)
+  strs: 鞃U
+
+== 004FBB18 ? (len 1da)
+  calls: USER32!CallNextHookEx, KERNEL32!GetCurrentThreadId, USER32!SetWindowsHookExA, KERNEL32!CreateEventA, KERNEL32!CreateThread, USER32!UnhookWindowsHookEx, KERNEL32!SetEvent, KERNEL32!WaitForSingleObject, KERNEL32!CloseHandle, USER32!SystemParametersInfoA, USER32!ShowWindow
+  strs: 鴯U
+
+== 004FBCF4 ? (len 307)
+  calls: USER32!LoadIconA, KERNEL32!GetModuleFileNameA, USER32!OemToCharA, USER32!CharLowerA, KERNEL32!FreeLibrary, USER32!SendMessageA, USER32!DestroyWindow
+  strs: 碽U | 碽U | 糱U | 糱U | L扷 | L扷 | T扷 | 碽U | 碽U | 糱U | 糱U | |歎
+
+== 004FBFFC ? (len 203)
+  calls: USER32!GetClassInfoA, USER32!RegisterClassA, USER32!SetWindowLongA, USER32!SendMessageA, USER32!SetClassLongA, USER32!GetSystemMenu, USER32!DeleteMenu
+  strs: h扷 | 浼O | 鞃U | 鞃U | 浼O | |歎 | |歎
+
+== 004FC200 ? (len 223)
+  calls: USER32!GetWindow, USER32!GetWindowLongA, USER32!EnumWindows, USER32!SetWindowPos, KERNEL32!SetThreadLocale
+  strs: 袕U | 袕U
+
+== 004FD1BC ? (len 93)
+  calls: USER32!SendMessageA
+  strs: `扷 | `扷
+
+== 004FD2D0 ? (len 18f)
+  calls: USER32!PostQuitMessage, USER32!GetCapture, USER32!SendMessageA
+  strs: X扷
+
+== 004FD460 ? (len 165)
+  calls: USER32!GetActiveWindow, USER32!GetWindowRect, USER32!SetWindowPos, USER32!MessageBoxA, USER32!SetActiveWindow
+  strs: 饙U | 饙U | 鼚U
+
+== 004FD838 ? (len 1b7)
+  calls: USER32!IsWindowVisible, USER32!IsWindowEnabled, USER32!GetCursorPos
+  strs: 豥P
+
+== 004FD9F0 ? (len 1bb)
+  calls: KERNEL32!GetCurrentThreadId, USER32!WaitMessage, USER32!SendMessageA, USER32!SetClassLongA, USER32!IsIconic, USER32!InvalidateRect
+  strs: P扷 | |歎
+
+== 004FDF7C ? (len 153)
+  calls: USER32!GetCursor, USER32!GetIconInfo, GDI32!DeleteObject
+  strs: 鞃U
+
+== 004FE0D0 ? (len 5f)
+  strs: 豥P
+
+== 004FE1C8 ? (len 53a)
+  calls: USER32!ClientToScreen, USER32!OffsetRect, KERNEL32!GetModuleHandleA, KERNEL32!GetProcAddress, USER32!PostMessageA
+  strs: 豥P | 詁U | 詁U
+
+== 00501A48 ? (len 173)
+  strs: |歎 | |歎
+
+== 00503328 ? (len 2c0)
+  strs: 鬰U | 餭U | 餭U | 鬰U | 鴆U | |歎 | 鬰U | 餭U | 餭U | 鬰U | 鴆U | |歎
+
+== 00503734 ? (len 1bf)
+  calls: USER32!GetDlgItem, USER32!GetWindowRect, USER32!MapWindowPoints, USER32!GetClientRect, USER32!GetParent, USER32!SendMessageA
+  strs: |歎 | |歎
+
+== 00503FD4 ? (len 583)
+  calls: KERNEL32!MulDiv, USER32!DrawTextA, USER32!SetRect, USER32!LoadIconA
+  strs: 饖U | 8?P
+
+== 005047E8 ? (len 221)
+  calls: KERNEL32!GlobalDeleteAtom
+  strs: 8?P
+
+== 0050A578 ? (len 24b)
+  calls: USER32!GetDC, GDI32!IntersectClipRect, USER32!ReleaseDC, USER32!GetCursorPos
+  strs: 袕U | 袕U | 袕U | 袕U
+
+== 0050B970 ? (len 4bf)
+  calls: USER32!PtInRect
+  strs: 袕U
+
+== 0050C670 ? (len 120)
+  strs: 袕U
+
+== 0050D328 ? (len 4ef)
+  calls: USER32!GetClassInfoA
+  strs: L扷
+
+== 0050F0A0 ? (len eb)
+  calls: USER32!ActivateKeyboardLayout
+  strs: 袕U
+
+== 0050F18C ? (len eb)
+  calls: USER32!ActivateKeyboardLayout
+  strs: 袕U
+
+== 0050F3F0 ? (len 107)
+  calls: USER32!GetWindowRect, USER32!InflateRect
+  strs: PjP
+
+== 0050FA3C ? (len 8a7)
+  calls: USER32!IsIconic, USER32!GetCapture, USER32!RemovePropA, USER32!LoadKeyboardLayoutA, USER32!SetWindowPos, USER32!EnableWindow, USER32!GetCursorPos, USER32!IsWindowVisible
+  strs: 袕U | 袕U
+
+== 00511748 ? (len 2eb)
+  calls: USER32!GetWindowDC, USER32!GetClientRect, USER32!GetWindowRect, USER32!MapWindowPoints, USER32!OffsetRect, GDI32!ExcludeClipRect, USER32!InflateRect, USER32!GetWindowLongA, USER32!DrawEdge, GDI32!IntersectClipRect, USER32!FillRect, USER32!ReleaseDC
+  strs: 鞃U | 鞃U
+
+== 00512148 ? (len cb)
+  calls: COMCTL32!ImageList_Create, COMCTL32!ImageList_SetDragCursorImage, COMCTL32!ImageList_GetDragImage, COMCTL32!ImageList_Destroy
+  strs: 鞃U | 鞃U
+
+== 00514BDC ? (len 5bf)
+  calls: USER32!PeekMessageA, USER32!GetCursorPos, USER32!SetCursor, USER32!GetCapture, USER32!SystemParametersInfoA, USER32!ReleaseCapture, USER32!SetCapture, USER32!SendMessageA
+  strs: 餭U | 鬰U | 餭U | 鬰U | 鬰U | 鴆U | 鞃U | 鞃U
+
+== 0051519C ? (len 35f)
+  calls: KERNEL32!SetErrorMode, KERNEL32!GetModuleHandleA, KERNEL32!GetProcAddress, KERNEL32!LoadLibraryA
+  strs: 袕U | 袕U
+
+== 005154FC ? (len 19f)
+  calls: USER32!ActivateKeyboardLayout, KERNEL32!GlobalDeleteAtom, KERNEL32!FreeLibrary
+  strs: 袕U
+
+== 0051BA58 ? (len 6f)
+  calls: USER32!SendMessageA
+  strs: |YQ
+
+== 0051BAC8 ? (len 9b)
+  calls: USER32!SendMessageA
+  strs: 刌Q
+
+== 0051BB64 ? (len 113)
+  calls: USER32!SendMessageA
+  strs: 孻Q
+
+== 0051BC78 ? (len 9f)
+  calls: USER32!SendMessageA
+  strs: 擸Q
+
+== 0051BD18 ? (len df)
+  calls: USER32!SendMessageA
+  strs: 淵Q
+
+== 0051BDF8 ? (len 9f)
+  calls: USER32!SendMessageA
+  strs: ¤YQ
+
+== 0051BE98 ? (len 123)
+  calls: USER32!SendMessageA
+  strs: 淵Q
+
+== 0051C448 ? (len ff)
+  strs: 琘Q
+
+== 0051C84C ? (len fb)
+  calls: USER32!SendMessageA
+  strs: 淵Q
+
+== 0051CCBC ? (len 3a7)
+  strs: 腨Q
+
+== 0051DB38 ? (len 48b)
+  calls: USER32!SendMessageA
+  strs: 袕U | 袕U
+
+== 0051F6C8 ? (len ef)
+  strs: 4tJ
+
+== 0051F7B8 ? (len 179)
+  strs: 碮Q
+
+== 005220AC ? (len d3)
+  strs: 糦Q
+
+== 005221EC ? (len 411)
+  calls: USER32!SetWindowLongA
+  strs: |歎
+
+== 00523814 ? (len da3)
+  calls: GDI32!SelectObject, GDI32!DeleteObject, GDI32!GetObjectA, GDI32!CreateFontIndirectA, USER32!GetWindowLongA, USER32!SetWindowLongA, KERNEL32!MulDiv
+  strs: x歎
+
+== 0052B35C ? (len fe)
+  strs: lsJ
+
+== 0052B60C ? (len 116)
+  strs: 訷Q | 躖Q
+
+== 0052B920 ? (len 87)
+  strs: 靁Q
+
+== 0052BA98 ? (len 13b)
+  strs: 躖Q | 鬥Q
+
+== 0052BBD4 ? (len 127)
+  strs: 訷Q
+
+== 0052BCFC ? (len 14f)
+  strs: 黋Q
+
+== 0052BFAC ? (len 223)
+  calls: USER32!GetDC, GDI32!GetTextMetricsA, GDI32!SelectObject, USER32!ReleaseDC, USER32!GetSystemMetrics, USER32!SendMessageA, USER32!InvalidateRect
+  strs: 鋂Q
+
+== 0052C624 ? (len 243)
+  calls: USER32!SendMessageA
+  strs: 鋂Q
+
+== 0052CA4C ? (len 437)
+  calls: USER32!PostMessageA, USER32!InvalidateRect, USER32!GetSystemMetrics
+  strs: |歎 | |歎 | |歎
+
+== 0052CE84 ? (len 413)
+  calls: USER32!GetWindow, USER32!GetWindowLongA, USER32!SetWindowLongA, USER32!SendMessageA, USER32!PostMessageA, USER32!GetFocus
+  strs: |歎
+
+== 0052D830 ? (len 111)
+  calls: KERNEL32!FreeLibrary
+  strs: T凲
+
+== 0052DE28 ? (len 5b)
+  strs: 碽U | 碽U
+
+== 005306E0 ? (len 13b)
+  calls: CC3260MT!__ErrorExit, CC3260MT!@$bdla$qpv, CC3260MT!@_ReThrowException$quipuc, CC3260MT!@_CatchCleanup$qv
+  strs: Illegal mode in _vector_delete_
+
+== 0053081C ? (len 25f)
+  calls: CC3260MT!@$bnwa$qui, CC3260MT!__ErrorExit, CC3260MT!@$bdla$qpv, CC3260MT!@_ReThrowException$quipuc, CC3260MT!@_CatchCleanup$qv, CC3260MT!___CRTL_MEM_GetBorMemPtrs, BORLNDMM!#2
+  strs: Illegal mode in _vector_new_ | Illegal dtorMode in _vector_new_ | L扷 | L扷 | i扷 | vclshmem.cpp: GetBorMemPtrs failed
+
+== 00530A7C ? (len 5b)
+  calls: KERNEL32!GetModuleHandleA, KERNEL32!GetProcAddress
+  strs: ___CPPdebugHook
+
+== 00530C34 ? (len 9f)
+  calls: CC3260MT!__ErrorExit, CC3260MT!__setargv, CC3260MT!__exitargv
+  strs: Pure virtual function called
+
+== 00530E28 ? (len 4b)
+  strs: %c
+
+== 00530E74 ? (len 43)
+  strs: %i
+
+== 0053157C ? (len 47)
+  calls: KERNEL32!DebugBreak
+  strs: VARIANT.CPP | vt == rhs.vt
+
+== 00532324 ? (len 77)
+  calls: KERNEL32!DebugBreak
+  strs: c:\bcb\emuvcl\utilcls.h | name | c:\bcb\emuvcl\utilcls.h | IsBound()
+
+== 005323B0 ? (len 157)
+  calls: KERNEL32!DebugBreak, CC3260MT!_memset
+  strs: c:\bcb\emuvcl\utilcls.h | IsBound() | c:\bcb\emuvcl\utilcls.h | (hasRetVal==false && args==0) || (hasRetVal==false && args!=0) || (hasRetVal==true && args!=0) | OK | FL | Inv(%d) %s, 0x%lX, retVT(0x%X), ErrArg(%d)
+
+
+== 00532508 ? (len 53)
+  calls: USER32!wvsprintfA, KERNEL32!DebugBreak, KERNEL32!OutputDebugStringA
+  strs: c:\bcb\emuvcl\utilcls.h | bufSize < sizeof(szBuffer)
+
+== 0053303C ? (len bb)
+  strs: false | 榗U | true | 榗U | -> | 燾U
+
+== 00533288 ? (len d76)
+  calls: BORLNDMM!#2, AIMDTL!imAppendMessage, AIMDTL!imAppendPageField, AIMDTL!imClearPrintQueue, AIMDTL!imClearReturnQueue, AIMDTL!imGetADTStatus, AIMDTL!imGetAdtMsgFieldCount, AIMDTL!imGetLgphDelay, AIMDTL!imGetPrinterAlarm, AIMDTL!imGetPrinterStatus, AIMDTL!imGetPrinttedPagesn, AIMDTL!imInitADT, AIMDTL!imOpenPrinter, AIMDTL!imPageBegin, AIMDTL!imPageEnd, AIMDTL!imPrinterStart, AIMDTL!imPrinterStop, AIMDTL!imSendCancel, AIMDTL!imSetLgphDelay, ADVAPI32!RegCloseKey, ADVAPI32!RegOpenKeyExA, ADVAPI32!RegQueryValueExA, KERNEL32!CloseHandle, KERNEL32!CompareStringA, KERNEL32!CopyFileA, KERNEL32!CreateDirectoryA, KERNEL32!CreateEventA, KERNEL32!CreateFileA, KERNEL32!CreateThread, KERNEL32!DebugBreak, KERNEL32!DeleteCriticalSection, KERNEL32!DeleteFileA, KERNEL32!EnterCriticalSection, KERNEL32!EnumCalendarInfoA, KERNEL32!ExitProcess, KERNEL32!ExitThread, KERNEL32!FileTimeToDosDateTime, KERNEL32!FileTimeToLocalFileTime, KERNEL32!FindClose, KERNEL32!FindFirstFileA, KERNEL32!FindNextFileA, KERNEL32!FindResourceA, KERNEL32!FormatMessageA, KERNEL32!FreeLibrary, KERNEL32!FreeResource, KERNEL32!GetACP, KERNEL32!GetCPInfo, KERNEL32!GetCommandLineA, KERNEL32!GetCurrentDirectoryA, KERNEL32!GetCurrentProcessId, KERNEL32!GetCurrentThreadId, KERNEL32!GetDateFormatA, KERNEL32!GetDiskFreeSpaceA, KERNEL32!GetExitCodeThread, KERNEL32!GetFileAttributesA, KERNEL32!GetFileSize, KERNEL32!GetFileType, KERNEL32!GetFullPathNameA, KERNEL32!GetLastError, KERNEL32!GetLocalTime, KERNEL32!GetLocaleInfoA, KERNEL32!GetModuleFileNameA, KERNEL32!GetModuleHandleA, KERNEL32!GetPrivateProfileStringA, KERNEL32!GetProcAddress, KERNEL32!GetProcessHeap, KERNEL32!GetStartupInfoA, KERNEL32!GetStdHandle, KERNEL32!GetStringTypeExA, KERNEL32!GetSystemInfo, KERNEL32!GetThreadLocale, KERNEL32!GetTickCount, KERNEL32!GetUserDefaultLCID, KERNEL32!GetVersion, KERNEL32!GetVersionExA, KERNEL32!GlobalAddAtomA, KERNEL32!GlobalAlloc, KERNEL32!GlobalDeleteAtom, KERNEL32!GlobalFindAtomA, KERNEL32!GlobalFree, KERNEL32!GlobalHandle, KERNEL32!GlobalLock, KERNEL32!GlobalReAlloc, KERNEL32!GlobalSize, KERNEL32!GlobalUnlock, KERNEL32!HeapAlloc, KERNEL32!HeapFree, KERNEL32!InitializeCriticalSection, KERNEL32!InterlockedDecrement, KERNEL32!InterlockedIncrement, KERNEL32!LeaveCriticalSection, KERNEL32!LoadLibraryA, KERNEL32!LoadLibraryExA, KERNEL32!LoadResource, KERNEL32!LocalAlloc, KERNEL32!LocalFree, KERNEL32!LockResource, KERNEL32!MulDiv, KERNEL32!MultiByteToWideChar, KERNEL32!OutputDebugStringA, KERNEL32!RaiseException, KERNEL32!ReadFile, KERNEL32!RemoveDirectoryA, KERNEL32!ResetEvent, KERNEL32!ResumeThread, KERNEL32!RtlUnwind, KERNEL32!SetEndOfFile, KERNEL32!SetErrorMode, KERNEL32!SetEvent, KERNEL32!SetFilePointer, KERNEL32!SetThreadLocale, KERNEL32!SizeofResource, KERNEL32!Sleep, KERNEL32!UnhandledExceptionFilter, KERNEL32!VirtualAlloc, KERNEL32!VirtualFree, KERNEL32!VirtualQuery, KERNEL32!WaitForSingleObject, KERNEL32!WideCharToMultiByte, KERNEL32!WriteFile, KERNEL32!WritePrivateProfileStringA, KERNEL32!lstrcmpA, KERNEL32!lstrcpyA, KERNEL32!lstrcpynA, KERNEL32!lstrlenA, VERSION!GetFileVersionInfoA, VERSION!GetFileVersionInfoSizeA, VERSION!VerQueryValueA, COMCTL32!ImageList_Add, COMCTL32!ImageList_BeginDrag, COMCTL32!ImageList_Create, COMCTL32!ImageList_Destroy, COMCTL32!ImageList_DragEnter, COMCTL32!ImageList_DragLeave, COMCTL32!ImageList_DragMove, COMCTL32!ImageList_DragShowNolock, COMCTL32!ImageList_Draw, COMCTL32!ImageList_DrawEx, COMCTL32!ImageList_EndDrag, COMCTL32!ImageList_GetBkColor, COMCTL32!ImageList_GetDragImage, COMCTL32!ImageList_GetIconSize, COMCTL32!ImageList_GetImageCount, COMCTL32!ImageList_Read, COMCTL32!ImageList_Remove, COMCTL32!ImageList_Replace, COMCTL32!ImageList_ReplaceIcon, COMCTL32!ImageList_SetBkColor, COMCTL32!ImageList_SetDragCursorImage, COMCTL32!ImageList_SetIconSize, COMCTL32!ImageList_Write, COMCTL32!#17, COMDLG32!GetOpenFileNameA, GDI32!BitBlt, GDI32!CloseEnhMetaFile, GDI32!CombineRgn, GDI32!CopyEnhMetaFileA, GDI32!CreateBitmap, GDI32!CreateBrushIndirect, GDI32!CreateCompatibleBitmap, GDI32!CreateCompatibleDC, GDI32!CreateDIBSection, GDI32!CreateDIBitmap, GDI32!CreateEnhMetaFileA, GDI32!CreateFontIndirectA, GDI32!CreateHalftonePalette, GDI32!CreatePalette, GDI32!CreatePenIndirect, GDI32!CreateRectRgn, GDI32!CreateSolidBrush, GDI32!DeleteDC, GDI32!DeleteEnhMetaFile, GDI32!DeleteObject, GDI32!Ellipse, GDI32!ExcludeClipRect, GDI32!ExtCreatePen, GDI32!ExtTextOutA, GDI32!GetBitmapBits, GDI32!GetBrushOrgEx, GDI32!GetClipBox, GDI32!GetCurrentPositionEx, GDI32!GetDCOrgEx, GDI32!GetDIBColorTable, GDI32!GetDIBits, GDI32!GetDeviceCaps, GDI32!GetEnhMetaFileBits, GDI32!GetEnhMetaFileDescriptionA, GDI32!GetEnhMetaFileHeader, GDI32!GetEnhMetaFilePaletteEntries, GDI32!GetNearestColor, GDI32!GetObjectA, GDI32!GetPaletteEntries, GDI32!GetPixel, GDI32!GetRgnBox, GDI32!GetStockObject, GDI32!GetSystemPaletteEntries, GDI32!GetTextExtentPoint32A, GDI32!GetTextExtentPointA, GDI32!GetTextMetricsA, GDI32!GetWinMetaFileBits, GDI32!GetWindowOrgEx, GDI32!IntersectClipRect, GDI32!LPtoDP, GDI32!LineTo, GDI32!MaskBlt, GDI32!MoveToEx, GDI32!PatBlt, GDI32!Pie, GDI32!PlayEnhMetaFile, GDI32!PolyPolyline, GDI32!Polyline, GDI32!RealizePalette, GDI32!RectVisible, GDI32!Rectangle, GDI32!RestoreDC, GDI32!SaveDC, GDI32!SelectObject, GDI32!SelectPalette, GDI32!SetBkColor, GDI32!SetBkMode, GDI32!SetBrushOrgEx, GDI32!SetDIBColorTable, GDI32!SetEnhMetaFileBits, GDI32!SetMapMode, GDI32!SetPixel, GDI32!SetROP2, GDI32!SetStretchBltMode, GDI32!SetTextColor, GDI32!SetViewportExtEx, GDI32!SetViewportOrgEx, GDI32!SetWinMetaFileBits, GDI32!SetWindowExtEx, GDI32!SetWindowOrgEx, GDI32!StretchBlt, GDI32!UnrealizeObject, SHELL32!SHBrowseForFolderA, SHELL32!SHFileOperationA, SHELL32!SHGetDesktopFolder, SHELL32!SHGetMalloc, SHELL32!SHGetPathFromIDListA, USER32!ActivateKeyboardLayout, USER32!AdjustWindowRectEx, USER32!BeginPaint, USER32!CallNextHookEx, USER32!CallWindowProcA, USER32!CharLowerA, USER32!CharLowerBuffA, USER32!CharNextA, USER32!CharUpperBuffA, USER32!CheckMenuItem, USER32!ChildWindowFromPoint, USER32!ClientToScreen, USER32!CloseClipboard, USER32!CreateIcon, USER32!CreateMenu, USER32!CreatePopupMenu, USER32!CreateWindowExA, USER32!DefFrameProcA, USER32!DefMDIChildProcA, USER32!DefWindowProcA, USER32!DeleteMenu, USER32!DestroyCursor, USER32!DestroyIcon, USER32!DestroyMenu, USER32!DestroyWindow, USER32!DispatchMessageA, USER32!DrawEdge, USER32!DrawFocusRect, USER32!DrawFrameControl, USER32!DrawIcon, USER32!DrawIconEx, USER32!DrawMenuBar, USER32!DrawTextA, USER32!EmptyClipboard, USER32!EnableMenuItem, USER32!EnableScrollBar, USER32!EnableWindow, USER32!EndPaint, USER32!EnumClipboardFormats, USER32!EnumThreadWindows, USER32!EnumWindows, USER32!EqualRect, USER32!FillRect, USER32!FindWindowA, USER32!FrameRect, USER32!GetActiveWindow, USER32!GetCapture, USER32!GetCaretPos, USER32!GetClassInfoA, USER32!GetClassNameA, USER32!GetClientRect, USER32!GetClipboardData, USER32!GetCursor, USER32!GetCursorPos, USER32!GetDC, USER32!GetDCEx, USER32!GetDesktopWindow, USER32!GetDlgItem, USER32!GetDoubleClickTime, USER32!GetFocus, USER32!GetForegroundWindow, USER32!GetIconInfo, USER32!GetKeyNameTextA, USER32!GetKeyState, USER32!GetKeyboardLayout, USER32!GetKeyboardLayoutList, USER32!GetKeyboardState, USER32!GetKeyboardType, USER32!GetLastActivePopup, USER32!GetMenu, USER32!GetMenuItemCount, USER32!GetMenuItemID, USER32!GetMenuItemInfoA, USER32!GetMenuState, USER32!GetMenuStringA, USER32!GetMessagePos, USER32!GetMessageTime, USER32!GetParent, USER32!GetPropA, USER32!GetScrollInfo, USER32!GetScrollPos, USER32!GetScrollRange, USER32!GetSubMenu, USER32!GetSystemMenu, USER32!GetSystemMetrics, USER32!GetTopWindow, USER32!GetWindow, USER32!GetWindowDC, USER32!GetWindowLongA, USER32!GetWindowPlacement, USER32!GetWindowRect, USER32!GetWindowTextA, USER32!GetWindowThreadProcessId, USER32!InflateRect, USER32!InsertMenuA, USER32!InsertMenuItemA, USER32!IntersectRect, USER32!InvalidateRect, USER32!IsCharAlphaA, USER32!IsCharAlphaNumericA, USER32!IsChild, USER32!IsDialogMessageA, USER32!IsIconic, USER32!IsRectEmpty, USER32!IsWindow, USER32!IsWindowEnabled, USER32!IsWindowVisible, USER32!IsZoomed, USER32!KillTimer, USER32!LoadBitmapA, USER32!LoadCursorA, USER32!LoadIconA, USER32!LoadKeyboardLayoutA, USER32!LoadStringA, USER32!MapVirtualKeyA, USER32!MapWindowPoints, USER32!MessageBeep, USER32!MessageBoxA, USER32!MsgWaitForMultipleObjects, USER32!OemToCharA, USER32!OffsetRect, USER32!OpenClipboard, USER32!PeekMessageA, USER32!PostMessageA, USER32!PostQuitMessage, USER32!PtInRect, USER32!RedrawWindow, USER32!RegisterClassA, USER32!RegisterClipboardFormatA, USER32!RegisterWindowMessageA, USER32!ReleaseCapture, USER32!ReleaseDC, USER32!RemoveMenu, USER32!RemovePropA, USER32!ScreenToClient, USER32!ScrollWindow, USER32!ScrollWindowEx, USER32!SendMessageA, USER32!SetActiveWindow, USER32!SetCapture, USER32!SetClassLongA, USER32!SetClipboardData, USER32!SetCursor, USER32!SetFocus, USER32!SetForegroundWindow, USER32!SetKeyboardState, USER32!SetMenu, USER32!SetMenuItemInfoA, USER32!SetParent, USER32!SetPropA, USER32!SetRect, USER32!SetScrollInfo, USER32!SetScrollPos, USER32!SetScrollRange, USER32!SetTimer, USER32!SetWindowLongA, USER32!SetWindowPlacement, USER32!SetWindowPos, USER32!SetWindowTextA, USER32!SetWindowsHookExA, USER32!ShowCursor, USER32!ShowOwnedPopups, USER32!ShowScrollBar, USER32!ShowWindow, USER32!SystemParametersInfoA, USER32!TrackPopupMenu, USER32!TranslateMDISysAccel, USER32!TranslateMessage, USER32!UnhookWindowsHookEx, USER32!UnionRect, USER32!UnregisterClassA, USER32!UpdateWindow, USER32!ValidateRect, USER32!WaitMessage, USER32!WinHelpA, USER32!WindowFromPoint, USER32!wsprintfA, USER32!wvsprintfA, USER32!GetSysColor, OLE32!CLSIDFromProgID, OLE32!CoCreateInstance, OLE32!CoGetClassObject, OLE32!CoGetMalloc, OLE32!CoInitialize, OLE32!CoUninitialize, OLE32!CreateStreamOnHGlobal, OLE32!IsAccelerator, OLE32!IsEqualGUID, OLE32!OleDraw, OLE32!OleSetMenuDescriptor, OLEAUT32!GetErrorInfo, OLEAUT32!SafeArrayAccessData, OLEAUT32!SafeArrayCreate, OLEAUT32!SafeArrayGetElement, OLEAUT32!SafeArrayGetLBound, OLEAUT32!SafeArrayGetUBound, OLEAUT32!SafeArrayPtrOfIndex, OLEAUT32!SafeArrayPutElement, OLEAUT32!SafeArrayRedim, OLEAUT32!SafeArrayUnaccessData, OLEAUT32!SysAllocStringLen, OLEAUT32!SysFreeString, OLEAUT32!SysReAllocStringLen, OLEAUT32!SysStringLen, OLEAUT32!VariantChangeType, OLEAUT32!VariantClear, OLEAUT32!VariantCopy, OLEAUT32!VariantCopyInd, OLEAUT32!VariantInit, CC3260MT!@$bdele$qpv, CC3260MT!@$bdla$qpv, CC3260MT!@$bnew$qui, CC3260MT!@$bnwa$qui, CC3260MT!@_CatchCleanup$qv, CC3260MT!@_InitTermAndUnexPtrs$qv, CC3260MT!@_ReThrowException$quipuc, CC3260MT!@_ThrowExceptionLDTC$qpvt1t1t1uiuiuipuct1, CC3260MT!__ErrorExit, CC3260MT!__Return_unwind, CC3260MT!___CRTL_MEM_GetBorMemPtrs, CC3260MT!___CRTL_MEM_UseBorMM, CC3260MT!___CRTL_TLS_Alloc, CC3260MT!___CRTL_TLS_ExitThread, CC3260MT!___CRTL_TLS_Free, CC3260MT!___CRTL_TLS_GetValue, CC3260MT!___CRTL_TLS_InitThread, CC3260MT!___CRTL_TLS_SetValue, CC3260MT!____ExceptionHandler, CC3260MT!___raiseDebuggerException, CC3260MT!___terminatePTR, CC3260MT!__argc, CC3260MT!__argv, CC3260MT!__argv_default_expand, CC3260MT!__exitargv, CC3260MT!__flushall, CC3260MT!__ftol, CC3260MT!__handle_exitargv, CC3260MT!__handle_setargv, CC3260MT!__handle_wexitargv, CC3260MT!__handle_wsetargv, CC3260MT!__ltoupper, CC3260MT!__matherr, CC3260MT!__matherrl, CC3260MT!__setargv, CC3260MT!__startup, CC3260MT!__wargv_default_expand, CC3260MT!_abort, CC3260MT!_atof, CC3260MT!_atol, CC3260MT!_chdir, CC3260MT!_cos, CC3260MT!_floor, CC3260MT!_free, CC3260MT!_malloc, CC3260MT!_memcmp, CC3260MT!_memcpy, CC3260MT!_memmove, CC3260MT!_memset, CC3260MT!_realloc, CC3260MT!_setdisk, CC3260MT!_sin, CC3260MT!_sprintf, CC3260MT!_stpcpy, CC3260MT!_strcpy, CC3260MT!_strlen, CC3260MT!_vsnprintf, STLPMT45!#2, STLPMT45!#467, STLPMT45!#12, STLPMT45!#11

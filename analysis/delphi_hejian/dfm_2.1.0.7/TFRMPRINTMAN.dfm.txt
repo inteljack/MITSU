@@ -1,0 +1,411 @@
+object frmPrintMan: TfrmPrintMan
+  Left = 193
+  Top = 89
+  Width = 962
+  Height = 654
+  Caption = '噴印資料管理'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object gboxSet: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 934
+    Height = 81
+    Caption = '基本設置'
+    TabOrder = 0
+    object txtKeyCodeValue: TLabeledEdit
+      Left = 80
+      Top = 32
+      Width = 593
+      Height = 21
+      EditLabel.Width = 58
+      EditLabel.Height = 13
+      EditLabel.Caption = 'Key Code：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 0
+    end
+    object btnReadData: TButton
+      Left = 816
+      Top = 30
+      Width = 105
+      Height = 25
+      Caption = '讀取資料'
+      TabOrder = 1
+      OnClick = btnReadDataClick
+    end
+  end
+  object gboxZM: TGroupBox
+    Left = 8
+    Top = 104
+    Width = 934
+    Height = 241
+    Caption = '正嘜'
+    TabOrder = 1
+    object txtModelValue: TEdit
+      Left = 120
+      Top = 38
+      Width = 801
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 0
+      OnKeyPress = txtModelValueKeyPress
+    end
+    object txtModel: TLabeledEdit
+      Left = 16
+      Top = 38
+      Width = 89
+      Height = 21
+      Ctl3D = True
+      EditLabel.Width = 12
+      EditLabel.Height = 13
+      EditLabel.Caption = '：'
+      LabelPosition = lpRight
+      LabelSpacing = 3
+      ParentCtl3D = False
+      TabOrder = 1
+    end
+    object txtBore: TLabeledEdit
+      Left = 16
+      Top = 80
+      Width = 89
+      Height = 21
+      Ctl3D = True
+      EditLabel.Width = 12
+      EditLabel.Height = 13
+      EditLabel.Caption = '：'
+      LabelPosition = lpRight
+      LabelSpacing = 3
+      ParentCtl3D = False
+      TabOrder = 2
+    end
+    object txtBoreValue: TEdit
+      Left = 120
+      Top = 80
+      Width = 113
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 3
+    end
+    object txtBoreUnit: TEdit
+      Left = 256
+      Top = 80
+      Width = 161
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 4
+    end
+    object txtOutput: TLabeledEdit
+      Left = 464
+      Top = 80
+      Width = 113
+      Height = 21
+      Ctl3D = True
+      EditLabel.Width = 12
+      EditLabel.Height = 13
+      EditLabel.Caption = '：'
+      LabelPosition = lpRight
+      LabelSpacing = 3
+      ParentCtl3D = False
+      TabOrder = 5
+    end
+    object txtOutputValue: TEdit
+      Left = 592
+      Top = 80
+      Width = 137
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 6
+    end
+    object txtOutputUnit: TEdit
+      Left = 752
+      Top = 80
+      Width = 169
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 7
+    end
+    object txtPhaseValue: TEdit
+      Left = 16
+      Top = 128
+      Width = 89
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 8
+    end
+    object txtPhaseUnit: TEdit
+      Left = 120
+      Top = 128
+      Width = 113
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 9
+    end
+    object txtVoltageValue: TEdit
+      Left = 256
+      Top = 128
+      Width = 89
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 10
+    end
+    object txtVoltageUnit: TEdit
+      Left = 352
+      Top = 128
+      Width = 65
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 11
+    end
+    object txtHzValue: TEdit
+      Left = 464
+      Top = 128
+      Width = 265
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 12
+    end
+    object txtHzUnit: TEdit
+      Left = 752
+      Top = 128
+      Width = 169
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 13
+    end
+    object txtTokki: TEdit
+      Left = 464
+      Top = 168
+      Width = 457
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 14
+    end
+    object txtCode: TLabeledEdit
+      Left = 16
+      Top = 200
+      Width = 89
+      Height = 21
+      Ctl3D = True
+      EditLabel.Width = 12
+      EditLabel.Height = 13
+      EditLabel.Caption = '：'
+      LabelPosition = lpRight
+      LabelSpacing = 3
+      ParentCtl3D = False
+      TabOrder = 15
+    end
+    object txtCodeValue: TEdit
+      Left = 120
+      Top = 200
+      Width = 298
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 16
+    end
+    object gbxMsg: TGroupBox
+      Left = 312
+      Top = 112
+      Width = 401
+      Height = 65
+      TabOrder = 17
+      Visible = False
+      object lblMSGDJS: TLabel
+        Left = 16
+        Top = 20
+        Width = 304
+        Height = 32
+        Caption = '正在導出數據中，請稍候...'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -27
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        Layout = tlCenter
+      end
+    end
+  end
+  object gboxCM: TGroupBox
+    Left = 8
+    Top = 360
+    Width = 934
+    Height = 73
+    Caption = '側嘜'
+    TabOrder = 2
+    object txtModelValueSide: TEdit
+      Left = 16
+      Top = 33
+      Width = 401
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object txtPlace: TEdit
+      Left = 464
+      Top = 33
+      Width = 457
+      Height = 21
+      Ctl3D = True
+      ParentCtl3D = False
+      TabOrder = 1
+    end
+  end
+  object gboxZXGG: TGroupBox
+    Left = 8
+    Top = 448
+    Width = 934
+    Height = 73
+    Caption = '紙箱規格'
+    TabOrder = 3
+    object txtCaseNo: TLabeledEdit
+      Left = 80
+      Top = 33
+      Width = 337
+      Height = 21
+      Ctl3D = True
+      EditLabel.Width = 60
+      EditLabel.Height = 13
+      EditLabel.Caption = '紙箱編號：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      ParentCtl3D = False
+      TabOrder = 0
+    end
+    object txtPrintWordHeight: TEdit
+      Left = 464
+      Top = 32
+      Width = 75
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object txtOutSidePrintWordBegin: TEdit
+      Left = 560
+      Top = 32
+      Width = 75
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object txtOutSidePrintWordEnd: TEdit
+      Left = 656
+      Top = 32
+      Width = 75
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object txtInsidePrintWordBegin: TEdit
+      Left = 752
+      Top = 32
+      Width = 75
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object txtInsidePrintWordEnd: TEdit
+      Left = 845
+      Top = 32
+      Width = 75
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+  end
+  object gboxPSet: TGroupBox
+    Left = 8
+    Top = 536
+    Width = 934
+    Height = 73
+    Caption = '操作'
+    TabOrder = 4
+    object btnAdd: TButton
+      Left = 16
+      Top = 28
+      Width = 75
+      Height = 25
+      Caption = '新增'
+      TabOrder = 0
+      OnClick = btnAddClick
+    end
+    object btnEdit: TButton
+      Left = 120
+      Top = 28
+      Width = 75
+      Height = 25
+      Caption = '修改'
+      TabOrder = 1
+      OnClick = btnEditClick
+    end
+    object btnDelete: TButton
+      Left = 224
+      Top = 28
+      Width = 75
+      Height = 25
+      Caption = '删除'
+      TabOrder = 2
+      OnClick = btnDeleteClick
+    end
+    object btnInsert: TButton
+      Left = 712
+      Top = 28
+      Width = 75
+      Height = 25
+      Caption = '导入'
+      TabOrder = 3
+      OnClick = btnInsertClick
+    end
+    object btnOutPut: TButton
+      Left = 832
+      Top = 28
+      Width = 75
+      Height = 25
+      Caption = '导出'
+      TabOrder = 4
+      OnClick = btnOutPutClick
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 456
+  end
+end

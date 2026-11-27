@@ -1,0 +1,173 @@
+
+== 004019DC ? (len 26f)
+  calls: rtl60!@Sysutils@IntToStr$qqri, rtl60!@System@TObject@Free$qqrv
+  strs: daCount | MsgInfo | DataSrc | UID | ADSADT
+
+== 00401C4C ? (len 4d)
+  calls: KERNEL32!InitializeCriticalSection, KERNEL32!DeleteCriticalSection, KERNEL32!OutputDebugStringA
+  strs: DllEntryPoint
+
+== 00401D1C imDtOpen (len 1d9)
+  calls: ANSERMBS!ApMapSharedMemory, ANSERMBS!ApUnmapSharedMemory, KERNEL32!GetModuleHandleA, KERNEL32!GetModuleFileNameA, KERNEL32!GetCurrentProcessId, KERNEL32!CreateEventA, KERNEL32!GetLastError, KERNEL32!SetEvent, KERNEL32!ResetEvent
+  strs: 輇@ | 骲@ | .c@ | Qc@
+
+== 00401EF8 ? (len 53)
+  strs: ctrler.exe
+
+== 00401F70 imDtGetExclusiveApp (len 5b)
+  calls: CC3260MT!_strcpy
+
+== 00401FCC imDtClose (len f7)
+  calls: CC3260MT!_memset, imInitADT, imDtReadCancel, KERNEL32!CloseHandle, imDtWriteCancel, ANSERMBS!ApUnmapSharedMemory
+
+== 004020C4 imDtWriteBegin (len d1)
+  calls: KERNEL32!WaitForSingleObject, vcl60!@Forms@TApplication@ProcessMessages$qqrv, CC3260MT!_memset
+
+== 00402198 imDtWriteEnd (len 5f)
+  calls: KERNEL32!ResetEvent, KERNEL32!SetEvent
+
+== 004021F8 imDtWriteCancel (len 9f)
+  calls: KERNEL32!WaitForSingleObject, KERNEL32!ResetEvent, KERNEL32!SetEvent
+
+== 00402298 imDtReadBegin (len c7)
+  calls: KERNEL32!WaitForSingleObject, vcl60!@Forms@TApplication@ProcessMessages$qqrv
+
+== 00402360 imDtReadEnd (len 67)
+  calls: KERNEL32!ResetEvent, KERNEL32!SetEvent
+
+== 004023C8 imDtReadCancel (len 37)
+
+== 00402400 imDtControl (len 215)
+  calls: KERNEL32!EnterCriticalSection, KERNEL32!LeaveCriticalSection, CC3260MT!_memcpy, KERNEL32!ResetEvent, KERNEL32!SetEvent, KERNEL32!WaitForSingleObject, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+
+== 00402618 imDtCheckCmdIn (len 9b)
+  calls: KERNEL32!WaitForSingleObject, KERNEL32!ResetEvent
+
+== 004026B4 imDtCmdOut (len 87)
+  calls: CC3260MT!_memcpy, KERNEL32!SetEvent
+
+== 0040273C imDtFieldBound (len f)
+
+== 0040274C imDtGetField (len 4d)
+
+== 0040280C imDtAppendField (len e3)
+  calls: CC3260MT!_memcpy
+
+== 004028F0 imDtWritePic (len 27b)
+  calls: ANSERMBS!ApTiffToBmpBound, CC3260MT!_malloc, ANSERMBS!ApTiffToBmp, imDtFieldBound, imDtWriteBegin, imDtAppendField, imDtWriteEnd, CC3260MT!_free, vcl60!@Graphics@TPicture@$bctr$qqrv, vcl60!@Graphics@TPicture@LoadFromFile$qqrx17System@AnsiString, vcl60!@Graphics@TPicture@GetBitmap$qqrv, vcl60!@Graphics@TBitmap@GetPixelFormat$qqrv, vcl60!@Extctrls@TImage@$bctr$qqrp18Classes@TComponent, vcl60!@Graphics@TBitmap@SetPixelFormat$qqr21Graphics@TPixelFormat, vcl60!@Graphics@TPicture@GetWidth$qqrv, vcl60!@Graphics@TPicture@GetHeight$qqrv, vcl60!@Extctrls@TImage@GetCanvas$qqrv, vcl60!@Graphics@TCanvas@Draw$qqriip17Graphics@TGraphic, rtl60!@System@TObject@Free$qqrv, rtl60!@Classes@TStream@GetSize$qqrv
+
+== 00402BC0 imOpenPrinter (len 23)
+  calls: imDtOpen
+
+== 00402BE4 imGetExclusiver (len 27)
+  calls: imDtGetExclusiveApp
+
+== 00402C0C imClosePrinter (len 33)
+  calls: imDtClose
+
+== 00402C40 imPrinterStart (len 37)
+  calls: imDtControl
+
+== 00402C78 imPrinterStop (len 37)
+  calls: imDtControl
+
+== 00402D38 imPageBegin (len 13)
+
+== 00402D4C imPageBeginExt (len 13)
+
+== 00402D60 imAppendMessage (len b1)
+  calls: imDtWriteBegin, imDtWriteEnd
+
+== 00402E14 imAppendPageField (len 4b)
+  calls: imDtAppendField
+
+== 00402E60 imPageEnd (len 93)
+  calls: imDtWriteEnd
+
+== 00402EF4 imSendCancel (len 33)
+  calls: imDtWriteCancel
+
+== 00402F28 imGetPrinterStatus (len 71)
+  calls: imDtControl
+
+== 00402F9C imClearPrintQueue (len 37)
+  calls: imDtControl
+
+== 00402FD4 imClearReturnQueue (len 3b)
+  calls: imDtWriteCancel, imDtControl
+
+== 00403010 imGetPrinttedPagesn (len 5f)
+  calls: imDtControl
+
+== 00403070 imGetNewPrinttedPagesn (len 5f)
+  calls: imDtControl
+
+== 004030D0 imGetPrinterAlarm (len 6f)
+  calls: imDtControl
+
+== 00403140 imInitADT (len 5f)
+  calls: imDtControl
+
+== 004031A0 imGetADTStatus (len 77)
+  calls: KERNEL32!WaitForSingleObject
+
+== 004032C4 imCheckIsAdtMsg (len 365)
+  calls: rtl60!@Sysutils@IntToStr$qqri, rtl60!@Classes@TStrings@SetDelimiter$qqrxc, rtl60!@Classes@TStrings@SetDelimitedText$qqrx17System@AnsiString, rtl60!@Sysutils@StrToInt$qqrx17System@AnsiString, rtl60!@System@TObject@Free$qqrv
+  strs: Count | MsgInfo | Object | MsgObjT
+
+== 004036A4 imGetAdtMsgFieldCount (len 175)
+  calls: rtl60!@Sysutils@IntToStr$qqri, rtl60!@Classes@TStream@SetPosition$qqrxj, rtl60!@System@TObject@Free$qqrv
+  strs: DataSrc | Data
+
+== 0040381C imGetAdtMsgFieldType (len 1b1)
+  calls: rtl60!@Inifiles@TMemIniFile@$bctr$qqrx17System@AnsiString, rtl60!@Sysutils@IntToStr$qqri, rtl60!@Classes@TStream@SetPosition$qqrxj, rtl60!@Sysutils@StrLen$qqrpxc, CC3260MT!_strcpy, rtl60!@System@TObject@Free$qqrv
+  strs: DataSrc | Data
+
+== 004039D0 imGetPHsHeight (len 77)
+  calls: imDtControl
+
+== 00403A48 imSetVMirrorCount (len 35)
+  calls: imDtControl
+
+== 00403A80 imCheckTrigger (len 5f)
+  calls: imDtControl
+
+== 00403AE0 imGetDPI (len 77)
+  calls: imDtControl
+
+== 00403B58 imGetLgphDelay (len 7b)
+  calls: imDtControl
+
+== 00403BD4 imSetLgphDelay (len 69)
+  calls: imDtControl
+
+== 00403C40 imCheckRegFunc (len 7b)
+  calls: imDtControl
+
+== 00403CBC imGetADTVersion (len 15)
+  calls: CC3260MT!_strcpy
+  strs: 豣@
+
+== 00403DA0 ? (len 6f7)
+  calls: rtl60!@Sysutils@IntToStr$qqri, CC3260MT!_strncpy, CC3260MT!@_CatchCleanup$qv
+  strs: InkInfo_ | SN | STATUS | VolumeLoad | VolumeCur | PercentVolumeCur | Color | AreaCode | SaleCode | DotsPrinted | TimesPrinted | TimesWouldPrint | TimesWouldPrintTotal | PrintStationName
+
+== 004044F0 imFetchInkInfo (len 1af)
+  calls: USER32!FindWindowA, USER32!SendMessageA, rtl60!@Sysutils@ExtractFilePath$qqrx17System@AnsiString, CC3260MT!__Return_unwind, CC3260MT!@_CatchCleanup$qv
+  strs: Printing PRO | TfrmMain | InkInfo.INI
+
+== 00404E1C ? (len 133)
+  calls: rtl60!@System@TObject@$bdtr$qqrv, rtl60!@System@initialization$qqrv, CC3260MT!___CRTL_MEM_GetBorMemPtrs, CC3260MT!__ErrorExit, BORLNDMM!#2
+  strs: vclshmem.cpp: GetBorMemPtrs failed
+
+== 00404F50 ? (len 67)
+  calls: rtl60!@System@IsMemoryManagerSet$qqrv, rtl60!@System@SetMemoryManager$qqrrx21System@TMemoryManager, CC3260MT!_strstr, KERNEL32!GetModuleHandleA, KERNEL32!GetProcAddress
+  strs: ___CPPdebugHook
+
+== 00405004 ? (len d3)
+  calls: CC3260MT!____ExceptionHandler, KERNEL32!LoadLibraryA, CC3260MT!__ErrorExit, KERNEL32!FreeLibrary
+  strs: CC3260MT.DLL | RTLDLL cannot find itself!
+
+== 00405364 ? (len c9a)
+  calls: vcl60!@Consts@initialization$qqrv, vcl60!@Consts@Finalization$qqrv, vcl60!@Graphics@initialization$qqrv, vcl60!@Graphics@Finalization$qqrv, vcl60!@Graphics@TBitmap@SetPixelFormat$qqr21Graphics@TPixelFormat, vcl60!@Graphics@TBitmap@GetPixelFormat$qqrv, vcl60!@Graphics@TPicture@GetHeight$qqrv, vcl60!@Graphics@TPicture@GetWidth$qqrv, vcl60!@Graphics@TPicture@LoadFromFile$qqrx17System@AnsiString, vcl60!@Graphics@TPicture@GetBitmap$qqrv, vcl60!@Graphics@TPicture@$bctr$qqrv, vcl60!@Graphics@TCanvas@Draw$qqriip17Graphics@TGraphic, vcl60!@Graphics@TPicture@, vcl60!@Printers@initialization$qqrv, vcl60!@Printers@Finalization$qqrv, vcl60!@Stdctrls@initialization$qqrv, vcl60!@Stdctrls@Finalization$qqrv, vcl60!@Extctrls@initialization$qqrv, vcl60!@Extctrls@Finalization$qqrv, vcl60!@Extctrls@TImage@GetCanvas$qqrv, vcl60!@Extctrls@TImage@$bctr$qqrp18Classes@TComponent, vcl60!@Extctrls@TImage@, vcl60!@Dialogs@initialization$qqrv, vcl60!@Dialogs@Finalization$qqrv, vcl60!@Clipbrd@initialization$qqrv, vcl60!@Clipbrd@Finalization$qqrv, vcl60!@Stdactns@initialization$qqrv, vcl60!@Stdactns@Finalization$qqrv, vcl60!@Winhelpviewer@initialization$qqrv, vcl60!@Winhelpviewer@Finalization$qqrv, vcl60!@Actnlist@initialization$qqrv, vcl60!@Actnlist@Finalization$qqrv, vcl60!@Forms@initialization$qqrv, vcl60!@Forms@Finalization$qqrv, vcl60!@Forms@TApplication@ProcessMessages$qqrv, vcl60!@Forms@Application, vcl60!@Imglist@initialization$qqrv, vcl60!@Imglist@Finalization$qqrv, vcl60!@Menus@initialization$qqrv, vcl60!@Menus@Finalization$qqrv, vcl60!@Controls@initialization$qqrv, vcl60!@Controls@Finalization$qqrv, rtl60!@System@initialization$qqrv, rtl60!@System@Finalization$qqrv, rtl60!@System@UnregisterModule$qqrp17System@TLibModule, rtl60!@System@RegisterModule$qqrp17System@TLibModule, rtl60!@System@FindHInstance$qqrpv, rtl60!@System@@LStrCat3$qqrv, rtl60!@System@@LStrCat$qqrv, rtl60!@System@@LStrFromPChar$qqrr17System@AnsiStringpc, rtl60!@System@@LStrAsg$qqrpvpxv, rtl60!@System@@LStrClr$qqrpv, rtl60!@System@@HandleFinally$qqrv, rtl60!@System@TObject@Free$qqrv, rtl60!@System@TObject@$bdtr$qqrv, rtl60!@System@TObject@$bctr$qqrv, rtl60!@System@IsMemoryManagerSet$qqrv, rtl60!@System@SetMemoryManager$qqrrx21System@TMemoryManager, rtl60!@System@IsMultiThread, rtl60!@System@IsConsole, rtl60!@System@ExitProc, rtl60!@System@CmdLine, rtl60!@System@IsLibrary, rtl60!@System@MainInstance, rtl60!@Types@initialization$qqrv, rtl60!@Types@Finalization$qqrv, rtl60!@Sysconst@initialization$qqrv, rtl60!@Sysconst@Finalization$qqrv, rtl60!@Sysutils@initialization$qqrv, rtl60!@Sysutils@Finalization$qqrv, rtl60!@Sysutils@StrLen$qqrpxc, rtl60!@Sysutils@ExtractFileName$qqrx17System@AnsiString, rtl60!@Sysutils@ExtractFilePath$qqrx17System@AnsiString, rtl60!@Sysutils@StrToInt$qqrx17System@AnsiString, rtl60!@Sysutils@IntToStr$qqri, rtl60!@Sysutils@AnsiCompareText$qqrx17System@AnsiStringt1, rtl60!@Varutils@initialization$qqrv, rtl60!@Varutils@Finalization$qqrv, rtl60!@Variants@initialization$qqrv, rtl60!@Variants@Finalization$qqrv, rtl60!@Rtlconsts@initialization$qqrv, rtl60!@Rtlconsts@Finalization$qqrv, rtl60!@Typinfo@initialization$qqrv, rtl60!@Typinfo@Finalization$qqrv, rtl60!@Typinfo@DotSep, rtl60!@Typinfo@BooleanIdents, rtl60!@Activex@initialization$qqrv, rtl60!@Activex@Finalization$qqrv, rtl60!@Classes@initialization$qqrv, rtl60!@Classes@Finalization$qqrv, rtl60!@Classes@TMemoryStream@$bdtr$qqrv, rtl60!@Classes@TStream@GetSize$qqrv, rtl60!@Classes@TStream@SetPosition$qqrxj, rtl60!@Classes@TStringList@$bdtr$qqrv, rtl60!@Classes@TStrings@SetDelimiter$qqrxc, rtl60!@Classes@TStrings@SetDelimitedText$qqrx17System@AnsiString, rtl60!@Classes@TStrings@$bdtr$qqrv, rtl60!@Classes@TPersistent@$bdtr$qqrv, rtl60!@Classes@TMemoryStream@, rtl60!@Classes@TStringList@, rtl60!@Math@initialization$qqrv, rtl60!@Math@Finalization$qqrv, rtl60!@Contnrs@initialization$qqrv, rtl60!@Contnrs@Finalization$qqrv, rtl60!@Inifiles@initialization$qqrv, rtl60!@Inifiles@Finalization$qqrv, rtl60!@Inifiles@TIniFile@$bdtr$qqrv, rtl60!@Inifiles@TMemIniFile@$bctr$qqrx17System@AnsiString, rtl60!@Inifiles@TCustomIniFile@$bctr$qqrx17System@AnsiString, rtl60!@Inifiles@TIniFile@, rtl60!@Inifiles@TMemIniFile@, rtl60!@Strutils@initialization$qqrv, rtl60!@Strutils@Finalization$qqrv, rtl60!@Helpintfs@initialization$qqrv, rtl60!@Helpintfs@Finalization$qqrv, rtl60!@Flatsb@initialization$qqrv, rtl60!@Flatsb@Finalization$qqrv, rtl60!@Multimon@initialization$qqrv, rtl60!@Multimon@Finalization$qqrv, BORLNDMM!#2, ANSERMBS!ApMapSharedMemory, ANSERMBS!ApTiffToBmp, ANSERMBS!ApTiffToBmpBound, ANSERMBS!ApUnmapSharedMemory, PSAPI!EnumProcessModules, PSAPI!GetModuleFileNameExA, KERNEL32!CloseHandle, KERNEL32!CreateEventA, KERNEL32!CreateToolhelp32Snapshot, KERNEL32!DeleteCriticalSection, KERNEL32!EnterCriticalSection, KERNEL32!FreeLibrary, KERNEL32!GetCommandLineA, KERNEL32!GetCurrentProcessId, KERNEL32!GetLastError, KERNEL32!GetModuleFileNameA, KERNEL32!GetModuleHandleA, KERNEL32!GetProcAddress, KERNEL32!GetProcessHeap, KERNEL32!GetVersion, KERNEL32!HeapAlloc, KERNEL32!HeapFree, KERNEL32!InitializeCriticalSection, KERNEL32!LeaveCriticalSection, KERNEL32!LoadLibraryA, KERNEL32!OpenProcess, KERNEL32!OutputDebugStringA, KERNEL32!Process32First, KERNEL32!Process32Next, KERNEL32!ResetEvent, KERNEL32!SetEvent, KERNEL32!WaitForSingleObject, USER32!FindWindowA, USER32!GetWindowThreadProcessId, USER32!SendMessageA, CC3260MT!@$bdele$qpv, CC3260MT!@_CatchCleanup$qv, CC3260MT!@_InitTermAndUnexPtrs$qv, CC3260MT!__ErrorExit, CC3260MT!__ErrorMessage, CC3260MT!__Return_unwind, CC3260MT!___CRTL_MEM_GetBorMemPtrs, CC3260MT!___CRTL_MEM_UseBorMM, CC3260MT!___CRTL_TLS_Alloc, CC3260MT!___CRTL_TLS_ExitThread, CC3260MT!___CRTL_TLS_Free, CC3260MT!___CRTL_TLS_GetValue, CC3260MT!___CRTL_TLS_InitThread, CC3260MT!___CRTL_TLS_SetValue, CC3260MT!____ExceptionHandler, CC3260MT!__argv_default_expand, CC3260MT!__free_heaps, CC3260MT!__handle_exitargv, CC3260MT!__handle_setargv, CC3260MT!__handle_wexitargv, CC3260MT!__handle_wsetargv, CC3260MT!__startupd, CC3260MT!__wargv_default_expand, CC3260MT!_free, CC3260MT!_malloc, CC3260MT!_memcpy, CC3260MT!_memset, CC3260MT!_strcpy, CC3260MT!_strncpy, CC3260MT!_strstr
+  strs: false | true | ->

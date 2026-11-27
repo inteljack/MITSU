@@ -1,0 +1,273 @@
+key	zh-CN(language.ini)	zh-TW(TWlanguage.ini)	en(enlanguage.ini)
+CartonYZGD	印字高度	印字高度	Print height
+CartonBMYZKS	表面印字开始	表面印字開始	Start printing surface
+CartonBMYZZL	表面印字终了	表面印字終了	The end surface printing
+CartonLMYZKS	里面印字开始	�堶惘L字開始	It started printing
+CartonLMYZZL	里面印字终了	�堶惘L字終了	The inside end of printing
+CartonNoNULL	纸箱编号不可为空！	紙箱編號不可為空！	Carton number can not be empty!
+CartonThere	纸箱编号已经存在，无法新增！	紙箱編號已經存在，無法新增！	Carton number already exists, can not be added!
+CartonNoThere	纸箱规格不存在！	紙箱規格不存在！	Carton specifications do not exist!
+CartonNoTable	纸箱规格表不存在！	紙箱規格表不存在！	Carton size table does not exist!
+CartonAddSucc	新增成功	新增成功	New success
+CartonAddFail	新增失败	新增失敗	New failed
+CartonDeleteFail	纸箱规格删除失败!	紙箱規格刪除失敗!	Carton specification deletion failed!
+CartonCheck	请至少选择一项进行删除！	請至少選擇壹項進行刪除！	Please select at least one item to delete!
+CartonEditSucc	修改成功	修改成功	Successful modification
+CartonEditFail	修改失败	修改失敗	Modify failed
+CartonNumNoExists	纸箱编号不存在!	紙箱編號不存在!	Carton number does not exist!
+CartonOutSideDYLW	表面印字终了输入数字大于Carton size W + Carton size L	表面印字終了輸入數字大於Carton size W + Carton size L	
+CartonInSideDYLW	里面印字终了输入数字大于Carton size W + Carton size L	�堶惘L字終了輸入數字大於Carton size W + Carton size L	
+CtrlCheckPrint	请检查喷码机是否连接成功！	請檢查噴碼機是否連接成功！	Please check the printer is connected successfully!
+CtrlPrinting	正在喷印中	正在噴印中	In spray printing
+CtrlStop	已停止喷印！	已停止噴印！	Has stopped spraying printing!
+CtrlStatusFail	获取喷码机状态失败！	獲取噴碼機狀態失敗！	Get the printer status failed!
+CtrlLJFail	连接Printing PRO失败！	連接Printing PRO失敗！	Failed to connect to Printing PRO!
+CtrlNoAlarm	系统已恢复正常！	系統已恢復正常！	The system has returned to normal!
+CtrlPHWarning	卡匣警告，请打开Printing PRO查看！	卡匣警告，請打開Printing PRO查看！	Cassette warning, please open the Printing PRO view!
+CtrlPHError	卡匣错误，请打开Printing PRO查看！	卡匣錯誤，請打開Printing PRO查看！	Cartridge error, please open the Printing PRO view!
+CtrlSysWarning	系统警告，请打开Printing PRO查看！	系統警告，請打開Printing PRO查看！	System warning, please open the PRO Printing view!
+CtrlSysError	系统错误，请打开Printing PRO查看！	系統錯誤，請打開Printing PRO查看！	System error, please open PRO Printing view!
+CtrlPrintOpenSucc	Printing PRO已成功连接！	Printing PRO已成功連接！	PRO Printing has been successfully connected!
+CtrlPrintNoMem	不能MAP MEOMRY！	不能MAP MEOMRY！	Can't MEOMRY MAP!
+CopyFileError	拷贝文件失败！	拷貝文件失敗！	Copy file failed!
+CtrlPrintOtherZY	Printing PRO已被其他程序佔用！	Printing PRO已被其他程序佔用！	Printing PRO has been occupied by other programs!
+CtrlIsPrepareModel	正在淮备模版中，请稍后...	正在淮備模版中，請稍後...	Is prepared template, please later...
+CtrlPrintWarm	很抱歉，喷印过程中发现异常！	很抱歉，噴印過程中發現異常！	I am sorry to find the anomalies in the printing process!
+CtrlPrintClearCarton1	喷印完成，是否清空箱数与机番?	噴印完成，是否清空箱數與機番?	Spray printing is completed, whether the number of empty boxes and machine?
+CtrlPrintClearCarton2	喷印机番不能小于箱数，是否清空箱数与机番?	噴印機番不能小於箱數，是否清空箱數與機番?	A printer can not be less than the number of boxes, whether empty box number and time machine?
+CtrlSendADTException	发送ADT模版失败，请确认配置是否正确!	發送ADT模版失敗，請確認配置是否正確!	Send ADT template failed, please verify that the configuration is correct!
+CtrlSendADTError	抱歉，初始话ADT失败	抱歉，初始話ADT失敗	Sorry, the initial ADT failed.
+CtrlKeyCodeNoNULL	Key code 不可为空!	Key code 不可為空!	Key Code can not be empty!
+CtrlMadeNoValue	製番不可为空!	製番不可為空!	The system can not be empty!
+CtrlNoBeginValue	开始喷印箱数不可为空!	開始噴印箱數不可為空!	The number of jet printing boxes can not be empty!
+CtrlMaxPrintNoNULL	最大喷印箱数不可为空!	最大噴印箱數不可為空!	Maximum number of jet printing box can not be empty!
+CtrlCaptionBeginAndEnd	开始喷印箱数必须小于喷印箱数!	開始噴印箱數必須小於噴印箱數!	The number of jet printing boxes must be less than the number of spraying boxes!
+CtrlNoValueMachine	机番不可为空!	機番不可為空!	Machine can not be empty!
+CtrlPrintCGMax	喷印箱数超过最大值	噴印箱數超過最大值	Spray box number exceeds the maximum value
+CtrlPrintCGCanPrint	喷印箱数超过可用机番	噴印箱數超過可用機番	Spray box number more than available machine
+CtrlCartonCGMaxHeight	印字高度为空，请重新设置!	印字高度為空，請重新設置!	Printing height is empty, please re setting!
+CtrlCartonCGMaxWBegin	表面印字开始为空，请重新设置!	表面印字開始為空，請重新設置!	Start printing surface is empty, please re setting!
+CtrlBMYZZLNoNULL	表面印字终了为空，请重新设置!	表面印字終了為空，請重新設置!	The surface printing end is empty, please re setting!
+CtrlLMYZKSNoNULL	里面印字开始为空，请重新设置!	�堶惘L字開始為空，請重新設置!	It started printing is empty, please re setting!
+CtrlLMYZZLNoNULL	里面印字终了为空，请重新设置!	�堶惘L字終了為空，請重新設置!	Inside the printing end is empty, please re setting!
+CtrlNoZMai	正唛范本不存在，请确认配置是否正确!	正嘜範本不存在，請確認配置是否正確!	Is mark model does not exist, please confirm that the configuration is correct!
+CtrlZSZMai	正唛范本宽度必须为正，请核对!	正嘜範本寬度必須為正，請核對!	The template is mark width must be positive, please check!
+CtrlZMKDNoNULL	正唛范本宽度不可为空，请核对!	正嘜範本寬度不可為空，請核對!	The template is mark width can not be empty, please check!
+CtrlNoCMai	侧唛范本不存在，请确认配置是否正确!	側嘜範本不存在，請確認配置是否正確!	Side mark model does not exist, please confirm that the configuration is correct!
+CtrlCMKD	侧唛范本宽度必须为正，请核对!	側嘜範本寬度必須為正，請核對!	Side mark model width must be positive, please check!
+CtrlCMKDNoNULL	侧唛范本宽度不可为空，请核对!	側嘜範本寬度不可為空，請核對!	Side mark template width can not be empty, please check!
+CtrlStoping	正在停止，请稍候...	正在停止，請稍候...	Please wait while you stop...
+CtrlNoInSideModel	合成的里面范本Temp_InSide不存在!	合成的�堶掃d本Temp_InSide不存在!	The synthesized inside template Temp_InSide does not exist!
+CtrlNoOutSideModel	合成的里面范本Temp_InSide不存在!	合成的�堶掃d本Temp_InSide不存在!	The synthesized inside template Temp_InSide does not exist!
+CtrlNoALLModel	整体范本档不存在!	整體範本檔不存在!	The overall template file does not exist!
+CtrlNoAllADTCount	整体范本ADT栏位数不符合	整體範本ADT欄位數不符合	The overall template ADT column number does not meet the
+CtrlIsSetDelaying	正在设置延迟值中，请稍后...	正在設置延遲值中，請稍後...	Setting the value of the delay, please...
+CtrlFailAllModel	整体范本合成失败!	整體範本合成失敗!	Integrated template synthesis failed!
+CtrlIsPrinting	正在启动喷印中...	正在啟動噴印中...	Starting the spray printing...
+CtrlWarmAllModel	合成模版或设置延迟值过程中出现异常	合成模版或設置延遲值過程中出現異常	Synthetic template or set the value of the delay in the process of abnormal
+CtrlIsSendingDelay	正在发送延迟值中，请稍后...	正在發送延遲值中，請稍後...	Delay value is being sent, please...
+CtrlNoFourPrintHead	喷头数量不对，请检查，喷头数量必须为4	噴頭數量不對，請檢查，噴頭數量必須為4	The number of nozzles is incorrect, please check that the number of nozzles must be 4
+CtrlDelayNoInt	延迟有负值	延遲有負值	Delay is negative
+CtrlNoSendAllDelay	喷印延迟值没有完全发送成功	噴印延遲值沒有完全發送成功	Jet lag is not fully transmitted
+CtrlSendDelayException	设置Printing Pro延迟值异常	設置Printing Pro延遲值異常	Set Printing Pro delay value exception
+CtrlAllSendCount	总发送页数	總發送頁數	The total number of pages sent
+CtrlDataHCZhong1	数据缓衝中，请在	數據緩衝中，請在	Data buffer, please after
+CtrlDataSecond	秒后放入纸箱...	秒後放入紙箱...	seconds into the carton...
+CtrlIsZBPrinting	正在淮备喷印中，请稍后...	正在淮備噴印中，請稍後...	Are ready to print, please try later...
+CtrlIsPreviewShow	淮备预览中，请稍候...	淮備預覽中，請稍候...	Prepare a preview, please wait...
+CtrlPreviewFail	预览资料失败!	預覽資料失敗!	Preview data failed!
+CtrlSendMsgError1	发送文本字串	發送文本字串	Send a text string
+CtrlSendMsgError2	发送二进制流	發送二進制流	Send binary stream
+CtrlSendMsgFail	失败！	失敗！	Failed!
+LoginPassError	密码错误！	密碼錯誤！	Password error!
+MainName	鹤见喷印软体	鶴見噴印軟體	
+MainIsPrinting	正在喷印中，是否关闭程式?	正在噴印中，是否關閉程式?	Is the printing process, whether to close the program?
+MainClearShow	是否关闭程式?	是否關閉程式?	Close the program?
+MainLogTime	本地时间:	本地時間:	Local time:
+PreviewDPI	解析度：	解析度：	Resolution:
+PreviewNoCMOrZM	合成后的正唛或侧唛模版不存在!	合成後的正嘜或側嘜模版不存在!	After the synthesis is mark or side mark template does not exist!
+PrintManDataCZ	数据已经存在，无法新增	數據已經存在，無法新增	Data already exists and cannot be added.
+PrintManMaxLenLeft	以下栏位资料长度超过系统设定：	以下欄位資料長度超過系統設定：	The following column data length exceeds the system settings:
+PrintDataExists	数据不存在，无法删除	數據不存在，無法刪除	Data does not exist, can not be deleted
+ProductNo	製番	製番	For some
+ProductCartonNO	纸箱编号	紙箱編號	Carton number
+ProductBeginTime	开始喷印时间	開始噴印時間	Start printing time
+ProductEndTime	结束喷印时间	結束噴印時間	End of jet printing time
+ProductBeginPrintNo	开始喷印箱号	開始噴印箱號	Start printing number
+ProductEndPrintNo	结束喷印箱号	結束噴印箱號	End printing number
+ProductBeginNo	开始机番	開始機番	Start machine
+ProductEndNo	结束机番	結束機番	End machine
+ProductActualBox	实际喷印箱数		
+NoExistsData	数据不存在！	數據不存在！	Data does not exist!
+SuperHCTimeNoNULL	数据缓衝时间不可为空	數據緩衝時間不可為空	Data buffer time is not available
+SuperMaxHCDYZome	最大缓存必须大于等于零	最大緩存必須大於等於零	Maximum cache must be greater than zero
+SuperSetSucc	设置成功	設置成功	Set success
+SuperSetFail	设置失败	設置失敗	Setting failed
+SuperMaxHCNoNULL	最大缓存不可为空	最大緩存不可為空	Maximum cache cannot be empty
+SuperMaxHCMustDyZone	最大缓存必须大于零	最大緩存必須大於零	Maximum cache must be greater than zero
+SuperSureQRPass	确定要恢复默认密码吗?	確定要恢復默認密碼嗎?	Are you sure you want to restore the default password?
+SuperSuccPass	恢复默认密码成功	恢復默認密碼成功	Restore default password success
+SuperFailPass	恢复默认密码失败	恢復默認密碼失敗	Restore default password failed
+SuperDelayNoNULL	延迟不可为空!	延遲不可為空!	Delay cannot be empty!
+SuperDelaySucc	延迟设置成功!	延遲設置成功!	Delay setting success!
+SuperDelayFail	延迟设置失败!	延遲設置失敗!	Delay setting failed!
+SuperDPINoNULL	解析度不可为空	解析度不可為空	The resolution is not available.
+SuperDPIDYZore	解析度必须大于零	解析度必須大於零	Resolution must be greater than zero
+SuperDPIZShu	解析度必须在450以内	解析度必須在450以內	Resolution must be within 450
+SuperDPISucc	解析度设置成功	解析度設置成功	Resolution set successfully
+SuperDPIFail	解析度设置失败	解析度設置失敗	Resolution setting failed
+SystemSetModelSucc	保存模版成功!	保存模版成功!	Save template successfully!
+SystemSetModelFail	保存模版失败!	保存模版失敗!	Save template failed!
+SystemPassNoSame	确认密码与新密码不一致	確認密碼與新密碼不壹致	Verify that the password is not consistent with the new password
+SystemOldPassError	旧密码错误	舊密碼錯誤	Old password error
+SystemPassSucc	修改密码成功	修改密碼成功	Modify password success
+SystemPassFail	修改密码失败	修改密碼失敗	Modify password failed
+SystemServerNoNULL	服务器不能为空	服務器不能為空	Server cannot be empty
+SystemUserNameNoNULL	用户名不能为空	用戶名不能為空	Protect the name can not be empty
+SystemLoginPassNoNULL	登录密码不能为空	登錄密碼不能為空	Login password can not be empty
+SystemDataBaseExists	数据库已经存在，是否清空后重新初始化?	數據庫已經存在，是否清空後重新初始化?	Database already exists, whether to empty after re initialization?
+SystemClearDataBaseFail	清空数据库失败，请确认该数据库是否被佔用?	清空數據庫失敗，請確認該數據庫是否被佔用?	Empty the database failed, please confirm whether the database is occupied?
+SystemIsCSH	是否初始化数据库?	是否初始化數據庫?	Whether to initialize the database?
+SystemCSHing	正在初始化数据库中...	正在初始化數據庫中...	In the initial database...
+SystemSetServerFail	服务器设置失败！	服務器設置失敗！	Server setup failed!
+SystemInputURL	导入路径不能为空	導入路徑不能為空	Import path cannot be empty
+SystemOutURL	导出路径不能为空	導出路徑不能為空	Export path cannot be empty
+SystemSuccOutInp	导入导出路径设置成功	導入導出路徑設置成功	Import export path set successfully
+SystemFailOutInp	导入导出路径设置失败	導入導出路徑設置失敗	Import export path setup failed
+SystemDataBFSucc	系统备份成功	系統備份成功	System backup success
+SystemDataBFFail	系统备份失败	系統備份失敗	System backup failed
+SystemClearALLData	该操作会清除当前所有数据，并还原为备份档，确定要还原吗？	該操作會清除當前所有數據，並還原為備份檔，確定要還原嗎？	This operation will clear the current all data, and restore to the backup file, determine to restore it?
+SystemDataFileNoExists	系统还原文件不存在，请确认还原档是否正确！	系統還原文件不存在，請確認還原檔是否正確！	System restore file does not exist
+SystemDataHYSucc	系统还原成功	系統還原成功	System restore success
+SystemDataHYFail	系统还原失败	系統還原失敗	System restore failed
+SystemServerSetSucc	服务器设置成功！	服務器設置成功！	Server setup successfully!
+SystemSetProductTableFail	添加数据库生产记录表失败！	添加數據庫生產記錄表失敗！	Failed to add database production record!
+SystemSetCartonTableFail	添加数据库纸箱规格表失败！	添加數據庫紙箱規格表失敗！	Failed to add database carton specifications!
+SystemSetPrintTableFail	添加数据库喷印资料表失败！	添加數據庫噴印資料表失敗！	Failed to add database carton specifications!
+SystemSetDataTableFail	创建数据库失败！	創建數據庫失敗！	Create database failed!
+SystemTS	系统提示	系統提示	System prompt
+SystemLenSucc	保存喷印资料数据最大长度成功	保存噴印資料數據最大長度成功	To save the maximum length of the jet printing data data
+SystemLenMsg	喷印资料栏位最大长度	噴印資料欄位最大長度	Maximum length of jet printing material
+SystemLenDW	单位：字符	單位：字符	Unit: character
+SystemNoInputDir	导入路径不存在!	導入路徑不存在!	
+SystemNoOutputDir	导出路径不存在!	導出路徑不存在!	
+SystemNullMsg1Path	正唛模版不能为空!	正嘜模版不能為空!	
+SystemNullMsg2Path	侧唛模版不能为空!	側嘜模版不能為空!	
+SystemNoMsg1Path	正唛模版不存在!	正嘜模版不存在!	
+SystemNoMsg2Path	侧唛模版不存在!	側嘜模版不存在!	
+CheckDir	请选择文件夹	請選擇文件夾	
+FileNoExists	很抱歉，文件不存在!	很抱歉，文件不存在!	Sorry, the file does not exist!
+FileEXEError	很抱歉，档案格式不正确！	很抱歉，檔案格式不正確！	Sorry, the file format is not correct!
+DeleteMsgShow	确定要删除该数据吗?	確定要刪除該數據嗎?	Are you sure you want to delete the data?
+DeleteSucc	删除成功!	刪除成功!	Delete success!
+InputDataing	正在导入数据中，请稍候...	正在導入數據中，請稍候...	Importing data, please wait...
+ErrorException	很抱歉，操作过程中发生异常！	很抱歉，操作過程中發生異常！	I'm sorry to have an exception in the operation!
+ExcelUrlError	Excel数据库路径有错！	Excel數據庫路徑有錯！	Excel database path is wrong!
+ExcelInputSucc1	导入数据过程中有	導入數據過程中有	Import data in the process of
+ExcelInputSucc2	条成功,	條成功,	article success,
+ExcelInputSucc21	条重复	條重復	strip repeat
+ExcelInputSucc3	已成功导入	已成功導入	Has successfully imported
+ExcelInputSucc4	条数据	條數據	Bar data
+ExcelNoData	Excel中没有数据可以导入！	Excel中沒有數據可以導入！	No data can be imported in Excel!
+InputFail	导入失败	導入失敗	Import failed
+ExcelModelNoExists	Excel模版文件不存在！	Excel模版文件不存在！	Excel template file does not exist!
+ExcelNameError	Excel数据源名称格式错误	Excel數據源名稱格式錯誤	Excel data source name format error
+OutputMsg	正在导出数据中，请稍候...	正在導出數據中，請稍候...	Please wait while the data is exported...
+ExcelExists	Excel档已存在，是否覆盖？	Excel檔已存在，是否覆蓋？	Excel file already exists, is it covered?
+ExcelOutputSucc1	数据成功导出!	數據成功導出!	Data successfully exported!
+ExcelRJError	很抱歉，导出Excel失败！！！	很抱歉，導出Excel失敗！！！	I'm sorry to export the Excel failed!!!
+DataBaseError	数据库无法连接，请确认惨数是否正确!	數據庫無法連接，請確認慘數是否正確!	The database cannot be connected, please make sure that the number is correct!
+DataHaveCZIsClear	数据已经存在，是否继续，已存在将被覆盖?	數據已經存在，是否繼續，已存在將被覆蓋?	Data already exists, is empty?
+DataFail	删除失败	刪除失敗	Delete failed
+IsLoading	正在运行中，请稍后...	正在運行中，請稍後...	Is running, please later...
+frmCarton	纸箱规格管理	紙箱規格管理	Carton specification management
+txtCaseNo	纸箱编号：	紙箱編號：	Carton number:
+txtCartonSizeLength	纸箱长度(L)：	紙箱長度(L)：	Carton length (L):
+txtCartonSizeWidth	纸箱宽度(W)：	紙箱寬度(W)：	Carton width (W):
+txtCartonSizeHeight	纸箱高度(H)：	紙箱高度(H)：	Carton height (H):
+txtPrintWordHeight	印字高度：	印字高度：	Print height:
+txtOutSidePrintWordBegin	表面印字开始：	表面印字開始：	Start printing surface:
+txtOutSidePrintWordEnd	表面印字终了：	表面印字終了：	The end surface printing:
+txtInsidePrintWordBegin	里面印字开始：	�堶惘L字開始：	It started printing:
+txtInsidePrintWordEnd	里面印字终了：	�堶惘L字終了：	The inside end of printing:
+GboxCarton	纸箱规格	紙箱規格	Carton size
+BaseCaoZuo	基本操作	基本操作	Basic operation
+frmCtrl	喷印控制台	噴印控制臺	Printing control console
+txtMadeNoValue	製番NO：	製番NO：	Make some NO:
+txtBoxNoBeginValue	箱数：	箱數：	Box number:
+txtMachineNoValue1	机番：	機番：	Machine fan:
+btnReadData	读取资料	讀取資料	Read data
+gboxSet	基本设置	基本設置	Basic set
+gboxZM	正唛	正嘜	Is mark
+gboxCM	侧唛	側嘜	Side mark
+gboxZXGG	纸箱规格	紙箱規格	Carton size
+gboxPSet	喷印操作	噴印操作	Spray printing operation
+btnPreview	预览	預覽	Preview
+btnPrint	喷印	噴印	Jet printing
+btnStop	停止	停止	Stop it
+cbxtype0	按顺序喷印	按順序噴印	Spray printing in sequence
+cbxtype1	按逆序喷印	按逆序噴印	In the reverse printing
+frmPrintMan	喷印资料管理	噴印資料管理	Jet printing data management
+frmProduct	生产记录	生產記錄	Production record
+frmSystem	系统设定	系統設定	System setting
+frmSuper	超级设置	超級設置	Super set
+lblPrintCount	喷印箱数：	噴印箱數：	Spray box number:
+lblPrintAllCount	总   箱  数：	總   箱  數：	Total box number:
+frmStatus	喷印状态	噴印狀態	Spray printing state
+lbldanwei	单    位： 毫米	單    位： 毫米	Single position: mm
+gbxSuoFang	缩放	縮放	zoom
+frmLogin	登录	登錄	Sign in
+txtPassWord	密码：	密碼：	Password:
+lblProductTime	生产日期：	生產日期：	Production date:
+lblTo	到	到	reach
+tabEditPWD	恢复默认设置	恢復默認設置	Restore default settings
+cbx_defaultPWD	恢复默认密码	恢復默認密碼	Restore default password
+tabSetDelay	延迟设置	延遲設置	Delay setting
+lblycone	延迟1	延遲1	Delay 1
+lblyctwo	延迟2	延遲2	Delay 2
+txtYCOne1	喷头1：	噴頭1：	Nozzle 1:
+txtYCOne2	喷头2：	噴頭2：	Nozzle 2:
+txtYCOne3	喷头3：	噴頭3：	Nozzle 3:
+txtYCOne4	喷头4：	噴頭4：	Nozzle 4:
+tabEditFBL	分辨率设置	分辨率設置	Resolution setting
+txtWidthResolution	横向分辨率：	橫向分辨率：	Lateral resolution:
+TabSZDFC	喷印最大缓存	噴印最大緩存	Spray printing maximum cache
+txtEditMaxHC	最大缓存：	最大緩存：	Maximum cache:
+TabShHC	数据缓衝	數據緩衝	Data buffer
+txtHCSJ	数据缓衝时间：	數據緩衝時間：	Data buffer time:
+TabShPWD	密码管理	密碼管理	Password management
+txtOldPwd	旧密码：	舊密碼：	Old password:
+txtNewPwd	新密码：	新密碼：	New password:
+txtSurePwd	确认密码：	確認密碼：	Confirm password:
+TabShServer	服务器	服務器	The server
+txtDataBaseName	数据库：	數據庫：	Database:
+txtDataBaseUserID	用户名：	用戶名：	User name:
+txtDataBasePwd	密    码：	密    碼：	Secret code:
+TabShModel	合成模板	合成模板	Synthetic template
+txtSourceMsg1Path	正唛模板：	正嘜模板：	Are label template:
+txtSourceMsg2Path	侧唛模板：	側嘜模板：	Side mark template:
+TabShInputOut	导入导出	導入導出	Import and export
+txtImportPath	导入路径：	導入路徑：	Import path:
+txtExportPath	导出路径：	導出路徑：	Export path:
+TabShBakSystem	系统备份与还原	系統備份與還原	System backup and restore
+RadioBtnbf	系统备份	系統備份	System backup
+RadioBtnhy	系统还原	系統還原	System restore
+frmAbout	关于	關於	
+AboutProduct	产品名称：	產品名稱：	
+AboutBanbeng	软件版本：	軟件版本：	
+AboutBanquan	版权声明：	版權聲明：	
+btnSetData	保存	保存	Preservation
+btnSet	设置	設置	Set up
+txtCondition	搜寻条件：	搜尋條件：	Search condition:
+btnSearch	搜寻	搜尋	Search for
+btnPro	上一页	上一頁	Previous page
+btnNext	下一页	下一頁	Next page
+btnAdd	新增	新增	Newly added
+btnEdit	修改	修改	modify
+btnDelete	删除	刪除	delete
+btnInput	导入	導入	Import
+btnOutPut	导出	導出	export
+btnOK	确定	確定	Determine
+btnCance	取消	取消	Cancel
+MainBanBen			Crane see jet printing software - Software version:
+DataCZIsQK			Data already exists, is empty?

@@ -1,0 +1,100 @@
+object frmMain: TfrmMain
+  Left = 298
+  Top = 164
+  BorderStyle = bsSingle
+  Caption = '鶴見噴印軟體'
+  ClientHeight = 636
+  ClientWidth = 996
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Icon.Data = {binary 29926 bytes: 000001000c00303010000100040068060000c60000002020...}
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Top = 0
+    Width = 996
+    Height = 636
+    Align = alClient
+    TabOrder = 0
+    object StatusBar1: TStatusBar
+      Left = 0
+      Top = 613
+      Width = 992
+      Height = 19
+      Panels = <
+        item
+          Width = 300
+        end
+        item
+          Width = 50
+        end>
+      SimplePanel = False
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 24
+    Top = 576
+    object NPrintCtrl: TMenuItem
+      Caption = '噴印控制'
+      OnClick = NPrintCtrlClick
+    end
+    object NPrintMan: TMenuItem
+      Caption = '噴印資料管理'
+      OnClick = NPrintManClick
+    end
+    object NCartonMan: TMenuItem
+      Caption = '紙箱規格管理'
+      OnClick = NCartonManClick
+    end
+    object NProduct: TMenuItem
+      Caption = '生產記錄'
+      OnClick = NProductClick
+    end
+    object NSystem: TMenuItem
+      Caption = '系統設定'
+      OnClick = NSystemClick
+    end
+    object NSuperSet: TMenuItem
+      Caption = '超級設置'
+      OnClick = NSuperSetClick
+    end
+    object NAbout: TMenuItem
+      Caption = '关于'
+      OnClick = NAboutClick
+    end
+  end
+  object ADOCon: TADOConnection
+    LoginPrompt = False
+    Left = 64
+    Top = 576
+  end
+  object TmpAdoQry: TADOQuery
+    Connection = ADOCon
+    Parameters = <>
+    Left = 104
+    Top = 576
+  end
+  object AdoQryEdit: TADOQuery
+    Connection = ADOCon
+    Parameters = <>
+    Left = 144
+    Top = 576
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 184
+    Top = 576
+  end
+end

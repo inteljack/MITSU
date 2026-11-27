@@ -1,0 +1,105 @@
+object frmAbout: TfrmAbout
+  Left = 449
+  Top = 197
+  Width = 372
+  Height = 303
+  BorderIcons = [biSystemMenu]
+  Caption = '关于'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbllPro: TLabel
+    Left = 40
+    Top = 32
+    Width = 60
+    Height = 16
+    Caption = '产品名称：'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbllBan: TLabel
+    Left = 40
+    Top = 88
+    Width = 60
+    Height = 16
+    Caption = '软件版本：'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbllqan: TLabel
+    Left = 40
+    Top = 152
+    Width = 60
+    Height = 16
+    Caption = '版本声明：'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblProduct: TLabel
+    Left = 120
+    Top = 32
+    Width = 60
+    Height = 16
+    Caption = 'lblProduct'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblSoftBase: TLabel
+    Left = 120
+    Top = 88
+    Width = 69
+    Height = 16
+    Caption = 'lblSoftBase'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblBaseSheng: TLabel
+    Left = 120
+    Top = 152
+    Width = 85
+    Height = 16
+    Caption = 'lblBaseSheng'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object btnClose: TButton
+    Left = 120
+    Top = 208
+    Width = 121
+    Height = 33
+    Caption = '确定'
+    TabOrder = 0
+    OnClick = btnCloseClick
+  end
+end

@@ -1,0 +1,16 @@
+bin/
+obj/
+.vs/
+*.user
+TestResults/
+x1-*.log
+
+# legacy material: contains plaintext DB/login passwords and vendor binaries
+鶴見/
+鶴見-出差紀錄/
+鶴見-舊資料/
+analysis/delphi_hejian/strings_*.txt
+
+# vendor / third-party material kept out of the repo
+X1SDKDemo_20261012/
+analysis/decompiled_dotnet/NPOI/

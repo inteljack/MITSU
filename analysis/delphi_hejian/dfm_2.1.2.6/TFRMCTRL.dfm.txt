@@ -1,0 +1,574 @@
+object frmCtrl: TfrmCtrl
+  Left = 283
+  Top = 36
+  Width = 966
+  Height = 651
+  Caption = '喷印控制台'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnResize = FormResize
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object gboxSet: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 934
+    Height = 97
+    Caption = '基本設置'
+    TabOrder = 0
+    object txtKeyCodeValue: TLabeledEdit
+      Left = 72
+      Top = 24
+      Width = 225
+      Height = 21
+      EditLabel.Width = 58
+      EditLabel.Height = 13
+      EditLabel.Caption = 'Key Code：'
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 0
+    end
+    object txtMadeNoValue: TLabeledEdit
+      Left = 72
+      Top = 64
+      Width = 225
+      Height = 21
+      EditLabel.Width = 52
+      EditLabel.Height = 13
+      EditLabel.Caption = '製番NO：'
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      MaxLength = 15
+      TabOrder = 1
+      OnChange = txtMadeNoValueChange
+    end
+    object txtBoxNoBeginValue: TLabeledEdit
+      Left = 368
+      Top = 64
+      Width = 57
+      Height = 21
+      EditLabel.Width = 36
+      EditLabel.Height = 13
+      EditLabel.Caption = '箱數：'
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      MaxLength = 6
+      TabOrder = 2
+      OnChange = txtBoxNoBeginValueChange
+      OnKeyPress = txtBoxNoBeginValueKeyPress
+    end
+    object txtBoxNoEndValue: TLabeledEdit
+      Left = 448
+      Top = 64
+      Width = 81
+      Height = 21
+      EditLabel.Width = 10
+      EditLabel.Height = 16
+      EditLabel.Caption = '/  '
+      EditLabel.Font.Charset = DEFAULT_CHARSET
+      EditLabel.Font.Color = clWindowText
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'MS Sans Serif'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      MaxLength = 6
+      TabOrder = 3
+      OnChange = txtBoxNoEndValueChange
+      OnKeyPress = txtBoxNoBeginValueKeyPress
+    end
+    object txtMachineNoValue1: TLabeledEdit
+      Left = 584
+      Top = 64
+      Width = 97
+      Height = 21
+      EditLabel.Width = 36
+      EditLabel.Height = 13
+      EditLabel.Caption = '機番：'
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      MaxLength = 12
+      TabOrder = 4
+      OnChange = txtMachineNoValue1Change
+    end
+    object txtMachineNoValue2: TEdit
+      Left = 688
+      Top = 64
+      Width = 116
+      Height = 21
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      MaxLength = 14
+      TabOrder = 5
+      OnChange = txtMachineNoValue2Change
+      OnKeyPress = txtBoxNoBeginValueKeyPress
+    end
+    object btnReadData: TButton
+      Left = 816
+      Top = 24
+      Width = 105
+      Height = 25
+      Caption = '讀取資料'
+      TabOrder = 6
+      OnClick = btnReadDataClick
+    end
+    object cbxtype: TComboBox
+      Left = 816
+      Top = 63
+      Width = 105
+      Height = 21
+      Style = csDropDownList
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ItemHeight = 13
+      TabOrder = 7
+    end
+  end
+  object gboxZM: TGroupBox
+    Left = 8
+    Top = 120
+    Width = 934
+    Height = 241
+    Caption = '正嘜'
+    Enabled = False
+    TabOrder = 1
+    object lblMacineNo: TLabel
+      Left = 440
+      Top = 200
+      Width = 23
+      Height = 16
+      Caption = 'NO:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object txtModelValue: TEdit
+      Left = 120
+      Top = 30
+      Width = 801
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 0
+    end
+    object txtModel: TLabeledEdit
+      Left = 16
+      Top = 30
+      Width = 89
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      EditLabel.Width = 12
+      EditLabel.Height = 13
+      EditLabel.Caption = '：'
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      LabelPosition = lpRight
+      LabelSpacing = 3
+      ParentCtl3D = False
+      TabOrder = 1
+    end
+    object txtBore: TLabeledEdit
+      Left = 16
+      Top = 72
+      Width = 89
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      EditLabel.Width = 12
+      EditLabel.Height = 13
+      EditLabel.Caption = '：'
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      LabelPosition = lpRight
+      LabelSpacing = 3
+      ParentCtl3D = False
+      TabOrder = 2
+    end
+    object txtBoreValue: TEdit
+      Left = 120
+      Top = 72
+      Width = 113
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 3
+    end
+    object txtBoreUnit: TEdit
+      Left = 256
+      Top = 72
+      Width = 161
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 4
+    end
+    object txtOutput: TLabeledEdit
+      Left = 464
+      Top = 72
+      Width = 113
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      EditLabel.Width = 12
+      EditLabel.Height = 13
+      EditLabel.Caption = '：'
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      LabelPosition = lpRight
+      LabelSpacing = 3
+      ParentCtl3D = False
+      TabOrder = 5
+    end
+    object txtOutputValue: TEdit
+      Left = 592
+      Top = 72
+      Width = 137
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 6
+    end
+    object txtOutputUnit: TEdit
+      Left = 752
+      Top = 72
+      Width = 169
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 7
+    end
+    object txtPhaseValue: TEdit
+      Left = 16
+      Top = 120
+      Width = 89
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 8
+    end
+    object txtPhaseUnit: TEdit
+      Left = 120
+      Top = 120
+      Width = 113
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 9
+    end
+    object txtVoltageValue: TEdit
+      Left = 256
+      Top = 120
+      Width = 89
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 10
+    end
+    object txtVoltageUnit: TEdit
+      Left = 352
+      Top = 120
+      Width = 65
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 11
+    end
+    object txtHzValue: TEdit
+      Left = 464
+      Top = 120
+      Width = 265
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 12
+    end
+    object txtHzUnit: TEdit
+      Left = 752
+      Top = 120
+      Width = 169
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 13
+    end
+    object txtMadeNoValueResult: TEdit
+      Left = 16
+      Top = 160
+      Width = 401
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 14
+    end
+    object txtTokki: TEdit
+      Left = 464
+      Top = 160
+      Width = 457
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 15
+    end
+    object txtCode: TLabeledEdit
+      Left = 16
+      Top = 200
+      Width = 89
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      EditLabel.Width = 12
+      EditLabel.Height = 13
+      EditLabel.Caption = '：'
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      LabelPosition = lpRight
+      LabelSpacing = 3
+      ParentCtl3D = False
+      TabOrder = 16
+    end
+    object txtCodeValue: TEdit
+      Left = 120
+      Top = 200
+      Width = 297
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 17
+    end
+    object txtMachineNoValueResult: TEdit
+      Left = 464
+      Top = 200
+      Width = 457
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 18
+    end
+  end
+  object gboxCM: TGroupBox
+    Left = 8
+    Top = 376
+    Width = 934
+    Height = 65
+    Caption = '側嘜'
+    Enabled = False
+    TabOrder = 2
+    object txtModelValueSide: TEdit
+      Left = 16
+      Top = 25
+      Width = 401
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 0
+    end
+    object txtPlace: TEdit
+      Left = 464
+      Top = 25
+      Width = 457
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      TabOrder = 1
+    end
+  end
+  object gboxZXGG: TGroupBox
+    Left = 8
+    Top = 456
+    Width = 934
+    Height = 65
+    Caption = '紙箱規格'
+    Enabled = False
+    TabOrder = 3
+    object txtCaseNo: TLabeledEdit
+      Left = 80
+      Top = 25
+      Width = 337
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      EditLabel.Width = 60
+      EditLabel.Height = 13
+      EditLabel.Caption = '紙箱編號：'
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      ParentCtl3D = False
+      TabOrder = 0
+    end
+    object txtPrintWordHeight: TEdit
+      Left = 464
+      Top = 24
+      Width = 75
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object txtOutSidePrintWordBegin: TEdit
+      Left = 560
+      Top = 24
+      Width = 75
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object txtOutSidePrintWordEnd: TEdit
+      Left = 656
+      Top = 24
+      Width = 75
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object txtInsidePrintWordBegin: TEdit
+      Left = 752
+      Top = 24
+      Width = 75
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object txtInsidePrintWordEnd: TEdit
+      Left = 845
+      Top = 24
+      Width = 75
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      ImeName = '中文 (简体) - 搜狗拼音输入法'
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+  end
+  object gboxPSet: TGroupBox
+    Left = 8
+    Top = 536
+    Width = 934
+    Height = 73
+    Caption = '噴印操作'
+    TabOrder = 4
+    object btnPrint: TButton
+      Left = 192
+      Top = 28
+      Width = 75
+      Height = 25
+      Caption = '噴印'
+      TabOrder = 0
+      OnClick = btnPrintClick
+    end
+    object btnStop: TButton
+      Left = 344
+      Top = 28
+      Width = 75
+      Height = 25
+      Caption = '停止'
+      TabOrder = 1
+      OnClick = btnStopClick
+    end
+    object btnPreview: TButton
+      Left = 32
+      Top = 28
+      Width = 75
+      Height = 25
+      Caption = '預覽'
+      TabOrder = 2
+      OnClick = btnPreviewClick
+    end
+  end
+  object gbxMsg: TGroupBox
+    Left = 352
+    Top = 152
+    Width = 305
+    Height = 65
+    TabOrder = 5
+    Visible = False
+    object lblMSGDJS: TLabel
+      Left = 16
+      Top = 20
+      Width = 226
+      Height = 32
+      Caption = '正在停止，請稍候...'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -27
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      Layout = tlCenter
+    end
+  end
+  object TimerPrintStart: TTimer
+    Interval = 500
+    OnTimer = TimerPrintStartTimer
+    Left = 392
+    Top = 8
+  end
+  object TimerSendMsg: TTimer
+    Interval = 400
+    OnTimer = TimerSendMsgTimer
+    Left = 432
+    Top = 8
+  end
+end

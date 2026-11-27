@@ -1,0 +1,197 @@
+object frmProduct: TfrmProduct
+  Left = 300
+  Top = 112
+  Width = 964
+  Height = 658
+  Caption = '生產記錄'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnResize = FormResize
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 948
+    Height = 73
+    Align = alTop
+    TabOrder = 0
+    object lblTo: TLabel
+      Left = 360
+      Top = 32
+      Width = 16
+      Height = 20
+      Caption = '到'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblProductTime: TLabel
+      Left = 56
+      Top = 32
+      Width = 80
+      Height = 20
+      Caption = '生產日期：'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object btnSearch: TButton
+      Left = 640
+      Top = 32
+      Width = 75
+      Height = 25
+      Caption = '搜尋'
+      TabOrder = 0
+      OnClick = btnSearchClick
+    end
+    object DateTimeEnd: TDateTimePicker
+      Left = 416
+      Top = 32
+      Width = 186
+      Height = 21
+      CalAlignment = dtaLeft
+      Date = 42310.5774863194
+      Time = 42310.5774863194
+      DateFormat = dfShort
+      DateMode = dmComboBox
+      Kind = dtkDate
+      ParseInput = False
+      TabOrder = 1
+    end
+    object DateTimeBegin: TDateTimePicker
+      Left = 168
+      Top = 32
+      Width = 169
+      Height = 21
+      CalAlignment = dtaLeft
+      Date = 42310.5770965741
+      Time = 42310.5770965741
+      DateFormat = dfShort
+      DateMode = dmComboBox
+      Kind = dtkDate
+      ParseInput = False
+      TabOrder = 2
+    end
+  end
+  object pnlCenter: TPanel
+    Left = 0
+    Top = 73
+    Width = 948
+    Height = 455
+    Align = alClient
+    TabOrder = 1
+    object dbgList: TDBGrid
+      Left = 1
+      Top = 1
+      Width = 946
+      Height = 453
+      Align = alClient
+      DataSource = DataSrc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+      ParentFont = False
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+    end
+  end
+  object pnlDown: TPanel
+    Left = 0
+    Top = 528
+    Width = 948
+    Height = 92
+    Align = alBottom
+    TabOrder = 2
+    object lblpage: TLabel
+      Left = 160
+      Top = 40
+      Width = 17
+      Height = 13
+      Caption = '1/1'
+    end
+    object btnPro: TButton
+      Left = 40
+      Top = 32
+      Width = 75
+      Height = 25
+      Caption = '上一页'
+      TabOrder = 0
+      OnClick = btnProClick
+    end
+    object btnNext: TButton
+      Left = 264
+      Top = 32
+      Width = 75
+      Height = 25
+      Caption = '下一页'
+      TabOrder = 1
+      OnClick = btnNextClick
+    end
+    object btnOutput: TButton
+      Left = 840
+      Top = 32
+      Width = 75
+      Height = 25
+      Caption = '导出'
+      TabOrder = 2
+      OnClick = btnOutputClick
+    end
+  end
+  object gbxMsg: TGroupBox
+    Left = 280
+    Top = 192
+    Width = 401
+    Height = 65
+    TabOrder = 3
+    Visible = False
+    object lblMSGDJS: TLabel
+      Left = 16
+      Top = 20
+      Width = 304
+      Height = 32
+      Caption = '正在導出數據中，請稍候...'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Height = -27
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      Layout = tlCenter
+    end
+  end
+  object DataSrc: TDataSource
+    Left = 232
+    Top = 8
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 384
+    Top = 8
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 744
+    Top = 16
+  end
+end

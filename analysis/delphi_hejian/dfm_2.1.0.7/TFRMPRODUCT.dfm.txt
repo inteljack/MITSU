@@ -1,0 +1,121 @@
+object frmProduct: TfrmProduct
+  Left = 343
+  Top = 198
+  Width = 964
+  Height = 658
+  Caption = '生產記錄'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 948
+    Height = 73
+    Align = alTop
+    TabOrder = 0
+    object lblTo: TLabel
+      Left = 360
+      Top = 32
+      Width = 16
+      Height = 20
+      Caption = '到'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblProductTime: TLabel
+      Left = 56
+      Top = 32
+      Width = 80
+      Height = 20
+      Caption = '生產日期：'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object btnSearch: TButton
+      Left = 640
+      Top = 32
+      Width = 75
+      Height = 25
+      Caption = '搜尋'
+      TabOrder = 0
+      OnClick = btnSearchClick
+    end
+    object DateTimeEnd: TDateTimePicker
+      Left = 416
+      Top = 32
+      Width = 186
+      Height = 21
+      CalAlignment = dtaLeft
+      Date = 42310.5774863194
+      Time = 42310.5774863194
+      DateFormat = dfShort
+      DateMode = dmComboBox
+      Kind = dtkDate
+      ParseInput = False
+      TabOrder = 1
+    end
+    object DateTimeBegin: TDateTimePicker
+      Left = 168
+      Top = 32
+      Width = 169
+      Height = 21
+      CalAlignment = dtaLeft
+      Date = 42310.5770965741
+      Time = 42310.5770965741
+      DateFormat = dfShort
+      DateMode = dmComboBox
+      Kind = dtkDate
+      ParseInput = False
+      TabOrder = 2
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 73
+    Width = 948
+    Height = 547
+    Align = alClient
+    TabOrder = 1
+    object DBGrid1: TDBGrid
+      Left = 1
+      Top = 1
+      Width = 946
+      Height = 545
+      Align = alClient
+      DataSource = DataSource1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+      ParentFont = False
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+    end
+  end
+  object DataSource1: TDataSource
+    Left = 96
+    Top = 568
+  end
+end

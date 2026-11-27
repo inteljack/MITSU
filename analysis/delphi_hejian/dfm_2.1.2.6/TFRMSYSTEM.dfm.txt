@@ -1,0 +1,723 @@
+object frmSystem: TfrmSystem
+  Left = 366
+  Top = 79
+  Width = 967
+  Height = 650
+  Caption = '系統設定'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 951
+    Height = 497
+    Align = alClient
+    TabOrder = 0
+    object PageConSys: TPageControl
+      Left = 1
+      Top = 1
+      Width = 949
+      Height = 495
+      ActivePage = TabShModel
+      Align = alClient
+      TabIndex = 2
+      TabOrder = 0
+      object TabShPWD: TTabSheet
+        Caption = '密碼管理'
+        object txtNewPwd: TLabeledEdit
+          Left = 112
+          Top = 88
+          Width = 480
+          Height = 21
+          EditLabel.Width = 48
+          EditLabel.Height = 13
+          EditLabel.Caption = '新密碼：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          PasswordChar = '*'
+          TabOrder = 0
+        end
+        object txtOldPwd: TLabeledEdit
+          Left = 112
+          Top = 40
+          Width = 480
+          Height = 21
+          EditLabel.Width = 48
+          EditLabel.Height = 13
+          EditLabel.Caption = '舊密碼：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          PasswordChar = '*'
+          TabOrder = 1
+        end
+        object txtSurePwd: TLabeledEdit
+          Left = 112
+          Top = 144
+          Width = 480
+          Height = 21
+          EditLabel.Width = 60
+          EditLabel.Height = 13
+          EditLabel.Caption = '確認密碼：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          PasswordChar = '*'
+          TabOrder = 2
+        end
+      end
+      object TabShServer: TTabSheet
+        Caption = '服務器'
+        ImageIndex = 1
+        object txtDataBasePwd: TLabeledEdit
+          Left = 112
+          Top = 184
+          Width = 480
+          Height = 21
+          EditLabel.Width = 48
+          EditLabel.Height = 13
+          EditLabel.Caption = '密    碼：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          PasswordChar = '*'
+          TabOrder = 0
+        end
+        object txtDataBaseUserID: TLabeledEdit
+          Left = 112
+          Top = 136
+          Width = 480
+          Height = 21
+          EditLabel.Width = 48
+          EditLabel.Height = 13
+          EditLabel.Caption = '用戶名：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 1
+        end
+        object txtDataBaseName: TLabeledEdit
+          Left = 112
+          Top = 88
+          Width = 480
+          Height = 21
+          EditLabel.Width = 48
+          EditLabel.Height = 13
+          EditLabel.Caption = '數據庫：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 2
+        end
+        object txtServerName: TLabeledEdit
+          Left = 112
+          Top = 40
+          Width = 480
+          Height = 21
+          EditLabel.Width = 48
+          EditLabel.Height = 13
+          EditLabel.Caption = '服務器：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 3
+        end
+      end
+      object TabShModel: TTabSheet
+        Caption = '合成模板'
+        ImageIndex = 2
+        object btnCeMai: TButton
+          Left = 622
+          Top = 128
+          Width = 75
+          Height = 25
+          Caption = '.......'
+          TabOrder = 0
+          OnClick = btnCeMaiClick
+        end
+        object btnZhengMai: TButton
+          Left = 622
+          Top = 58
+          Width = 75
+          Height = 25
+          Caption = '.......'
+          TabOrder = 1
+          OnClick = btnZhengMaiClick
+        end
+        object txtSourceMsg1Path: TLabeledEdit
+          Left = 120
+          Top = 60
+          Width = 473
+          Height = 21
+          EditLabel.Width = 60
+          EditLabel.Height = 13
+          EditLabel.Caption = '正嘜模板：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 2
+        end
+        object txtSourceMsg2Path: TLabeledEdit
+          Left = 120
+          Top = 130
+          Width = 473
+          Height = 21
+          EditLabel.Width = 60
+          EditLabel.Height = 13
+          EditLabel.Caption = '側嘜模板：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 3
+        end
+      end
+      object TabShInputOut: TTabSheet
+        Caption = '導入導出'
+        ImageIndex = 3
+        object btnOut: TButton
+          Left = 686
+          Top = 102
+          Width = 75
+          Height = 25
+          Caption = '.......'
+          TabOrder = 0
+          OnClick = btnOutClick
+        end
+        object btnInput: TButton
+          Left = 686
+          Top = 46
+          Width = 75
+          Height = 25
+          Caption = '.......'
+          TabOrder = 1
+          OnClick = btnInputClick
+        end
+        object txtImportPath: TLabeledEdit
+          Left = 120
+          Top = 48
+          Width = 537
+          Height = 21
+          EditLabel.Width = 60
+          EditLabel.Height = 13
+          EditLabel.Caption = '導入路徑：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 2
+        end
+        object txtExportPath: TLabeledEdit
+          Left = 120
+          Top = 104
+          Width = 537
+          Height = 21
+          EditLabel.Width = 60
+          EditLabel.Height = 13
+          EditLabel.Caption = '導出路徑：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 3
+        end
+      end
+      object TabShBakSystem: TTabSheet
+        Caption = '系統備份與還原'
+        ImageIndex = 4
+        object RadioBtnbf: TRadioButton
+          Left = 128
+          Top = 80
+          Width = 81
+          Height = 17
+          Caption = '系統備份'
+          Checked = True
+          TabOrder = 0
+          TabStop = True
+        end
+        object RadioBtnhy: TRadioButton
+          Left = 128
+          Top = 136
+          Width = 81
+          Height = 17
+          Caption = '系統還原'
+          TabOrder = 1
+        end
+      end
+      object TabShPrintMsgLen: TTabSheet
+        Caption = '噴印資料欄位最大長度'
+        ImageIndex = 5
+        object lblUnitChar: TLabel
+          Left = 48
+          Top = 24
+          Width = 51
+          Height = 16
+          Caption = '單位:字符'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblKeyCode: TLabel
+          Left = 40
+          Top = 66
+          Width = 62
+          Height = 16
+          Caption = 'Key Code:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblCaseNo: TLabel
+          Left = 272
+          Top = 66
+          Width = 59
+          Height = 16
+          Caption = 'Case-NO:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblModel: TLabel
+          Left = 488
+          Top = 66
+          Width = 41
+          Height = 16
+          Caption = 'Model:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblModelValue: TLabel
+          Left = 712
+          Top = 66
+          Width = 76
+          Height = 16
+          Caption = 'ModelValue:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblOutput: TLabel
+          Left = 712
+          Top = 114
+          Width = 41
+          Height = 16
+          Caption = 'Output:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblBoreUnit: TLabel
+          Left = 488
+          Top = 114
+          Width = 55
+          Height = 16
+          Caption = 'BoreUnit:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblBoreValue: TLabel
+          Left = 272
+          Top = 114
+          Width = 67
+          Height = 16
+          Caption = 'BoreValue:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblBore: TLabel
+          Left = 40
+          Top = 114
+          Width = 32
+          Height = 16
+          Caption = 'Bore:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblPhaseUnit: TLabel
+          Left = 712
+          Top = 162
+          Width = 65
+          Height = 16
+          Caption = 'PhaseUnit:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblPhaseValue: TLabel
+          Left = 488
+          Top = 162
+          Width = 77
+          Height = 16
+          Caption = 'PhaseValue:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblOutputUnit: TLabel
+          Left = 272
+          Top = 162
+          Width = 64
+          Height = 16
+          Caption = 'OutputUnit:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblOutputValue: TLabel
+          Left = 40
+          Top = 162
+          Width = 76
+          Height = 16
+          Caption = 'OutputValue:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblHzUnit: TLabel
+          Left = 712
+          Top = 210
+          Width = 42
+          Height = 16
+          Caption = 'HzUnit:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblHzValue: TLabel
+          Left = 488
+          Top = 210
+          Width = 54
+          Height = 16
+          Caption = 'HzValue:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblVoltageUnit: TLabel
+          Left = 272
+          Top = 210
+          Width = 73
+          Height = 16
+          Caption = 'VoltageUnit:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblVoltageValue: TLabel
+          Left = 40
+          Top = 210
+          Width = 85
+          Height = 16
+          Caption = 'VoltageValue:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblPlace: TLabel
+          Left = 712
+          Top = 258
+          Width = 38
+          Height = 16
+          Caption = 'Place:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblTkki: TLabel
+          Left = 488
+          Top = 258
+          Width = 29
+          Height = 16
+          Caption = 'Tkki:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblCodeValue: TLabel
+          Left = 272
+          Top = 258
+          Width = 71
+          Height = 16
+          Caption = 'CodeValue:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblCode: TLabel
+          Left = 40
+          Top = 258
+          Width = 36
+          Height = 16
+          Caption = 'Code:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object EditKeyCode: TCSpinEdit
+          Left = 135
+          Top = 64
+          Width = 80
+          Height = 22
+          TabOrder = 0
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditCaseNo: TCSpinEdit
+          Left = 352
+          Top = 64
+          Width = 80
+          Height = 22
+          TabOrder = 1
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditModel: TCSpinEdit
+          Left = 573
+          Top = 64
+          Width = 80
+          Height = 22
+          TabOrder = 2
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditModelValue: TCSpinEdit
+          Left = 800
+          Top = 64
+          Width = 80
+          Height = 22
+          TabOrder = 3
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditOutput: TCSpinEdit
+          Left = 800
+          Top = 112
+          Width = 80
+          Height = 22
+          TabOrder = 4
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditBoreUnit: TCSpinEdit
+          Left = 573
+          Top = 112
+          Width = 80
+          Height = 22
+          TabOrder = 5
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditBoreValue: TCSpinEdit
+          Left = 352
+          Top = 112
+          Width = 80
+          Height = 22
+          TabOrder = 6
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditBore: TCSpinEdit
+          Left = 135
+          Top = 112
+          Width = 80
+          Height = 22
+          TabOrder = 7
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditPhaseUnit: TCSpinEdit
+          Left = 800
+          Top = 160
+          Width = 80
+          Height = 22
+          TabOrder = 8
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditPhaseValue: TCSpinEdit
+          Left = 573
+          Top = 160
+          Width = 80
+          Height = 22
+          TabOrder = 9
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditOutputUnit: TCSpinEdit
+          Left = 352
+          Top = 160
+          Width = 80
+          Height = 22
+          TabOrder = 10
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditOutputValue: TCSpinEdit
+          Left = 135
+          Top = 160
+          Width = 80
+          Height = 22
+          TabOrder = 11
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditHzUnit: TCSpinEdit
+          Left = 800
+          Top = 208
+          Width = 80
+          Height = 22
+          TabOrder = 12
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditHzValue: TCSpinEdit
+          Left = 573
+          Top = 208
+          Width = 80
+          Height = 22
+          TabOrder = 13
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditVoltageUnit: TCSpinEdit
+          Left = 352
+          Top = 208
+          Width = 80
+          Height = 22
+          TabOrder = 14
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditVoltageValue: TCSpinEdit
+          Left = 135
+          Top = 208
+          Width = 80
+          Height = 22
+          TabOrder = 15
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditPlace: TCSpinEdit
+          Left = 800
+          Top = 256
+          Width = 80
+          Height = 22
+          TabOrder = 16
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditTkki: TCSpinEdit
+          Left = 573
+          Top = 256
+          Width = 80
+          Height = 22
+          TabOrder = 17
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditCodeValue: TCSpinEdit
+          Left = 352
+          Top = 256
+          Width = 80
+          Height = 22
+          TabOrder = 18
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+        object EditCode: TCSpinEdit
+          Left = 135
+          Top = 256
+          Width = 80
+          Height = 22
+          TabOrder = 19
+          OnKeyPress = EditKeyCodeKeyPress
+        end
+      end
+    end
+  end
+  object pnlDown: TPanel
+    Left = 0
+    Top = 497
+    Width = 951
+    Height = 115
+    Align = alBottom
+    TabOrder = 1
+    object btnSetData: TButton
+      Left = 72
+      Top = 48
+      Width = 75
+      Height = 25
+      Caption = '保存'
+      TabOrder = 0
+      OnClick = btnSetDataClick
+    end
+  end
+  object gbxMsg: TGroupBox
+    Left = 288
+    Top = 184
+    Width = 353
+    Height = 65
+    TabOrder = 2
+    Visible = False
+    object lblMSGDJS: TLabel
+      Left = 16
+      Top = 20
+      Width = 252
+      Height = 32
+      Caption = '正在運行中，請稍後...'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Height = -27
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      Layout = tlCenter
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 568
+  end
+end

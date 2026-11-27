@@ -1,0 +1,348 @@
+object frmCarton: TfrmCarton
+  Left = 343
+  Top = 35
+  Width = 968
+  Height = 650
+  Caption = '紙箱規格管理'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 8
+    Top = 144
+    Width = 934
+    Height = 217
+    Picture.Data = {binary 615186 bytes: 07544269746d617006630900424d06630900000000003600...}
+  end
+  object gboxZXCZ: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 934
+    Height = 129
+    Caption = '紙箱規格'
+    TabOrder = 0
+    object lblcdu: TLabel
+      Left = 200
+      Top = 64
+      Width = 26
+      Height = 20
+      Caption = 'mm'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblzxkd: TLabel
+      Left = 432
+      Top = 64
+      Width = 26
+      Height = 20
+      Caption = 'mm'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblzxgd: TLabel
+      Left = 664
+      Top = 64
+      Width = 26
+      Height = 20
+      Caption = 'mm'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblyzgd: TLabel
+      Left = 896
+      Top = 64
+      Width = 26
+      Height = 20
+      Caption = 'mm'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblbmyzks: TLabel
+      Left = 200
+      Top = 96
+      Width = 26
+      Height = 20
+      Caption = 'mm'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblbmyzzl: TLabel
+      Left = 432
+      Top = 96
+      Width = 26
+      Height = 20
+      Caption = 'mm'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lbllmyzks: TLabel
+      Left = 664
+      Top = 96
+      Width = 26
+      Height = 20
+      Caption = 'mm'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lbllmyzzl: TLabel
+      Left = 896
+      Top = 96
+      Width = 26
+      Height = 20
+      Caption = 'mm'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object textBoxCaseNo: TLabeledEdit
+      Left = 112
+      Top = 24
+      Width = 809
+      Height = 21
+      EditLabel.Width = 60
+      EditLabel.Height = 13
+      EditLabel.Caption = '紙箱編號：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 0
+    end
+    object textBoxCartonSizeLength: TLabeledEdit
+      Left = 112
+      Top = 64
+      Width = 80
+      Height = 21
+      EditLabel.Width = 72
+      EditLabel.Height = 13
+      EditLabel.Caption = '紙箱長度(L)：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 1
+      OnKeyPress = textBoxCartonSizeLengthKeyPress
+    end
+    object textBoxCartonSizeWidth: TLabeledEdit
+      Left = 344
+      Top = 64
+      Width = 80
+      Height = 21
+      EditLabel.Width = 77
+      EditLabel.Height = 13
+      EditLabel.Caption = '紙箱寬度(W)：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 2
+      OnKeyPress = textBoxCartonSizeLengthKeyPress
+    end
+    object textBoxCartonSizeHeight: TLabeledEdit
+      Left = 576
+      Top = 64
+      Width = 80
+      Height = 21
+      EditLabel.Width = 74
+      EditLabel.Height = 13
+      EditLabel.Caption = '紙箱高度(H)：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 3
+      OnKeyPress = textBoxCartonSizeLengthKeyPress
+    end
+    object textBoxPrintWordHeight: TLabeledEdit
+      Left = 808
+      Top = 64
+      Width = 80
+      Height = 21
+      EditLabel.Width = 60
+      EditLabel.Height = 13
+      EditLabel.Caption = '印字高度：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 4
+      OnKeyPress = textBoxCartonSizeLengthKeyPress
+    end
+    object textBoxOutSidePrintWordBegin: TLabeledEdit
+      Left = 112
+      Top = 96
+      Width = 80
+      Height = 21
+      EditLabel.Width = 84
+      EditLabel.Height = 13
+      EditLabel.Caption = '表面印字開始：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 5
+      OnKeyPress = textBoxCartonSizeLengthKeyPress
+    end
+    object textBoxOutSidePrintWordEnd: TLabeledEdit
+      Left = 344
+      Top = 96
+      Width = 80
+      Height = 21
+      EditLabel.Width = 84
+      EditLabel.Height = 13
+      EditLabel.Caption = '表面印字終了：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 6
+      OnKeyPress = textBoxCartonSizeLengthKeyPress
+    end
+    object textBoxInsidePrintWordBegin: TLabeledEdit
+      Left = 576
+      Top = 96
+      Width = 80
+      Height = 21
+      EditLabel.Width = 84
+      EditLabel.Height = 13
+      EditLabel.Caption = '裏面印字開始：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 7
+      OnKeyPress = textBoxCartonSizeLengthKeyPress
+    end
+    object textBoxInsidePrintWordEnd: TLabeledEdit
+      Left = 808
+      Top = 96
+      Width = 80
+      Height = 21
+      EditLabel.Width = 84
+      EditLabel.Height = 13
+      EditLabel.Caption = '裏面印字終了：'
+      LabelPosition = lpLeft
+      LabelSpacing = 3
+      TabOrder = 8
+      OnKeyPress = textBoxCartonSizeLengthKeyPress
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 368
+    Width = 937
+    Height = 169
+    DataSource = DataSource1
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgMultiSelect]
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+  end
+  object gbxMsg: TGroupBox
+    Left = 280
+    Top = 184
+    Width = 401
+    Height = 65
+    TabOrder = 2
+    Visible = False
+    object lblMSGDJS: TLabel
+      Left = 16
+      Top = 20
+      Width = 304
+      Height = 32
+      Caption = '正在導出數據中，請稍候...'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Height = -27
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      Layout = tlCenter
+    end
+  end
+  object gboxJBCZ: TGroupBox
+    Left = 8
+    Top = 544
+    Width = 937
+    Height = 65
+    Caption = '基本操作'
+    TabOrder = 3
+    object btnAdd: TButton
+      Left = 16
+      Top = 24
+      Width = 75
+      Height = 25
+      Caption = '新增'
+      TabOrder = 0
+      OnClick = btnAddClick
+    end
+    object btnEdit: TButton
+      Left = 120
+      Top = 24
+      Width = 75
+      Height = 25
+      Caption = '修改'
+      TabOrder = 1
+      OnClick = btnEditClick
+    end
+    object btnDelete: TButton
+      Left = 224
+      Top = 24
+      Width = 75
+      Height = 25
+      Caption = '刪除'
+      TabOrder = 2
+      OnClick = btnDeleteClick
+    end
+    object btnInput: TButton
+      Left = 720
+      Top = 24
+      Width = 75
+      Height = 25
+      Caption = '導入'
+      TabOrder = 3
+      OnClick = btnInputClick
+    end
+    object btnOutPut: TButton
+      Left = 840
+      Top = 24
+      Width = 75
+      Height = 25
+      Caption = '導出'
+      TabOrder = 4
+      OnClick = btnOutPutClick
+    end
+  end
+  object DataSource1: TDataSource
+    Left = 424
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 480
+  end
+end

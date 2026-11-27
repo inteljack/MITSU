@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AC2E249A-9632-4D93-AE62-082C7B868B39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mitsu.Printer", "src\Mitsu.Printer\Mitsu.Printer.csproj", "{826DCD8D-2129-4002-B261-FFEBFF286B25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mitsu.Printer.Simulator", "src\Mitsu.Printer.Simulator\Mitsu.Printer.Simulator.csproj", "{8D3CDF2B-DEB0-476F-AE2F-17E9AC204146}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CB48E4F6-EE03-48BF-99EE-1DFF66418AB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mitsu.Printer.Tests", "tests\Mitsu.Printer.Tests\Mitsu.Printer.Tests.csproj", "{0FD632D4-0218-41E1-B1FF-1E99BEA430F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mitsu.X1Tool", "src\Mitsu.X1Tool\Mitsu.X1Tool.csproj", "{9ACB8056-E16E-4B52-B8FC-6268DDFD5E71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mitsu.Core", "src\Mitsu.Core\Mitsu.Core.csproj", "{A7BA99B5-3DA9-459B-91A8-DCBF1CCDB125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mitsu.Core.Tests", "tests\Mitsu.Core.Tests\Mitsu.Core.Tests.csproj", "{092B3573-7707-4C6C-B38D-2681681B9C1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{826DCD8D-2129-4002-B261-FFEBFF286B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826DCD8D-2129-4002-B261-FFEBFF286B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826DCD8D-2129-4002-B261-FFEBFF286B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826DCD8D-2129-4002-B261-FFEBFF286B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3CDF2B-DEB0-476F-AE2F-17E9AC204146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3CDF2B-DEB0-476F-AE2F-17E9AC204146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3CDF2B-DEB0-476F-AE2F-17E9AC204146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3CDF2B-DEB0-476F-AE2F-17E9AC204146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FD632D4-0218-41E1-B1FF-1E99BEA430F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FD632D4-0218-41E1-B1FF-1E99BEA430F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FD632D4-0218-41E1-B1FF-1E99BEA430F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FD632D4-0218-41E1-B1FF-1E99BEA430F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ACB8056-E16E-4B52-B8FC-6268DDFD5E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACB8056-E16E-4B52-B8FC-6268DDFD5E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACB8056-E16E-4B52-B8FC-6268DDFD5E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACB8056-E16E-4B52-B8FC-6268DDFD5E71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7BA99B5-3DA9-459B-91A8-DCBF1CCDB125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7BA99B5-3DA9-459B-91A8-DCBF1CCDB125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7BA99B5-3DA9-459B-91A8-DCBF1CCDB125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7BA99B5-3DA9-459B-91A8-DCBF1CCDB125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092B3573-7707-4C6C-B38D-2681681B9C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092B3573-7707-4C6C-B38D-2681681B9C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092B3573-7707-4C6C-B38D-2681681B9C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092B3573-7707-4C6C-B38D-2681681B9C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{826DCD8D-2129-4002-B261-FFEBFF286B25} = {AC2E249A-9632-4D93-AE62-082C7B868B39}
+		{8D3CDF2B-DEB0-476F-AE2F-17E9AC204146} = {AC2E249A-9632-4D93-AE62-082C7B868B39}
+		{0FD632D4-0218-41E1-B1FF-1E99BEA430F9} = {CB48E4F6-EE03-48BF-99EE-1DFF66418AB5}
+		{9ACB8056-E16E-4B52-B8FC-6268DDFD5E71} = {AC2E249A-9632-4D93-AE62-082C7B868B39}
+		{A7BA99B5-3DA9-459B-91A8-DCBF1CCDB125} = {AC2E249A-9632-4D93-AE62-082C7B868B39}
+		{092B3573-7707-4C6C-B38D-2681681B9C1D} = {CB48E4F6-EE03-48BF-99EE-1DFF66418AB5}
+	EndGlobalSection
+EndGlobal

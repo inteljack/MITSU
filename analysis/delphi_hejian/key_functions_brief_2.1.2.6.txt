@@ -1,0 +1,1539 @@
+========== 00415704 frmCtrl---GetCheckIsNULL
+0041571B  call   0x530bc4
+0041573D  call   0x533f18 ; CC3260MT!_memset
+00415764  mov    eax, dword ptr [ecx + 0x2f4] ; .txtKeyCodeValue
+0041576A  call   0x50a000
+0041579A  call   0x531008
+004157B4  test   cl, cl
+004157B6  je     0x415857
+004157D4  mov    edx, 0x5381a2 ; "CtrlKeyCodeNoNULL"
+004157E9  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004157F2  call   0x4056d4 ; frmMain---ShowMessage
+004157FC  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00415803  call   0x40450c ; frmMain---ShowAlert
+00415852  jmp    0x41753d
+00415876  mov    eax, dword ptr [ecx + 0x2f8] ; .txtMadeNoValue
+0041587C  call   0x50a000
+0041589C  call   0x531008
+004158C9  test   cl, cl
+004158CB  je     0x41596c
+004158E9  mov    edx, 0x5381b5 ; "CtrlMadeNoValue"
+004158FE  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00415907  call   0x4056d4 ; frmMain---ShowMessage
+00415911  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00415918  call   0x40450c ; frmMain---ShowAlert
+00415967  jmp    0x41753d
+0041598B  mov    eax, dword ptr [ecx + 0x2fc] ; .txtBoxNoBeginValue
+00415991  call   0x50a000
+004159B1  call   0x531008
+004159DE  test   cl, cl
+004159E0  je     0x415a81
+004159FE  mov    edx, 0x5381c6 ; "CtrlNoBeginValue"
+00415A13  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00415A1C  call   0x4056d4 ; frmMain---ShowMessage
+00415A26  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00415A2D  call   0x40450c ; frmMain---ShowAlert
+00415A7C  jmp    0x41753d
+00415AA0  mov    eax, dword ptr [ecx + 0x2fc] ; .txtBoxNoBeginValue
+00415AA6  call   0x50a000
+00415AB0  call   0x4a9bc8
+00415ABB  mov    dword ptr [edx + 0x48c], eax
+00415AF3  mov    eax, dword ptr [ecx + 0x300] ; .txtBoxNoEndValue
+00415AF9  call   0x50a000
+00415B19  call   0x531008
+00415B46  test   cl, cl
+00415B48  je     0x415be9
+00415B66  mov    edx, 0x5381d8 ; "CtrlMaxPrintNoNULL"
+00415B7B  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00415B84  call   0x4056d4 ; frmMain---ShowMessage
+00415B8E  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00415B95  call   0x40450c ; frmMain---ShowAlert
+00415BE4  jmp    0x41753d
+00415C08  mov    eax, dword ptr [ecx + 0x2fc] ; .txtBoxNoBeginValue
+00415C0E  call   0x50a000
+00415C18  call   0x4a9bc8
+00415C35  mov    eax, dword ptr [ecx + 0x300] ; .txtBoxNoEndValue
+00415C3B  call   0x50a000
+00415C45  call   0x4a9bc8
+00415C4A  cmp    ebx, eax
+00415C7A  test   cl, cl
+00415C7C  je     0x415d1d
+00415C9A  mov    edx, 0x5381eb ; "CtrlCaptionBeginAndEnd"
+00415CAF  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00415CB8  call   0x4056d4 ; frmMain---ShowMessage
+00415CC2  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00415CC9  call   0x40450c ; frmMain---ShowAlert
+00415D18  jmp    0x41753d
+00415D3C  mov    eax, dword ptr [ecx + 0x308] ; .txtMachineNoValue2
+00415D42  call   0x50a000
+00415D62  call   0x531008
+00415D8F  test   cl, cl
+00415D91  je     0x415da9
+00415D9B  mov    dword ptr [eax + 0xaf0], edx
+00415DA1  mov    dword ptr [eax + 0xaf4], edx
+00415DA7  jmp    0x415e01
+00415DC8  mov    eax, dword ptr [ecx + 0x308] ; .txtMachineNoValue2
+00415DCE  call   0x50a000
+00415DD6  call   0x40462c
+00415DDC  call   0x533edc ; CC3260MT!_atof
+00415DE8  fstp   qword ptr [edx + 0xaf0]
+00415E0D  mov    edx, dword ptr [eax + 0xaf0]
+00415E13  mov    dword ptr [ecx + 0x408], edx
+00415E19  mov    edx, dword ptr [eax + 0xaf4]
+00415E1F  mov    dword ptr [ecx + 0x40c], edx
+00415E44  mov    eax, dword ptr [ecx + 0x304] ; .txtMachineNoValue1
+00415E4A  call   0x50a000
+00415E6A  call   0x531008
+00415E6F  test   al, al
+00415E71  jne    0x415e8e
+00415E79  fld    qword ptr [ecx + 0xaf0]
+00415E7F  fcomp  dword ptr [0x417544]
+00415E85  fnstsw ax
+00415E88  je     0x415e8e
+00415E8C  jmp    0x415e93
+00415EBB  test   cl, cl
+00415EBD  je     0x415f5e
+00415EDB  mov    edx, 0x538204 ; "CtrlNoValueMachine"
+00415EF0  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00415EF9  call   0x4056d4 ; frmMain---ShowMessage
+00415F03  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00415F0A  call   0x40450c ; frmMain---ShowAlert
+00415F59  jmp    0x41753d
+00415F7D  mov    eax, dword ptr [ecx + 0x308] ; .txtMachineNoValue2
+00415F83  call   0x50a000
+00415F8B  call   0x4047e0
+00415F96  mov    ecx, dword ptr [edx + 0x308] ; .txtMachineNoValue2
+00415F9C  cmp    eax, dword ptr [ecx + 0x208]
+00415FBD  test   cl, cl
+00415FBF  je     0x41606f
+00415FE0  mov    edx, 0x538217 ; "CtrlPrintCGMax"
+00415FF8  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416001  call   0x4056d4 ; frmMain---ShowMessage
+0041600E  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00416015  call   0x40450c ; frmMain---ShowAlert
+0041606A  jmp    0x41753d
+00416091  mov    eax, dword ptr [ecx + 0x300] ; .txtBoxNoEndValue
+00416097  call   0x50a000
+004160A4  call   0x4a9bc8
+004160AF  fild   dword ptr [ebp - 0x1b0]
+004160B5  fstp   xword ptr [ebp - 0x1bc]
+004160D4  mov    eax, dword ptr [ecx + 0x308] ; .txtMachineNoValue2
+004160DA  call   0x50a000
+004160E5  call   0x40462c
+004160EB  call   0x533edc ; CC3260MT!_atof
+004160F1  fld    xword ptr [ebp - 0x1bc]
+004160F9  fnstsw ax
+00416130  test   cl, cl
+00416132  je     0x4161e2
+00416153  mov    edx, 0x538226 ; "CtrlPrintCGCanPrint"
+0041616B  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416174  call   0x4056d4 ; frmMain---ShowMessage
+00416181  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00416188  call   0x40450c ; frmMain---ShowAlert
+004161DD  jmp    0x41753d
+00416204  mov    eax, dword ptr [ecx + 0x384] ; .txtPrintWordHeight
+0041620A  call   0x50a000
+00416233  call   0x531008
+00416266  test   cl, cl
+00416268  je     0x416318
+00416289  mov    edx, 0x53823b ; "CtrlCartonCGMaxHeight"
+004162A1  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004162AA  call   0x4056d4 ; frmMain---ShowMessage
+004162B7  mov    eax, dword ptr [0x5585a8] ; "ððU"
+004162BE  call   0x40450c ; frmMain---ShowAlert
+00416313  jmp    0x41753d
+0041633A  mov    eax, dword ptr [ecx + 0x388] ; .txtOutSidePrintWordBegin
+00416340  call   0x50a000
+00416369  call   0x531008
+0041639C  test   cl, cl
+0041639E  je     0x41644e
+004163BF  mov    edx, 0x538252 ; "CtrlCartonCGMaxWBegin"
+004163D7  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004163E0  call   0x4056d4 ; frmMain---ShowMessage
+004163ED  mov    eax, dword ptr [0x5585a8] ; "ððU"
+004163F4  call   0x40450c ; frmMain---ShowAlert
+00416449  jmp    0x41753d
+00416470  mov    eax, dword ptr [ecx + 0x38c] ; .txtOutSidePrintWordEnd
+00416476  call   0x50a000
+0041649F  call   0x531008
+004164D2  test   cl, cl
+004164D4  je     0x416584
+004164F5  mov    edx, 0x538269 ; "CtrlBMYZZLNoNULL"
+0041650D  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416516  call   0x4056d4 ; frmMain---ShowMessage
+00416523  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0041652A  call   0x40450c ; frmMain---ShowAlert
+0041657F  jmp    0x41753d
+004165A6  mov    eax, dword ptr [ecx + 0x390] ; .txtInsidePrintWordBegin
+004165AC  call   0x50a000
+004165D5  call   0x531008
+00416608  test   cl, cl
+0041660A  je     0x4166ba
+0041662B  mov    edx, 0x53827b ; "CtrlLMYZKSNoNULL"
+00416643  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0041664C  call   0x4056d4 ; frmMain---ShowMessage
+00416659  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00416660  call   0x40450c ; frmMain---ShowAlert
+004166B5  jmp    0x41753d
+004166DC  mov    eax, dword ptr [ecx + 0x394] ; .txtInsidePrintWordEnd
+004166E2  call   0x50a000
+0041670B  call   0x531008
+0041673E  test   cl, cl
+00416740  je     0x4167f0
+00416761  mov    edx, 0x53828d ; "CtrlLMYZZLNoNULL"
+00416779  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416782  call   0x4056d4 ; frmMain---ShowMessage
+0041678F  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00416796  call   0x40450c ; frmMain---ShowAlert
+004167EB  jmp    0x41753d
+0041680B  mov    edx, 0x5382a8 ; "SourceMsg1Path"
+00416823  mov    edx, 0x53829e ; "SourceMsg"
+0041683B  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416844  call   0x402678 ; frmMain---GetHeJianInfo
+0041685A  call   0x530f54
+004168A7  mov    eax, dword ptr [ecx + 0xb64]
+004168AD  call   0x4aa088
+004168B2  test   al, al
+004168B4  jne    0x416964
+004168D5  mov    edx, 0x5382b7 ; "CtrlNoZMai"
+004168ED  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004168F6  call   0x4056d4 ; frmMain---ShowMessage
+00416903  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0041690A  call   0x40450c ; frmMain---ShowAlert
+0041695F  jmp    0x41753d
+0041696D  mov    edx, 0x5382ca ; "Width"
+00416994  mov    edx, 0x5382c2 ; "MsgInfo"
+004169B2  mov    edx, dword ptr [edx + 0xb64]
+004169B8  mov    eax, dword ptr [0x5585a8] ; "ððU"
+004169BF  call   0x40240c ; frmMain---GetIniData
+00416A21  call   0x531020
+00416A3E  test   cl, cl
+00416A40  je     0x416b39
+00416A49  call   0x40462c
+00416A4F  call   0x533edc ; CC3260MT!_atof
+00416A5B  fstp   qword ptr [edx + 0xad8]
+00416A67  fld    qword ptr [ecx + 0xad8]
+00416A6D  fcomp  dword ptr [0x417544]
+00416A73  fnstsw ax
+00416A76  ja     0x416bf6
+00416A97  mov    edx, 0x5382d1 ; "CtrlZSZMai"
+00416AAF  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416AB8  call   0x4056d4 ; frmMain---ShowMessage
+00416AC5  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00416ACC  call   0x40450c ; frmMain---ShowAlert
+00416B34  jmp    0x41753d
+00416B54  mov    edx, 0x5382dc ; "CtrlZMKDNoNULL"
+00416B6C  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416B75  call   0x4056d4 ; frmMain---ShowMessage
+00416B82  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00416B89  call   0x40450c ; frmMain---ShowAlert
+00416BF1  jmp    0x41753d
+00416C11  mov    edx, 0x5382f5 ; "SourceMsg2Path"
+00416C29  mov    edx, 0x5382eb ; "SourceMsg"
+00416C41  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416C4A  call   0x402678 ; frmMain---GetHeJianInfo
+00416C60  call   0x530f54
+00416CAD  mov    eax, dword ptr [ecx + 0xb68]
+00416CB3  call   0x4aa088
+00416CB8  test   al, al
+00416CBA  jne    0x416d7d
+00416CDB  mov    edx, 0x538304 ; "CtrlNoCMai"
+00416CF3  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416CFC  call   0x4056d4 ; frmMain---ShowMessage
+00416D09  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00416D10  call   0x40450c ; frmMain---ShowAlert
+00416D78  jmp    0x41753d
+00416D86  mov    edx, 0x538317 ; "Width"
+00416DAD  mov    edx, 0x53830f ; "MsgInfo"
+00416DCB  mov    edx, dword ptr [edx + 0xb68]
+00416DD1  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00416DD8  call   0x40240c ; frmMain---GetIniData
+00416E3A  call   0x531020
+00416E57  test   cl, cl
+00416E59  je     0x416f65
+00416E62  call   0x40462c
+00416E68  call   0x533edc ; CC3260MT!_atof
+00416E74  fstp   qword ptr [edx + 0xae0]
+00416E80  fld    qword ptr [ecx + 0xae0]
+00416E86  fcomp  dword ptr [0x417544]
+00416E8C  fnstsw ax
+00416E8F  ja     0x417035
+00416EB0  mov    edx, 0x53831e ; "CtrlCMKD"
+00416EC8  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416ED1  call   0x4056d4 ; frmMain---ShowMessage
+00416EDE  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00416EE5  call   0x40450c ; frmMain---ShowAlert
+00416F60  jmp    0x41753d
+00416F80  mov    edx, 0x538327 ; "CtrlCMKDNoNULL"
+00416F98  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00416FA1  call   0x4056d4 ; frmMain---ShowMessage
+00416FAE  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00416FB5  call   0x40450c ; frmMain---ShowAlert
+00417030  jmp    0x41753d
+00417065  call   0x531020
+00417082  test   cl, cl
+00417084  je     0x417396
+004170AC  mov    eax, dword ptr [ecx + 0x370] ; .txtCaseNo
+004170B2  call   0x50a000
+004170DD  mov    eax, 0x538337 ; "select * from "
+004170E2  call   0x531358
+00417100  mov    edx, 0x538346 ; " where [CASE-No]='"
+0041711E  call   0x530f7c
+0041713F  call   0x530f7c
+0041717B  call   0x530f7c
+0041720D  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00417215  mov    eax, dword ptr [eax + 0x31c] ; .txtBore
+0041721B  call   0x476aac
+0041722E  call   dword ptr [edx + 0x44]
+00417231  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00417239  mov    eax, dword ptr [eax + 0x31c] ; .txtBore
+0041723F  call   0x476aac
+00417258  call   dword ptr [ecx + 0x2c]
+0041725B  mov    edx, dword ptr [0x5585a8] ; "ððU"
+00417263  mov    eax, dword ptr [eax + 0x31c] ; .txtBore
+00417269  call   0x48daf8
+0041726E  mov    edx, dword ptr [0x5585a8] ; "ððU"
+00417276  mov    eax, dword ptr [ecx + 0x31c] ; .txtBore
+0041727E  call   dword ptr [edx + 0x14c]
+00417284  test   eax, eax
+00417286  jg     0x417372
+004172A7  mov    edx, 0x53835b ; "CartonNoThere"
+004172BF  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004172C8  call   0x4056d4 ; frmMain---ShowMessage
+004172D5  mov    eax, dword ptr [0x5585a8] ; "ððU"
+004172DC  call   0x40450c ; frmMain---ShowAlert
+0041736D  jmp    0x41753d
+00417391  jmp    0x417466
+004173B1  mov    edx, 0x538369 ; "CartonNoTable"
+004173C9  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004173D2  call   0x4056d4 ; frmMain---ShowMessage
+004173DF  mov    eax, dword ptr [0x5585a8] ; "ððU"
+004173E6  call   0x40450c ; frmMain---ShowAlert
+00417461  jmp    0x41753d
+004174B0  jmp    0x41753d
+004174E0  mov    eax, 0x538377 ; "frmCtrl---GetCheckIsNULL:"
+004174E5  call   0x531358
+004174F2  mov    eax, dword ptr [0x5585a8] ; "ððU"
+004174F9  call   0x404fd8
+0041752D  jmp    0x41753d
+========== 0040D334 TfrmCtrl::TimerSendMsgTimer [frmCtrl---TimerSendMsgTimer]
+0040D348  call   0x530bc4
+0040D356  cmp    byte ptr [edx + 0xb6c], 0
+0040D35D  je     0x40d69b
+0040D366  mov    eax, dword ptr [ecx + 0xb3c]
+0040D36C  mov    edx, dword ptr [0x5585a8] ; "ððU"
+0040D374  cmp    eax, dword ptr [ecx + 0x34c] ; .txtMadeNoValueResult
+0040D37A  jg     0x40d69b
+0040D382  call   0x533380 ; AIMDTL!imGetADTStatus
+0040D390  cmp    dword ptr [ebp - 0x64], 1
+0040D394  jne    0x40d69b
+0040D3BE  mov    edx, dword ptr [eax + 0x3f4]
+0040D3C7  cmp    edx, dword ptr [ecx + 0x3f8]
+0040D3CD  jl     0x40d435
+0040D3E8  mov    edx, 0x537b62 ; "CtrlPrintClearCarton1"
+0040D3FA  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0040D403  call   0x4056d4 ; frmMain---ShowMessage
+0040D40E  call   0x530f54
+0040D433  jmp    0x40d4b0
+0040D438  fild   dword ptr [ecx + 0x3f8]
+0040D441  fcomp  qword ptr [eax + 0x408]
+0040D447  fnstsw ax
+0040D44A  jb     0x40d4b0
+0040D465  mov    edx, 0x537b78 ; "CtrlPrintClearCarton2"
+0040D477  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0040D480  call   0x4056d4 ; frmMain---ShowMessage
+0040D48B  call   0x530f54
+0040D4B0  cmp    dword ptr [ebp - 0x68], 1
+0040D4B4  jne    0x40d625
+0040D4BD  call   0x417898 ; frmCtrl---SetStopPrint
+0040D4D9  mov    edx, 0x537b8e ; "SystemTS"
+0040D4EB  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0040D4F4  call   0x4056d4 ; frmMain---ShowMessage
+0040D4FC  call   0x40462c
+0040D505  call   0x40462c
+0040D515  call   0x530c94
+0040D51A  dec    eax
+0040D543  test   cl, cl
+0040D545  je     0x40d685
+0040D566  mov    eax, dword ptr [eax + 0x300] ; .txtBoxNoEndValue
+0040D56C  call   0x50a030
+0040D59C  mov    eax, dword ptr [eax + 0x2fc] ; .txtBoxNoBeginValue
+0040D5A2  call   0x50a030
+0040D5D2  mov    eax, dword ptr [eax + 0x304] ; .txtMachineNoValue1
+0040D5D8  call   0x50a030
+0040D608  mov    eax, dword ptr [eax + 0x308] ; .txtMachineNoValue2
+0040D60E  call   0x50a030
+0040D623  jmp    0x40d685
+0040D628  mov    eax, dword ptr [ecx + 0xb40]
+0040D631  cmp    eax, dword ptr [edx + 0x400]
+0040D637  jge    0x40d685
+0040D63C  push   dword ptr [ecx + 0x48c]
+0040D642  call   0x5333b0 ; AIMDTL!imPageBegin
+0040D650  cmp    dword ptr [ebp - 0x6c], 1
+0040D654  jne    0x40d67d
+0040D659  call   0x40e5b8 ; frmCtrl---SetDataToPrintPro
+0040D65E  test   al, al
+0040D660  je     0x40d67d
+0040D665  inc    dword ptr [edx + 0x48c]
+0040D66E  inc    dword ptr [ecx + 0xb40]
+0040D677  inc    dword ptr [eax + 0xb3c]
+0040D67D  call   0x5333b6 ; AIMDTL!imPageEnd
+0040D6A1  jmp    0x40d702
+0040D6A6  mov    eax, dword ptr [ecx + 0x3ac] ; .TimerSendMsg
+0040D6AE  call   0x501a28
+0040D6CC  mov    eax, 0x537b9b ; "frmCtrl---TimerSendMsgTimer:"
+0040D6D1  call   0x531358
+0040D6DB  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0040D6E2  call   0x404fd8
+========== 0040D714 frmCtrl---SetValueToStr
+0040D72B  call   0x530bc4
+0040D758  mov    eax, dword ptr [ecx + 0x368] ; .txtPlace
+0040D75E  call   0x50a000
+0040D771  call   0x530f54
+0040D7A8  mov    eax, dword ptr [ecx + 0x318] ; .txtModel
+0040D7AE  call   0x50a000
+0040D7C1  call   0x530f54
+0040D7F8  mov    eax, dword ptr [ecx + 0x314] ; .txtModelValue
+0040D7FE  call   0x50a000
+0040D811  call   0x530f54
+0040D848  mov    eax, dword ptr [ecx + 0x31c] ; .txtBore
+0040D84E  call   0x50a000
+0040D861  call   0x530f54
+0040D898  mov    eax, dword ptr [ecx + 0x320] ; .txtBoreValue
+0040D89E  call   0x50a000
+0040D8B1  call   0x530f54
+0040D8E8  mov    eax, dword ptr [ecx + 0x324] ; .txtBoreUnit
+0040D8EE  call   0x50a000
+0040D901  call   0x530f54
+0040D938  mov    eax, dword ptr [ecx + 0x328] ; .txtOutput
+0040D93E  call   0x50a000
+0040D951  call   0x530f54
+0040D988  mov    eax, dword ptr [ecx + 0x32c] ; .txtOutputValue
+0040D98E  call   0x50a000
+0040D9A1  call   0x530f54
+0040D9D8  mov    eax, dword ptr [ecx + 0x330] ; .txtOutputUnit
+0040D9DE  call   0x50a000
+0040D9F1  call   0x530f54
+0040DA28  mov    eax, dword ptr [ecx + 0x334] ; .txtPhaseValue
+0040DA2E  call   0x50a000
+0040DA41  call   0x530f54
+0040DA78  mov    eax, dword ptr [ecx + 0x338] ; .txtPhaseUnit
+0040DA7E  call   0x50a000
+0040DA91  call   0x530f54
+0040DAC8  mov    eax, dword ptr [ecx + 0x33c] ; .txtVoltageValue
+0040DACE  call   0x50a000
+0040DAE1  call   0x530f54
+0040DB18  mov    eax, dword ptr [ecx + 0x340] ; .txtVoltageUnit
+0040DB1E  call   0x50a000
+0040DB31  call   0x530f54
+0040DB68  mov    eax, dword ptr [ecx + 0x344] ; .txtHzValue
+0040DB6E  call   0x50a000
+0040DB81  call   0x530f54
+0040DBB8  mov    eax, dword ptr [ecx + 0x348] ; .txtHzUnit
+0040DBBE  call   0x50a000
+0040DBD1  call   0x530f54
+0040DC08  mov    eax, dword ptr [ecx + 0x2f8] ; .txtMadeNoValue
+0040DC0E  call   0x50a000
+0040DC21  call   0x530f54
+0040DC58  mov    eax, dword ptr [ecx + 0x350] ; .txtTokki
+0040DC5E  call   0x50a000
+0040DC71  call   0x530f54
+0040DCA8  mov    eax, dword ptr [ecx + 0x358] ; .txtCodeValue
+0040DCAE  call   0x50a000
+0040DCC1  call   0x530f54
+0040DCF8  mov    eax, dword ptr [ecx + 0x354] ; .txtCode
+0040DCFE  call   0x50a000
+0040DD11  call   0x530f54
+0040DD48  mov    eax, dword ptr [ecx + 0x304] ; .txtMachineNoValue1
+0040DD4E  call   0x50a000
+0040DD61  call   0x530f54
+0040DD98  mov    eax, dword ptr [ecx + 0x2f8] ; .txtMadeNoValue
+0040DD9E  call   0x50a000
+0040DDB1  call   0x530f54
+0040DDE8  mov    eax, dword ptr [ecx + 0x398] ; .lblMacineNo
+0040DDEE  call   0x50a000
+0040DE01  call   0x530f54
+0040DE38  mov    eax, dword ptr [ecx + 0x364] ; .txtModelValueSide
+0040DE3E  call   0x50a000
+0040DE51  call   0x530f54
+0040DE88  mov    eax, dword ptr [ecx + 0x300] ; .txtBoxNoEndValue
+0040DE8E  call   0x50a000
+0040DE98  call   0x4a9bc8
+0040DEA3  mov    dword ptr [edx + 0x3f8], eax
+0040DEDB  mov    eax, dword ptr [ecx + 0x2fc] ; .txtBoxNoBeginValue
+0040DEE1  call   0x50a000
+0040DEEB  call   0x4a9bc8
+0040DEF6  mov    dword ptr [edx + 0x3f4], eax
+0040DF15  mov    eax, dword ptr [ecx + 0x3f4]
+0040DF21  mov    dword ptr [edx + 0x3fc], eax
+0040DF2D  mov    eax, dword ptr [ecx + 0x3f8]
+0040DF39  sub    eax, dword ptr [edx + 0x3f4]
+0040DF45  mov    dword ptr [ecx + 0x400], eax
+0040DF63  mov    edx, 0x537bbd ; "SpaceBtVoltageHzValue"
+0040DF78  mov    edx, 0x537bb8 ; "Data"
+0040DF8D  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0040DF96  call   0x402678 ; frmMain---GetHeJianInfo
+0040DFA0  call   0x4a9bc8
+0040DFBD  call   0x40f178 ; frmCtrl---GetNULLStr
+0040DFD0  call   0x530f54
+0040E038  call   0x530f54
+0040E054  call   0x530f54
+0040E070  call   0x530f54
+0040E080  call   0x4047e0
+0040E085  test   eax, eax
+0040E087  jle    0x40e0df
+0040E094  call   0x4047e0
+0040E099  test   eax, eax
+0040E09B  jle    0x40e0df
+0040E0C7  call   0x530f68
+0040E0EA  call   0x4047e0
+0040E0EF  test   eax, eax
+0040E0F1  jle    0x40e149
+0040E0FE  call   0x4047e0
+0040E103  test   eax, eax
+0040E105  jle    0x40e149
+0040E131  call   0x530f68
+0040E154  call   0x4047e0
+0040E159  test   eax, eax
+0040E15B  jle    0x40e1bc
+0040E168  call   0x4047e0
+0040E16D  test   eax, eax
+0040E16F  jle    0x40e1bc
+0040E1A1  call   0x530f68
+0040E1EF  call   0x530f7c
+0040E205  call   0x530f54
+0040E253  call   0x530f7c
+0040E269  call   0x530f54
+0040E2B7  call   0x530f7c
+0040E2ED  call   0x530f7c
+0040E319  call   0x530f7c
+0040E33A  call   0x530f7c
+0040E350  call   0x530f54
+0040E3E0  call   0x530f7c
+0040E3F6  call   0x530f54
+0040E454  call   0x530f7c
+0040E46A  call   0x530f54
+0040E4AA  push   dword ptr [ecx + 0xaf4]
+0040E4B0  push   dword ptr [ecx + 0xaf0]
+0040E4BC  call   0x530eb8
+0040E4ED  call   0x530f7c
+0040E503  call   0x530f54
+0040E53D  jmp    0x40e5a3
+0040E561  mov    eax, 0x537bdb ; "frmCtrl---SetValueToStr:"
+0040E566  call   0x531358
+0040E573  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0040E57A  call   0x404fd8
+========== 0040E5B8 frmCtrl---SetDataToPrintPro
+0040E5CF  call   0x530bc4
+0040E5E6  mov    edx, 0x537bf4 ; "Model"
+0040E601  mov    edx, dword ptr [edx + 0x45c]
+0040E60D  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040E616  cmp    ecx, 1
+0040E632  test   cl, cl
+0040E634  je     0x40e64a
+0040E645  jmp    0x40f16d
+0040E653  mov    edx, 0x537bfa ; "ModelValue"
+0040E66E  mov    edx, dword ptr [eax + 0x3e4]
+0040E67A  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040E683  cmp    edx, 1
+0040E69F  test   cl, cl
+0040E6A1  je     0x40e6b7
+0040E6B2  jmp    0x40f16d
+0040E6C0  mov    edx, 0x537c05 ; "Bore"
+0040E6DB  mov    edx, dword ptr [eax + 0x460]
+0040E6E7  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040E6F0  cmp    edx, 1
+0040E70C  test   cl, cl
+0040E70E  je     0x40e724
+0040E71F  jmp    0x40f16d
+0040E72D  mov    edx, 0x537c0a ; "BoreValue"
+0040E748  mov    edx, dword ptr [eax + 0x468]
+0040E754  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040E75D  cmp    edx, 1
+0040E779  test   cl, cl
+0040E77B  je     0x40e791
+0040E78C  jmp    0x40f16d
+0040E79A  mov    edx, 0x537c14 ; "Output"
+0040E7B5  mov    edx, dword ptr [eax + 0x464]
+0040E7C1  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040E7CA  cmp    edx, 1
+0040E7E6  test   cl, cl
+0040E7E8  je     0x40e7fe
+0040E7F9  jmp    0x40f16d
+0040E807  mov    edx, 0x537c1b ; "OutputValue"
+0040E822  mov    edx, dword ptr [eax + 0x46c]
+0040E82E  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040E837  cmp    edx, 1
+0040E853  test   cl, cl
+0040E855  je     0x40e86b
+0040E866  jmp    0x40f16d
+0040E874  mov    edx, 0x537c27 ; "PhaseValue"
+0040E88F  mov    edx, dword ptr [eax + 0x41c]
+0040E89B  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040E8A4  cmp    edx, 1
+0040E8C0  test   cl, cl
+0040E8C2  je     0x40e8d8
+0040E8D3  jmp    0x40f16d
+0040E8E1  mov    edx, 0x537c32 ; "PhaseUnit"
+0040E8FC  mov    edx, dword ptr [eax + 0x420]
+0040E908  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040E911  cmp    edx, 1
+0040E92D  test   cl, cl
+0040E92F  je     0x40e945
+0040E940  jmp    0x40f16d
+0040E94E  mov    edx, 0x537c3c ; "AllValueData"
+0040E969  mov    edx, dword ptr [eax + 0x470]
+0040E975  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040E97E  cmp    edx, 1
+0040E99A  test   cl, cl
+0040E99C  je     0x40e9b2
+0040E9AD  jmp    0x40f16d
+0040E9BB  mov    edx, 0x537c49 ; "MadeNoValue"
+0040E9D6  mov    edx, dword ptr [eax + 0x438]
+0040E9E2  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040E9EB  cmp    edx, 1
+0040EA07  test   cl, cl
+0040EA09  je     0x40ea1f
+0040EA1A  jmp    0x40f16d
+0040EA28  mov    edx, 0x537c55 ; "Tokii"
+0040EA43  mov    edx, dword ptr [eax + 0x43c]
+0040EA4F  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040EA58  cmp    edx, 1
+0040EA74  test   cl, cl
+0040EA76  je     0x40ea8c
+0040EA87  jmp    0x40f16d
+0040EAA4  mov    edx, 0x537c5b ; "   "
+0040EAC6  call   0x530f7c
+0040EAEC  call   0x530f7c
+0040EAFB  push   dword ptr [ecx + 0xaf4]
+0040EB01  push   dword ptr [ecx + 0xaf0]
+0040EB0A  call   0x530eb8
+0040EB2B  call   0x530f7c
+0040EB3E  call   0x530f54
+0040EBAB  mov    edx, 0x537c5f ; "Code"
+0040EBC6  mov    edx, dword ptr [eax + 0x478]
+0040EBD2  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040EBDB  cmp    edx, 1
+0040EBF7  test   cl, cl
+0040EBF9  je     0x40ec0f
+0040EC0A  jmp    0x40f16d
+0040EC18  mov    edx, 0x537c64 ; "CodeDian"
+0040EC33  mov    edx, dword ptr [eax + 0x47c]
+0040EC3F  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040EC48  cmp    edx, 1
+0040EC64  test   cl, cl
+0040EC66  je     0x40ec7c
+0040EC77  jmp    0x40f16d
+0040EC85  mov    edx, 0x537c6d ; "CodeValue"
+0040ECA0  mov    edx, dword ptr [eax + 0x440]
+0040ECAC  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040ECB5  cmp    edx, 1
+0040ECD1  test   cl, cl
+0040ECD3  je     0x40ece9
+0040ECE4  jmp    0x40f16d
+0040ECF2  mov    edx, 0x537c77 ; "MacineNo"
+0040ED0D  mov    edx, dword ptr [eax + 0x450]
+0040ED19  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040ED22  cmp    edx, 1
+0040ED3E  test   cl, cl
+0040ED40  je     0x40ed56
+0040ED51  jmp    0x40f16d
+0040ED5F  mov    edx, 0x537c80 ; "MacineNoValue"
+0040ED7A  mov    edx, dword ptr [eax + 0x480]
+0040ED86  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040ED8F  cmp    edx, 1
+0040EDAB  test   cl, cl
+0040EDAD  je     0x40edc3
+0040EDBE  jmp    0x40f16d
+0040EDD2  fld    qword ptr [ecx + 0xaf0]
+0040EDDB  fstp   xword ptr [esp]
+0040EDEC  call   0x4ab560
+0040EE05  mov    eax, 0x537c8e ; "Printing Serial Number:"
+0040EE0B  call   0x531358
+0040EE23  mov    edx, 0x537ca6 ; "   XiangHao:"
+0040EE3B  call   0x530f7c
+0040EE5A  mov    eax, dword ptr [ecx + 0x3fc]
+0040EE60  call   0x4a9b28
+0040EE7B  call   0x530f7c
+0040EE85  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0040EE8C  call   0x404fd8
+0040EF09  mov    eax, dword ptr [ecx + 0x39c] ; .cbxtype
+0040EF11  call   dword ptr [edx + 0xc8]
+0040EF17  dec    eax
+0040EF18  jne    0x40ef3a
+0040EF20  fld    qword ptr [ecx + 0xaf0]
+0040EF26  fsub   dword ptr [0x40f174]
+0040EF32  fstp   qword ptr [eax + 0xaf0]
+0040EF38  jmp    0x40ef70
+0040EF40  mov    eax, dword ptr [edx + 0x39c] ; .cbxtype
+0040EF48  call   dword ptr [edx + 0xc8]
+0040EF4E  test   eax, eax
+0040EF50  jne    0x40ef70
+0040EF58  fld    qword ptr [ecx + 0xaf0]
+0040EF5E  fadd   dword ptr [0x40f174]
+0040EF6A  fstp   qword ptr [eax + 0xaf0]
+0040EF76  inc    dword ptr [edx + 0x3fc]
+0040EF8B  push   dword ptr [ecx + 0xaf4]
+0040EF91  push   dword ptr [ecx + 0xaf0]
+0040EF9A  call   0x530eb8
+0040EFC5  call   0x530f7c
+0040EFD8  call   0x530f54
+0040F00C  mov    edx, 0x537cb3 ; "ModelValueSide"
+0040F027  mov    edx, dword ptr [eax + 0x454]
+0040F033  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040F03C  cmp    edx, 1
+0040F058  test   cl, cl
+0040F05A  je     0x40f070
+0040F06B  jmp    0x40f16d
+0040F079  mov    edx, 0x537cc2 ; "Place"
+0040F094  mov    edx, dword ptr [eax + 0x458]
+0040F0A0  call   0x410ca4 ; frmCtrl---SetAppendPageField
+0040F0A9  cmp    edx, 1
+0040F0C5  test   cl, cl
+0040F0C7  je     0x40f0dd
+0040F0D8  jmp    0x40f16d
+0040F0EC  jmp    0x40f16d
+0040F110  mov    eax, 0x537cc8 ; "frmCtrl---SetDataToPrintPro:"
+0040F115  call   0x531358
+0040F122  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0040F129  call   0x404fd8
+0040F15D  jmp    0x40f16d
+========== 00419BBC frmCtrl---UpdatePageSN
+00419BCD  call   0x530bc4
+00419BDB  cmp    byte ptr [edx + 0xb6c], 0
+00419BE2  je     0x419dc2
+00419BED  mov    dword ptr [ecx + 0x488], eax
+00419BFD  call   0x53339e ; AIMDTL!imGetPrinttedPagesn
+00419C02  dec    eax
+00419C03  jne    0x419d2a
+00419C0C  mov    eax, dword ptr [ecx + 0x3f4]
+00419C15  cmp    eax, dword ptr [edx + 0x3f8]
+00419C1B  jge    0x419d2a
+00419C24  inc    dword ptr [ecx + 0x3f4]
+00419C40  mov    eax, dword ptr [ecx + 0x3f4]
+00419C46  call   0x4a9b28
+00419C54  mov    eax, dword ptr [edx + 0x2fc] ; .txtBoxNoBeginValue
+00419C5D  call   0x50a030
+00419C65  mov    eax, dword ptr [ecx + 0x39c] ; .cbxtype
+00419C6D  call   dword ptr [edx + 0xc8]
+00419C73  dec    eax
+00419C74  jne    0x419c8d
+00419C76  fld    dword ptr [0x419e2c]
+00419C7F  fsubr  qword ptr [ecx + 0x408]
+00419C85  fstp   qword ptr [ecx + 0x408]
+00419C8B  jmp    0x419cb7
+00419C90  mov    eax, dword ptr [eax + 0x39c] ; .cbxtype
+00419C98  call   dword ptr [edx + 0xc8]
+00419C9E  test   eax, eax
+00419CA0  jne    0x419cb7
+00419CA2  fld    dword ptr [0x419e2c]
+00419CAB  fadd   qword ptr [ecx + 0x408]
+00419CB1  fstp   qword ptr [ecx + 0x408]
+00419CBA  cmp    dword ptr [eax + 0xb3c], 0
+00419CC1  jle    0x419ccc
+00419CC6  dec    dword ptr [edx + 0xb3c]
+00419CD5  fld    qword ptr [ecx + 0x408]
+00419CDE  fstp   xword ptr [esp]
+00419CEC  call   0x4ab560
+00419CF9  mov    eax, dword ptr [eax + 0x308] ; .txtMachineNoValue2
+00419CFF  call   0x50a030
+00419D2D  cmp    dword ptr [ecx + 0xb40], 0
+00419D34  jle    0x419dc2
+00419D50  mov    eax, dword ptr [ecx + 0xb40]
+00419D56  call   0x4a9b28
+00419D75  call   0x530f7c
+00419D7F  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00419D86  mov    ecx, dword ptr [edx + 0x30c] ; .btnReadData
+00419D8C  mov    eax, dword ptr [ecx + 0x208]
+00419D97  call   0x51df7c
+00419D9D  call   0x51ded8
+00419DC8  jmp    0x419e19
+00419DE3  mov    eax, 0x538819 ; "frmCtrl---UpdatePageSN:"
+00419DE8  call   0x531358
+00419DF2  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00419DF9  call   0x404fd8
+========== 00417D44 frmCtrl---SetPrintTimer
+00417D5B  call   0x530bc4
+00417D94  mov    edx, dword ptr [edx + 0xb68]
+00417DA0  call   0x40f83c ; frmCtrl---EditOutSideObj
+00417DBD  mov    edx, 0x5384d1 ; "msg\AdtTemp.ms"
+00417DD3  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00417DE1  call   0x530f7c
+00417E0B  call   0x410e3c ; frmCtrl---GetAllGroupMSG
+00417E10  test   al, al
+00417E12  je     0x4182e4
+00417E1E  mov    eax, dword ptr [ecx + 0xb5c]
+00417E24  call   0x4aa088
+00417E29  test   al, al
+00417E2B  jne    0x417e9e
+00417E45  mov    edx, 0x5384e0 ; "CtrlNoInSideModel"
+00417E5A  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00417E63  call   0x4056d4 ; frmMain---ShowMessage
+00417E6E  call   0x530f54
+00417E99  jmp    0x418350
+00417EA4  mov    eax, dword ptr [ecx + 0xb60]
+00417EAA  call   0x4aa088
+00417EAF  test   al, al
+00417EB1  jne    0x417f24
+00417ECB  mov    edx, 0x5384f2 ; "CtrlNoOutSideModel"
+00417EE0  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00417EE9  call   0x4056d4 ; frmMain---ShowMessage
+00417EF4  call   0x530f54
+00417F1F  jmp    0x418350
+00417F2A  mov    eax, dword ptr [ecx + 0xae8]
+00417F30  call   0x4aa088
+00417F35  test   al, al
+00417F37  jne    0x417faa
+00417F51  mov    edx, 0x538505 ; "CtrlNoALLModel"
+00417F66  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00417F6F  call   0x4056d4 ; frmMain---ShowMessage
+00417F7A  call   0x530f54
+00417FA5  jmp    0x418350
+00417FB5  call   0x40462c
+00417FBB  call   0x533386 ; AIMDTL!imGetAdtMsgFieldCount
+00417FDE  mov    edx, 0x538519 ; "AdtFieldCount"
+00417FF3  mov    edx, 0x538514 ; "Data"
+00418008  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00418011  call   0x402678 ; frmMain---GetHeJianInfo
+0041801B  call   0x4a9bc8
+0041806E  cmp    ecx, dword ptr [ebp - 0xb0]
+00418074  je     0x4180e7
+0041808E  mov    edx, 0x538527 ; "CtrlNoAllADTCount"
+004180A3  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004180AC  call   0x4056d4 ; frmMain---ShowMessage
+004180B7  call   0x530f54
+004180E2  jmp    0x4182d9
+004180FF  mov    edx, 0x538539 ; "CtrlIsSetDelaying"
+00418114  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0041811D  call   0x4056d4 ; frmMain---ShowMessage
+00418127  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0041812E  mov    ecx, dword ptr [edx + 0x30c] ; .btnReadData
+00418134  mov    eax, dword ptr [ecx + 0x208]
+0041813F  call   0x51df7c
+00418145  call   0x51ded8
+0041818F  call   0x418b30 ; frmCtrl---SetPrintDelayToPro
+0041819A  call   0x530f54
+004181D4  call   0x531008
+004181EE  test   cl, cl
+004181F0  je     0x4182d9
+00418215  call   0x40d0c4 ; frmCtrl---SetPrintToPrintPro
+00418220  call   0x530f54
+0041825A  call   0x531008
+00418274  test   cl, cl
+00418276  je     0x4182d9
+00418281  mov    edx, 0x53854d ; "-1"
+0041829A  call   0x530f54
+004182B2  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004182BA  mov    edx, dword ptr [eax + 0x350] ; .txtTokki
+004182C6  mov    dword ptr [ecx + 0xb4c], edx
+004182D2  mov    byte ptr [eax + 0xb39], 1
+004182E2  jmp    0x418350
+004182FC  mov    edx, 0x538550 ; "CtrlFailAllModel"
+00418311  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0041831A  call   0x4056d4 ; frmMain---ShowMessage
+00418325  call   0x530f54
+00418359  mov    edx, 0x538561 ; "-1"
+00418372  call   0x531020
+0041838C  test   cl, cl
+0041838E  je     0x4183d5
+0041839C  call   0x40462c
+004183B3  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004183BB  call   0x40450c ; frmMain---ShowAlert
+004183D3  jmp    0x41844b
+004183ED  mov    edx, 0x538564 ; "CtrlIsPrinting"
+00418402  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0041840B  call   0x4056d4 ; frmMain---ShowMessage
+00418416  call   0x530f54
+00418446  call   0x533604 ; KERNEL32!Sleep
+0041846C  call   0x531358
+00418476  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0041847E  mov    edx, dword ptr [eax + 0x30c] ; .btnReadData
+00418484  mov    eax, dword ptr [edx + 0x208]
+0041848F  call   0x51df7c
+00418495  call   0x51ded8
+004184E5  jmp    0x4185b7
+00418509  mov    eax, 0x538575 ; "frmCtrl---SetPrintTimer:"
+0041850E  call   0x531358
+00418518  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0041851F  call   0x404fd8
+0041854F  mov    edx, 0x53858e ; "CtrlWarmAllModel"
+00418564  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0041856D  call   0x4056d4 ; frmMain---ShowMessage
+00418577  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0041857E  call   0x40450c ; frmMain---ShowAlert
+========== 0040D0C4 frmCtrl---SetPrintToPrintPro
+0040D0D8  call   0x530bc4
+0040D114  call   0x533f18 ; CC3260MT!_memset
+0040D120  call   0x5333a4 ; AIMDTL!imInitADT
+0040D128  cmp    dword ptr [ebp - 0x50], 1
+0040D12C  jne    0x40d1df
+0040D135  call   0x417898 ; frmCtrl---SetStopPrint
+0040D13D  mov    edx, dword ptr [edx + 0xae8]
+0040D146  call   0x40c0ac ; frmCtrl---SendMessageToADT
+0040D14B  test   al, al
+0040D14D  je     0x40d180
+0040D152  call   0x40d714 ; frmCtrl---SetValueToStr
+0040D157  call   0x5333bc ; AIMDTL!imPrinterStart
+0040D15F  cmp    dword ptr [ebp - 0x54], 1
+0040D163  jne    0x40d23c
+0040D16C  mov    byte ptr [edx + 0xb6c], 1
+0040D176  call   0x4185cc ; frmCtrl---InserProductRecord
+0040D17B  jmp    0x40d23c
+0040D192  mov    edx, 0x537b1c ; "CtrlSendADTException"
+0040D1A4  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0040D1AD  call   0x4056d4 ; frmMain---ShowMessage
+0040D1B8  call   0x530f54
+0040D1DD  jmp    0x40d23c
+0040D1F1  mov    edx, 0x537b31 ; "CtrlSendADTError"
+0040D203  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0040D20C  call   0x4056d4 ; frmMain---ShowMessage
+0040D217  call   0x530f54
+0040D248  call   0x530f54
+0040D278  jmp    0x40d32a
+0040D29C  mov    eax, 0x537b42 ; "frmCtrl---SetPrintToPrintPro:"
+0040D2A1  call   0x531358
+0040D2AB  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0040D2B2  call   0x404fd8
+0040D2E3  call   0x530f54
+0040D31D  jmp    0x40d32a
+========== 00418B30 frmCtrl---SetPrintDelayToPro
+00418B4D  call   0x530bc4
+00418B98  mov    edx, 0x538673 ; "CtrlIsSendingDelay"
+00418BAD  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00418BB6  call   0x4056d4 ; frmMain---ShowMessage
+00418BC0  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00418BC7  mov    ecx, dword ptr [edx + 0x30c] ; .btnReadData
+00418BCD  mov    eax, dword ptr [ecx + 0x208]
+00418BD8  call   0x51df7c
+00418BDE  call   0x51ded8
+00418C0F  call   0x419a18 ; frmCtrl---GetPrintHeadDelayCount
+00418C42  mov    eax, dword ptr [ecx + 0x388] ; .txtOutSidePrintWordBegin
+00418C48  call   0x50a000
+00418C75  mov    eax, dword ptr [ecx + 0x390] ; .txtInsidePrintWordBegin
+00418C7B  call   0x50a000
+00418CAB  call   0x531008
+00418CC5  test   cl, cl
+00418CC7  je     0x418d03
+00418CEB  call   0x530f54
+00418D25  call   0x531008
+00418D3F  test   cl, cl
+00418D41  je     0x418d7d
+00418D65  call   0x530f54
+00418DAC  mov    edx, 0x538691 ; "DPI"
+00418DC1  mov    edx, 0x53868c ; "Data"
+00418DD6  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00418DDF  call   0x402678 ; frmMain---GetHeJianInfo
+00418DE9  call   0x4a9bc8
+00418E3F  mov    edx, 0x53869d ; "Width"
+00418E63  mov    edx, 0x538695 ; "MsgInfo"
+00418E7E  mov    edx, dword ptr [edx + 0xb5c]
+00418E84  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00418E8B  call   0x40240c ; frmMain---GetIniData
+00418E93  call   0x40462c
+00418E99  call   0x533edc ; CC3260MT!_atof
+00418E9F  fstp   qword ptr [ebp - 0x110]
+00418EFF  mov    edx, 0x5386a8 ; "PerInch"
+00418F14  mov    edx, 0x5386a3 ; "Data"
+00418F29  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00418F32  call   0x402678 ; frmMain---GetHeJianInfo
+00418F3A  call   0x40462c
+00418F40  call   0x533edc ; CC3260MT!_atof
+00418F46  fstp   qword ptr [ebp - 0x118]
+00418F97  mov    edx, 0x5386b8 ; "Width"
+00418FBB  mov    edx, 0x5386b0 ; "MsgInfo"
+00418FD6  mov    edx, dword ptr [edx + 0xb60]
+00418FDC  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00418FE3  call   0x40240c ; frmMain---GetIniData
+00418FEB  call   0x40462c
+00418FF1  call   0x533edc ; CC3260MT!_atof
+00418FF7  fstp   qword ptr [ebp - 0x120]
+0041903F  fld    qword ptr [ebp - 0x110]
+00419045  fcomp  qword ptr [ebp - 0x120]
+0041904B  fnstsw ax
+0041904E  ja     0x419070
+00419050  fld    qword ptr [ebp - 0x120]
+00419056  fsub   qword ptr [ebp - 0x110]
+0041905C  fild   dword ptr [ebp - 0x108]
+00419062  fdivp  st(1)
+00419064  fmul   qword ptr [ebp - 0x118]
+0041906A  fstp   qword ptr [ebp - 0x104]
+00419088  mov    edx, 0x5386c3 ; "PrintHead1FixedDelay1"
+0041909D  mov    edx, 0x5386be ; "Data"
+004190B2  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004190BB  call   0x402678 ; frmMain---GetHeJianInfo
+004190C3  call   0x40462c
+004190C9  call   0x533edc ; CC3260MT!_atof
+004190CF  fstp   qword ptr [ebp - 0x128]
+0041912F  mov    edx, 0x5386de ; "PrintHead1FixedDelay2"
+00419144  mov    edx, 0x5386d9 ; "Data"
+00419159  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00419162  call   0x402678 ; frmMain---GetHeJianInfo
+0041916A  call   0x40462c
+00419170  call   0x533edc ; CC3260MT!_atof
+00419176  fstp   qword ptr [ebp - 0x130]
+004191D6  mov    edx, 0x5386f9 ; "PrintHead2FixedDelay1"
+004191EB  mov    edx, 0x5386f4 ; "Data"
+00419200  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00419209  call   0x402678 ; frmMain---GetHeJianInfo
+00419211  call   0x40462c
+00419217  call   0x533edc ; CC3260MT!_atof
+0041921D  fstp   qword ptr [ebp - 0x138]
+00419280  mov    edx, 0x538714 ; "PrintHead2FixedDelay2"
+00419298  mov    edx, 0x53870f ; "Data"
+004192AD  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004192B6  call   0x402678 ; frmMain---GetHeJianInfo
+004192C1  call   0x40462c
+004192C7  call   0x533edc ; CC3260MT!_atof
+004192CD  fstp   qword ptr [ebp - 0x140]
+00419336  mov    edx, 0x53872f ; "PrintHead3FixedDelay1"
+0041934E  mov    edx, 0x53872a ; "Data"
+00419366  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0041936F  call   0x402678 ; frmMain---GetHeJianInfo
+0041937A  call   0x40462c
+00419380  call   0x533edc ; CC3260MT!_atof
+00419386  fstp   qword ptr [ebp - 0x148]
+004193F2  mov    edx, 0x53874a ; "PrintHead3FixedDelay2"
+0041940A  mov    edx, 0x538745 ; "Data"
+00419422  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0041942B  call   0x402678 ; frmMain---GetHeJianInfo
+00419436  call   0x40462c
+0041943C  call   0x533edc ; CC3260MT!_atof
+00419442  fstp   qword ptr [ebp - 0x150]
+004194AE  mov    edx, 0x538765 ; "PrintHead4FixedDelay1"
+004194C6  mov    edx, 0x538760 ; "Data"
+004194DE  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004194E7  call   0x402678 ; frmMain---GetHeJianInfo
+004194F2  call   0x40462c
+004194F8  call   0x533edc ; CC3260MT!_atof
+004194FE  fstp   qword ptr [ebp - 0x158]
+0041956A  mov    edx, 0x538780 ; "PrintHead4FixedDelay2"
+00419582  mov    edx, 0x53877b ; "Data"
+0041959A  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004195A3  call   0x402678 ; frmMain---GetHeJianInfo
+004195AE  call   0x40462c
+004195B4  call   0x533edc ; CC3260MT!_atof
+004195BA  fstp   qword ptr [ebp - 0x160]
+0041960E  call   0x40462c
+00419614  call   0x533edc ; CC3260MT!_atof
+0041961A  fstp   qword ptr [ebp - 0x168]
+00419623  call   0x40462c
+00419629  call   0x533edc ; CC3260MT!_atof
+0041962F  fstp   qword ptr [ebp - 0x170]
+00419635  fld    qword ptr [ebp - 0x128]
+0041963B  fadd   qword ptr [ebp - 0x130]
+00419641  fadd   qword ptr [ebp - 0x168]
+00419647  fstp   qword ptr [ebp - 0x178]
+0041964D  fld    qword ptr [ebp - 0x138]
+00419653  fadd   qword ptr [ebp - 0x140]
+00419659  fadd   qword ptr [ebp - 0x168]
+0041965F  fstp   qword ptr [ebp - 0x180]
+00419665  fld    qword ptr [ebp - 0x148]
+0041966B  fadd   qword ptr [ebp - 0x150]
+00419671  fadd   qword ptr [ebp - 0x170]
+00419677  fsub   qword ptr [ebp - 0x104]
+0041967D  fstp   qword ptr [ebp - 0x188]
+00419683  fld    qword ptr [ebp - 0x158]
+00419689  fadd   qword ptr [ebp - 0x160]
+0041968F  fadd   qword ptr [ebp - 0x170]
+00419695  fsub   qword ptr [ebp - 0x104]
+0041969B  fstp   qword ptr [ebp - 0x190]
+004196A1  fld    qword ptr [ebp - 0x178]
+004196A7  fcomp  dword ptr [0x419a14]
+004196AD  fnstsw ax
+004196B0  jb     0x4196e9
+004196B2  fld    qword ptr [ebp - 0x180]
+004196B8  fcomp  dword ptr [0x419a14]
+004196BE  fnstsw ax
+004196C1  jb     0x4196e9
+004196C3  fld    qword ptr [ebp - 0x188]
+004196C9  fcomp  dword ptr [0x419a14]
+004196CF  fnstsw ax
+004196D2  jb     0x4196e9
+004196D4  fld    qword ptr [ebp - 0x190]
+004196DA  fcomp  dword ptr [0x419a14]
+004196E0  fnstsw ax
+004196E3  jae    0x419769
+00419704  mov    edx, 0x538796 ; "CtrlDelayNoInt"
+0041971C  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00419725  call   0x4056d4 ; frmMain---ShowMessage
+00419733  call   0x530f54
+00419764  jmp    0x41986b
+0041977F  cmp    edx, dword ptr [ebp - 0xfc]
+00419785  jge    0x41986b
+004197A2  cmp    dword ptr [ebp - 0x198], 0
+004197A9  jne    0x4197c5
+004197C3  jmp    0x41982c
+004197C5  cmp    dword ptr [ebp - 0x198], 1
+004197CC  jne    0x4197e8
+004197E6  jmp    0x41982c
+004197E8  cmp    dword ptr [ebp - 0x198], 2
+004197EF  jne    0x41980b
+00419809  jmp    0x41982c
+0041980B  cmp    dword ptr [ebp - 0x198], 3
+00419812  jne    0x41982c
+00419844  call   0x419acc ; frmCtrl---SetPrintHeadDelay
+00419849  test   al, al
+0041984B  je     0x419853
+0041985F  cmp    ecx, dword ptr [ebp - 0xfc]
+00419865  jl     0x41978b
+0041987D  call   0x530f54
+004198E2  jmp    0x419a0b
+00419912  mov    eax, 0x5387a5 ; "frmCtrl---SetPrintDelayToPro:"
+00419917  call   0x531358
+00419924  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0041992B  call   0x404fd8
+00419961  mov    edx, 0x5387c3 ; "CtrlSendDelayException"
+00419979  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00419982  call   0x4056d4 ; frmMain---ShowMessage
+00419993  call   0x530f54
+004199FB  jmp    0x419a0b
+========== 00419ACC frmCtrl---SetPrintHeadDelay
+00419AE0  call   0x530bc4
+00419AFC  cmp    dword ptr [ebp - 0x38], 0
+00419B00  jle    0x419b31
+00419B02  fld    qword ptr [ebp + 8]
+00419B05  fadd   qword ptr [0x419bb0]
+00419B0B  fmul   dword ptr [0x419bb8]
+00419B11  call   0x533e94 ; CC3260MT!__ftol
+00419B1A  call   0x5333ce ; AIMDTL!imSetLgphDelay
+00419B1F  dec    eax
+00419B20  jne    0x419b28
+00419B26  jmp    0x419b31
+00419B2B  cmp    dword ptr [ebp - 0x38], 0
+00419B2F  jg     0x419b02
+00419B3E  jmp    0x419ba4
+00419B59  mov    eax, 0x5387fc ; "frmCtrl---SetPrintHeadDelay:"
+00419B5E  call   0x531358
+00419B68  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00419B6F  call   0x404fd8
+00419B97  jmp    0x419ba4
+00419BB3  inc    edi
+00419BB6  test   byte ptr [edi], bh
+========== 00410E3C frmCtrl---GetAllGroupMSG
+00410E53  call   0x530bc4
+00410E65  call   0x530d90
+00410E8B  mov    edx, 0x537efa ; "DPI"
+00410E9D  mov    edx, 0x537ef5 ; "Data"
+00410EAF  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00410EB8  call   0x402678 ; frmMain---GetHeJianInfo
+00410EC0  call   0x40462c
+00410EC6  call   0x533edc ; CC3260MT!_atof
+00410ECC  fstp   qword ptr [ebp - 0x74]
+00410F17  mov    edx, 0x537f03 ; "PerInch"
+00410F29  mov    edx, 0x537efe ; "Data"
+00410F3B  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00410F44  call   0x402678 ; frmMain---GetHeJianInfo
+00410F4C  call   0x40462c
+00410F52  call   0x533edc ; CC3260MT!_atof
+00410F58  fstp   qword ptr [ebp - 0x7c]
+00410FA7  mov    eax, dword ptr [ecx + 0x388] ; .txtOutSidePrintWordBegin
+00410FAD  call   0x50a000
+00410FB5  call   0x40462c
+00410FBB  call   0x533edc ; CC3260MT!_atof
+00410FC1  fstp   qword ptr [ebp - 0x84]
+00410FF3  mov    eax, dword ptr [ecx + 0x38c] ; .txtOutSidePrintWordEnd
+00410FF9  call   0x50a000
+00411001  call   0x40462c
+00411007  call   0x533edc ; CC3260MT!_atof
+0041100D  fstp   qword ptr [ebp - 0x8c]
+0041103F  mov    eax, dword ptr [ecx + 0x390] ; .txtInsidePrintWordBegin
+00411045  call   0x50a000
+0041104D  call   0x40462c
+00411053  call   0x533edc ; CC3260MT!_atof
+00411059  fstp   qword ptr [ebp - 0x94]
+0041108B  mov    eax, dword ptr [ecx + 0x394] ; .txtInsidePrintWordEnd
+00411091  call   0x50a000
+00411099  call   0x40462c
+0041109F  call   0x533edc ; CC3260MT!_atof
+004110A5  fstp   qword ptr [ebp - 0x9c]
+004110C1  fld    qword ptr [ebp - 0x8c]
+004110C7  fsub   qword ptr [ebp - 0x84]
+004110CD  fdiv   qword ptr [ebp - 0x7c]
+004110D0  fmul   qword ptr [ebp - 0x74]
+004110D6  fsub   qword ptr [ecx + 0xad8]
+004110DF  fsub   qword ptr [eax + 0xae0]
+004110E5  fstp   qword ptr [ebp - 0xa4]
+004110EB  fld    qword ptr [ebp - 0x9c]
+004110F1  fsub   qword ptr [ebp - 0x94]
+004110F7  fdiv   qword ptr [ebp - 0x7c]
+004110FA  fmul   qword ptr [ebp - 0x74]
+00411100  fsub   qword ptr [edx + 0xad8]
+00411109  fsub   qword ptr [ecx + 0xae0]
+0041110F  fstp   qword ptr [ebp - 0xac]
+00411120  call   0x530f54
+00411137  mov    edx, 0x537f0b ; "msg\TempInSide.ms"
+0041114A  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00411158  call   0x530f7c
+00411168  call   0x530f54
+0041119F  mov    edx, 0x537f1d ; "msg\TempOutSide.ms"
+004111B2  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004111C0  call   0x530f7c
+004111D0  call   0x530f54
+00411218  call   0x4112e8 ; frmCtrl---GroupMsgWhole
+0041121D  test   al, al
+0041121F  je     0x411244
+0041123F  jmp    0x4112e0
+00411262  jmp    0x4112e0
+00411283  mov    eax, 0x537f30 ; "frmCtrl---GetAllGroupMSG:"
+00411288  call   0x531358
+00411292  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00411299  call   0x404fd8
+004112D3  jmp    0x4112e0
+========== 004112E8 frmCtrl---GroupMsgWhole
+004112F9  call   0x530bc4
+00411316  mov    edx, 0x537f4f ; "MaxPrintHeadCount"
+00411328  mov    edx, 0x537f4a ; "Data"
+0041133A  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00411343  call   0x402678 ; frmMain---GetHeJianInfo
+0041134D  call   0x4a9bc8
+0041139D  mov    edx, 0x537f66 ; "SinglePrintHeadHeight"
+004113AF  mov    edx, 0x537f61 ; "Data"
+004113C1  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004113CA  call   0x402678 ; frmMain---GetHeJianInfo
+004113D4  call   0x4a9bc8
+00411415  imul   ecx, dword ptr [ebp - 0x5c]
+0041142D  push   dword ptr [edx + 0xb60]
+0041143E  mov    edx, 0x537f7c ; "TempOutSide"
+00411453  mov    ecx, dword ptr [ecx + 0xb68]
+0041145C  mov    edx, dword ptr [eax + 0xb64]
+00411465  call   0x4115f4 ; frmCtrl---GroupMsgModel
+00411494  push   dword ptr [eax + 0xb5c]
+004114A5  mov    edx, 0x537f88 ; "TempInSide"
+004114BA  mov    ecx, dword ptr [edx + 0xb68]
+004114C3  mov    edx, dword ptr [eax + 0xb64]
+004114CC  call   0x4115f4 ; frmCtrl---GroupMsgModel
+004114F9  push   dword ptr [ecx + 0xae8]
+0041150D  mov    edx, 0x537f93 ; "AdtTemp"
+00411522  mov    ecx, dword ptr [edx + 0xb5c]
+0041152B  mov    edx, dword ptr [eax + 0xb60]
+00411534  call   0x4115f4 ; frmCtrl---GroupMsgModel
+00411552  cmp    byte ptr [ebp - 0x61], 0
+00411556  je     0x411572
+00411558  cmp    byte ptr [ebp - 0x62], 0
+0041155C  je     0x411572
+0041155E  cmp    byte ptr [ebp - 0x63], 0
+00411562  je     0x411572
+00411570  jmp    0x4115ea
+0041157E  jmp    0x4115ea
+0041159F  mov    eax, 0x537f9b ; "frmCtrl---GroupMsgWhole:"
+004115A4  call   0x531358
+004115AE  mov    eax, dword ptr [0x5585a8] ; "ððU"
+004115B5  call   0x404fd8
+004115DD  jmp    0x4115ea
+========== 00417898 frmCtrl---SetStopPrint
+004178A9  call   0x530bc4
+004178B7  mov    byte ptr [edx + 0xb39], 0
+004178BE  call   0x5333c8 ; AIMDTL!imSendCancel
+004178C3  call   0x533374 ; AIMDTL!imClearPrintQueue
+004178C8  call   0x53337a ; AIMDTL!imClearReturnQueue
+004178CD  call   0x5333c2 ; AIMDTL!imPrinterStop
+004178D5  cmp    byte ptr [ecx + 0xb6c], 0
+004178DC  je     0x4178e6
+004178E1  call   0x417964 ; frmCtrl---SetEndProductInfo
+004178E9  mov    byte ptr [edx + 0xb6c], 0
+004178F6  jmp    0x417951
+004178FB  mov    byte ptr [ecx + 0xb6c], 0
+0041791B  mov    eax, 0x5383f7 ; "frmCtrl---SetStopPrint:"
+00417920  call   0x531358
+0041792A  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00417931  call   0x404fd8
+========== 00417964 frmCtrl---SetEndProductInfo
+00417975  call   0x530bc4
+00417992  mov    edx, 0x538415 ; "ProductRecord"
+004179A4  mov    edx, 0x53840f ; "Table"
+004179B6  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+004179BF  call   0x402678 ; frmMain---GetHeJianInfo
+00417A06  call   0x531020
+00417A1D  test   cl, cl
+00417A1F  je     0x417cc4
+00417A3B  mov    eax, dword ptr [ecx + 0x35c] ; .txtMachineNoValueResult
+00417A41  call   0x50a000
+00417A5A  mov    eax, dword ptr [ecx + 0x2fc] ; .txtBoxNoBeginValue
+00417A60  call   0x50a000
+00417A79  mov    eax, 0x538424 ; "update "
+00417A7E  call   0x531358
+00417A93  mov    edx, 0x53842c ; " set [EndPrintTime]=CONVERT(VARCHAR(100), GETDATE(), 121),[EndBoxNo]='"
+00417AA8  call   0x530f7c
+00417AC0  call   0x530f7c
+00417AD5  mov    edx, 0x538473 ; "',[EndMachineNo]='"
+00417AEA  call   0x530f7c
+00417B02  call   0x530f7c
+00417B2C  call   0x530f7c
+00417BED  mov    eax, 0x538488 ; " where ID=(select max(ID) as MaxID from "
+00417BF2  call   0x531358
+00417C1C  call   0x530f7c
+00417C27  call   0x530f68
+00417C5C  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00417C64  mov    eax, dword ptr [eax + 0x31c] ; .txtBore
+00417C6A  call   0x476aac
+00417C77  call   dword ptr [edx + 0x44]
+00417C7A  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00417C82  mov    eax, dword ptr [eax + 0x31c] ; .txtBore
+00417C88  call   0x476aac
+00417C98  call   dword ptr [ecx + 0x2c]
+00417C9B  mov    edx, dword ptr [0x5585a8] ; "ððU"
+00417CA3  mov    eax, dword ptr [eax + 0x31c] ; .txtBore
+00417CA9  call   0x4769d4
+00417CE0  jmp    0x417d31
+00417CFB  mov    eax, 0x5384b3 ; "frmCtrl---SetEndProductInfo:"
+00417D00  call   0x531358
+00417D0A  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00417D11  call   0x404fd8
+========== 004185CC frmCtrl---InserProductRecord
+004185E3  call   0x530bc4
+00418606  mov    edx, 0x5385a5 ; "ProductRecord"
+00418618  mov    edx, 0x53859f ; "Table"
+0041862A  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00418633  call   0x402678 ; frmMain---GetHeJianInfo
+0041867A  mov    eax, 0x5385b3 ; "insert into "
+0041867F  call   0x531358
+00418694  mov    edx, 0x5385c0 ; " ([Key code],[MadeNo],[Case-No],[BeginPrintTime],[BeginBoxNo],[BeginMachineNo])"
+004186A9  call   0x530f7c
+004186F3  mov    eax, dword ptr [ecx + 0x35c] ; .txtMachineNoValueResult
+004186F9  call   0x50a000
+00418715  mov    eax, dword ptr [ecx + 0x2fc] ; .txtBoxNoBeginValue
+0041871B  call   0x50a000
+00418737  mov    eax, dword ptr [ecx + 0x370] ; .txtCaseNo
+0041873D  call   0x50a000
+00418759  mov    eax, dword ptr [ecx + 0x2f8] ; .txtMadeNoValue
+0041875F  call   0x50a000
+0041877B  mov    eax, dword ptr [ecx + 0x2f4] ; .txtKeyCodeValue
+00418781  call   0x50a000
+00418797  mov    eax, 0x538610 ; " values ('"
+0041879D  call   0x531358
+004187B2  mov    edx, 0x53861b ; "','"
+004187C7  call   0x530f7c
+004187DF  call   0x530f7c
+004187F4  mov    edx, 0x53861f ; "','"
+00418809  call   0x530f7c
+00418821  call   0x530f7c
+00418836  mov    edx, 0x538623 ; "',CONVERT(VARCHAR(100), GETDATE(), 121),'"
+0041884B  call   0x530f7c
+00418863  call   0x530f7c
+00418878  mov    edx, 0x53864d ; "','"
+0041888D  call   0x530f7c
+004188A5  call   0x530f7c
+004188BA  mov    edx, 0x538651 ; "')"
+004188CF  call   0x530f7c
+004188DA  call   0x530f68
+00418A1F  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00418A27  mov    eax, dword ptr [eax + 0x318] ; .txtModel
+00418A2D  call   0x476aac
+00418A40  call   dword ptr [edx + 0x44]
+00418A43  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00418A4B  mov    eax, dword ptr [eax + 0x318] ; .txtModel
+00418A51  call   0x476aac
+00418A67  call   dword ptr [ecx + 0x2c]
+00418A6A  mov    edx, dword ptr [0x5585a8] ; "ððU"
+00418A72  mov    eax, dword ptr [eax + 0x318] ; .txtModel
+00418A78  call   0x4769d4
+00418AAE  jmp    0x418b26
+00418AD5  mov    eax, 0x538654 ; "frmCtrl---InserProductRecord:"
+00418ADA  call   0x531358
+00418AE4  mov    eax, dword ptr [0x5585a8] ; "ððU"
+00418AEB  call   0x404fd8
+00418B16  jmp    0x418b26
+========== 0040B760 frmCtrl---GetPrintStatus
+0040B774  call   0x530bc4
+0040B79F  call   0x533398 ; AIMDTL!imGetPrinterStatus
+0040B7A7  cmp    dword ptr [ebp - 0x7c], 1
+0040B7AB  jne    0x40bbed
+0040B7B4  sub    cl, 1
+0040B7B7  jb     0x40b7d0
+0040B7B9  je     0x40b819
+0040B7BB  dec    cl
+0040B7BD  je     0x40bb53
+0040B7C3  dec    cl
+0040B7C5  je     0x40bb99
+0040B7CB  jmp    0x40bca6
+0040B7D3  mov    byte ptr [eax + 0xb38], 0
+0040B7DD  mov    eax, dword ptr [edx + 0x3a4] ; .gbxMsg
+0040B7E5  call   0x509f20
+0040B7F6  call   0x530f54
+0040B805  call   0x417548 ; frmCtrl---SetControlEnable
+0040B80D  mov    byte ptr [ecx + 0xb6d], 0
+0040B814  jmp    0x40bca6
+0040B81C  cmp    dword ptr [eax + 0xb44], 1
+0040B823  jne    0x40b895
+0040B828  mov    dword ptr [edx + 0xb44], 2
+0040B860  call   0x530f7c
+0040B86B  call   0x530f54
+0040B890  jmp    0x40bb0b
+0040B898  cmp    dword ptr [ecx + 0xb44], 2
+0040B89F  jne    0x40b911
+0040B8A4  mov    dword ptr [eax + 0xb44], 3
+0040B8C0  mov    edx, 0x53791f ; ".."
+0040B8DC  call   0x530f7c
+0040B8E7  call   0x530f54
+0040B90C  jmp    0x40bb0b
+0040B914  cmp    dword ptr [ecx + 0xb44], 3
+0040B91B  jne    0x40b98d
+0040B920  mov    dword ptr [eax + 0xb44], 4
+0040B93C  mov    edx, 0x537922 ; "..."
+0040B958  call   0x530f7c
+0040B963  call   0x530f54
+0040B988  jmp    0x40bb0b
+0040B990  cmp    dword ptr [ecx + 0xb44], 4
+0040B997  jne    0x40ba09
+0040B99C  mov    dword ptr [eax + 0xb44], 5
+0040B9B8  mov    edx, 0x537926 ; "...."
+0040B9D4  call   0x530f7c
+0040B9DF  call   0x530f54
+0040BA04  jmp    0x40bb0b
+0040BA0C  cmp    dword ptr [ecx + 0xb44], 5
+0040BA13  jne    0x40ba85
+0040BA18  mov    dword ptr [eax + 0xb44], 6
+0040BA34  mov    edx, 0x53792b ; "....."
+0040BA50  call   0x530f7c
+0040BA5B  call   0x530f54
+0040BA80  jmp    0x40bb0b
+0040BA88  cmp    dword ptr [ecx + 0xb44], 6
+0040BA8F  jne    0x40bafe
+0040BA94  mov    dword ptr [eax + 0xb44], 1
+0040BAB0  mov    edx, 0x537931 ; "......"
+0040BACC  call   0x530f7c
+0040BAD7  call   0x530f54
+0040BAFC  jmp    0x40bb0b
+0040BB01  mov    dword ptr [ecx + 0xb44], 1
+0040BB0E  cmp    byte ptr [eax + 0xb39], 0
+0040BB15  je     0x40bb38
+0040BB1A  mov    dword ptr [edx + 0xab4], 1
+0040BB27  mov    byte ptr [ecx + 0xb39], 0
+0040BB31  mov    byte ptr [eax + 0xb38], 1
+0040BB3F  call   0x417548 ; frmCtrl---SetControlEnable
+0040BB47  mov    byte ptr [edx + 0xb6d], 1
+0040BB4E  jmp    0x40bca6
+0040BB56  mov    byte ptr [ecx + 0xb38], 0
+0040BB60  mov    eax, dword ptr [eax + 0x3a4] ; .gbxMsg
+0040BB68  call   0x509f20
+0040BB79  call   0x530f54
+0040BB85  call   0x417548 ; frmCtrl---SetControlEnable
+0040BB8D  mov    byte ptr [ecx + 0xb6d], 0
+0040BB94  jmp    0x40bca6
+0040BBAF  call   0x40bd9c ; frmCtrl---GetAlarmStatus
+0040BBBA  call   0x530f54
+0040BBD9  call   0x417548 ; frmCtrl---SetControlEnable
+0040BBE1  mov    byte ptr [ecx + 0xb6d], 0
+0040BBE8  jmp    0x40bca6
+0040BBED  cmp    dword ptr [ebp - 0x7c], 0
+0040BBF1  jne    0x40bc22
+0040BBF6  mov    byte ptr [eax + 0xb6d], 0
+0040BC07  call   0x417548 ; frmCtrl---SetControlEnable
+0040BC18  call   0x530f54
+0040BC1D  jmp    0x40bca6
+0040BC22  cmp    dword ptr [ebp - 0x7c], -1
+0040BC26  jne    0x40bc6a
+0040BC2B  mov    byte ptr [edx + 0xb6d], 0
+0040BC48  call   0x40c270 ; frmCtrl---GetOpenPrintStatus
+0040BC53  call   0x530f54
+0040BC68  jmp    0x40bca6
+0040BC6A  cmp    dword ptr [ebp - 0x7c], -3
+0040BC6E  jne    0x40bc9c
+0040BC73  mov    byte ptr [ecx + 0xb6d], 0
+0040BC84  call   0x417548 ; frmCtrl---SetControlEnable
+0040BC95  call   0x530f54
+0040BC9A  jmp    0x40bca6
+0040BC9F  mov    byte ptr [ecx + 0xb6d], 0
+0040BCB2  call   0x530f54
+0040BCE2  jmp    0x40bd94
+0040BD06  mov    eax, 0x537938 ; "frmCtrl---GetPrintStatus:"
+0040BD0B  call   0x531358
+0040BD15  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0040BD1C  call   0x404fd8
+0040BD4D  call   0x530f54
+0040BD87  jmp    0x40bd94
+========== 00419E30 frmCtrl---SetTimerPageSN
+00419E41  call   0x530bc4
+00419E4F  cmp    byte ptr [edx + 0xb38], 0
+00419E56  je     0x41a117
+00419E5F  cmp    byte ptr [ecx + 0xb6c], 0
+00419E66  je     0x41a0fd
+00419E8B  cmp    dword ptr [ecx + 0xab4], 1
+00419E92  jne    0x41a063
+00419E9B  mov    edx, dword ptr [eax + 0xb48]
+00419EA4  mov    eax, dword ptr [ecx + 0x380] ; .TimerPrintStart
+00419EB0  mov    dword ptr [ecx + 0xb48], edx
+00419EB9  cmp    dword ptr [edx + 0xb48], 0x3e8
+00419EC3  jl     0x41a0e5
+00419ECC  cmp    dword ptr [eax + 0xb4c], 0
+00419ED3  jle    0x41a039
+00419EEF  mov    eax, dword ptr [ecx + 0xb4c]
+00419EF5  call   0x4a9b28
+00419F12  mov    edx, 0x538843 ; "CtrlDataSecond"
+00419F24  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00419F2D  call   0x4056d4 ; frmMain---ShowMessage
+00419F42  mov    edx, 0x538832 ; "CtrlDataHCZhong1"
+00419F54  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+00419F5D  call   0x4056d4 ; frmMain---ShowMessage
+00419F77  call   0x530f7c
+00419F8F  call   0x530f7c
+00419F9A  call   0x530f54
+0041A013  call   0x41a180 ; frmCtrl---ShowMsgStation
+0041A01B  dec    dword ptr [ecx + 0xb4c]
+0041A037  jmp    0x41a053
+0041A03C  mov    byte ptr [ecx + 0xb38], 0
+0041A046  mov    eax, dword ptr [eax + 0x3a4] ; .gbxMsg
+0041A04E  call   0x509f20
+0041A058  mov    dword ptr [ecx + 0xb48], eax
+0041A05E  jmp    0x41a0e5
+0041A066  cmp    dword ptr [edx + 0xab4], 2
+0041A06D  jne    0x41a0e5
+0041A081  mov    edx, 0x538852 ; "CtrlIsZBPrinting"
+0041A093  mov    ecx, dword ptr [0x5585a8] ; "ððU"
+0041A09C  call   0x4056d4 ; frmMain---ShowMessage
+0041A0A7  call   0x530f54
+0041A0E0  call   0x41a180 ; frmCtrl---ShowMsgStation
+0041A0FB  jmp    0x41a117
+0041A100  mov    byte ptr [ecx + 0xb38], 0
+0041A10A  mov    eax, dword ptr [eax + 0x3a4] ; .gbxMsg
+0041A112  call   0x509f20
+0041A11D  jmp    0x41a16e
+0041A138  mov    eax, 0x538863 ; "frmCtrl---SetTimerPageSN:"
+0041A13D  call   0x531358
+0041A147  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0041A14E  call   0x404fd8
+========== 0044C504 SendThread---Execute----Terminated
+0044C515  call   0x530bc4
+0044C528  call   0x533400 ; KERNEL32!CreateEventA
+0044C533  jmp    0x44c5aa
+0044C53E  call   0x44c660 ; SendThread---UpdateSN
+0044C54E  call   0x533622 ; KERNEL32!WaitForSingleObject
+0044C559  jmp    0x44c5aa
+0044C574  mov    eax, 0x552c3b ; "SendThread---Execute----Terminated:"
+0044C579  call   0x531358
+0044C583  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0044C58A  call   0x404fd8
+0044C5AD  cmp    byte ptr [ecx + 0xd], 0
+0044C5B1  je     0x44c535
+0044C5B9  call   0x5333e8 ; KERNEL32!CloseHandle
+0044C5C4  jmp    0x44c64d
+0044C5E2  mov    eax, 0x552c5f ; "SendThread---Execute:"
+0044C5E7  call   0x531358
+0044C5F1  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0044C5F8  call   0x404fd8
+0044C619  call   0x40462c
+0044C62D  call   0x504670
+========== 0044C660 SendThread---UpdateSN
+0044C671  call   0x530bc4
+0044C67C  mov    edx, dword ptr [0x5585b0] ; "ÆrU"
+0044C684  call   0x419bbc ; frmCtrl---UpdatePageSN
+0044C68F  jmp    0x44c6e0
+0044C6AA  mov    eax, 0x552c75 ; "SendThread---UpdateSN:"
+0044C6AF  call   0x531358
+0044C6B9  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0044C6C0  call   0x404fd8
+========== 0044C6F4 SendThread---Wakeup
+0044C705  call   0x530bc4
+0044C713  cmp    dword ptr [edx + 0x30], 0
+0044C717  je     0x44c724
+0044C71F  call   0x5335ec ; KERNEL32!SetEvent
+0044C72A  jmp    0x44c77b
+0044C745  mov    eax, 0x552c8c ; "SendThread---Wakeup:"
+0044C74A  call   0x531358
+0044C754  mov    eax, dword ptr [0x5585a8] ; "ððU"
+0044C75B  call   0x404fd8
+0044C78C  inc    eax
+0044C7B6  inc    esp
+0044C7CA  inc    esp
+0044C7F7  dec    ecx
+0044C7FC  jne    0x44c851

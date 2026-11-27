@@ -1,0 +1,340 @@
+object frmSuperset: TfrmSuperset
+  Left = 553
+  Top = 62
+  Width = 966
+  Height = 650
+  Caption = '超级设定'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 950
+    Height = 497
+    Align = alClient
+    TabOrder = 0
+    object PageConSet: TPageControl
+      Left = 1
+      Top = 1
+      Width = 948
+      Height = 495
+      ActivePage = tabSetDelay
+      Align = alClient
+      TabIndex = 1
+      TabOrder = 0
+      object tabEditPWD: TTabSheet
+        Caption = '恢復默認設置'
+        object cbx_defaultPWD: TCheckBox
+          Left = 110
+          Top = 80
+          Width = 100
+          Height = 17
+          Caption = '恢復默認密碼'
+          Checked = True
+          State = cbChecked
+          TabOrder = 0
+        end
+      end
+      object tabSetDelay: TTabSheet
+        Caption = '延遲設置'
+        ImageIndex = 1
+        object lblycone: TLabel
+          Left = 176
+          Top = 56
+          Width = 30
+          Height = 13
+          Caption = '延遲1'
+        end
+        object lblyctwo: TLabel
+          Left = 528
+          Top = 56
+          Width = 30
+          Height = 13
+          Caption = '延遲2'
+        end
+        object lblmm11: TLabel
+          Left = 280
+          Top = 104
+          Width = 22
+          Height = 16
+          Caption = 'mm'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblmm12: TLabel
+          Left = 280
+          Top = 152
+          Width = 22
+          Height = 16
+          Caption = 'mm'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblmm13: TLabel
+          Left = 280
+          Top = 200
+          Width = 22
+          Height = 16
+          Caption = 'mm'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblmm14: TLabel
+          Left = 280
+          Top = 248
+          Width = 22
+          Height = 16
+          Caption = 'mm'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblmm21: TLabel
+          Left = 624
+          Top = 104
+          Width = 22
+          Height = 16
+          Caption = 'mm'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblmm22: TLabel
+          Left = 624
+          Top = 144
+          Width = 22
+          Height = 16
+          Caption = 'mm'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblmm23: TLabel
+          Left = 624
+          Top = 192
+          Width = 22
+          Height = 16
+          Caption = 'mm'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblmm24: TLabel
+          Left = 624
+          Top = 240
+          Width = 22
+          Height = 16
+          Caption = 'mm'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object txtYCOne1: TLabeledEdit
+          Left = 152
+          Top = 104
+          Width = 121
+          Height = 21
+          EditLabel.Width = 42
+          EditLabel.Height = 13
+          EditLabel.Caption = '噴頭1：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 0
+          OnKeyPress = txtWidthResolutionKeyPress
+        end
+        object txtYCTwo1: TLabeledEdit
+          Left = 152
+          Top = 152
+          Width = 121
+          Height = 21
+          EditLabel.Width = 42
+          EditLabel.Height = 13
+          EditLabel.Caption = '噴頭2：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 1
+          OnKeyPress = txtWidthResolutionKeyPress
+        end
+        object txtYCThree1: TLabeledEdit
+          Left = 152
+          Top = 200
+          Width = 121
+          Height = 21
+          EditLabel.Width = 42
+          EditLabel.Height = 13
+          EditLabel.Caption = '噴頭3：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 2
+          OnKeyPress = txtWidthResolutionKeyPress
+        end
+        object txtYCFour1: TLabeledEdit
+          Left = 152
+          Top = 248
+          Width = 121
+          Height = 21
+          EditLabel.Width = 42
+          EditLabel.Height = 13
+          EditLabel.Caption = '噴頭4：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 3
+          OnKeyPress = txtWidthResolutionKeyPress
+        end
+        object txtYCOne2: TLabeledEdit
+          Left = 496
+          Top = 104
+          Width = 121
+          Height = 21
+          EditLabel.Width = 42
+          EditLabel.Height = 13
+          EditLabel.Caption = '噴頭1：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 4
+          OnKeyPress = txtWidthResolutionKeyPress
+        end
+        object txtYCTwo2: TLabeledEdit
+          Left = 496
+          Top = 144
+          Width = 121
+          Height = 21
+          EditLabel.Width = 42
+          EditLabel.Height = 13
+          EditLabel.Caption = '噴頭2：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 5
+          OnKeyPress = txtWidthResolutionKeyPress
+        end
+        object txtYCThree2: TLabeledEdit
+          Left = 496
+          Top = 192
+          Width = 121
+          Height = 21
+          EditLabel.Width = 42
+          EditLabel.Height = 13
+          EditLabel.Caption = '噴頭3：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 6
+          OnKeyPress = txtWidthResolutionKeyPress
+        end
+        object txtYCFour2: TLabeledEdit
+          Left = 496
+          Top = 240
+          Width = 121
+          Height = 21
+          EditLabel.Width = 42
+          EditLabel.Height = 13
+          EditLabel.Caption = '噴頭4：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 7
+          OnKeyPress = txtWidthResolutionKeyPress
+        end
+      end
+      object tabEditFBL: TTabSheet
+        Caption = '分辨率設置'
+        ImageIndex = 2
+        object txtWidthResolution: TLabeledEdit
+          Left = 180
+          Top = 80
+          Width = 200
+          Height = 21
+          EditLabel.Width = 72
+          EditLabel.Height = 13
+          EditLabel.Caption = '橫向分辨率：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 0
+          OnKeyPress = txtWidthResolutionKeyPress
+        end
+      end
+      object TabSZDFC: TTabSheet
+        Caption = '噴印最大緩存'
+        ImageIndex = 3
+        object txtEditMaxHC: TLabeledEdit
+          Left = 170
+          Top = 80
+          Width = 200
+          Height = 21
+          EditLabel.Width = 60
+          EditLabel.Height = 13
+          EditLabel.Caption = '最大緩存：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 0
+        end
+      end
+      object TabShHC: TTabSheet
+        Caption = '數據緩衝'
+        ImageIndex = 4
+        object txtHCSJ: TLabeledEdit
+          Left = 168
+          Top = 80
+          Width = 200
+          Height = 21
+          EditLabel.Width = 84
+          EditLabel.Height = 13
+          EditLabel.Caption = '數據緩衝時間：'
+          LabelPosition = lpLeft
+          LabelSpacing = 3
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 497
+    Width = 950
+    Height = 115
+    Align = alBottom
+    TabOrder = 1
+    object btnSet: TButton
+      Left = 72
+      Top = 48
+      Width = 75
+      Height = 25
+      Caption = '設置'
+      TabOrder = 0
+      OnClick = btnSetClick
+    end
+  end
+end

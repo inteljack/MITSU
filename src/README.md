@@ -8,6 +8,30 @@
 | `tests/Mitsu.Printer.Tests` | 位元組比對測試＋用戶端對模擬器的端對端測試（含故障注入） |
 | `src/Mitsu.Core` | 核心邏輯：工單驗證、機番產生、每箱 18 欄組字、每箱狀態、生產控制流程（無 UI、無 DB） |
 | `tests/Mitsu.Core.Tests` | 核心邏輯單元測試＋生產流程對模擬器的端對端測試 |
+| `src/Mitsu.App` | WinForms 主程式 `MitsuConsole.exe`（噴印控制台） |
+
+## 主程式（Mitsu.App）
+
+```powershell
+D:\dev_program\MITSU\src\Mitsu.App\bin\Debug\net8.0-windows\MitsuConsole.exe
+```
+
+- 預設為「內建模擬器」模式（每 2 秒模擬一箱通過電眼），不接機台也能完整操作；系統設定 →「使用內建模擬器」改為 False 並填噴碼機 IP 即連真機。
+- 設定檔：`%ProgramData%\MITSU\appsettings.json`。工程密碼只存 PBKDF2 雜湊（舊版是明碼）。
+- **資料來源目前是示範資料**（4 筆噴印資料、3 種紙箱），資料層（SQL Server／Excel 匯入）完成後替換；「噴印資料管理／紙箱規格管理／生產記錄」選單先停用。
+
+| 畫面 | 內容 |
+|---|---|
+| 噴印控制台 | 版面沿用舊版（基本設置／正嘜／側嘜／紙箱規格／噴印操作）；右側狀態、箱數與事件記錄；噴印中鎖住輸入與選單；停止或異常後自動帶入下一箱的箱數與流水號 |
+| 噴印資料選擇 | Key code 模糊查詢，雙擊帶回；超出長度上限的欄位紅字 |
+| 預覽 | 列出前 3 箱實際送出的 String1–20，作為設計 X1 訊息時的欄位對照 |
+| 大字箱數視窗 | 72 號字「已噴 / 總箱數」，優先顯示在第二螢幕，噴印中不能關閉，記憶位置 |
+| 需人工確認的紙箱 | 結束時若有 Uncertain 箱，逐箱列出各面確認狀態 |
+| 系統設定 | 噴碼機、噴印目標（每一面的 line/station/訊息檔）、生產參數、工程密碼 |
+
+開發輔助（不需操作畫面）：
+- `MitsuConsole.exe --screenshot <資料夾>`：把各視窗畫成 PNG。
+- `MitsuConsole.exe --demo-run <資料夾> [stop]`：用內建模擬器自動跑 10 箱（或在第 5 箱停止），輸出截圖與事件記錄；結果符合預期時 exit code 0。
 
 協定依據：`analysis/01_X1_protocol.md`（由 X1SDKDemo 反推，**尚未經實機驗證**）。
 

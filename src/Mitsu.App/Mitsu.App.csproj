@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>MitsuConsole</AssemblyName>
+    <RootNamespace>Mitsu.App</RootNamespace>
+    <Version>3.0.0</Version>
+    <Product>鶴見噴印控制台</Product>
+    <Company>Anser</Company>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mitsu.Core\Mitsu.Core.csproj" />
+    <ProjectReference Include="..\Mitsu.Printer\Mitsu.Printer.csproj" />
+    <ProjectReference Include="..\Mitsu.Printer.Simulator\Mitsu.Printer.Simulator.csproj" />
+  </ItemGroup>
+
+</Project>
